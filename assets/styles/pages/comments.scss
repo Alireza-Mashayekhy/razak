@@ -1,0 +1,79 @@
+.comments {
+  .topDiv {
+    background: url("/images/commentBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 225px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 90px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .commentsList {
+    padding: 200px 148px 100px 148px;
+    gap: 83px;
+    .comment {
+      margin-bottom: 17px;
+      background: #e6e9ed;
+      padding: 52px 34px 41px 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 433px;
+      .comma {
+        margin-bottom: 50px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #01040b;
+        margin-bottom: 44px;
+      }
+      .name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: rgba(1, 4, 11, 0.81);
+      }
+    }
+  }
+  .pagination {
+    gap: 10px;
+    margin-bottom: 200px;
+    .num {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #606a79;
+      cursor: pointer;
+    }
+    .activePage {
+      color: #0b1a31;
+    }
+    .linePagination {
+      height: 2px;
+      width: 86px;
+      display: inline-block;
+      background-color: #0b1a31;
+    }
+  }
+}
