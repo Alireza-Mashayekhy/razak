@@ -1,0 +1,158 @@
+.products {
+  .topDiv {
+    background: url("/images/newsBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 249px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 82px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .table {
+    padding: 200px 148px 200px 150px;
+    * {
+      direction: ltr;
+      text-align: left;
+    }
+    .activeDrag {
+      cursor: grabbing !important;
+    }
+    .lettersSort {
+      direction: ltr;
+      box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
+      gap: 45px;
+      padding: 11px 50px;
+      overflow: hidden;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #b9b7bd;
+      cursor: grab;
+      margin-bottom: 99px;
+      div {
+        cursor: pointer;
+      }
+      .active {
+        color: #1a407a;
+      }
+    }
+    .filters {
+      gap: 40px;
+      margin-bottom: 50px;
+      .searchDiv,
+      .categoryDiv,
+      .sortDiv {
+        width: 30%;
+        max-width: 278px;
+        img {
+          position: absolute;
+        }
+        select,
+        input {
+          width: 100%;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: #b9b7bd;
+          padding-bottom: 8px;
+          padding-left: 35px;
+          border: none;
+          border-bottom: 1px solid #b9b7bd;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    .productTable {
+      cursor: grab;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      overflow: hidden;
+      .name {
+        min-width: 240px;
+        text-align: center;
+      }
+      .generic {
+        min-width: 373px;
+        text-align: center;
+      }
+      .forms {
+        min-width: 261px;
+        text-align: center;
+      }
+      .indications {
+        min-width: 258px;
+        text-align: center;
+      }
+      .packinging {
+        min-width: 222px;
+        text-align: center;
+      }
+      .detail {
+        min-width: 135px;
+        text-align: center;
+      }
+      .title {
+        height: 56px;
+        background: #1a407a;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        div {
+          background: #1a407a;
+        }
+      }
+      .product {
+        height: 150px;
+        gap: 1px;
+        div,
+        a {
+          background: #e6e9ed;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000;
+        }
+        .name {
+          text-decoration: underline;
+        }
+        .detail {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 50px;
+          color: #1a407a;
+          &:hover {
+            text-decoration: none;
+          }
+          img {
+            transform: rotate(180deg);
+            margin-left: 7px;
+            width: 42px;
+          }
+        }
+      }
+    }
+  }
+}

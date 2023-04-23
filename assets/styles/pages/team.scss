@@ -1,0 +1,121 @@
+.team {
+  background: url("/images/aboutUs.jpg");
+  background: url("/images/aboutUs.jpg"), #0c0f1c;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .effect {
+    padding: 60px 148px 197px 152px;
+    background: linear-gradient(
+      179.87deg,
+      rgba(1, 4, 11, 0) -2.01%,
+      #01040b 40%,
+      #000000 90%
+    );
+    .enLogo {
+      text-align: left;
+      margin-bottom: 266px;
+      position: relative;
+      left: -82px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      color: #b9b7bd;
+      margin-bottom: 10px;
+      span {
+        display: inline-block;
+        width: 43px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: white;
+        margin-right: 24px;
+      }
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+      text-align: justify;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 200px;
+      max-width: 693px;
+    }
+    .category {
+      margin-bottom: 100px;
+      div {
+        width: 400px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .active {
+        border-bottom: 5px solid #ffffff;
+      }
+    }
+    .pictures {
+      gap: 50px;
+      justify-content: space-between;
+      .picture {
+        width: 329px;
+        height: 420px;
+        background: url("/images/firstTeam.jpg") no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        overflow: hidden;
+        &:hover {
+          .informations {
+            transform: translateY(0px);
+          }
+        }
+        .informations {
+          transform: translateY(85px);
+          transition: transform 1s;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.16);
+          backdrop-filter: blur(10px);
+          padding: 25px 35px 22px 0px;
+          .name {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: #ffffff;
+            margin-bottom: 16px;
+            span {
+              height: 17px;
+              width: 5px;
+              background-color: #1a407a;
+              border-radius: 5px;
+              margin-left: 13px;
+              display: inline-block;
+            }
+          }
+          .position {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 17px;
+          }
+          .socials {
+            gap: 13px;
+          }
+        }
+      }
+    }
+  }
+}

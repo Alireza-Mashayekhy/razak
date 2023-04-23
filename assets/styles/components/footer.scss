@@ -1,0 +1,88 @@
+.footer {
+  padding: 179px 150px 68px 150px;
+  background: #1a407a;
+  color: white;
+  .topDiv {
+    margin-bottom: 186px;
+    & > div {
+      margin: 0px 10px;
+    }
+    .faLogo {
+      width: 141px;
+      margin-bottom: 39px;
+    }
+    p {
+      max-width: 250px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 41px;
+      color: #bac6d7;
+    }
+    h5 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+    a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #bac6d7;
+      margin-bottom: 24px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .calls {
+      img {
+        margin-left: 10px;
+      }
+      & > div {
+        margin-bottom: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #bac6d7;
+      }
+    }
+    .getPadding {
+      padding-top: 33px;
+    }
+  }
+  .agency,
+  .rules,
+  .socials {
+    width: 100%;
+    text-align: center;
+  }
+  .agency {
+    margin-bottom: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .rules {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #bac6d7;
+    span {
+      margin: 0px 9px;
+    }
+    a {
+      color: #bac6d7;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .socials {
+    img {
+      margin: 0px 10px;
+    }
+  }
+}

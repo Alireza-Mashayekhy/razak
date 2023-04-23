@@ -1,0 +1,102 @@
+.productDetail {
+  .topDiv {
+    background: url("/images/newsBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 249px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 82px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a407a;
+    background: #e6e9ed;
+    span {
+      color: #606a79;
+    }
+  }
+  .aboutProduct {
+    position: relative;
+    padding: 240px 148px 200px 94px;
+    .productBack {
+      height: 110%;
+      position: absolute;
+      z-index: -1;
+      left: 0px;
+      top: 0px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 40px;
+      margin-bottom: 13px;
+      color: #606a79;
+      span {
+        width: 43px;
+        height: 5px;
+        display: inline-block;
+        border-radius: 5px;
+        background-color: #1c427b;
+        margin-right: 13px;
+      }
+    }
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 56px;
+      color: #01040b;
+    }
+    .descriptions {
+      height: 352px;
+      overflow-y: scroll;
+      padding-left: 30px;
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 0px;
+        background: #e6e9ed;
+        border-radius: 1px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        background: #1a407a;
+        border-radius: 1px;
+      }
+      h5 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        color: #01040b;
+        margin-bottom: 50px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 44px;
+        text-align: justify;
+        color: #606a79;
+      }
+    }
+    .productImg {
+      width: 700px;
+    }
+  }
+}

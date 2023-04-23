@@ -1,0 +1,44 @@
+.partners {
+  .topDiv {
+    background: url("/images/newsBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 249px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 82px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .partners {
+    padding: 209px 148px 200px 150px;
+    gap: 105px;
+    .partner {
+      img {
+        width: 150px;
+        margin-bottom: 25px;
+      }
+      .text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        color: #01040b;
+      }
+    }
+  }
+}

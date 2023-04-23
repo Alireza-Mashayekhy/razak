@@ -1,0 +1,48 @@
+.gallery {
+  .topDiv {
+    background: url("/images/galleryBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 225px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 82px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .images {
+    padding: 200px 148px 200px 157px;
+    gap: 70px;
+    .image {
+      margin-bottom: 30px;
+      width: 433px;
+      img {
+        width: 100%;
+      }
+      .text {
+        width: 100%;
+        padding: 34px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        text-align: center;
+        background: #1a407a;
+      }
+    }
+  }
+}

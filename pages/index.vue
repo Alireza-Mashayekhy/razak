@@ -1,0 +1,402 @@
+<template>
+  <div class="home">
+    <div class="chatWithUs d-flex align-items-center">
+      <div class="text">با ما گفتگو کنید</div>
+      <div class="circle">
+        <img src="/icons/messages.svg" alt="messages" class="messages" />
+      </div>
+    </div>
+    <div class="topDiv d-flex flex-column justify-content-between">
+      <div class="logoDiv">
+        <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+      </div>
+      <div class="about">
+        <h1>شرکت داروسازی رازک</h1>
+        <div class="d-flex align-items-end text">
+          <div>شرکـــت لابـــراتـــوار های رازک با نیـــم قـــرن تجـــربه</div>
+          <img
+            src="/icons/circleArrow.svg"
+            alt="circle arrow"
+            class="circleArrow"
+          />
+        </div>
+        <div class="socials">
+          <img src="/icons/whatsapp.svg" alt="whatsapp" />
+          <img src="/icons/instagram.svg" alt="instagram" />
+          <img src="/icons/linkedin.svg" alt="linkedin" />
+        </div>
+      </div>
+    </div>
+    <div class="aboutRazak">
+      <div class="title">
+        درباره ی رازک
+        <span></span>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div>
+          <h2>شرکت لابراتوارهای رازک با بیش از نیم قرن تجربه و بهترین کیفیت</h2>
+          <router-link to="/" class="more">
+            <span>بیشتر بخوانید</span>
+            <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+          </router-link>
+        </div>
+        <div>
+          <p>
+            شرکت سهامی داروسازی لابراتوارهای رازک در سال 1343 هجری شمسی (1964
+            میلادی) با نام شرکت سهامی لابراتوارهای فایزر تحت مالکیت شرکت فایزر
+            آمریکا فعالیت خود را آغاز نمود.
+          </p>
+          <div class="d-flex links">
+            <router-link to="/"
+              >لیست محصولات
+              <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
+            /></router-link>
+            <router-link to="/"
+              >تماس با ما
+              <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
+            /></router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="homeNews">
+      <div class="titles">
+        <div class="line"></div>
+        <div class="newsTitle">
+          اخبار
+          <span></span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h3>اخبار و رویداد ها</h3>
+          <router-link to="/">
+            دیدن همه
+            <img src="/icons/circleArrow.svg" alt="circleArrow" />
+          </router-link>
+        </div>
+      </div>
+      <div
+        class="images"
+        :class="{ activeDrag: mouseDown == true }"
+        @mousemove="mousemove"
+        @mousedown="startDragging"
+        @mouseup="stopDragging"
+        @mouseleave="stopDragging"
+        ref="parent"
+      >
+        <div class="image image1">
+          <div class="effectedDiv">
+            <div class="newsTitle">اخبار</div>
+            <h5>لورم ایپسوم</h5>
+            <div class="date">
+              <img src="/icons/calendar.svg" alt="calendar" />
+              ۱۴۰۱/۰۵/۰۲
+            </div>
+            <router-link to="/">
+              بیشتر بخوانید
+              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            </router-link>
+          </div>
+        </div>
+        <div class="image image2">
+          <div class="effectedDiv">
+            <div class="newsTitle">اخبار</div>
+            <h5>لورم ایپسوم</h5>
+            <div class="date">
+              <img src="/icons/calendar.svg" alt="calendar" />
+              ۱۴۰۱/۰۵/۰۲
+            </div>
+            <router-link to="/">
+              بیشتر بخوانید
+              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            </router-link>
+          </div>
+        </div>
+        <div class="image image3">
+          <div class="effectedDiv">
+            <div class="newsTitle">اخبار</div>
+            <h5>لورم ایپسوم</h5>
+            <div class="date">
+              <img src="/icons/calendar.svg" alt="calendar" />
+              ۱۴۰۱/۰۵/۰۲
+            </div>
+            <router-link to="/">
+              بیشتر بخوانید
+              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            </router-link>
+          </div>
+        </div>
+        <div class="image image4">
+          <div class="effectedDiv">
+            <div class="newsTitle">اخبار</div>
+            <h5>لورم ایپسوم</h5>
+            <div class="date">
+              <img src="/icons/calendar.svg" alt="calendar" />
+              ۱۴۰۱/۰۵/۰۲
+            </div>
+            <router-link to="/">
+              بیشتر بخوانید
+              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="podcasts d-flex align-items-center">
+      <div class="titles">
+        <div class="title">
+          پایگاه دانش
+          <span></span>
+        </div>
+        <h5>پادکست های رازک</h5>
+        <p>
+          این روزها گوش دادن به انواع پادکست با موضوعات مختلف طرفداران بسیار
+          زیادی دارد، زیرا به راحتی، بدون اتلاف وقت، در مسیر و حتی در حال
+          استراحت می‌‌توانید به آن گوش کنید.
+        </p>
+        <router-link to="/">
+          دیدن همه
+          <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+        </router-link>
+      </div>
+      <div class="phone">
+        <img
+          :src="`/images/podcastImg${podcastNum}.jpg`"
+          class="podcastImg"
+          alt="podcastImg"
+        />
+        <div class="podcastName">پادکست شماره {{ podcastNum }}</div>
+        <div class="category">دسته بندی</div>
+        <div class="timeline">
+          <span class="circle"></span>
+          <div class="progress"></div>
+        </div>
+        <div class="time d-flex justify-content-between">
+          <div class="length"></div>
+          <div class="current">0:00</div>
+        </div>
+        <div class="controls d-flex justify-content-between">
+          <a href="/audio/podcast.mp3">
+            <img src="/icons/arrowDown.svg" alt="control icon" />
+          </a>
+          <img
+            @click="nextPodcast"
+            src="/icons/forward.svg"
+            alt="control icon"
+          />
+          <img class="playControl" src="/icons/play.svg" alt="control icon" />
+          <img
+            @click="prevPodcast"
+            src="/icons/previous.svg"
+            alt="control icon"
+          />
+          <img src="/icons/repeateOne.svg" alt="control icon" />
+        </div>
+      </div>
+      <div
+        class="podcastsList d-flex col"
+        ref="parent2"
+        :class="{ activeDrag2: mouseDown2 == true }"
+        @mousemove="mousemove2"
+        @mousedown="startDragging2"
+        @mouseup="stopDragging2"
+        @mouseleave="stopDragging2"
+      >
+        <div class="podcast" v-for="i in 5" :key="i" @click="podcastNum = i">
+          <div class="title"><span></span>پادکست شماره {{ i }}</div>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="homeBlogs">
+      <div class="effect">
+        <div class="title">پایگاه دانش<span></span></div>
+        <div class="d-flex justify-content-between">
+          <h5>مقالات، تحقیقات و نوآوری های رازک</h5>
+          <router-link to="/">
+            دیدن همه
+            <img src="/icons/circleArrow.svg" alt="circleArrow" />
+          </router-link>
+        </div>
+        <div class="blogs">
+          <div class="blog" v-for="i in 4" :key="i">
+            <div class="blogTitle">دارو سازی</div>
+            <p>
+              داروسازی حرفه‌ای است که در زمینه دارو درمانی برای مداوای یک بیمار
+              به عنوان متداول‌ترین شیوه در دنیا با بیماران و مردم مرتبط می‌گردد.
+              داروساز در صورت ناموفق بودن رژیم دارو درمانی باید علل عدم موفقیت
+              را بررسی کند. این رشته در ایران و بسیاری از کشورهای جهان در مقطع
+              دکترای حرفه ای ارائه می شود...
+            </p>
+            <router-link to="/">
+              بیشتر بخوانید
+              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="follow text-center">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="text">YOU</div>
+        <div class="image1 followImage"></div>
+        <div class="text">DON’T</div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="text">?US</div>
+        <div class="image2 followImage"></div>
+        <div class="text">FOLLOW</div>
+      </div>
+      <router-link to="/">
+        اینستاگرام ما
+        <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+      </router-link>
+    </div>
+  </div>
+</template>
+
+<script>
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+export default {
+  layout: "main",
+  data() {
+    return {
+      mouseDown: false,
+      startX: null,
+      scrollLeft: null,
+      mouseDown2: false,
+      startX2: null,
+      scrollLeft2: null,
+      podcastNum: 1,
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.audioPlayer();
+
+      gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline();
+      tl.to(".followImage", {
+        scrollTrigger: {
+          trigger: ".follow",
+          start: "10% center",
+          end: "=+400 center",
+          scrub: true,
+          // markers: true,
+        },
+        "min-width": "140px",
+      });
+    }, 100);
+  },
+  methods: {
+    mousemove(e) {
+      e.preventDefault();
+      if (!this.mouseDown) {
+        return;
+      }
+      const x = e.pageX - this.$refs.parent.offsetLeft;
+      const scroll = x - this.startX;
+      this.$refs.parent.scrollLeft = this.scrollLeft - scroll;
+    },
+    startDragging(e) {
+      this.mouseDown = true;
+      this.startX = e.pageX - this.$refs.parent.offsetLeft;
+      this.scrollLeft = this.$refs.parent.scrollLeft;
+    },
+    stopDragging(event) {
+      this.mouseDown = false;
+    },
+    mousemove2(e) {
+      e.preventDefault();
+      if (!this.mouseDown2) {
+        return;
+      }
+      const x = e.pageX - this.$refs.parent2.offsetLeft;
+      const scroll = x - this.startX2;
+      this.$refs.parent2.scrollLeft = this.scrollLeft2 - scroll;
+    },
+    startDragging2(e) {
+      this.mouseDown2 = true;
+      this.startX2 = e.pageX - this.$refs.parent2.offsetLeft;
+      this.scrollLeft2 = this.$refs.parent2.scrollLeft;
+    },
+    stopDragging2(event) {
+      this.mouseDown2 = false;
+    },
+    nextPodcast() {
+      if (this.podcastNum < 5) {
+        this.podcastNum += 1;
+      }
+    },
+    prevPodcast() {
+      if (this.podcastNum > 1) {
+        this.podcastNum -= 1;
+      }
+    },
+    audioPlayer() {
+      const audioPlayer = document.querySelector(".phone");
+      var audio = new Audio("/audio/podcast.mp3");
+
+      audio.addEventListener(
+        "loadeddata",
+        () => {
+          audioPlayer.querySelector(".time .length").textContent =
+            getTimeCodeFromNum(audio.duration);
+        },
+        false
+      );
+      const timeline = audioPlayer.querySelector(".timeline");
+      timeline.addEventListener(
+        "click",
+        (e) => {
+          const timelineWidth = window.getComputedStyle(timeline).width;
+          const timeToSeek =
+            (e.offsetX / parseInt(timelineWidth)) * audio.duration;
+          audio.currentTime = timeToSeek;
+        },
+        false
+      );
+      setInterval(() => {
+        const progressBar = audioPlayer.querySelector(".progress");
+        const circle = audioPlayer.querySelector(".circle");
+        progressBar.style.width =
+          (audio.currentTime / audio.duration) * 100 + "%";
+        circle.style.left = (audio.currentTime / audio.duration) * 100 + "%";
+        audioPlayer.querySelector(".time .current").textContent =
+          getTimeCodeFromNum(audio.currentTime);
+      }, 500);
+      const playBtn = audioPlayer.querySelector(".controls .playControl");
+      playBtn.addEventListener(
+        "click",
+        () => {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        },
+        false
+      );
+      function getTimeCodeFromNum(num) {
+        let seconds = parseInt(num);
+        let minutes = parseInt(seconds / 60);
+        seconds -= minutes * 60;
+        const hours = parseInt(minutes / 60);
+        minutes -= hours * 60;
+
+        if (hours === 0)
+          return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+        return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+          seconds % 60
+        ).padStart(2, 0)}`;
+      }
+    },
+  },
+};
+</script>
+
+<style>
+</style>
