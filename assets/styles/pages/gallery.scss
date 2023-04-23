@@ -29,6 +29,9 @@
     .image {
       margin-bottom: 30px;
       width: 433px;
+      &:hover {
+        text-decoration: none;
+      }
       img {
         width: 100%;
       }

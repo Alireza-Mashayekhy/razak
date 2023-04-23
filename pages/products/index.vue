@@ -102,7 +102,7 @@
             {{ product.packaging }}
           </div>
           <router-link
-            to="/"
+            to="/products/1"
             class="d-flex justify-content-center align-items-center detail"
           >
             More

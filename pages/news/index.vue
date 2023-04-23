@@ -31,7 +31,7 @@
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است چاپگرها ...
             </p>
-            <router-link to="/"
+            <router-link to="/news/1"
               >بیشتر بخوانید
               <img src="/icons/circleArrow.svg" alt="circleArrow" />
             </router-link>

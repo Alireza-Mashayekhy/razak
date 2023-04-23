@@ -29,7 +29,7 @@
           <div class="link">
             <div class="num">01</div>
             <h5>پایگاه دانش</h5>
-            <router-link to="/">مقالات</router-link>
+            <router-link to="/blogs">مقالات</router-link>
             <router-link to="/">نوآوری و تحقیقات</router-link>
             <router-link to="/">مطالعات </router-link>
             <router-link to="/">کتاب الکترونیکی</router-link>
@@ -40,39 +40,39 @@
             <h5>محصولات</h5>
             <router-link to="/">انسانی</router-link>
             <router-link to="/">دامی</router-link>
-            <router-link to="/">لیست محصولات</router-link>
+            <router-link to="/products">لیست محصولات</router-link>
             <router-link to="/">توزیع کنندگان</router-link>
           </div>
           <div class="link">
             <div class="num">03</div>
             <h5>اتاق خبر</h5>
-            <router-link to="/">اخبار </router-link>
-            <router-link to="/">رویداد های رازک</router-link>
+            <router-link to="/news">اخبار </router-link>
+            <router-link to="/events">رویداد های رازک</router-link>
             <router-link to="/">اخبار تیپیکو</router-link>
             <router-link to="/">اخبار سهام</router-link>
           </div>
           <div class="link">
             <div class="num">04</div>
             <h5>لابراتوارهای رازک</h5>
-            <router-link to="/">درباره ی رازک</router-link>
-            <router-link to="/">مدیران و سهامداران رازک</router-link>
-            <router-link to="/">شرکای رازک</router-link>
+            <router-link to="/aboutUs">درباره ی رازک</router-link>
+            <router-link to="/team">مدیران و سهامداران رازک</router-link>
+            <router-link to="/partners">شرکای رازک</router-link>
             <router-link to="/">پورتال سهامداران</router-link>
             <router-link to="/">معرفی لوگو</router-link>
           </div>
           <div class="link">
             <div class="num">05</div>
             <h5>تماس با ما</h5>
-            <router-link to="/">اطلاعات تماس</router-link>
+            <router-link to="/contactUs">اطلاعات تماس</router-link>
             <router-link to="/">صدای مشتریان</router-link>
             <router-link to="/">همکاری با ما</router-link>
-            <router-link to="/">ثبت شکایت</router-link>
-            <router-link to="/">نظرات همراهان</router-link>
+            <router-link to="/voc">ثبت شکایت</router-link>
+            <router-link to="/comments">نظرات همراهان</router-link>
           </div>
           <div class="link">
             <div class="num">06</div>
             <h5>مدیا سنتر</h5>
-            <router-link to="/">گالری تصاویر</router-link>
+            <router-link to="/gallery">گالری تصاویر</router-link>
             <router-link to="/">گالری ویدیوها</router-link>
           </div>
         </div>
@@ -118,6 +118,11 @@ export default {
         document.getElementsByClassName("openedMenu")[0].style.display = "none";
         document.getElementsByClassName("header")[0].style.transition = "none";
       }, 700);
+    },
+  },
+  watch: {
+    "$route.path"() {
+      this.closeMenu();
     },
   },
 };

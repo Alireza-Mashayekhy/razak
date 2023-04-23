@@ -8,10 +8,15 @@
     </div>
     <div class="route">صفحه اصلی . گالری تصاویر</div>
     <div class="images d-flex flex-wrap justify-content-center">
-      <div class="image" v-for="image in images" :key="image.id">
+      <router-link
+        to="/gallery/1"
+        class="image"
+        v-for="image in images"
+        :key="image.id"
+      >
         <img :src="image.img" alt="gallery" />
         <div class="text">لورم ایپسوم متن ساختگی با تولید</div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
