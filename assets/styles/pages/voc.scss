@@ -1,0 +1,125 @@
+.voc {
+  background: url("/images/vocBack.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  .effect {
+    padding: 60px 148px 197px 152px;
+    background: linear-gradient(180deg, rgba(26, 48, 122, 0) 36%, #01040b 40%);
+    .enLogo {
+      text-align: left;
+      margin-bottom: 200px;
+      position: relative;
+      left: -82px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 40px;
+      color: #b9b7bd;
+      margin-bottom: 10px;
+      span {
+        width: 43px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: white;
+        display: inline-block;
+        margin-right: 23px;
+      }
+    }
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 56px;
+      color: #ffffff;
+      margin-bottom: 29px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #ffffff;
+      max-width: 500px;
+      margin-bottom: 195px;
+    }
+    .form {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 9, 23, 0.78) 0%,
+        rgba(26, 64, 122, 0.81) 100%
+      );
+      padding: 200px 110px 201px 87px;
+      p {
+        margin-bottom: 100px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        color: #ffffff;
+      }
+      .inputs {
+        .col4 {
+          width: 31%;
+          margin-bottom: 57px;
+        }
+        .col12 {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        textarea {
+          width: 100%;
+          margin-bottom: 100px;
+        }
+        input,
+        select,
+        textarea {
+          border: none;
+          border-bottom: 1px solid #bac6d7;
+          background-color: inherit;
+          padding-bottom: 16px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 29px;
+          color: white;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: white;
+          }
+
+          &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: white;
+          }
+        }
+      }
+      button {
+        background-color: inherit;
+        border: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 50px;
+        color: #ffffff;
+        .circleArrow {
+          width: 40px;
+        }
+        .dots {
+          margin-right: 8px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
