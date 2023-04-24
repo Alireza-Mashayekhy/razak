@@ -1,0 +1,316 @@
+.login {
+  .topDiv {
+    background: url("/images/newsBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 249px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 82px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .page {
+    background: url("/images/loginBack.jpg") no-repeat;
+    background-size: cover;
+    .form {
+      background: rgba(0, 10, 24, 0.35);
+      background-blend-mode: multiply;
+      backdrop-filter: blur(15px);
+      padding: 276px 148px 240px 148px;
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        margin-bottom: 97px;
+      }
+      .usernameInput,
+      .passwordInput {
+        width: 500px;
+        position: relative;
+        margin-bottom: 50px;
+        img {
+          position: absolute;
+          left: 0px;
+        }
+        input {
+          background-color: inherit;
+          border: none;
+          border-bottom: 2px solid #ffffff;
+          color: white;
+          padding-bottom: 10px;
+          width: 100%;
+          padding-left: 30px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 27px;
+          &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: white;
+          }
+
+          &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: whitered;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .code {
+        width: 500px;
+        margin-bottom: 57px;
+        input {
+          background-color: inherit;
+          border: none;
+          border-bottom: 2px solid #ffffff;
+          color: white;
+          padding-bottom: 10px;
+          width: 195px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 27px;
+          &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: white;
+          }
+
+          &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: whitered;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        img {
+          height: 39px;
+        }
+      }
+      .buttonDiv {
+        width: 500px;
+        margin-bottom: 60px;
+        button {
+          background-color: inherit;
+          border: none;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 50px;
+          color: #ffffff;
+          padding: 0px;
+          .circleArrow {
+            width: 40px;
+            margin-left: 8px;
+          }
+          .dots {
+            margin-left: 5px;
+          }
+        }
+      }
+      .signUpText,
+      .forgot {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 9px;
+        a {
+          color: #0065ff;
+        }
+      }
+    }
+    .other {
+      padding: 100px 148px;
+      .chartDiv {
+        background: #01040b;
+        padding: 50px;
+        margin-bottom: 50px;
+        * {
+          direction: ltr;
+          text-align: left;
+        }
+        .title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 28px;
+          color: #72abf0;
+          margin-bottom: 31px;
+        }
+        .dropNum {
+          .number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            color: #ffffff;
+            margin-right: 48px;
+          }
+          .text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #b2b2b2;
+            margin-top: 10px;
+          }
+          .green,
+          .red {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+          }
+          .red {
+            margin-right: 29px;
+            color: #e61414;
+          }
+          .green {
+            color: #50b810;
+          }
+        }
+        .grayLine {
+          width: 0.5px;
+          display: inline-block;
+          border-radius: 1px;
+          background-color: #4c4c4c;
+          margin-right: 29px;
+        }
+        .years {
+          margin-top: 54px;
+          margin-bottom: 13px;
+          & > div {
+            gap: 20px;
+            flex-wrap: wrap;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            div {
+              direction: rtl;
+            }
+          }
+          button {
+            background: #4c4c4c;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+          }
+        }
+        .chart {
+          height: 220px;
+        }
+        .aboutChart {
+          margin-top: 29px;
+          & > div {
+            width: 111px;
+          }
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #b2b2b2;
+            height: fit-content;
+          }
+          .number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            height: fit-content;
+          }
+          span {
+            width: 1px;
+            display: inline-block;
+            margin: 0px 32px;
+            background-color: #b2b2b2;
+            margin-bottom: 31px;
+          }
+        }
+      }
+      .post {
+        padding: 36px 45px;
+        border: 0.5px solid rgba(28, 66, 123, 0.7);
+        margin-bottom: 25px;
+        & > img {
+          height: 101px;
+        }
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          text-align: right;
+          color: #0b1a31;
+          margin-bottom: 19px;
+        }
+        .writer {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 50px;
+          color: #1a407a;
+          margin-right: 8px;
+          margin-left: 5px;
+        }
+        .date {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 50px;
+          letter-spacing: 0.2em;
+          color: #1a407a;
+          margin-right: 5px;
+        }
+        span {
+          width: 1px;
+          height: 11px;
+          display: inline-block;
+          background-color: #b9b7bd;
+          margin: 0px 15px;
+        }
+      }
+    }
+  }
+}

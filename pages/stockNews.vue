@@ -101,7 +101,9 @@
       <div class="banner">
         <img src="/icons/diagram.svg" alt="diagram" />
         <div class="title">پورتال سهامداران شرکت داروسازی رازک</div>
-        <button>پورتال سهامداران</button>
+        <router-link to="/login">
+          <button>پورتال سهامداران</button>
+        </router-link>
       </div>
       <div class="topNews">
         <div class="title">
@@ -226,6 +228,9 @@ export default {
   data() {
     return {
       pagination: 1,
+      mouseDown: false,
+      startX: null,
+      scrollLeft: null,
       lastNews: [
         {
           id: 0,
@@ -261,6 +266,25 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    mousemove(e) {
+      e.preventDefault();
+      if (!this.mouseDown) {
+        return;
+      }
+      const x = e.pageX - this.$refs.parent.offsetLeft;
+      const scroll = x - this.startX;
+      this.$refs.parent.scrollLeft = this.scrollLeft - scroll;
+    },
+    startDragging(e) {
+      this.mouseDown = true;
+      this.startX = e.pageX - this.$refs.parent.offsetLeft;
+      this.scrollLeft = this.$refs.parent.scrollLeft;
+    },
+    stopDragging(event) {
+      this.mouseDown = false;
+    },
   },
 };
 </script>

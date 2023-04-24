@@ -49,7 +49,7 @@
             <router-link to="/news">اخبار </router-link>
             <router-link to="/events">رویداد های رازک</router-link>
             <router-link to="/">اخبار تیپیکو</router-link>
-            <router-link to="/">اخبار سهام</router-link>
+            <router-link to="/stockNews">اخبار سهام</router-link>
           </div>
           <div class="link">
             <div class="num">04</div>
