@@ -165,8 +165,13 @@
     }
     .newsList {
       gap: 25px;
-      overflow-x: hidden;
+      overflow-x: scroll;
       margin-bottom: 210px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .new {
         background: url("/images/topNew.jpg") no-repeat;
         background-size: cover;
@@ -222,6 +227,148 @@
             }
             &:hover {
               text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1540px) {
+  .blogsDetail {
+    .news {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .blogsDetail {
+    .topDiv {
+      padding-right: 70px;
+    }
+    .route {
+      padding: 0px 70px;
+      margin-bottom: 100px;
+    }
+    .news {
+      padding: 0px 70px;
+    }
+    .relatedPosts {
+      margin-top: 100px;
+      padding: 0px 70px;
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .blogsDetail {
+    .topDiv {
+      padding: 20px;
+      padding-bottom: 150px;
+      .title {
+        font-size: 23px;
+        max-width: 70%;
+        line-height: 40px;
+      }
+      .enLogo {
+        img {
+          height: 40px;
+        }
+      }
+    }
+    .route {
+      padding: 0px 20px;
+      font-size: 12px;
+      margin-bottom: 50px;
+      span {
+        font-size: 12px;
+      }
+    }
+    .news {
+      padding: 0px 20px;
+      .new {
+        p {
+          font-size: 15px;
+          line-height: 35px;
+        }
+        .writer,
+        .date {
+          font-size: 14px;
+          img {
+            width: 15px;
+          }
+        }
+      }
+      .lotsVisit {
+        margin-bottom: 50px;
+        .searchDiv {
+          img {
+            width: 15px;
+            top: 9px;
+          }
+          input {
+            font-size: 15px;
+            padding-right: 24px;
+          }
+        }
+        .title {
+          font-size: 15px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
+        }
+        .lotsVisitNew {
+          .subject {
+            font-size: 15px;
+          }
+          .new {
+            font-size: 12px;
+          }
+          a {
+            font-size: 10px;
+            img {
+              width: 16px;
+            }
+          }
+        }
+      }
+    }
+    .relatedPosts {
+      padding: 0px 20px;
+      margin-top: 50px;
+      .title {
+        font-size: 15px;
+        span {
+          width: 20px;
+          height: 2.5px;
+        }
+      }
+      .newsList {
+        .new {
+          min-width: 200px;
+          .effect {
+            padding: 20px 15px;
+            transform: translateY(160px);
+            .title {
+              font-size: 12px;
+              margin-bottom: 0px;
+            }
+            .about {
+              font-size: 12px;
+              line-height: 22px;
+              margin-bottom: 17px;
+            }
+            .text {
+              font-size: 11px;
+              line-height: 22px;
+              margin-bottom: 0px;
+            }
+            a {
+              font-size: 11px;
+              img {
+                width: 20px;
+              }
             }
           }
         }

@@ -25,7 +25,39 @@
       <img src="/images/distributorsAbout.jpg" alt="image" />
     </div>
     <div class="slider">
-      <splide :options="options">
+      <splide :options="options" v-show="slideOption == 1">
+        <splide-slide v-for="i in 16" :key="i">
+          <div class="slide">
+            <div class="info">
+              <div class="city">
+                <img src="/icons/location.svg" alt="location" />
+                تهران
+              </div>
+              <div class="title">لورم ایپسوم متن</div>
+              <p>
+                آدرس:لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+              </p>
+            </div>
+          </div>
+        </splide-slide>
+      </splide>
+      <splide :options="options2" v-show="slideOption == 2">
+        <splide-slide v-for="i in 16" :key="i">
+          <div class="slide">
+            <div class="info">
+              <div class="city">
+                <img src="/icons/location.svg" alt="location" />
+                تهران
+              </div>
+              <div class="title">لورم ایپسوم متن</div>
+              <p>
+                آدرس:لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+              </p>
+            </div>
+          </div>
+        </splide-slide>
+      </splide>
+      <splide :options="options3" v-show="slideOption == 3">
         <splide-slide v-for="i in 16" :key="i">
           <div class="slide">
             <div class="info">
@@ -94,7 +126,7 @@
           <div class="phone">شماره تماس</div>
         </div>
         <div class="list">
-          <div class="myRow" v-for="i in 7" :key="i">
+          <div class="myRow" v-for="i in 5" :key="i">
             <div class="cityValue">تهران</div>
             <div class="addressValue">کیلومتر 10 جاده مخصوص کرج</div>
             <div class="phoneValue">۰۲۱ ۴۴۵۲۵۴۱۳-۱۶</div>
@@ -145,13 +177,43 @@ export default {
   layout: "main",
   data() {
     return {
+      slideOption: 1,
       options: {
         type: "loop",
         padding: "20%",
       },
+      options2: {
+        type: "loop",
+        padding: "10%",
+      },
+      options3: {
+        type: "loop",
+        padding: "0%",
+      },
       pagination: 1,
       myModal: false,
     };
+  },
+  mounted() {
+    addEventListener("resize", this.onResize);
+    if (window.innerWidth > 1057) {
+      this.slideOption = 1;
+    } else if (window.innerWidth > 719 && window.innerWidth < 1057) {
+      this.slideOption = 2;
+    } else {
+      this.slideOption = 3;
+    }
+  },
+  methods: {
+    onResize() {
+      if (window.innerWidth > 1057) {
+        this.slideOption = 1;
+      } else if (window.innerWidth > 719 && window.innerWidth < 1057) {
+        this.slideOption = 2;
+      } else {
+        this.slideOption = 3;
+      }
+    },
   },
 };
 </script>

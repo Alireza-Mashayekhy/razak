@@ -349,3 +349,340 @@
     }
   }
 }
+@media only screen and (max-width: 1500px) {
+  .distributors {
+    .about {
+      flex-direction: column;
+      & > div {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .slider {
+      .splide__slide {
+        .slide {
+          .info {
+            width: 90%;
+          }
+        }
+      }
+    }
+    .spreaders {
+      flex-direction: column;
+      align-items: center;
+      .map {
+        width: 730px;
+        min-width: 730px;
+        .mashhad {
+          right: 184px;
+          top: 171px;
+        }
+        .tehran {
+          left: 243px;
+          top: 178px;
+        }
+        .isfahan {
+          left: 260px;
+          top: 283px;
+        }
+        .shiraz {
+          bottom: 374px;
+          left: 301px;
+        }
+      }
+    }
+    .modalBack {
+      justify-content: start;
+      .myModal {
+        width: 90%;
+        height: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .distributors {
+    .topDiv {
+      padding: 70px;
+      padding-bottom: 100px;
+    }
+    .route {
+      padding: 7px 70px;
+    }
+    .about {
+      padding: 100px 70px;
+    }
+    .slider {
+      .splide__arrow--prev {
+        left: 15%;
+      }
+      .splide__arrow--next {
+        right: 16%;
+      }
+      .splide__slide {
+        .slide {
+          .info {
+            padding: 20px;
+          }
+        }
+      }
+    }
+    .spreaders {
+      padding-right: 70px;
+      padding-left: 30px;
+      .map {
+        width: 522px;
+        min-width: 522px;
+        .mashhad {
+          right: 124px;
+          top: 124px;
+        }
+        .tehran {
+          left: 173px;
+          top: 126px;
+        }
+        .isfahan {
+          left: 179px;
+          top: 197px;
+        }
+        .shiraz {
+          bottom: 497px;
+          left: 213px;
+        }
+      }
+    }
+    .modalBack {
+      .myModal {
+        width: 88%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .distributors {
+    .modalBack {
+      .myModal {
+        width: 84.8%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .distributors {
+    .topDiv {
+      padding: 20px;
+      padding-bottom: 50px;
+      .enLogo {
+        img {
+          height: 40px;
+        }
+      }
+      .title {
+        font-size: 20px;
+      }
+    }
+    .route {
+      padding: 7px 20px;
+      font-size: 10px;
+    }
+    .about {
+      padding: 50px 20px;
+      div {
+        .title {
+          font-size: 15px;
+          max-width: 428px;
+          span {
+            height: 2.5px;
+            width: 20px;
+          }
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .slider {
+      .splide__arrow--prev {
+        left: 4%;
+      }
+      .splide__arrow--next {
+        right: 5%;
+      }
+      .splide__slide {
+        .slide {
+          .info {
+            width: 80%;
+            right: -50px;
+            .city {
+              font-size: 10px;
+              margin-bottom: 0px;
+              img {
+                width: 12px;
+                margin-bottom: 7px;
+              }
+            }
+            .title {
+              font-size: 12px;
+            }
+            p {
+              font-size: 10px;
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+    .spreaders {
+      padding: 0px 20px;
+      .info {
+        .title {
+          font-size: 15px;
+          margin-bottom: 0px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
+        }
+        p {
+          font-size: 15px;
+          margin-bottom: 0px;
+        }
+        button {
+          font-size: 12px;
+          img {
+            width: 20px;
+          }
+        }
+      }
+      .map {
+        width: 280px;
+        min-width: 280px;
+        height: 300px;
+        .mashhad {
+          right: 63px;
+          top: 61px;
+        }
+        .tehran {
+          left: 92px;
+          top: 63px;
+        }
+        .isfahan {
+          left: 94px;
+          top: 104px;
+        }
+        .shiraz {
+          bottom: 660px;
+          left: 113px;
+        }
+        .circle {
+          font-size: 5px;
+          padding: 5px;
+        }
+      }
+    }
+    .modalBack {
+      .myModal {
+        width: 88.85%;
+        .modalHeader {
+          font-size: 12px;
+        }
+        .filters {
+          gap: 20px;
+          .searchDiv,
+          .sectionDiv,
+          .cityDiv {
+            position: relative;
+            input,
+            select {
+              font-size: 10px;
+              padding-right: 19px;
+              padding-bottom: 4px;
+            }
+            img {
+              width: 15px;
+              bottom: 9px;
+            }
+            input {
+              padding-bottom: 0px !important;
+            }
+          }
+        }
+        .listHeader {
+          margin-bottom: 5px;
+          .city,
+          .address,
+          .phone {
+            font-size: 10px;
+          }
+          .city {
+            min-width: 70px;
+          }
+          .phone {
+            min-width: 150px;
+          }
+        }
+        .list {
+          .myRow {
+            .cityValue,
+            .addressValue,
+            .phoneValue {
+              font-size: 10px;
+            }
+            .cityValue {
+              min-width: 70px;
+            }
+            .phoneValue {
+              min-width: 150px;
+            }
+          }
+        }
+        .pagination {
+          margin-top: 20px;
+          .num {
+            font-size: 10px;
+          }
+          .linePagination {
+            width: 46px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .distributors {
+    .modalBack {
+      .myModal {
+        width: 83.85%;
+        .filters {
+          gap: 20px;
+          flex-direction: column;
+          .searchDiv,
+          .sectionDiv,
+          .cityDiv {
+            width: 100%;
+            min-width: 100%;
+          }
+        }
+        .listHeader {
+          display: none;
+        }
+        .list {
+          max-height: 155px;
+          overflow-y: scroll;
+          .myRow {
+            flex-direction: column;
+            .addressValue {
+              border: none;
+              border-top: 0.5px solid #1a407a;
+              border-bottom: 0.5px solid #1a407a;
+            }
+          }
+        }
+      }
+    }
+  }
+}

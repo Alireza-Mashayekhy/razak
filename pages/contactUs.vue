@@ -11,7 +11,7 @@
         </div>
         <h3>با ما در تماس باشید</h3>
         <div class="line"></div>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between allInfoes">
           <div>
             <div class="phone">
               <div class="fieldTitle">

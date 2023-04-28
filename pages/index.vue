@@ -276,22 +276,49 @@ export default {
   mounted() {
     setTimeout(() => {
       this.audioPlayer();
-
-      gsap.registerPlugin(ScrollTrigger);
-      let tl = gsap.timeline();
-      tl.to(".followImage", {
-        scrollTrigger: {
-          trigger: ".follow",
-          start: "10% center",
-          end: "=+400 center",
-          scrub: true,
-          // markers: true,
-        },
-        "min-width": "140px",
-      });
+      this.imagesGsap();
+      window.addEventListener("resize", this.imagesGsap);
     }, 100);
   },
   methods: {
+    imagesGsap() {
+      gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline();
+      if (window.innerWidth > 1418) {
+        tl.to(".followImage", {
+          scrollTrigger: {
+            trigger: ".follow",
+            start: "10% center",
+            end: "=+400 center",
+            scrub: true,
+            // markers: true,
+          },
+          "min-width": "140px",
+        });
+      } else if (window.innerWidth < 1418 && window.innerWidth > 1057) {
+        tl.to(".followImage", {
+          scrollTrigger: {
+            trigger: ".follow",
+            start: "10% center",
+            end: "=+400 center",
+            scrub: true,
+            // markers: true,
+          },
+          "min-width": "70px",
+        });
+      } else {
+        tl.to(".followImage", {
+          scrollTrigger: {
+            trigger: ".follow",
+            start: "10% center",
+            end: "=+400 center",
+            scrub: true,
+            // markers: true,
+          },
+          "min-width": "45px",
+        });
+      }
+    },
     mousemove(e) {
       e.preventDefault();
       if (!this.mouseDown) {

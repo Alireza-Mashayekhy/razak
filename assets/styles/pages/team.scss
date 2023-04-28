@@ -1,15 +1,10 @@
 .team {
-  background: url("/images/aboutUs.jpg");
+  background: url("/images/aboutUs.jpg"),
+    linear-gradient(179.87deg, #01040b 40%, #000000 90%);
   background-repeat: no-repeat;
   background-size: contain;
   .effect {
     padding: 60px 148px 197px 152px;
-    background: linear-gradient(
-      179.87deg,
-      rgba(1, 4, 11, 0) -2.01%,
-      #01040b 40%,
-      #000000 90%
-    );
     .enLogo {
       text-align: left;
       margin-bottom: 266px;
@@ -67,7 +62,7 @@
     }
     .pictures {
       gap: 50px;
-      justify-content: space-between;
+      justify-content: center;
       .picture {
         width: 329px;
         height: 420px;
@@ -112,6 +107,76 @@
           }
           .socials {
             gap: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1057px) {
+  .team {
+    .effect {
+      padding: 70px;
+      padding-top: 60px;
+      padding-bottom: 100px;
+      .enLogo {
+        left: 0px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .team {
+    .effect {
+      padding: 20px;
+      padding-bottom: 50px;
+      .enLogo {
+        margin-bottom: 100px;
+        img {
+          height: 40px;
+        }
+      }
+      .title {
+        font-size: 15px;
+        span {
+          width: 20px;
+          height: 2.5px;
+        }
+      }
+      h3 {
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 25px;
+        max-width: 70%;
+      }
+      .category {
+        div {
+          font-size: 12px;
+        }
+      }
+      .pictures {
+        gap: 20px;
+        .picture {
+          width: 200px;
+          height: 250px;
+          .informations {
+            padding: 15px;
+            transform: translateY(67px);
+            .name {
+              font-size: 12px;
+            }
+            .position {
+              font-size: 10px;
+            }
+            .socials {
+              img {
+                width: 15px;
+              }
+            }
           }
         }
       }

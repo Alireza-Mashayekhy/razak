@@ -7,13 +7,13 @@
       </div>
       <div class="d-flex flex-column getPadding">
         <h5>محصولات</h5>
-        <router-link to="/">لیست محصولات</router-link>
-        <router-link to="/">محصولات رازک</router-link>
+        <router-link to="/products">لیست محصولات</router-link>
+        <router-link to="/products">محصولات رازک</router-link>
       </div>
       <div class="d-flex flex-column getPadding">
         <h5>ارتباط</h5>
-        <router-link to="/">تماس با ما</router-link>
-        <router-link to="/">صدای مشتریان</router-link>
+        <router-link to="/contactUs">تماس با ما</router-link>
+        <router-link to="/voc">صدای مشتریان</router-link>
       </div>
       <div class="d-flex flex-column calls getPadding">
         <h5>اطلاعات تماس</h5>

@@ -41,7 +41,7 @@
             <router-link to="/">انسانی</router-link>
             <router-link to="/">دامی</router-link>
             <router-link to="/products">لیست محصولات</router-link>
-            <router-link to="/">توزیع کنندگان</router-link>
+            <router-link to="/distributors">توزیع کنندگان</router-link>
           </div>
           <div class="link">
             <div class="num">03</div>
@@ -94,30 +94,95 @@
 
 <script>
 export default {
+  data() {
+    return {
+      headerOpen: false,
+    };
+  },
+  mounted() {
+    window.addEventListener("resize", this.headerResize);
+  },
   methods: {
+    headerResize() {
+      if (window.innerWidth > 719) {
+        if (this.headerOpen) {
+          document.getElementsByClassName("header")[0].style.transform =
+            "translateX(152px)";
+          document.getElementsByClassName("header")[0].style.padding = "0px";
+        } else {
+          document.getElementsByClassName("header")[0].style.transform =
+            "translateX(100vw)";
+          document.getElementsByClassName("header")[0].style.padding =
+            "85px 40px 56px 40px";
+        }
+      } else {
+        if (this.headerOpen) {
+          document.getElementsByClassName("header")[0].style.transform =
+            "translateX(80px)";
+          document.getElementsByClassName("header")[0].style.padding = "0px";
+        } else {
+          document.getElementsByClassName("header")[0].style.padding =
+            "40px 40px 40px 10px";
+          document.getElementsByClassName("header")[0].style.transform =
+            "translateX(100vw)";
+        }
+      }
+    },
     openMenu() {
-      document.getElementsByClassName("header")[0].style.transition =
-        "transform 1s";
-      document.getElementsByClassName("header")[0].style.transform =
-        "translateX(152px)";
-      document.getElementsByClassName("header")[0].style.padding = "0px";
-      document.getElementsByClassName("menu")[0].style.display = "none";
-      document.getElementsByClassName("langAndScroll")[0].style.display =
-        "none";
-      document.getElementsByClassName("openedMenu")[0].style.display = "flex";
+      this.headerOpen = true;
+      if (window.innerWidth > 719) {
+        document.getElementsByClassName("header")[0].style.transition =
+          "transform 1s";
+        document.getElementsByClassName("header")[0].style.transform =
+          "translateX(152px)";
+        document.getElementsByClassName("header")[0].style.padding = "0px";
+        document.getElementsByClassName("menu")[0].style.display = "none";
+        document.getElementsByClassName("langAndScroll")[0].style.display =
+          "none";
+        document.getElementsByClassName("openedMenu")[0].style.display = "flex";
+      } else {
+        document.getElementsByClassName("header")[0].style.transition =
+          "transform 1s";
+        document.getElementsByClassName("header")[0].style.transform =
+          "translateX(80px)";
+        document.getElementsByClassName("header")[0].style.padding = "0px";
+        document.getElementsByClassName("menu")[0].style.display = "none";
+        document.getElementsByClassName("langAndScroll")[0].style.display =
+          "none";
+        document.getElementsByClassName("openedMenu")[0].style.display = "flex";
+      }
     },
     closeMenu() {
-      document.getElementsByClassName("header")[0].style.transform =
-        "translateX(100vw)";
-      setTimeout(() => {
-        document.getElementsByClassName("header")[0].style.padding =
-          "85px 40px 56px 40px";
-        document.getElementsByClassName("menu")[0].style.display = "flex";
-        document.getElementsByClassName("langAndScroll")[0].style.display =
-          "flex";
-        document.getElementsByClassName("openedMenu")[0].style.display = "none";
-        document.getElementsByClassName("header")[0].style.transition = "none";
-      }, 700);
+      this.headerOpen = false;
+      if (window.innerWidth > 719) {
+        document.getElementsByClassName("header")[0].style.transform =
+          "translateX(100vw)";
+        setTimeout(() => {
+          document.getElementsByClassName("header")[0].style.padding =
+            "85px 40px 56px 40px";
+          document.getElementsByClassName("menu")[0].style.display = "flex";
+          document.getElementsByClassName("langAndScroll")[0].style.display =
+            "flex";
+          document.getElementsByClassName("openedMenu")[0].style.display =
+            "none";
+          document.getElementsByClassName("header")[0].style.transition =
+            "none";
+        }, 700);
+      } else {
+        document.getElementsByClassName("header")[0].style.transform =
+          "translateX(100vw)";
+        setTimeout(() => {
+          document.getElementsByClassName("header")[0].style.padding =
+            "40px 40px 40px 10px";
+          document.getElementsByClassName("menu")[0].style.display = "flex";
+          document.getElementsByClassName("langAndScroll")[0].style.display =
+            "flex";
+          document.getElementsByClassName("openedMenu")[0].style.display =
+            "none";
+          document.getElementsByClassName("header")[0].style.transition =
+            "none";
+        }, 700);
+      }
     },
   },
   watch: {

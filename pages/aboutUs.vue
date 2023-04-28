@@ -21,7 +21,7 @@
             <span>02</span>
             مسئولیت ما
           </div>
-          <div class="team">
+          <div class="ourTeamTitle">
             <span>03</span>
             تیم ما
           </div>
@@ -167,7 +167,17 @@
         <span></span>
       </div>
       <h3>گواهینامه های اخذ شده</h3>
-      <splide :options="options" class="slider">
+      <splide :options="options" class="slider" v-show="firstOption == 1">
+        <splide-slide v-for="i in 16" :key="i">
+          <img src="/images/certificate.jpg" alt="certificate" />
+        </splide-slide>
+      </splide>
+      <splide :options="options2" class="slider" v-show="firstOption == 2">
+        <splide-slide v-for="i in 16" :key="i">
+          <img src="/images/certificate.jpg" alt="certificate" />
+        </splide-slide>
+      </splide>
+      <splide :options="options3" class="slider" v-show="firstOption == 3">
         <splide-slide v-for="i in 16" :key="i">
           <img src="/images/certificate.jpg" alt="certificate" />
         </splide-slide>
@@ -180,7 +190,7 @@
         alt="reverseTeamBaner"
         class="reverseTeamBaner"
       />
-      <div class="d-flex align-items-end justify-content-between">
+      <div class="d-flex align-items-end justify-content-between aboutTeam">
         <div class="d-flex">
           <div class="titles">
             <div>
@@ -221,6 +231,7 @@ export default {
   data() {
     return {
       unitItem: 1,
+      firstOption: 1,
       units: [
         {
           id: 1,
@@ -264,7 +275,28 @@ export default {
         perPage: 4,
         perMove: 1,
       },
+      options2: {
+        type: "loop",
+        perPage: 3,
+        perMove: 1,
+      },
+      options3: {
+        type: "loop",
+        perPage: 2,
+        perMove: 1,
+      },
     };
+  },
+  mounted() {
+    addEventListener("resize", this.onResize);
+    if (window.innerWidth > 1570) {
+      this.firstOption = 1;
+    }
+    if (window.innerWidth > 719 && window.innerWidth < 1570) {
+      this.firstOption = 2;
+    } else {
+      this.firstOption = 3;
+    }
   },
   methods: {
     scrollTo(num) {
@@ -272,6 +304,16 @@ export default {
       const height = 418;
       this.unitItem = num + 1;
       texts.scrollTop = num * height;
+    },
+    onResize() {
+      if (window.innerWidth > 1570) {
+        this.firstOption = 1;
+      }
+      if (window.innerWidth > 719 && window.innerWidth < 1570) {
+        this.firstOption = 2;
+      } else {
+        this.firstOption = 3;
+      }
     },
   },
 };

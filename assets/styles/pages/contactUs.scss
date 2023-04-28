@@ -12,6 +12,9 @@
     text-align: left;
     padding-left: 70px;
   }
+  & > div {
+    gap: 50px;
+  }
   .informations {
     width: 535px;
     .title {
@@ -155,6 +158,109 @@
       }
       span {
         margin-right: 5px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .contactUs {
+    min-height: fit-content;
+    height: fit-content;
+    & > div {
+      flex-direction: column;
+      padding-left: 150px;
+    }
+    .informations {
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .contactUs {
+    padding-right: 70px;
+    & > div {
+      padding-left: 70px;
+    }
+    .form {
+      padding: 60px;
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .contactUs {
+    padding-right: 20px;
+    padding-top: 20px;
+    .enLogo {
+      padding-left: 20px;
+      img {
+        height: 40px;
+      }
+    }
+    & > div {
+      padding-left: 20px;
+    }
+    .allInfoes {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .informations {
+      .title {
+        font-size: 15px;
+        span {
+          width: 20px;
+          height: 2.5px;
+        }
+      }
+      h3 {
+        font-size: 20px;
+        max-width: 100%;
+        margin-bottom: 0px;
+      }
+      img {
+        width: 15px;
+      }
+      .whatsAppNum2,
+      .whatsAppNum1 {
+        .fieldTitle {
+          left: 5px;
+          margin-bottom: 5px;
+        }
+        img {
+          width: 26px;
+        }
+      }
+      .fieldTitle {
+        font-size: 12px !important;
+      }
+      .fieldInfo {
+        font-size: 14px !important;
+      }
+      .address,
+      .postalCode {
+        font-size: 12px;
+      }
+    }
+    .form {
+      padding: 30px;
+      p {
+        font-size: 12px;
+        margin-bottom: 50px;
+      }
+      input {
+        font-size: 12px;
+      }
+      button {
+        font-size: 12px;
+        .circleArrow {
+          width: 20px;
+        }
+        .dots {
+          width: 70px;
+        }
       }
     }
   }

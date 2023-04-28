@@ -1,3 +1,8 @@
 .mainLayout {
   padding-right: 135px;
 }
+@media only screen and (max-width: 719px) {
+  .mainLayout {
+    padding-right: 80px;
+  }
+}

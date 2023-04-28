@@ -47,7 +47,7 @@
       }
       .story,
       .responsibility,
-      .team {
+      .ourTeamTitle {
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
@@ -122,7 +122,7 @@
     padding: 200px 148px 234px 151px;
     .titles {
       margin-left: 100px;
-      width: 145px;
+      min-width: 145px;
       h4 {
         font-style: normal;
         font-weight: 400;
@@ -158,6 +158,9 @@
   .units {
     background-color: black;
     padding: 166px 148px 198px 170px;
+    & > div {
+      gap: 50px;
+    }
     .title {
       font-style: normal;
       font-weight: 400;
@@ -344,7 +347,7 @@
     }
     .slider {
       img {
-        width: 312px;
+        width: 90%;
       }
       .splide__track {
         margin-right: 100px;
@@ -393,58 +396,63 @@
       bottom: -100px;
       left: -130px;
     }
-    .titles {
-      margin-left: 100px;
-      div {
+    .aboutTeam {
+      .titles {
+        margin-left: 100px;
+        min-width: 144px;
+        div {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          color: #b9b7bd;
+          margin-bottom: 24px;
+          span {
+            width: 43px;
+            height: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: white;
+            margin-right: 9px;
+          }
+        }
+        h3 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          color: #ffffff;
+        }
+      }
+      p {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        color: #b9b7bd;
-        margin-bottom: 24px;
-        span {
-          width: 43px;
-          height: 5px;
-          border-radius: 5px;
-          display: inline-block;
-          background-color: white;
-          margin-right: 9px;
-        }
+        line-height: 40px;
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 693px;
+        margin-left: 100px;
       }
-      h3 {
+      a {
         font-style: normal;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 16px;
         color: #ffffff;
-      }
-    }
-    p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 40px;
-      color: rgba(255, 255, 255, 0.8);
-      max-width: 693px;
-      margin-left: 100px;
-    }
-    a {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #ffffff;
-      img {
-        width: 40px;
-        margin-right: 8px;
-      }
-      &:hover {
-        text-decoration: none;
+        min-width: 121px;
+        img {
+          width: 40px;
+          margin-right: 8px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     .images {
       margin-top: 191px;
       .firstImg,
       .secImg {
+        width: 40%;
         img {
-          width: 500px;
+          width: 100%;
         }
         .name {
           font-style: normal;
@@ -467,6 +475,336 @@
       }
       .firstImg {
         margin-left: 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1322px) {
+  .aboutUs {
+    .ourStory {
+      & > div {
+        flex-direction: column;
+      }
+    }
+    .units {
+      .image {
+        .item6 {
+          top: 536px;
+        }
+      }
+    }
+    .ourTeam {
+      .aboutTeam {
+        flex-direction: column;
+        & > div {
+          flex-direction: column;
+        }
+        p {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .aboutUs {
+    .topDiv {
+      .effect {
+        padding: 70px;
+      }
+    }
+    .ourStory {
+      padding-left: 70px;
+      .title,
+      .about {
+        padding-right: 70px;
+      }
+      p {
+        margin: 70px;
+      }
+    }
+    .ourResponsibility,
+    .units {
+      padding: 100px 70px;
+    }
+    .units {
+      .texts {
+        .unit {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .certificates {
+      padding: 100px 70px;
+      padding-bottom: 200px;
+    }
+    .ourTeam {
+      padding: 100px 70px;
+      .teamBaner {
+        width: 400px;
+        right: -50px;
+      }
+      .reverseTeamBaner {
+        width: 400px;
+        bottom: -10px;
+      }
+      .images {
+        .firstImg,
+        .secImg {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .aboutUs {
+    .topDiv {
+      .effect {
+        padding: 20px;
+        .enLogo {
+          img {
+            height: 40px;
+          }
+        }
+        .title {
+          font-size: 15px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
+        }
+        h2 {
+          font-size: 20px;
+          margin-bottom: 0px;
+        }
+        .story,
+        .responsibility,
+        .ourTeamTitle {
+          margin-left: 0px;
+          font-size: 15px;
+          padding-bottom: 20px;
+          span {
+            margin-left: 20px;
+          }
+        }
+        .responsibility {
+          border-top: 1px solid #ffffff;
+          border-bottom: 1px solid #ffffff;
+        }
+      }
+    }
+    .ourStory {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 50px;
+      .title {
+        padding-right: 0px;
+        font-size: 12px;
+        span {
+          width: 20px;
+          height: 2.5px;
+        }
+      }
+      img {
+        width: 100%;
+        max-width: 398px;
+      }
+      .about {
+        padding-right: 0px;
+        font-size: 12px;
+      }
+      p {
+        margin: 0px;
+        font-size: 12px;
+      }
+      .link {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    .ourResponsibility {
+      padding: 50px 20px;
+      flex-direction: column;
+      gap: 50px;
+      .titles {
+        margin-left: 0px;
+        h4 {
+          font-size: 15px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
+        }
+        h3 {
+          font-size: 18px;
+        }
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+    .units {
+      padding: 50px 20px;
+      .title {
+        font-size: 12px;
+        span {
+          width: 20px;
+          height: 2.5px;
+        }
+      }
+      h3 {
+        font-size: 15px;
+        margin-bottom: 50px;
+      }
+      & > div {
+        flex-direction: column;
+      }
+      .image {
+        .lineAndCircles {
+          height: 400px;
+          margin: 0px 7px;
+          .line {
+            width: 1.5px;
+            height: 400px;
+          }
+          .circle {
+            width: 15px;
+            height: 15px;
+          }
+          .activeCircle {
+            outline: 2px dashed #ffffff;
+          }
+        }
+        .item {
+          font-size: 12px;
+        }
+        .item1 {
+          top: 28px;
+        }
+        .item2 {
+          top: 91px;
+        }
+        .item3 {
+          top: 141px;
+        }
+        .item4 {
+          top: 208px;
+        }
+        .item5 {
+          top: 258px;
+        }
+        .item6 {
+          top: 324px;
+        }
+      }
+      .texts {
+        width: 100%;
+        height: 240px;
+        .unit {
+          height: 240px;
+          .num {
+            font-size: 30px;
+          }
+          .title {
+            font-size: 12px;
+          }
+          .unitImg {
+            width: 50px;
+            height: 50px;
+            padding-right: 3px;
+            img {
+              width: 25px;
+            }
+          }
+          p {
+            font-size: 10px;
+            max-width: 100%;
+          }
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .certificates {
+      padding: 50px 20px;
+      padding-bottom: 200px;
+      .title {
+        font-size: 12px;
+        padding-right: 0px;
+        span {
+          width: 20px;
+          height: 2.5px;
+        }
+      }
+      h3 {
+        padding-right: 0px;
+        font-size: 15px;
+        margin-bottom: 50px;
+      }
+      .slider {
+        .splide__track {
+          margin-right: 60px;
+          margin-left: 50px;
+        }
+        img {
+          width: 95%;
+        }
+      }
+    }
+    .ourTeam {
+      padding: 50px 20px;
+      .teamBaner {
+        width: 250px;
+        top: -45px;
+        right: -40px;
+      }
+      .reverseTeamBaner {
+        width: 250px;
+        left: -73px;
+      }
+      .aboutTeam {
+        .titles {
+          div {
+            font-size: 12px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          h3 {
+            font-size: 15px;
+          }
+        }
+        p {
+          font-size: 12px;
+          max-width: 100%;
+          line-height: 30px;
+          margin-left: 0px;
+        }
+        a {
+          font-size: 12px;
+          min-width: 82px;
+          img {
+            width: 20px;
+          }
+        }
+      }
+      .images {
+        margin-top: 50px;
+        gap: 20px;
+        .firstImg,
+        .secImg {
+          margin-left: 0px;
+          .name {
+            font-size: 12px;
+          }
+          .position {
+            font-size: 10px;
+          }
+        }
       }
     }
   }
