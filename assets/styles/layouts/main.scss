@@ -1,8 +1,19 @@
 .mainLayout {
   padding-right: 135px;
+  .bar {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    display: none;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 719px) {
   .mainLayout {
-    padding-right: 80px;
+    padding-right: 0px;
+    .bar {
+      display: flex;
+    }
   }
 }

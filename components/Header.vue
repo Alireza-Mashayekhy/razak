@@ -167,7 +167,7 @@ export default {
             "none";
           document.getElementsByClassName("header")[0].style.transition =
             "none";
-        }, 700);
+        }, 930);
       } else {
         document.getElementsByClassName("header")[0].style.transform =
           "translateX(100vw)";
@@ -181,7 +181,7 @@ export default {
             "none";
           document.getElementsByClassName("header")[0].style.transition =
             "none";
-        }, 700);
+        }, 930);
       }
     },
   },
