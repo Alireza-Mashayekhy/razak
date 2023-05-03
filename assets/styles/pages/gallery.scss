@@ -6,11 +6,14 @@
     .enLogo {
       text-align: left;
       margin-bottom: 82px;
+      img {
+        width: 130px;
+      }
     }
     .title {
       font-style: normal;
       font-weight: 400;
-      font-size: 35px;
+      font-size: 32px;
       color: #ffffff;
     }
   }
@@ -19,7 +22,7 @@
     padding: 7px 148px;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #1a407a;
     background: #e6e9ed;
   }

@@ -107,18 +107,18 @@ export default {
       if (window.innerWidth > 719) {
         if (this.headerOpen) {
           document.getElementsByClassName("header")[0].style.transform =
-            "translateX(152px)";
+            "translateX(120px)";
           document.getElementsByClassName("header")[0].style.padding = "0px";
         } else {
           document.getElementsByClassName("header")[0].style.transform =
             "translateX(100vw)";
           document.getElementsByClassName("header")[0].style.padding =
-            "85px 40px 56px 40px";
+            "85px 40px 56px 23px";
         }
       } else {
         if (this.headerOpen) {
           document.getElementsByClassName("header")[0].style.transform =
-            "translateX(80px)";
+            "translateX(0px)";
           document.getElementsByClassName("header")[0].style.padding = "0px";
         } else {
           document.getElementsByClassName("header")[0].style.padding =
@@ -134,7 +134,7 @@ export default {
         document.getElementsByClassName("header")[0].style.transition =
           "transform 1s";
         document.getElementsByClassName("header")[0].style.transform =
-          "translateX(152px)";
+          "translateX(120px)";
         document.getElementsByClassName("header")[0].style.padding = "0px";
         document.getElementsByClassName("menu")[0].style.display = "none";
         document.getElementsByClassName("langAndScroll")[0].style.display =
@@ -159,7 +159,7 @@ export default {
           "translateX(100vw)";
         setTimeout(() => {
           document.getElementsByClassName("header")[0].style.padding =
-            "85px 40px 56px 40px";
+            "85px 40px 56px 23px";
           document.getElementsByClassName("menu")[0].style.display = "flex";
           document.getElementsByClassName("langAndScroll")[0].style.display =
             "flex";
@@ -167,7 +167,7 @@ export default {
             "none";
           document.getElementsByClassName("header")[0].style.transition =
             "none";
-        }, 930);
+        }, 800);
       } else {
         document.getElementsByClassName("header")[0].style.transform =
           "translateX(100vw)";
@@ -181,7 +181,7 @@ export default {
             "none";
           document.getElementsByClassName("header")[0].style.transition =
             "none";
-        }, 930);
+        }, 800);
       }
     },
   },

@@ -1,10 +1,10 @@
 .header {
   background: #1a407a;
   color: white;
-  padding: 85px 40px 56px 40px;
-  height: 100vh;
+  padding: 85px 40px 56px 18px;
+  height: 100%;
   position: fixed;
-  right: 152px;
+  right: 120px;
   width: 100%;
   align-items: end;
   transform: translateX(100vw);
@@ -74,11 +74,14 @@
     display: none;
     justify-content: space-between;
     flex-direction: column;
-
     .topDiv {
       padding: 46px 60px 0px 91px;
       .xIcon {
         cursor: pointer;
+        width: 40px;
+      }
+      .enLogo {
+        width: 130px;
       }
     }
     .secDiv {
@@ -107,19 +110,19 @@
           .num {
             font-style: normal;
             font-weight: 400;
-            font-size: 25px;
+            font-size: 20px;
             margin-bottom: 3px;
           }
           h5 {
             font-style: normal;
             font-weight: 400;
-            font-size: 30px;
+            font-size: 18px;
             margin-bottom: 17px;
           }
           a {
             font-style: normal;
             font-weight: 400;
-            font-size: 20px;
+            font-size: 16px;
             color: #b0bed1;
             margin-bottom: 8px;
             &:hover {
@@ -142,7 +145,7 @@
           padding-bottom: 5px;
           color: white;
           font-weight: 300;
-          font-size: 20px;
+          font-size: 16px;
           font-style: normal;
           &:focus {
             outline: none;
@@ -165,7 +168,7 @@
     .rules {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 16px;
       color: #bac6d7;
       padding-right: 260px;
       padding-bottom: 41px;
@@ -199,7 +202,6 @@
 }
 @media only screen and (max-width: 719px) {
   .header {
-    right: 80px;
     padding: 40px;
     padding-left: 10px;
     right: 0px;

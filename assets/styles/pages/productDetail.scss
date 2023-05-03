@@ -6,11 +6,14 @@
     .enLogo {
       text-align: left;
       margin-bottom: 82px;
+      img {
+        width: 130px;
+      }
     }
     .title {
       font-style: normal;
       font-weight: 400;
-      font-size: 35px;
+      font-size: 32px;
       color: #ffffff;
     }
   }
@@ -19,7 +22,7 @@
     padding: 7px 148px;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #1a407a;
     background: #e6e9ed;
     span {
@@ -39,7 +42,7 @@
     .title {
       font-style: normal;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 18px;
       line-height: 40px;
       margin-bottom: 13px;
       color: #606a79;
@@ -55,7 +58,7 @@
     h2 {
       font-style: normal;
       font-weight: 400;
-      font-size: 35px;
+      font-size: 32px;
       line-height: 56px;
       color: #01040b;
     }
@@ -81,7 +84,7 @@
       h5 {
         font-style: normal;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 18px;
         line-height: 38px;
         color: #01040b;
         margin-bottom: 50px;
@@ -89,8 +92,8 @@
       p {
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 44px;
+        font-size: 16px;
+        line-height: 35px;
         text-align: justify;
         color: #606a79;
       }

@@ -10,11 +10,14 @@
       margin-bottom: 266px;
       position: relative;
       left: -82px;
+      img {
+        width: 130px;
+      }
     }
     .title {
       font-style: normal;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 18px;
       color: #b9b7bd;
       margin-bottom: 10px;
       span {
@@ -29,15 +32,15 @@
     h3 {
       font-style: normal;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 32px;
       color: #ffffff;
       margin-bottom: 30px;
     }
     p {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 40px;
+      font-size: 16px;
+      line-height: 35px;
       text-align: justify;
       color: rgba(255, 255, 255, 0.8);
       margin-bottom: 200px;

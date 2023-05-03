@@ -1,4 +1,5 @@
 .aboutUs {
+  overflow: hidden;
   .topDiv {
     height: 100vh;
     min-height: 650px;
@@ -22,11 +23,14 @@
         width: 100%;
         text-align: left;
         margin-bottom: 50px;
+        img {
+          width: 130px;
+        }
       }
       .title {
         font-style: normal;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 18px;
         color: #b9b7bd;
         margin-bottom: 10px;
         span {
@@ -41,7 +45,7 @@
       h2 {
         font-style: normal;
         font-weight: 400;
-        font-size: 35px;
+        font-size: 32px;
         color: #ffffff;
         margin-bottom: 50px;
       }
@@ -50,7 +54,7 @@
       .ourTeamTitle {
         font-style: normal;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 20px;
         color: #ffffff;
         padding: 30px 0px;
         margin-left: 90px;
@@ -70,7 +74,7 @@
     .title {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       color: #b9b7bd;
       margin-bottom: 8px;
       padding-right: 136px;
@@ -87,8 +91,8 @@
       max-width: 600px;
       font-style: normal;
       font-weight: 400;
-      font-size: 25px;
-      line-height: 44px;
+      font-size: 16px;
+      line-height: 35px;
       text-align: justify;
       color: #ffffff;
       margin-bottom: 58px;
@@ -97,8 +101,8 @@
     p {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 40px;
+      font-size: 16px;
+      line-height: 35px;
       text-align: justify;
       color: rgba(255, 255, 255, 0.8);
       max-width: 1013px;
@@ -126,7 +130,7 @@
       h4 {
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 18px;
         color: #b9b7bd;
         margin-bottom: 8px;
         span {
@@ -149,8 +153,8 @@
       max-width: 914px;
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 40px;
+      font-size: 16px;
+      line-height: 35px;
       text-align: justify;
       color: #606a79;
     }
@@ -164,7 +168,7 @@
     .title {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       color: #b9b7bd;
       margin-bottom: 8px;
       span {
@@ -324,7 +328,7 @@
     .title {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       color: #b9b7bd;
       margin-bottom: 8px;
       padding-right: 63px;
@@ -403,7 +407,7 @@
         div {
           font-style: normal;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 18px;
           color: #b9b7bd;
           margin-bottom: 24px;
           span {
@@ -425,8 +429,8 @@
       p {
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 16px;
+        line-height: 35px;
         color: rgba(255, 255, 255, 0.8);
         max-width: 693px;
         margin-left: 100px;

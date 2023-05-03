@@ -291,8 +291,7 @@ export default {
     addEventListener("resize", this.onResize);
     if (window.innerWidth > 1570) {
       this.firstOption = 1;
-    }
-    if (window.innerWidth > 719 && window.innerWidth < 1570) {
+    } else if (window.innerWidth > 719 && window.innerWidth < 1570) {
       this.firstOption = 2;
     } else {
       this.firstOption = 3;
@@ -308,8 +307,7 @@ export default {
     onResize() {
       if (window.innerWidth > 1570) {
         this.firstOption = 1;
-      }
-      if (window.innerWidth > 719 && window.innerWidth < 1570) {
+      } else if (window.innerWidth > 719 && window.innerWidth < 1570) {
         this.firstOption = 2;
       } else {
         this.firstOption = 3;
