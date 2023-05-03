@@ -241,12 +241,16 @@
     <div class="follow text-center">
       <div class="d-flex justify-content-center align-items-center">
         <div class="text">YOU</div>
-        <div class="image1 followImage"></div>
+        <div class="image1 followImage" v-show="animeImg == 1"></div>
+        <div class="image1 followImage2" v-show="animeImg == 2"></div>
+        <div class="image1 followImage3" v-show="animeImg == 3"></div>
         <div class="text">DON’T</div>
       </div>
       <div class="d-flex justify-content-center align-items-center">
         <div class="text">?US</div>
-        <div class="image2 followImage"></div>
+        <div class="image2 followImage" v-show="animeImg == 1"></div>
+        <div class="image2 followImage2" v-show="animeImg == 2"></div>
+        <div class="image2 followImage3" v-show="animeImg == 3"></div>
         <div class="text">FOLLOW</div>
       </div>
       <router-link to="/">
@@ -271,53 +275,73 @@ export default {
       startX2: null,
       scrollLeft2: null,
       podcastNum: 1,
+      animeImg: 0,
     };
   },
   mounted() {
     setTimeout(() => {
+      this.resizeFunc();
       this.audioPlayer();
       this.imagesGsap();
-      window.addEventListener("resize", this.imagesGsap);
+      this.imagesGsap2();
+      this.imagesGsap3();
+      window.addEventListener("resize", this.resizeFunc);
     }, 100);
   },
   methods: {
+    resizeFunc() {
+      if (window.innerWidth > 1418) {
+        this.animeImg = 1;
+      } else if (window.innerWidth < 1418 && window.innerWidth > 1057) {
+        this.animeImg = 2;
+      } else {
+        this.animeImg = 3;
+      }
+    },
     imagesGsap() {
       gsap.registerPlugin(ScrollTrigger);
       let tl = gsap.timeline();
-      if (window.innerWidth > 1418) {
-        tl.to(".followImage", {
-          scrollTrigger: {
-            trigger: ".follow",
-            start: "10% center",
-            end: "=+400 center",
-            scrub: true,
-            // markers: true,
-          },
-          "min-width": "140px",
-        });
-      } else if (window.innerWidth < 1418 && window.innerWidth > 1057) {
-        tl.to(".followImage", {
-          scrollTrigger: {
-            trigger: ".follow",
-            start: "10% center",
-            end: "=+400 center",
-            scrub: true,
-            // markers: true,
-          },
-          "min-width": "70px",
-        });
-      } else {
-        tl.to(".followImage", {
-          scrollTrigger: {
-            trigger: ".follow",
-            start: "10% center",
-            end: "=+400 center",
-            scrub: true,
-            // markers: true,
-          },
-          "min-width": "45px",
-        });
-      }
+      tl.to(".followImage", {
+        scrollTrigger: {
+          trigger: ".follow",
+          start: "10% center",
+          end: "=+400 center",
+          scrub: true,
+          // markers: true,
+        },
+        "min-width": "140px",
+        "min-width": "140px",
+      });
+    },
+    imagesGsap2() {
+      gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline();
+      tl.to(".followImage2", {
+        scrollTrigger: {
+          trigger: ".follow",
+          start: "10% center",
+          end: "=+400 center",
+          scrub: true,
+          // markers: true,
+        },
+        "min-width": "70px",
+        "min-width": "70px",
+      });
+    },
+    imagesGsap3() {
+      gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline();
+      tl.to(".followImage3", {
+        scrollTrigger: {
+          trigger: ".follow",
+          start: "10% center",
+          end: "=+400 center",
+          scrub: true,
+          // markers: true,
+        },
+        "min-width": "45px",
+        "min-width": "45px",
+      });
     },
     mousemove(e) {
       e.preventDefault();
