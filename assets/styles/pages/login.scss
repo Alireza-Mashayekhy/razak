@@ -2,7 +2,7 @@
   .topDiv {
     background: url("/images/newsBack.jpg") no-repeat;
     background-size: cover;
-    padding: 70px 148px 249px 70px;
+    padding: 70px 148px 150px 70px;
     .enLogo {
       text-align: left;
       margin-bottom: 82px;
@@ -33,7 +33,7 @@
       background: rgba(0, 10, 24, 0.35);
       background-blend-mode: multiply;
       backdrop-filter: blur(15px);
-      padding: 276px 148px 240px 148px;
+      padding: 200px 148px 200px 148px;
       .title {
         font-style: normal;
         font-weight: 400;
@@ -123,7 +123,7 @@
       .buttonDiv {
         width: 500px;
         margin-bottom: 60px;
-        button {
+        a {
           background-color: inherit;
           border: none;
           font-style: normal;
@@ -132,6 +132,10 @@
           line-height: 50px;
           color: #ffffff;
           padding: 0px;
+          .imgDiv {
+            margin-left: 10px;
+            margin-right: 0px;
+          }
           .circleArrow {
             width: 40px;
             margin-left: 8px;
@@ -155,7 +159,7 @@
       }
     }
     .other {
-      padding: 100px 148px;
+      padding: 200px 148px;
       .chartDiv {
         background: #01040b;
         padding: 50px;
@@ -344,9 +348,10 @@
     .topDiv {
       padding: 20px;
       padding-bottom: 50px;
+      padding-top: 100px;
       .enLogo {
         img {
-          height: 40px;
+          display: none;
         }
       }
       .title {

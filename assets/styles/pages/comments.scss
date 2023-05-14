@@ -2,7 +2,7 @@
   .topDiv {
     background: url("/images/commentBack.jpg") no-repeat;
     background-size: cover;
-    padding: 70px 148px 225px 70px;
+    padding: 70px 148px 150px 70px;
     .enLogo {
       text-align: left;
       margin-bottom: 90px;
@@ -102,12 +102,13 @@
     .topDiv {
       padding: 20px;
       padding-bottom: 150px;
+      padding-top: 100px;
       .title {
         font-size: 23px;
       }
       .enLogo {
         img {
-          height: 40px;
+          display: none;
         }
       }
     }

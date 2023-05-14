@@ -2,7 +2,7 @@
   .topDiv {
     background: url("/images/newsBack.jpg") no-repeat;
     background-size: cover;
-    padding: 70px 148px 249px 70px;
+    padding: 70px 148px 150px 70px;
     .enLogo {
       text-align: left;
       margin-bottom: 82px;
@@ -46,7 +46,7 @@
       gap: 25px;
       overflow-x: scroll;
       border-bottom: 1px solid #b9b7bd;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       margin-bottom: 100px;
       -ms-overflow-style: none;
       scrollbar-width: none;
@@ -334,24 +334,24 @@
 @media only screen and (max-width: 719px) {
   .blogs {
     .topDiv {
-      padding: 20px;
-      padding-bottom: 150px;
+      padding: 50px;
+      padding-top: 100px;
       .title {
         font-size: 23px;
       }
       .enLogo {
         img {
-          height: 40px;
+          display: none;
         }
       }
     }
     .route {
-      padding-right: 20px;
+      padding-right: 50px;
       font-size: 12px;
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
     .topNews {
-      padding: 0px 20px;
+      padding: 0px 50px;
       .title {
         font-size: 15px;
         span {
@@ -390,7 +390,7 @@
       }
     }
     .someNews {
-      padding: 0px 20px;
+      padding: 0px 50px;
       .lastNews {
         padding-bottom: 50px;
         .title {
@@ -418,6 +418,8 @@
             width: 12px;
           }
           .newPic {
+            width: 100%;
+            height: auto;
             margin-top: 50px;
             margin-right: 0px;
           }

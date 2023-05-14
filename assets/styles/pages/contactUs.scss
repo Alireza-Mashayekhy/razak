@@ -148,13 +148,17 @@
     .message {
       margin-bottom: 55px;
     }
-    button {
+    a {
       background-color: inherit;
       border: none;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       color: #ffffff;
+      .imgDiv {
+        margin-right: 0px;
+        margin-left: 10px;
+      }
       .circleArrow {
         width: 40px;
         margin-left: 8px;
@@ -196,11 +200,11 @@
 @media only screen and (max-width: 719px) {
   .contactUs {
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 100px;
     .enLogo {
       padding-left: 20px;
       img {
-        height: 40px;
+        display: none;
       }
     }
     & > div {

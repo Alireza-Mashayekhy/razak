@@ -103,10 +103,12 @@
           </div>
           <router-link
             to="/products/1"
-            class="d-flex justify-content-center align-items-center detail"
+            class="d-flex blueCircleLink justify-content-center align-items-center detail"
           >
             More
-            <img src="/icons/blueCircleArrow.svg" alt="CircleArrow" />
+            <div class="imgDiv">
+              <img src="/icons/blueAngleArrow.svg" alt="CircleArrow" />
+            </div>
           </router-link>
         </div>
       </div>

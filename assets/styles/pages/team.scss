@@ -64,11 +64,11 @@
       }
     }
     .pictures {
-      gap: 50px;
+      gap: 25px;
       justify-content: center;
       .picture {
-        width: 329px;
-        height: 420px;
+        width: 300px;
+        height: 400px;
         background: url("/images/firstTeam.jpg") no-repeat;
         background-size: cover;
         display: flex;
@@ -138,6 +138,7 @@
         margin-bottom: 100px;
         img {
           height: 40px;
+          display: none;
         }
       }
       .title {

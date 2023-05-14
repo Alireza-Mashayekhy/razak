@@ -14,11 +14,15 @@
         <h1>شرکت داروسازی رازک</h1>
         <div class="d-flex align-items-end text">
           <div>شرکـــت لابـــراتـــوار های رازک با نیـــم قـــرن تجـــربه</div>
-          <img
-            src="/icons/circleArrow.svg"
-            alt="circle arrow"
-            class="circleArrow"
-          />
+          <router-link to="#" class="circleLink">
+            <div class="imgDiv">
+              <img
+                src="/icons/angleArrow.svg"
+                alt="circle arrow"
+                class="circleArrow"
+              />
+            </div>
+          </router-link>
         </div>
         <div class="socials">
           <img src="/icons/whatsapp.svg" alt="whatsapp" />
@@ -28,16 +32,22 @@
       </div>
     </div>
     <div class="aboutRazak">
-      <div class="title">
+      <div class="title" data-aos="zoom-in" data-aos-duration="1000">
         درباره ی رازک
         <span></span>
       </div>
-      <div class="d-flex justify-content-between">
+      <div
+        class="d-flex justify-content-between"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <div>
           <h2>شرکت لابراتوارهای رازک با بیش از نیم قرن تجربه و بهترین کیفیت</h2>
-          <router-link to="/" class="more">
+          <router-link to="/" class="more blueCircleLink">
             <span>بیشتر بخوانید</span>
-            <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+            <div class="imgDiv">
+              <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+            </div>
           </router-link>
         </div>
         <div>
@@ -61,16 +71,22 @@
     </div>
     <div class="homeNews">
       <div class="titles">
-        <div class="line"></div>
-        <div class="newsTitle">
+        <div class="line lineAnimation"></div>
+        <div class="newsTitle" data-aos="fade-up" data-aos-duration="1000">
           اخبار
           <span></span>
         </div>
-        <div class="d-flex justify-content-between">
+        <div
+          class="d-flex justify-content-between"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3>اخبار و رویداد ها</h3>
-          <router-link to="/">
+          <router-link to="/" class="littleCircleLink">
             دیدن همه
-            <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            <div class="imgDiv">
+              <img src="/icons/angleArrow.svg" alt="circleArrow" />
+            </div>
           </router-link>
         </div>
       </div>
@@ -142,7 +158,7 @@
       </div>
     </div>
     <div class="podcasts d-flex align-items-center">
-      <div class="titles">
+      <div class="titles" data-aos="fade-left" data-aos-duration="1000">
         <div class="title">
           پایگاه دانش
           <span></span>
@@ -153,9 +169,11 @@
           زیادی دارد، زیرا به راحتی، بدون اتلاف وقت، در مسیر و حتی در حال
           استراحت می‌‌توانید به آن گوش کنید.
         </p>
-        <router-link to="/">
+        <router-link to="/" class="blueCircleLink">
           دیدن همه
-          <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+          <div class="imgDiv">
+            <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+          </div>
         </router-link>
       </div>
       <div class="phone">
@@ -183,7 +201,18 @@
             src="/icons/forward.svg"
             alt="control icon"
           />
-          <img class="playControl" src="/icons/play.svg" alt="control icon" />
+          <img
+            class="playControl"
+            v-if="play"
+            src="/icons/pause.svg"
+            alt="control icon"
+          />
+          <img
+            class="playControl"
+            v-else
+            src="/icons/play.svg"
+            alt="control icon"
+          />
           <img
             @click="prevPodcast"
             src="/icons/previous.svg"
@@ -200,6 +229,8 @@
         @mousedown="startDragging2"
         @mouseup="stopDragging2"
         @mouseleave="stopDragging2"
+        data-aos="fade-right"
+        data-aos-duration="1000"
       >
         <div class="podcast" v-for="i in 5" :key="i" @click="podcastNum = i">
           <div class="title"><span></span>پادکست شماره {{ i }}</div>
@@ -212,12 +243,20 @@
     </div>
     <div class="homeBlogs">
       <div class="effect">
-        <div class="title">پایگاه دانش<span></span></div>
-        <div class="d-flex justify-content-between">
+        <div class="title" data-aos="zoom-in" data-aos-duration="1000">
+          پایگاه دانش<span></span>
+        </div>
+        <div
+          class="d-flex justify-content-between"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <h5>مقالات، تحقیقات و نوآوری های رازک</h5>
-          <router-link to="/">
+          <router-link to="/" class="littleCircleLink">
             دیدن همه
-            <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            <div class="imgDiv">
+              <img src="/icons/angleArrow.svg" alt="circleArrow" />
+            </div>
           </router-link>
         </div>
         <div class="blogs">
@@ -230,9 +269,11 @@
               را بررسی کند. این رشته در ایران و بسیاری از کشورهای جهان در مقطع
               دکترای حرفه ای ارائه می شود...
             </p>
-            <router-link to="/">
+            <router-link to="/" class="littleCircleLink">
               بیشتر بخوانید
-              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              <div class="imgDiv">
+                <img src="/icons/angleArrow.svg" alt="circleArrow" />
+              </div>
             </router-link>
           </div>
         </div>
@@ -253,9 +294,11 @@
         <div class="image2 followImage3" v-show="animeImg == 3"></div>
         <div class="text">FOLLOW</div>
       </div>
-      <router-link to="/">
+      <router-link to="/" class="blueCircleLink">
         اینستاگرام ما
-        <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+        <div class="imgDiv">
+          <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+        </div>
       </router-link>
     </div>
   </div>
@@ -276,6 +319,7 @@ export default {
       scrollLeft2: null,
       podcastNum: 1,
       animeImg: 0,
+      play: false,
     };
   },
   mounted() {
@@ -285,7 +329,10 @@ export default {
       this.imagesGsap();
       this.imagesGsap2();
       this.imagesGsap3();
+      this.lineAnimation();
       window.addEventListener("resize", this.resizeFunc);
+      document.getElementsByClassName("about")[0].style.transition = "all 2s";
+      document.getElementsByClassName("about")[0].style.opacity = "1";
     }, 100);
   },
   methods: {
@@ -305,7 +352,7 @@ export default {
         scrollTrigger: {
           trigger: ".follow",
           start: "10% center",
-          end: "=+400 center",
+          end: "10% center",
           scrub: true,
           // markers: true,
         },
@@ -320,7 +367,7 @@ export default {
         scrollTrigger: {
           trigger: ".follow",
           start: "10% center",
-          end: "=+400 center",
+          end: "10% center",
           scrub: true,
           // markers: true,
         },
@@ -335,7 +382,7 @@ export default {
         scrollTrigger: {
           trigger: ".follow",
           start: "10% center",
-          end: "=+400 center",
+          end: "10% center",
           scrub: true,
           // markers: true,
         },
@@ -425,8 +472,10 @@ export default {
         () => {
           if (audio.paused) {
             audio.play();
+            this.play = true;
           } else {
             audio.pause();
+            this.play = false;
           }
         },
         false
@@ -444,6 +493,20 @@ export default {
           seconds % 60
         ).padStart(2, 0)}`;
       }
+    },
+    lineAnimation() {
+      gsap.registerPlugin(ScrollTrigger);
+      let tl = gsap.timeline();
+      tl.to(".lineAnimation", {
+        scrollTrigger: {
+          trigger: ".lineAnimation",
+          start: "top 80%",
+          end: "top 80%",
+          scrub: true,
+          // markers: true,
+        },
+        width: "100%",
+      });
     },
   },
 };

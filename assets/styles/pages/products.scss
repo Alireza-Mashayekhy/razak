@@ -2,7 +2,7 @@
   .topDiv {
     background: url("/images/newsBack.jpg") no-repeat;
     background-size: cover;
-    padding: 70px 148px 249px 70px;
+    padding: 70px 148px 150px 70px;
     .enLogo {
       text-align: left;
       margin-bottom: 82px;
@@ -156,6 +156,11 @@
           font-size: 16px;
           line-height: 50px;
           color: #1a407a;
+          .imgDiv {
+            margin-right: 0px;
+            margin-left: 10px !important;
+            padding-left: 2px !important;
+          }
           &:hover {
             text-decoration: none;
           }
@@ -188,12 +193,13 @@
     .topDiv {
       padding: 20px;
       padding-bottom: 150px;
+      padding-top: 100px;
       .title {
         font-size: 23px;
       }
       .enLogo {
         img {
-          height: 40px;
+          display: none;
         }
       }
     }

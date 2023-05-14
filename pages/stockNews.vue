@@ -99,8 +99,10 @@
         </div>
       </div>
       <div class="banner">
-        <img src="/icons/diagram.svg" alt="diagram" />
-        <div class="title">پورتال سهامداران شرکت داروسازی رازک</div>
+        <div class="d-flex align-items-center">
+          <img src="/icons/diagram.svg" alt="diagram" />
+          <div class="title">پورتال سهامداران شرکت داروسازی رازک</div>
+        </div>
         <router-link to="/login">
           <button>پورتال سهامداران</button>
         </router-link>
@@ -129,9 +131,11 @@
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است چاپگرها ...
               </p>
-              <router-link to="/news/1"
-                >بیشتر بخوانید
-                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              <router-link to="/news/1" class="littleCircleLink">
+                بیشتر بخوانید
+                <div class="imgDiv">
+                  <img src="/icons/angleArrow.svg" alt="circleArrow" />
+                </div>
               </router-link>
             </div>
           </div>
@@ -211,9 +215,11 @@
               تقدیر از رازک در دومین اجلاس سراسری مدیران ارزش آفرین ، دومین
               اجلاس سراسری مدیران...
             </div>
-            <router-link to="/"
-              >بیشتر بخوانید
-              <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+            <router-link to="/" class="blueCircleLink">
+              بیشتر بخوانید
+              <div class="imgDiv">
+                <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+              </div>
             </router-link>
           </div>
         </div>

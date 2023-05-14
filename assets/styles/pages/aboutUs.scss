@@ -70,7 +70,7 @@
   }
   .ourStory {
     background: #01040b;
-    padding: 132px 12px 200px 151px;
+    padding: 200px 12px 200px 151px;
     .title {
       font-style: normal;
       font-weight: 400;
@@ -123,7 +123,7 @@
     }
   }
   .ourResponsibility {
-    padding: 200px 148px 234px 151px;
+    padding: 200px 148px 200px 151px;
     .titles {
       margin-left: 100px;
       min-width: 145px;
@@ -161,7 +161,7 @@
   }
   .units {
     background-color: black;
-    padding: 166px 148px 198px 170px;
+    padding: 200px 148px 200px 170px;
     & > div {
       gap: 50px;
     }
@@ -324,7 +324,7 @@
     }
   }
   .certificates {
-    padding: 200px 85px 189px 88px;
+    padding: 200px 85px 240px 88px;
     .title {
       font-style: normal;
       font-weight: 400;
@@ -381,7 +381,7 @@
     }
   }
   .ourTeam {
-    padding: 321px 148px 200px 150px;
+    padding: 200px 148px 200px 150px;
     background-color: black;
     position: relative;
     * {
@@ -565,10 +565,10 @@
   .aboutUs {
     .topDiv {
       .effect {
-        padding: 20px;
+        padding: 50px;
         .enLogo {
           img {
-            height: 40px;
+            display: none;
           }
         }
         .title {
@@ -599,9 +599,7 @@
       }
     }
     .ourStory {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 50px;
+      padding: 100px 50px;
       .title {
         padding-right: 0px;
         font-size: 12px;
@@ -629,7 +627,7 @@
       }
     }
     .ourResponsibility {
-      padding: 50px 20px;
+      padding: 100px 50px;
       flex-direction: column;
       gap: 50px;
       .titles {
@@ -650,7 +648,7 @@
       }
     }
     .units {
-      padding: 50px 20px;
+      padding: 100px 50px;
       .title {
         font-size: 12px;
         span {
@@ -733,7 +731,7 @@
       }
     }
     .certificates {
-      padding: 50px 20px;
+      padding: 100px 50px;
       padding-bottom: 200px;
       .title {
         font-size: 12px;
@@ -759,7 +757,7 @@
       }
     }
     .ourTeam {
-      padding: 50px 20px;
+      padding: 100px 50px;
       .teamBaner {
         width: 250px;
         top: -45px;

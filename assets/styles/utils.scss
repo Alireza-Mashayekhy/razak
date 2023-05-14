@@ -1,1 +1,115 @@
+@keyframes bluePales {
+  0% {
+    outline: 1px #1a407a solid;
+    outline-offset: 0px;
+  }
 
+  100% {
+    outline: 1px #1a407a00 solid;
+    outline-offset: 10px;
+  }
+}
+@keyframes pales {
+  0% {
+    outline: 1px white solid;
+    outline-offset: 0px;
+  }
+
+  100% {
+    outline: 1px rgba(255, 255, 255, 0) solid;
+    outline-offset: 20px;
+  }
+}
+@keyframes littlePales {
+  0% {
+    outline: 1px white solid;
+    outline-offset: 0px;
+  }
+
+  100% {
+    outline: 1px rgba(255, 255, 255, 0) solid;
+    outline-offset: 10px;
+  }
+}
+.circleLink {
+  .imgDiv {
+    transition: all 0.5s;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    border: 2px solid white;
+    outline: 1px white solid;
+    outline-width: 2px !important;
+    outline-offset: 10px;
+    border-radius: 100%;
+    animation: pales 2s infinite;
+    img {
+      width: 8px !important;
+      height: auto !important;
+    }
+  }
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+.littleCircleLink {
+  display: flex;
+  align-items: center;
+  .imgDiv {
+    transition: all 0.5s;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    margin-right: 10px;
+    border: 2px solid white;
+    outline: 1px white solid;
+    outline-width: 2px !important;
+    outline-offset: 10px;
+    border-radius: 100%;
+    animation: littlePales 1.5s infinite;
+    img {
+      width: 6px !important;
+      height: auto !important;
+      margin: 0px !important;
+    }
+  }
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+.blueCircleLink {
+  display: flex;
+  align-items: center;
+  .imgDiv {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1a407a;
+    outline: 1px #1a407a solid;
+    outline-width: 2px !important;
+    outline-offset: 10px;
+    border-radius: 100%;
+    animation: bluePales 1.5s infinite;
+    padding-right: 1px;
+    padding-top: 1px;
+    margin-right: 10px;
+    img {
+      width: 6px !important;
+      height: auto !important;
+      margin: 0px !important;
+    }
+  }
+  &:hover {
+    text-decoration: none !important;
+  }
+}

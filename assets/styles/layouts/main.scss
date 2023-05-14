@@ -2,11 +2,98 @@
   padding-right: 103px;
   .bar {
     background: rgba(0, 0, 0, 0.5);
-    opacity: 0.5;
     display: none;
     padding: 20px;
     position: fixed;
     width: 100%;
+    height: 78px;
+    max-height: 78px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    .barIcon {
+      width: 37px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      &:hover {
+        div {
+          span {
+            width: 100%;
+          }
+        }
+      }
+      .firstLine,
+      .secLine,
+      .thirdLine {
+        width: 100%;
+        display: flex;
+        position: relative;
+        span {
+          height: 3px;
+          display: inline-block;
+          background-color: white;
+          border-radius: 3px;
+        }
+      }
+      .firstLine {
+        justify-content: end;
+        span {
+          width: 50%;
+          transition: all 0.5s;
+        }
+      }
+      .secLine {
+        span {
+          width: 100%;
+        }
+      }
+      .thirdLine {
+        justify-content: start;
+        span {
+          width: 50%;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .enLogo {
+      width: 78px;
+    }
+    .langDiv {
+      height: 26px;
+      .resLanguage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        justify-content: start;
+        gap: 15px;
+        height: 26px;
+        transition: all 1s;
+        img {
+          width: 25px;
+          cursor: pointer;
+        }
+        .effect {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+          padding: 10px 5px;
+          border-radius: 20px;
+          background-color: #122c53;
+          div {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            cursor: pointer;
+            color: white;
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 719px) {
@@ -14,6 +101,7 @@
     padding-right: 0px;
     .bar {
       display: flex;
+      z-index: 9;
     }
   }
 }

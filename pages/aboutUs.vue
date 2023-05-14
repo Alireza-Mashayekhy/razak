@@ -204,9 +204,11 @@
             متعهد هستند که رازک را قادر می سازد تا یک شرکت بسیار مؤثر باشد.
           </p>
         </div>
-        <router-link to="/">
+        <router-link to="/" class="littleCircleLink">
           دیدن همه
-          <img src="/icons/circleArrow.svg" alt="circleArrow" />
+          <div class="imgDiv">
+            <img src="/icons/angleArrow.svg" alt="circleArrow" />
+          </div>
         </router-link>
       </div>
       <div class="images d-flex">

@@ -2,7 +2,7 @@
   .topDiv {
     background: url("/images/distributorsBack.jpg") no-repeat;
     background-size: cover;
-    padding: 70px 148px 220px 70px;
+    padding: 70px 148px 150px 70px;
     .enLogo {
       text-align: left;
       margin-bottom: 82px;
@@ -125,7 +125,7 @@
     }
   }
   .spreaders {
-    padding: 0px 148px 0px 63px;
+    padding: 200px 148px 200px 63px;
     .info {
       max-width: 100%;
       .title {
@@ -152,7 +152,7 @@
         color: #000000;
         margin-bottom: 50px;
       }
-      button {
+      a {
         border: none;
         background-color: inherit;
         font-style: normal;
@@ -478,9 +478,10 @@
     .topDiv {
       padding: 20px;
       padding-bottom: 50px;
+      padding-top: 100px;
       .enLogo {
         img {
-          height: 40px;
+          display: none;
         }
       }
       .title {

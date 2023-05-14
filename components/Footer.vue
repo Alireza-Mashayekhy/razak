@@ -28,7 +28,10 @@
       </div>
     </div>
     <div class="agency d-flex justify-content-center">
-      <div>Razak Pharmacy. All Right Reserved.Dayan Agency</div>
+      <div>
+        Razak Pharmacy. All Right Reserved.
+        <a href="https://www.ravakagancy.com"> Ravak Agency </a>
+      </div>
       <div class="mr-1">2021 @</div>
     </div>
     <div class="rules">

@@ -106,7 +106,7 @@
           }
         }
       }
-      button {
+      a {
         background-color: inherit;
         border: none;
         font-style: normal;
@@ -114,6 +114,10 @@
         font-size: 16px;
         line-height: 50px;
         color: #ffffff;
+        .imgDiv {
+          margin-right: 0px;
+          margin-left: 10px;
+        }
         .circleArrow {
           width: 40px;
         }
@@ -159,10 +163,12 @@
     .effect {
       padding: 20px;
       padding-bottom: 50px;
+      padding-top: 50px;
       .enLogo {
         margin-bottom: 50px;
         img {
           height: 40px;
+          display: none;
         }
       }
       .title {

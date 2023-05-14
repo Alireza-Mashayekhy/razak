@@ -64,12 +64,13 @@
     .topDiv {
       padding: 20px;
       padding-bottom: 150px;
+      padding-top: 100px;
       .title {
         font-size: 23px;
       }
       .enLogo {
         img {
-          height: 40px;
+          display: none;
         }
       }
     }

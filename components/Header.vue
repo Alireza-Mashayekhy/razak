@@ -1,13 +1,26 @@
 <template>
   <div class="header d-flex justify-content-between flex-column">
     <div class="menu">
-      <img @click="openMenu" src="/icons/bar.svg" alt="bar" />
-      <div>منو</div>
+      <div class="barIcon" @click="openMenu">
+        <div class="firstLine">
+          <span></span>
+        </div>
+        <div class="secLine">
+          <span></span>
+        </div>
+        <div class="thirdLine">
+          <span></span>
+        </div>
+      </div>
+      <div class="text">منو</div>
     </div>
     <div class="langAndScroll">
       <div class="language">
-        <div>FA</div>
-        <img src="/icons/global.svg" alt="global" />
+        <div class="effect">
+          <div>EN</div>
+          <div>FA</div>
+        </div>
+        <img src="/icons/global.svg" alt="global" @click="handelLang" />
       </div>
       <div class="scroll">
         <div>اسکرول کنید</div>
@@ -101,6 +114,7 @@ export default {
   },
   mounted() {
     window.addEventListener("resize", this.headerResize);
+    document.getElementsByClassName("language")[0].style.height = "25px";
   },
   methods: {
     headerResize() {
@@ -113,7 +127,7 @@ export default {
           document.getElementsByClassName("header")[0].style.transform =
             "translateX(100vw)";
           document.getElementsByClassName("header")[0].style.padding =
-            "85px 40px 56px 23px";
+            "85px 40px 56px 18px";
         }
       } else {
         if (this.headerOpen) {
@@ -182,6 +196,14 @@ export default {
           document.getElementsByClassName("header")[0].style.transition =
             "none";
         }, 800);
+      }
+    },
+    handelLang() {
+      const lang = document.getElementsByClassName("language")[0];
+      if (lang.style.height == "25px") {
+        lang.style.height = "125px";
+      } else {
+        lang.style.height = "25px";
       }
     },
   },

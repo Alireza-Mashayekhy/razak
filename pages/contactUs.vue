@@ -58,15 +58,17 @@
         </p>
         <input type="email" class="email" placeholder="ایمیل" />
         <input type="text" class="message" placeholder="پیام شما" />
-        <button>
-          <img
-            src="/icons/circleArrow.svg"
-            alt="circleArrow"
-            class="circleArrow"
-          />
+        <router-link to="#" class="littleCircleLink">
+          <div class="imgDiv">
+            <img
+              src="/icons/angleArrow.svg"
+              alt="circleArrow"
+              class="circleArrow"
+            />
+          </div>
           <img src="/icons/dots.svg" alt="dots" class="dots" />
           <span>ارسال</span>
-        </button>
+        </router-link>
       </div>
     </div>
   </div>

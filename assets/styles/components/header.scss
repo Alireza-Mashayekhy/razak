@@ -20,11 +20,54 @@
     flex-direction: column;
     align-items: center;
     padding-left: 15px;
-    img {
+    .barIcon {
       width: 37px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
       cursor: pointer;
+      &:hover {
+        div {
+          span {
+            width: 100%;
+          }
+        }
+      }
+      .firstLine,
+      .secLine,
+      .thirdLine {
+        width: 100%;
+        display: flex;
+        position: relative;
+        span {
+          height: 3px;
+          display: inline-block;
+          background-color: white;
+          border-radius: 3px;
+        }
+      }
+      .firstLine {
+        justify-content: end;
+        span {
+          width: 50%;
+          transition: all 0.5s;
+        }
+      }
+      .secLine {
+        span {
+          width: 100%;
+        }
+      }
+      .thirdLine {
+        justify-content: start;
+        span {
+          width: 50%;
+          transition: all 0.5s;
+        }
+      }
     }
-    div {
+    .text {
       transform: rotate(-90deg);
       margin-top: 15px;
       font-style: normal;
@@ -39,15 +82,31 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow: hidden;
+      justify-content: end;
+      gap: 15px;
+      height: 25px;
+      transition: all 1s;
       img {
         width: 25px;
+        cursor: pointer;
       }
-      div {
-        transform: rotate(-90deg);
-        margin-bottom: 10px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
+      .effect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 5px;
+        padding-right: 0px;
+        border-radius: 20px;
+        background-color: #122c53;
+        div {
+          transform: rotate(-90deg);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          cursor: pointer;
+        }
       }
     }
     .scroll {
@@ -79,6 +138,10 @@
       .xIcon {
         cursor: pointer;
         width: 40px;
+        transition: all 0.5s;
+        &:hover {
+          transform: rotate(180deg);
+        }
       }
       .enLogo {
         width: 130px;
@@ -236,7 +299,7 @@
         padding: 32px;
         padding-bottom: 0px;
         .enLogo {
-          height: 40px;
+          width: 73px;
         }
         .xIcon {
           width: 30px;

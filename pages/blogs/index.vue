@@ -31,9 +31,11 @@
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است چاپگرها ...
             </p>
-            <router-link to="/blogs/1"
-              >بیشتر بخوانید
-              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            <router-link to="/blogs/1" class="littleCircleLink">
+              بیشتر بخوانید
+              <div class="imgDiv">
+                <img src="/icons/angleArrow.svg" alt="circleArrow" />
+              </div>
             </router-link>
           </div>
         </div>
@@ -113,9 +115,11 @@
             تقدیر از رازک در دومین اجلاس سراسری مدیران ارزش آفرین ، دومین اجلاس
             سراسری مدیران...
           </div>
-          <router-link to="/"
-            >بیشتر بخوانید
-            <img src="/icons/blueCircleArrow.svg" alt="blueCircleArrow" />
+          <router-link to="/" class="blueCircleLink">
+            بیشتر بخوانید
+            <div class="imgDiv">
+              <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+            </div>
           </router-link>
         </div>
       </div>

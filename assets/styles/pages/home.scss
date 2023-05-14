@@ -1,4 +1,5 @@
 .home {
+  overflow-x: hidden;
   .chatWithUs {
     position: fixed;
     bottom: 53px;
@@ -26,11 +27,11 @@
     }
   }
   .topDiv {
-    padding: 68px 148px 176px 70px;
+    padding: 68px 148px 90px 70px;
     background: url("/images/homeBack.jpg") no-repeat;
     background-size: cover;
     height: 100vh;
-    min-height: 680px;
+    min-height: 485px;
     .logoDiv {
       width: 100%;
       text-align: left;
@@ -39,6 +40,8 @@
       }
     }
     .about {
+      opacity: 0;
+      transition: all 1s;
       h1 {
         font-style: bold;
         font-weight: 800;
@@ -129,11 +132,14 @@
         border: 1px solid #1a407a;
         border-radius: 40px;
         padding: 16px 20px;
+        transition: all 0.5s;
         img {
           margin-right: 7px;
         }
         &:hover {
           text-decoration: none;
+          transform: translate3d(-5px, -5px, 5px);
+          box-shadow: 10px 10px 15px #0b1a31;
         }
       }
     }
@@ -141,18 +147,19 @@
   .homeNews {
     background: #1a407a;
     .titles {
-      padding: 108px 148px 0px 152px;
+      padding: 200px 148px 0px 152px;
       .line {
-        width: 100%;
+        width: 0%;
         height: 3px;
         background-color: white;
         display: inline-block;
         margin-bottom: 92px;
+        transition: 1s all !important;
       }
       .newsTitle {
         font-style: normal;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 18px;
         color: #b9b7bd;
         margin-bottom: 10px;
         span {
@@ -453,10 +460,10 @@
     background: url("/images/homeBlogs.jpg") no-repeat;
     background-size: cover;
     height: 100vh;
-    min-height: 750px;
+    min-height: 850px;
     .effect {
       background: #153465d3;
-      padding: 200px 148px 44px 153px;
+      padding: 200px 148px 200px 153px;
       height: 100%;
       .title {
         font-style: normal;
@@ -543,6 +550,7 @@
       width: 0px;
       margin-bottom: 10px;
       margin-bottom: 50px;
+      transition: all 1s !important;
     }
     .image1 {
       background: url("/images/followImg1.jpg") no-repeat;
@@ -555,13 +563,18 @@
       background-position: center;
     }
     a {
-      margin-top: 200px;
+      margin-top: 100px;
       font-style: normal;
       font-weight: 300;
       font-size: 25px;
       color: #1a407a;
+      justify-content: center;
+      align-items: center;
       &:hover {
         text-decoration: none;
+      }
+      .imgDiv {
+        margin-bottom: 10px;
       }
       img {
         width: 40px;
@@ -663,8 +676,8 @@
 @media only screen and (max-width: 719px) {
   .home {
     .chatWithUs {
-      left: 20px;
-      bottom: 40px;
+      left: 50px;
+      bottom: 50px;
       .text {
         font-size: 10px;
       }
@@ -675,10 +688,10 @@
       }
     }
     .topDiv {
-      padding: 20px;
-      padding-bottom: 100px;
+      padding: 50px;
       .logoDiv {
         .enLogo {
+          display: none;
           width: 78px;
         }
       }
@@ -687,8 +700,11 @@
           font-size: 30px;
         }
         .text {
+          flex-direction: column;
           div {
             font-size: 15px;
+            margin-left: 0px;
+            line-height: 22px;
           }
           img {
             width: 35px;
@@ -702,7 +718,7 @@
       }
     }
     .aboutRazak {
-      padding: 20px;
+      padding: 100px 50px;
       .title {
         font-size: 15px;
         span {
@@ -725,6 +741,7 @@
       }
       .links {
         flex-wrap: wrap;
+        gap: 25px;
         a {
           font-size: 10px;
         }
@@ -732,8 +749,7 @@
     }
     .homeNews {
       .titles {
-        padding-right: 20px;
-        padding-left: 20px;
+        padding: 100px 50px;
         .line {
           margin-bottom: 50px;
         }
@@ -786,9 +802,9 @@
       }
     }
     .podcasts {
-      padding: 20px;
+      padding: 50px;
       padding-top: 250px;
-      padding-bottom: 70px;
+      padding-bottom: 100px;
       .titles {
         .title {
           font-size: 15px;
@@ -844,9 +860,9 @@
       }
     }
     .homeBlogs {
+      min-height: 730px;
       .effect {
-        padding: 20px;
-        padding-bottom: 70px;
+        padding: 100px 50px;
         & > div {
           flex-wrap: wrap;
         }
@@ -883,7 +899,7 @@
       }
     }
     .follow {
-      padding: 150px 0px;
+      padding: 100px 0px;
       & > div {
         flex-direction: column-reverse;
       }

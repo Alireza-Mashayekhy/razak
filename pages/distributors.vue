@@ -84,10 +84,12 @@
           برای نمایش مراکز پخش، استان مورد نظر خود را در نقشه انتخاب کرده و بر
           روی آن کلیک کنید .
         </p>
-        <button>
+        <router-link to="#" class="blueCircleLink">
           مشاهده لیست تمامی مراکز
-          <img src="/icons/blackCircleArrow.svg" alt="arrow" />
-        </button>
+          <div class="imgDiv">
+            <img src="/icons/blueAngleArrow.svg" alt="arrow" />
+          </div>
+        </router-link>
       </div>
       <div class="map">
         <div class="circle tehran" @click="myModal = true">تهران</div>
