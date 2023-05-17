@@ -1,105 +1,217 @@
 <template>
-  <div class="header d-flex justify-content-between flex-column">
-    <div class="menu">
-      <div class="barIcon" @click="openMenu">
-        <div class="firstLine">
-          <span></span>
+  <div class="header">
+    <div
+      class="faHeader faPage justify-content-between flex-column"
+      v-show="$store.state.lang == 'fa'"
+    >
+      <div class="menu">
+        <div class="barIcon" @click="openMenu">
+          <div class="firstLine">
+            <span></span>
+          </div>
+          <div class="secLine">
+            <span></span>
+          </div>
+          <div class="thirdLine">
+            <span></span>
+          </div>
         </div>
-        <div class="secLine">
-          <span></span>
+        <div class="text">منو</div>
+      </div>
+      <div class="langAndScroll">
+        <div class="language">
+          <div class="effect">
+            <div @click="changeToEn">EN</div>
+            <div @click="changeToFa">FA</div>
+          </div>
+          <img src="/icons/global.svg" alt="global" @click="handelLang" />
         </div>
-        <div class="thirdLine">
-          <span></span>
+        <div class="scroll">
+          <div>اسکرول کنید</div>
+          <img src="/icons/mouse.svg" alt="mouse" />
         </div>
       </div>
-      <div class="text">منو</div>
+      <div class="openedMenu">
+        <div class="topDiv d-flex justify-content-between">
+          <img src="/images/enLogo.svg" class="enLogo" alt="enLogo" />
+          <img
+            src="/icons/xIcon.svg"
+            class="xIcon"
+            alt="xIcon"
+            @click="closeMenu"
+          />
+        </div>
+        <div class="secDiv">
+          <div class="links">
+            <div class="link">
+              <div class="num">01</div>
+              <h5>پایگاه دانش</h5>
+              <router-link to="/blogs">مقالات</router-link>
+              <router-link to="/">نوآوری و تحقیقات</router-link>
+              <router-link to="/">مطالعات </router-link>
+              <router-link to="/">کتاب الکترونیکی</router-link>
+              <router-link to="/">پادکست ها</router-link>
+            </div>
+            <div class="link">
+              <div class="num">02</div>
+              <h5>محصولات</h5>
+              <router-link to="/">انسانی</router-link>
+              <router-link to="/">دامی</router-link>
+              <router-link to="/products">لیست محصولات</router-link>
+              <router-link to="/distributors">توزیع کنندگان</router-link>
+            </div>
+            <div class="link">
+              <div class="num">03</div>
+              <h5>اتاق خبر</h5>
+              <router-link to="/news">اخبار </router-link>
+              <router-link to="/events">رویداد های رازک</router-link>
+              <router-link to="/">اخبار تیپیکو</router-link>
+              <router-link to="/stockNews">اخبار سهام</router-link>
+            </div>
+            <div class="link">
+              <div class="num">04</div>
+              <h5>لابراتوارهای رازک</h5>
+              <router-link to="/aboutUs">درباره ی رازک</router-link>
+              <router-link to="/team">مدیران و سهامداران رازک</router-link>
+              <router-link to="/partners">شرکای رازک</router-link>
+              <router-link to="/">پورتال سهامداران</router-link>
+              <router-link to="/">معرفی لوگو</router-link>
+            </div>
+            <div class="link">
+              <div class="num">05</div>
+              <h5>تماس با ما</h5>
+              <router-link to="/contactUs">اطلاعات تماس</router-link>
+              <router-link to="/">صدای مشتریان</router-link>
+              <router-link to="/">همکاری با ما</router-link>
+              <router-link to="/voc">ثبت شکایت</router-link>
+              <router-link to="/comments">نظرات همراهان</router-link>
+            </div>
+            <div class="link">
+              <div class="num">06</div>
+              <h5>مدیا سنتر</h5>
+              <router-link to="/gallery">گالری تصاویر</router-link>
+              <router-link to="/">گالری ویدیوها</router-link>
+            </div>
+          </div>
+          <div class="searchDiv">
+            <img src="/icons/search.svg" alt="search" />
+            <input type="search" placeholder="جستجو" />
+          </div>
+        </div>
+        <div class="rules">
+          <router-link to="/">قوانین و مقررات </router-link>
+          <span>|</span>
+          <router-link to="/">نقشه سایت</router-link>
+          <span>|</span>
+          <router-link to="/">حریم خصوصی</router-link>
+        </div>
+      </div>
     </div>
-    <div class="langAndScroll">
-      <div class="language">
-        <div class="effect">
-          <div>EN</div>
-          <div>FA</div>
-        </div>
-        <img src="/icons/global.svg" alt="global" @click="handelLang" />
-      </div>
-      <div class="scroll">
-        <div>اسکرول کنید</div>
-        <img src="/icons/mouse.svg" alt="mouse" />
-      </div>
-    </div>
-    <div class="openedMenu">
-      <div class="topDiv d-flex justify-content-between">
-        <img src="/images/enLogo.svg" class="enLogo" alt="enLogo" />
-        <img
-          src="/icons/xIcon.svg"
-          class="xIcon"
-          alt="xIcon"
-          @click="closeMenu"
-        />
-      </div>
-      <div class="secDiv">
-        <div class="links">
-          <div class="link">
-            <div class="num">01</div>
-            <h5>پایگاه دانش</h5>
-            <router-link to="/blogs">مقالات</router-link>
-            <router-link to="/">نوآوری و تحقیقات</router-link>
-            <router-link to="/">مطالعات </router-link>
-            <router-link to="/">کتاب الکترونیکی</router-link>
-            <router-link to="/">پادکست ها</router-link>
+    <div
+      class="enHeader enPage justify-content-between flex-column"
+      v-show="$store.state.lang == 'en'"
+    >
+      <div class="menu">
+        <div class="barIcon" @click="openMenu">
+          <div class="firstLine">
+            <span></span>
           </div>
-          <div class="link">
-            <div class="num">02</div>
-            <h5>محصولات</h5>
-            <router-link to="/">انسانی</router-link>
-            <router-link to="/">دامی</router-link>
-            <router-link to="/products">لیست محصولات</router-link>
-            <router-link to="/distributors">توزیع کنندگان</router-link>
+          <div class="secLine">
+            <span></span>
           </div>
-          <div class="link">
-            <div class="num">03</div>
-            <h5>اتاق خبر</h5>
-            <router-link to="/news">اخبار </router-link>
-            <router-link to="/events">رویداد های رازک</router-link>
-            <router-link to="/">اخبار تیپیکو</router-link>
-            <router-link to="/stockNews">اخبار سهام</router-link>
-          </div>
-          <div class="link">
-            <div class="num">04</div>
-            <h5>لابراتوارهای رازک</h5>
-            <router-link to="/aboutUs">درباره ی رازک</router-link>
-            <router-link to="/team">مدیران و سهامداران رازک</router-link>
-            <router-link to="/partners">شرکای رازک</router-link>
-            <router-link to="/">پورتال سهامداران</router-link>
-            <router-link to="/">معرفی لوگو</router-link>
-          </div>
-          <div class="link">
-            <div class="num">05</div>
-            <h5>تماس با ما</h5>
-            <router-link to="/contactUs">اطلاعات تماس</router-link>
-            <router-link to="/">صدای مشتریان</router-link>
-            <router-link to="/">همکاری با ما</router-link>
-            <router-link to="/voc">ثبت شکایت</router-link>
-            <router-link to="/comments">نظرات همراهان</router-link>
-          </div>
-          <div class="link">
-            <div class="num">06</div>
-            <h5>مدیا سنتر</h5>
-            <router-link to="/gallery">گالری تصاویر</router-link>
-            <router-link to="/">گالری ویدیوها</router-link>
+          <div class="thirdLine">
+            <span></span>
           </div>
         </div>
-        <div class="searchDiv">
-          <img src="/icons/search.svg" alt="search" />
-          <input type="search" placeholder="جستجو" />
+        <div class="text">منو</div>
+      </div>
+      <div class="langAndScroll">
+        <div class="language">
+          <div class="effect">
+            <div @click="changeToEn">EN</div>
+            <div @click="changeToFa">FA</div>
+          </div>
+          <img src="/icons/global.svg" alt="global" @click="handelEnLang" />
+        </div>
+        <div class="scroll">
+          <div>اسکرول کنید</div>
+          <img src="/icons/mouse.svg" alt="mouse" />
         </div>
       </div>
-      <div class="rules">
-        <router-link to="/">قوانین و مقررات </router-link>
-        <span>|</span>
-        <router-link to="/">نقشه سایت</router-link>
-        <span>|</span>
-        <router-link to="/">حریم خصوصی</router-link>
+      <div class="openedMenu">
+        <div class="topDiv d-flex justify-content-between">
+          <img src="/images/enLogo.svg" class="enLogo" alt="enLogo" />
+          <img
+            src="/icons/xIcon.svg"
+            class="xIcon"
+            alt="xIcon"
+            @click="closeMenu"
+          />
+        </div>
+        <div class="secDiv">
+          <div class="links">
+            <div class="link">
+              <div class="num">01</div>
+              <h5>پایگاه دانش</h5>
+              <router-link to="/blogs">مقالات</router-link>
+              <router-link to="/">نوآوری و تحقیقات</router-link>
+              <router-link to="/">مطالعات </router-link>
+              <router-link to="/">کتاب الکترونیکی</router-link>
+              <router-link to="/">پادکست ها</router-link>
+            </div>
+            <div class="link">
+              <div class="num">02</div>
+              <h5>محصولات</h5>
+              <router-link to="/">انسانی</router-link>
+              <router-link to="/">دامی</router-link>
+              <router-link to="/products">لیست محصولات</router-link>
+              <router-link to="/distributors">توزیع کنندگان</router-link>
+            </div>
+            <div class="link">
+              <div class="num">03</div>
+              <h5>اتاق خبر</h5>
+              <router-link to="/news">اخبار </router-link>
+              <router-link to="/events">رویداد های رازک</router-link>
+              <router-link to="/">اخبار تیپیکو</router-link>
+              <router-link to="/stockNews">اخبار سهام</router-link>
+            </div>
+            <div class="link">
+              <div class="num">04</div>
+              <h5>لابراتوارهای رازک</h5>
+              <router-link to="/aboutUs">درباره ی رازک</router-link>
+              <router-link to="/team">مدیران و سهامداران رازک</router-link>
+              <router-link to="/partners">شرکای رازک</router-link>
+              <router-link to="/">پورتال سهامداران</router-link>
+              <router-link to="/">معرفی لوگو</router-link>
+            </div>
+            <div class="link">
+              <div class="num">05</div>
+              <h5>تماس با ما</h5>
+              <router-link to="/contactUs">اطلاعات تماس</router-link>
+              <router-link to="/">صدای مشتریان</router-link>
+              <router-link to="/">همکاری با ما</router-link>
+              <router-link to="/voc">ثبت شکایت</router-link>
+              <router-link to="/comments">نظرات همراهان</router-link>
+            </div>
+            <div class="link">
+              <div class="num">06</div>
+              <h5>مدیا سنتر</h5>
+              <router-link to="/gallery">گالری تصاویر</router-link>
+              <router-link to="/">گالری ویدیوها</router-link>
+            </div>
+          </div>
+          <div class="searchDiv">
+            <img src="/icons/search.svg" alt="search" />
+            <input type="search" placeholder="جستجو" />
+          </div>
+        </div>
+        <div class="rules">
+          <router-link to="/">قوانین و مقررات </router-link>
+          <span>|</span>
+          <router-link to="/">نقشه سایت</router-link>
+          <span>|</span>
+          <router-link to="/">حریم خصوصی</router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -115,85 +227,140 @@ export default {
   mounted() {
     window.addEventListener("resize", this.headerResize);
     document.getElementsByClassName("language")[0].style.height = "25px";
+    document.getElementsByClassName("language")[1].style.height = "25px";
   },
   methods: {
     headerResize() {
       if (window.innerWidth > 719) {
         if (this.headerOpen) {
-          document.getElementsByClassName("header")[0].style.transform =
+          document.getElementsByClassName("faHeader")[0].style.transform =
             "translateX(120px)";
-          document.getElementsByClassName("header")[0].style.padding = "0px";
+          document.getElementsByClassName("faHeader")[0].style.padding = "0px";
+          document.getElementsByClassName("enHeader")[0].style.transform =
+            "translateX(-120px)";
+          document.getElementsByClassName("enHeader")[0].style.padding = "0px";
         } else {
-          document.getElementsByClassName("header")[0].style.transform =
+          document.getElementsByClassName("faHeader")[0].style.transform =
             "translateX(100vw)";
-          document.getElementsByClassName("header")[0].style.padding =
+          document.getElementsByClassName("faHeader")[0].style.padding =
             "85px 40px 56px 18px";
+          document.getElementsByClassName("enHeader")[0].style.transform =
+            "translateX(-100vw)";
+          document.getElementsByClassName("enHeader")[0].style.padding =
+            "85px 18px 56px 40px";
         }
       } else {
         if (this.headerOpen) {
-          document.getElementsByClassName("header")[0].style.transform =
+          document.getElementsByClassName("faHeader")[0].style.transform =
             "translateX(0px)";
-          document.getElementsByClassName("header")[0].style.padding = "0px";
+          document.getElementsByClassName("faHeader")[0].style.padding = "0px";
+          document.getElementsByClassName("enHeader")[0].style.transform =
+            "translateX(0px)";
+          document.getElementsByClassName("enHeader")[0].style.padding = "0px";
         } else {
-          document.getElementsByClassName("header")[0].style.padding =
+          document.getElementsByClassName("faHeader")[0].style.padding =
             "40px 40px 40px 10px";
-          document.getElementsByClassName("header")[0].style.transform =
+          document.getElementsByClassName("faHeader")[0].style.transform =
             "translateX(100vw)";
+          document.getElementsByClassName("enHeader")[0].style.padding =
+            "40px 40px 40px 10px";
+          document.getElementsByClassName("enHeader")[0].style.transform =
+            "translateX(-100vw)";
         }
       }
     },
     openMenu() {
       this.headerOpen = true;
       if (window.innerWidth > 719) {
-        document.getElementsByClassName("header")[0].style.transition =
+        document.getElementsByClassName("faHeader")[0].style.transition =
           "transform 1s";
-        document.getElementsByClassName("header")[0].style.transform =
+        document.getElementsByClassName("faHeader")[0].style.transform =
           "translateX(120px)";
-        document.getElementsByClassName("header")[0].style.padding = "0px";
-        document.getElementsByClassName("menu")[0].style.display = "none";
-        document.getElementsByClassName("langAndScroll")[0].style.display =
-          "none";
-        document.getElementsByClassName("openedMenu")[0].style.display = "flex";
-      } else {
-        document.getElementsByClassName("header")[0].style.transition =
+        document.getElementsByClassName("faHeader")[0].style.padding = "0px";
+        document.getElementsByClassName("enHeader")[0].style.transition =
           "transform 1s";
-        document.getElementsByClassName("header")[0].style.transform =
-          "translateX(80px)";
-        document.getElementsByClassName("header")[0].style.padding = "0px";
+        document.getElementsByClassName("enHeader")[0].style.transform =
+          "translateX(-120px)";
+        document.getElementsByClassName("enHeader")[0].style.padding = "0px";
         document.getElementsByClassName("menu")[0].style.display = "none";
         document.getElementsByClassName("langAndScroll")[0].style.display =
           "none";
         document.getElementsByClassName("openedMenu")[0].style.display = "flex";
+        document.getElementsByClassName("menu")[1].style.display = "none";
+        document.getElementsByClassName("langAndScroll")[1].style.display =
+          "none";
+        document.getElementsByClassName("openedMenu")[1].style.display = "flex";
+      } else {
+        document.getElementsByClassName("faHeader")[0].style.transition =
+          "transform 1s";
+        document.getElementsByClassName("faHeader")[0].style.transform =
+          "translateX(80px)";
+        document.getElementsByClassName("faHeader")[0].style.padding = "0px";
+        document.getElementsByClassName("enHeader")[0].style.transition =
+          "transform 1s";
+        document.getElementsByClassName("enHeader")[0].style.transform =
+          "translateX(80px)";
+        document.getElementsByClassName("enHeader")[0].style.padding = "0px";
+        document.getElementsByClassName("menu")[0].style.display = "none";
+        document.getElementsByClassName("langAndScroll")[0].style.display =
+          "none";
+        document.getElementsByClassName("openedMenu")[0].style.display = "flex";
+        document.getElementsByClassName("menu")[1].style.display = "none";
+        document.getElementsByClassName("langAndScroll")[1].style.display =
+          "none";
+        document.getElementsByClassName("openedMenu")[1].style.display = "flex";
       }
     },
     closeMenu() {
       this.headerOpen = false;
       if (window.innerWidth > 719) {
-        document.getElementsByClassName("header")[0].style.transform =
+        document.getElementsByClassName("faHeader")[0].style.transform =
           "translateX(100vw)";
+        document.getElementsByClassName("enHeader")[0].style.transform =
+          "translateX(-100vw)";
         setTimeout(() => {
-          document.getElementsByClassName("header")[0].style.padding =
-            "85px 40px 56px 23px";
+          document.getElementsByClassName("faHeader")[0].style.padding =
+            "85px 40px 56px 18px";
+          document.getElementsByClassName("enHeader")[0].style.padding =
+            "85px 18px 56px 40px";
           document.getElementsByClassName("menu")[0].style.display = "flex";
           document.getElementsByClassName("langAndScroll")[0].style.display =
             "flex";
           document.getElementsByClassName("openedMenu")[0].style.display =
             "none";
-          document.getElementsByClassName("header")[0].style.transition =
+          document.getElementsByClassName("menu")[1].style.display = "flex";
+          document.getElementsByClassName("langAndScroll")[1].style.display =
+            "flex";
+          document.getElementsByClassName("openedMenu")[1].style.display =
+            "none";
+          document.getElementsByClassName("faHeader")[0].style.transition =
+            "none";
+          document.getElementsByClassName("enHeader")[0].style.transition =
             "none";
         }, 800);
       } else {
-        document.getElementsByClassName("header")[0].style.transform =
+        document.getElementsByClassName("faHeader")[0].style.transform =
           "translateX(100vw)";
+        document.getElementsByClassName("enHeader")[0].style.transform =
+          "translateX(-100vw)";
         setTimeout(() => {
-          document.getElementsByClassName("header")[0].style.padding =
+          document.getElementsByClassName("faHeader")[0].style.padding =
+            "40px 40px 40px 10px";
+          document.getElementsByClassName("enHeader")[0].style.padding =
             "40px 40px 40px 10px";
           document.getElementsByClassName("menu")[0].style.display = "flex";
           document.getElementsByClassName("langAndScroll")[0].style.display =
             "flex";
           document.getElementsByClassName("openedMenu")[0].style.display =
             "none";
-          document.getElementsByClassName("header")[0].style.transition =
+          document.getElementsByClassName("menu")[1].style.display = "flex";
+          document.getElementsByClassName("langAndScroll")[1].style.display =
+            "flex";
+          document.getElementsByClassName("openedMenu")[1].style.display =
+            "none";
+          document.getElementsByClassName("faHeader")[0].style.transition =
+            "none";
+          document.getElementsByClassName("enHeader")[0].style.transition =
             "none";
         }, 800);
       }
@@ -205,6 +372,23 @@ export default {
       } else {
         lang.style.height = "25px";
       }
+    },
+    handelEnLang() {
+      console.log("h");
+      const lang = document
+        .getElementsByClassName("enHeader")[0]
+        .getElementsByClassName("language")[0];
+      if (lang.style.height == "25px") {
+        lang.style.height = "125px";
+      } else {
+        lang.style.height = "25px";
+      }
+    },
+    changeToEn() {
+      this.$store.commit("changeToEn");
+    },
+    changeToFa() {
+      this.$store.commit("changeToFa");
     },
   },
   watch: {

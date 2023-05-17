@@ -1,18 +1,37 @@
 <template>
   <div class="galleryImages">
-    <div class="topDiv">
-      <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+    <div v-show="$store.state.lang == 'fa'" class="faPage faGalleryImages">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">سمینارها و انجمن های دامی</div>
       </div>
-      <div class="title">سمینارها و انجمن های دامی</div>
+      <div class="route">
+        صفحه اصلی . گالری تصاویر.
+        <span>شرکت داروسازی لابراتوارهای رازک در مسیر بهبود مستمر</span>
+      </div>
+      <div class="images d-flex flex-wrap justify-content-center">
+        <div class="image" v-for="image in images" :key="image.id">
+          <img :src="image.img" alt="gallery" />
+        </div>
+      </div>
     </div>
-    <div class="route">
-      صفحه اصلی . گالری تصاویر.
-      <span>شرکت داروسازی لابراتوارهای رازک در مسیر بهبود مستمر</span>
-    </div>
-    <div class="images d-flex flex-wrap justify-content-center">
-      <div class="image" v-for="image in images" :key="image.id">
-        <img :src="image.img" alt="gallery" />
+    <div v-show="$store.state.lang == 'en'" class="enPage enGalleryImages">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">سمینارها و انجمن های دامی</div>
+      </div>
+      <div class="route">
+        صفحه اصلی . گالری تصاویر.
+        <span>شرکت داروسازی لابراتوارهای رازک در مسیر بهبود مستمر</span>
+      </div>
+      <div class="images d-flex flex-wrap justify-content-center">
+        <div class="image" v-for="image in images" :key="image.id">
+          <img :src="image.img" alt="gallery" />
+        </div>
       </div>
     </div>
   </div>

@@ -1,895 +1,1540 @@
 .home {
   overflow-x: hidden;
-  .chatWithUs {
-    position: fixed;
-    bottom: 53px;
-    left: 67px;
-    z-index: 8;
-    .text {
-      background: rgba(1, 22, 55, 0.4);
-      backdrop-filter: blur(30px);
-      border-radius: 0px 60px 60px 0px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 13px;
-      color: #ffffff;
-      padding: 4px 25px 4px 19px;
-      height: fit-content;
-      margin-left: 8px;
-      border: 1px solid rgba(137, 137, 137, 0.5);
-    }
-    .circle {
-      padding: 25px;
-      border-radius: 100%;
-      background: rgba(1, 22, 55, 0.4);
-      backdrop-filter: blur(30px);
-      border: 1px solid rgba(137, 137, 137, 0.5);
-    }
-  }
-  .topDiv {
-    padding: 68px 148px 90px 70px;
-    background: url("/images/homeBack.jpg") no-repeat;
-    background-size: cover;
-    height: 100vh;
-    min-height: 485px;
-    .logoDiv {
-      width: 100%;
-      text-align: left;
-      .enLogo {
-        width: 130px;
-      }
-    }
-    .about {
-      opacity: 0;
-      transition: all 1s;
-      h1 {
-        font-style: bold;
-        font-weight: 800;
-        font-size: 40px;
-        color: #ffffff;
-        margin-bottom: 12px;
-      }
+  .faHome {
+    left: 0px !important;
+    position: relative;
+    .chatWithUs {
+      position: fixed;
+      bottom: 53px;
+      left: 67px;
+      z-index: 8;
       .text {
-        margin-bottom: 95px;
-        div {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 40px;
-          color: #bac6d7;
-          max-width: 358px;
-          margin-left: 77px;
-        }
-        img {
-          width: 56px;
-        }
-      }
-      .socials {
-        img {
-          margin: 0px 10px;
-        }
-      }
-    }
-  }
-  .aboutRazak {
-    padding: 128px 148px 187px 161px;
-    & > div {
-      gap: 50px;
-    }
-    .title {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      color: #b9b7bd;
-      margin-bottom: 10px;
-      span {
-        display: inline-block;
-        height: 5px;
-        width: 43px;
-        background-color: #1a407a;
-        margin-right: 10px;
-        border-radius: 5px;
-      }
-    }
-    h2 {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      line-height: 56px;
-      color: #0b1a31;
-      max-width: 453px;
-      margin-bottom: 40px;
-    }
-    .more {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #1a407a;
-      img {
-        margin-right: 7px;
-      }
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 34px;
-      text-align: justify;
-      color: #606a79;
-      max-width: 532px;
-      margin-bottom: 53px;
-    }
-    .links {
-      gap: 50px;
-      a {
+        background: rgba(1, 22, 55, 0.4);
+        backdrop-filter: blur(30px);
+        border-radius: 0px 60px 60px 0px;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        color: #1a407a;
-        border: 1px solid #1a407a;
-        border-radius: 40px;
-        padding: 16px 20px;
-        transition: all 0.5s;
-        img {
-          margin-right: 7px;
+        font-size: 13px;
+        color: #ffffff;
+        padding: 4px 25px 4px 19px;
+        height: fit-content;
+        margin-left: 8px;
+        border: 1px solid rgba(137, 137, 137, 0.5);
+      }
+      .circle {
+        padding: 25px;
+        border-radius: 100%;
+        background: rgba(1, 22, 55, 0.4);
+        backdrop-filter: blur(30px);
+        border: 1px solid rgba(137, 137, 137, 0.5);
+      }
+    }
+    .topDiv {
+      padding: 68px 148px 90px 70px;
+      background: url("/images/homeBack.jpg") no-repeat;
+      background-size: cover;
+      height: 100vh;
+      min-height: 485px;
+      .logoDiv {
+        width: 100%;
+        text-align: left;
+        .enLogo {
+          width: 130px;
         }
-        &:hover {
-          text-decoration: none;
-          transform: translate3d(-5px, -5px, 5px);
-          box-shadow: 10px 10px 15px #0b1a31;
+      }
+      .about {
+        opacity: 0;
+        transition: all 1s;
+        h1 {
+          font-style: bold;
+          font-weight: 800;
+          font-size: 40px;
+          color: #ffffff;
+          margin-bottom: 12px;
+        }
+        .text {
+          margin-bottom: 95px;
+          div {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            color: #bac6d7;
+            max-width: 358px;
+            margin-left: 77px;
+          }
+          img {
+            width: 56px;
+          }
+        }
+        .socials {
+          img {
+            margin: 0px 10px;
+          }
         }
       }
     }
-  }
-  .homeNews {
-    background: #1a407a;
-    .titles {
-      padding: 200px 148px 0px 152px;
-      .line {
-        width: 0%;
-        height: 3px;
-        background-color: white;
-        display: inline-block;
-        margin-bottom: 92px;
-        transition: 1s all !important;
+    .aboutRazak {
+      padding: 128px 148px 187px 161px;
+      & > div {
+        gap: 50px;
       }
-      .newsTitle {
+      .title {
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 25px;
         color: #b9b7bd;
         margin-bottom: 10px;
         span {
           display: inline-block;
           height: 5px;
           width: 43px;
+          background-color: #1a407a;
+          margin-right: 10px;
           border-radius: 5px;
-          margin-right: 19px;
-          background-color: white;
         }
       }
-      h3 {
+      h2 {
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
-        color: #ffffff;
+        line-height: 56px;
+        color: #0b1a31;
+        max-width: 453px;
+        margin-bottom: 40px;
       }
-      a {
+      .more {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        color: #ffffff;
+        color: #1a407a;
         img {
-          width: 40px;
-          margin-right: 8px;
+          margin-right: 7px;
         }
-      }
-    }
-    .images {
-      display: flex;
-      position: relative;
-      cursor: grab;
-      overflow: scroll;
-      padding-right: 265px;
-      padding-left: 200px;
-      top: 220px;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      .image {
-        min-width: 350px;
-        height: 466px;
-        margin-left: 50px;
-        overflow: hidden;
         &:hover {
-          .effectedDiv {
-            transform: translateY(0px);
-          }
+          text-decoration: none;
         }
-        .effectedDiv {
-          transform: translateY(100%);
-          transition: transform 1s;
-          padding: 100px 45px 84px 45px;
-          background: radial-gradient(
-            50% 50% at 50% 50%,
-            rgba(12, 48, 103, 0.45) 0%,
-            #1a407ae1 100%
-          );
-          background-blend-mode: multiply;
-          width: 100%;
-          height: 100%;
-          .newsTitle {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            color: #b9b7bd;
-            margin-bottom: 8px;
-          }
-          h5 {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            color: #ffffff;
-            margin-bottom: 16px;
-          }
-          .date {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            color: #b9b7bd;
-            margin-bottom: 110px;
-            img {
-              margin-left: 8px;
-            }
-          }
-          a {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            color: #ffffff;
-            &:hover {
-              text-decoration: none;
-            }
-            img {
-              width: 40px;
-              margin-right: 7px;
-            }
-          }
-        }
-      }
-      .image1 {
-        background: url("/images/newsImage1.jpg") no-repeat;
-        background-size: cover;
-      }
-      .image2 {
-        background: url("/images/newsImage2.jpg") no-repeat;
-        background-size: cover;
-      }
-      .image3 {
-        background: url("/images/newsImage3.jpg") no-repeat;
-        background-size: cover;
-      }
-      .image4 {
-        background: url("/images/newsImage4.jpg") no-repeat;
-        background-size: cover;
-      }
-    }
-    .activeDrag {
-      cursor: grabbing;
-    }
-  }
-  .podcasts {
-    padding: 408px 148px 200px 0px;
-    .titles {
-      width: 28%;
-      margin-left: 50px;
-      .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #b9b7bd;
-        margin-bottom: 8px;
-        span {
-          width: 43px;
-          height: 5px;
-          border-radius: 5px;
-          display: inline-block;
-          background-color: #1a407a;
-          margin-right: 10px;
-        }
-      }
-      h5 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        color: #0b1a31;
-        margin-bottom: 16px;
       }
       p {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 34px;
         text-align: justify;
         color: #606a79;
-        max-width: 452px;
-        margin-bottom: 45px;
+        max-width: 532px;
+        margin-bottom: 53px;
       }
-      a {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: #1a407a;
-        &:hover {
-          text-decoration: none;
-        }
-        img {
-          margin-right: 8px;
-          width: 40px;
+      .links {
+        gap: 50px;
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #1a407a;
+          border: 1px solid #1a407a;
+          border-radius: 40px;
+          padding: 16px 20px;
+          transition: all 0.5s;
+          img {
+            margin-right: 7px;
+          }
+          &:hover {
+            text-decoration: none;
+            transform: translate3d(-5px, -5px, 5px);
+            box-shadow: 10px 10px 15px #0b1a31;
+          }
         }
       }
     }
-    .phone {
-      background: url("/images/phone.jpg") no-repeat;
-      background-size: cover;
-      padding: 122px 31px;
-      width: 387px;
-      height: 792px;
-      .podcastName {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #ffffff;
-        margin-top: 18px;
-      }
-      .category {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: #b9b7bd;
-        margin-bottom: 40px;
-      }
-      .podcastImg {
-        width: 100%;
-      }
-      .timeline {
-        direction: ltr;
-        background-color: #b9b7bd;
-        cursor: pointer;
-        height: 2px;
-        overflow: visible;
-        margin-bottom: 15px;
-        display: flex;
-        position: relative;
-        .progress {
-          height: 100%;
-          overflow: visible;
-          background-color: white;
-          position: absolute;
-          left: 0px;
-        }
-        .circle {
-          width: 18px;
-          height: 18px;
-          border-radius: 50%;
+    .homeNews {
+      background: #1a407a;
+      .titles {
+        padding: 200px 148px 0px 152px;
+        .line {
+          width: 0%;
+          height: 3px;
           background-color: white;
           display: inline-block;
-          position: relative;
-          bottom: 7px;
-          z-index: 2;
-          left: 0px;
+          margin-bottom: 92px;
+          transition: 1s all !important;
+        }
+        .newsTitle {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #b9b7bd;
+          margin-bottom: 10px;
+          span {
+            display: inline-block;
+            height: 5px;
+            width: 43px;
+            border-radius: 5px;
+            margin-right: 19px;
+            background-color: white;
+          }
+        }
+        h3 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          color: #ffffff;
+        }
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #ffffff;
+          img {
+            width: 40px;
+            margin-right: 8px;
+          }
         }
       }
-      .time {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        color: #ffffff;
-        margin-bottom: 39px;
-      }
-      .controls {
-        img {
-          cursor: pointer;
+      .images {
+        display: flex;
+        position: relative;
+        cursor: grab;
+        overflow: scroll;
+        padding-right: 265px;
+        padding-left: 200px;
+        top: 220px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
         }
+
+        .image {
+          min-width: 350px;
+          height: 466px;
+          margin-left: 50px;
+          overflow: hidden;
+          &:hover {
+            .effectedDiv {
+              transform: translateY(0px);
+            }
+          }
+          .effectedDiv {
+            transform: translateY(100%);
+            transition: transform 1s;
+            padding: 100px 45px 84px 45px;
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              rgba(12, 48, 103, 0.45) 0%,
+              #1a407ae1 100%
+            );
+            background-blend-mode: multiply;
+            width: 100%;
+            height: 100%;
+            .newsTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #b9b7bd;
+              margin-bottom: 8px;
+            }
+            h5 {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 25px;
+              color: #ffffff;
+              margin-bottom: 16px;
+            }
+            .date {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #b9b7bd;
+              margin-bottom: 110px;
+              img {
+                margin-left: 8px;
+              }
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #ffffff;
+              &:hover {
+                text-decoration: none;
+              }
+              img {
+                width: 40px;
+                margin-right: 7px;
+              }
+            }
+          }
+        }
+        .image1 {
+          background: url("/images/newsImage1.jpg") no-repeat;
+          background-size: cover;
+        }
+        .image2 {
+          background: url("/images/newsImage2.jpg") no-repeat;
+          background-size: cover;
+        }
+        .image3 {
+          background: url("/images/newsImage3.jpg") no-repeat;
+          background-size: cover;
+        }
+        .image4 {
+          background: url("/images/newsImage4.jpg") no-repeat;
+          background-size: cover;
+        }
+      }
+      .activeDrag {
+        cursor: grabbing;
       }
     }
-    .podcastsList {
-      overflow: scroll;
-      padding: 124px 48px;
-      background-color: #f6f6f6;
+    .podcasts {
+      padding: 408px 148px 200px 0px;
       position: relative;
-      cursor: grab;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-      .podcast {
-        min-width: 248px;
-        margin-left: 100px;
-        cursor: pointer;
+      .titles {
+        width: 28%;
+        margin-left: 50px;
         .title {
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
-          color: #0b1a31;
-          margin-bottom: 10px;
+          color: #b9b7bd;
+          margin-bottom: 8px;
           span {
-            width: 3px;
-            height: 16px;
-            background-color: #235093;
-            margin-left: 7px;
+            width: 43px;
+            height: 5px;
+            border-radius: 5px;
             display: inline-block;
+            background-color: #1a407a;
+            margin-right: 10px;
           }
+        }
+        h5 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          color: #0b1a31;
+          margin-bottom: 16px;
         }
         p {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 30px;
-          // text-align: justify;
+          text-align: justify;
           color: #606a79;
+          max-width: 452px;
+          margin-bottom: 45px;
+        }
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #1a407a;
+          &:hover {
+            text-decoration: none;
+          }
+          img {
+            margin-right: 8px;
+            width: 40px;
+          }
         }
       }
-    }
-    .activeDrag2 {
-      cursor: grabbing;
-    }
-    &::before {
-      content: "";
-      height: 100%;
-      display: inline-block;
-      width: 200px;
-      background: linear-gradient(
-        270.45deg,
-        rgba(255, 255, 255, 0) 22.58%,
-        #ffffff 79%
-      );
-      position: absolute;
-      left: 0px;
-      z-index: 2;
-    }
-  }
-  .homeBlogs {
-    background: url("/images/homeBlogs.jpg") no-repeat;
-    background-size: cover;
-    height: 100vh;
-    min-height: 850px;
-    .effect {
-      background: #153465d3;
-      padding: 200px 148px 200px 153px;
-      height: 100%;
-      .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 40px;
-        color: #b9b7bd;
-        margin-bottom: 10px;
-        span {
-          background-color: white;
-          display: inline-block;
-          width: 43px;
-          height: 5px;
-          border-radius: 5px;
-          margin-right: 21px;
+      .phone {
+        background: url("/images/phone.jpg") no-repeat;
+        background-size: cover;
+        padding: 122px 31px;
+        width: 387px;
+        height: 792px;
+        .podcastName {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #ffffff;
+          margin-top: 18px;
+        }
+        .category {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #b9b7bd;
+          margin-bottom: 40px;
+        }
+        .podcastImg {
+          width: 100%;
+        }
+        .timeline {
+          direction: ltr;
+          background-color: #b9b7bd;
+          cursor: pointer;
+          height: 2px;
+          overflow: visible;
+          margin-bottom: 15px;
+          display: flex;
+          position: relative;
+          .progress {
+            height: 100%;
+            overflow: visible;
+            background-color: white;
+            position: absolute;
+            left: 0px;
+          }
+          .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            bottom: 7px;
+            z-index: 2;
+            left: 0px;
+          }
+        }
+        .time {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          color: #ffffff;
+          margin-bottom: 39px;
+        }
+        .controls {
+          img {
+            cursor: pointer;
+          }
         }
       }
-      h5 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        color: #ffffff;
-        margin-bottom: 167px;
-      }
-      a {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: #ffffff;
-        img {
-          width: 40px;
-          margin-right: 8px;
-        }
-        &:hover {
-          text-decoration: none;
-        }
-      }
-      .blogs {
-        max-height: 340px;
-        overflow-y: scroll;
+      .podcastsList {
+        overflow: scroll;
+        padding: 124px 48px;
+        background-color: #f6f6f6;
+        position: relative;
+        cursor: grab;
         -ms-overflow-style: none;
         scrollbar-width: none;
         &::-webkit-scrollbar {
           display: none;
         }
-        .blog {
-          height: 340px;
-          .blogTitle {
+        .podcast {
+          min-width: 248px;
+          margin-left: 100px;
+          cursor: pointer;
+          .title {
             font-style: normal;
             font-weight: 400;
-            font-size: 25px;
-            color: #ffffff;
-            margin-bottom: 16px;
+            font-size: 18px;
+            color: #0b1a31;
+            margin-bottom: 10px;
+            span {
+              width: 3px;
+              height: 16px;
+              background-color: #235093;
+              margin-left: 7px;
+              display: inline-block;
+            }
           }
           p {
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            max-width: 798px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 40px;
+            line-height: 30px;
+            // text-align: justify;
+            color: #606a79;
+          }
+        }
+      }
+      .activeDrag2 {
+        cursor: grabbing;
+      }
+      &::before {
+        content: "";
+        height: 60%;
+        display: inline-block;
+        width: 200px;
+        background: linear-gradient(
+          270.45deg,
+          rgba(255, 255, 255, 0) 22.58%,
+          #ffffff 79%
+        );
+        position: absolute;
+        left: 0px;
+        z-index: 2;
+      }
+    }
+    .homeBlogs {
+      background: url("/images/homeBlogs.jpg") no-repeat;
+      background-size: cover;
+      height: 100vh;
+      min-height: 850px;
+      .effect {
+        background: #153465d3;
+        padding: 200px 148px 200px 153px;
+        height: 100%;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 40px;
+          color: #b9b7bd;
+          margin-bottom: 10px;
+          span {
+            background-color: white;
+            display: inline-block;
+            width: 43px;
+            height: 5px;
+            border-radius: 5px;
+            margin-right: 21px;
+          }
+        }
+        h5 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          color: #ffffff;
+          margin-bottom: 167px;
+        }
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #ffffff;
+          img {
+            width: 40px;
+            margin-right: 8px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .blogs {
+          max-height: 340px;
+          overflow-y: scroll;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .blog {
+            height: 340px;
+            .blogTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 25px;
+              color: #ffffff;
+              margin-bottom: 16px;
+            }
+            p {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              max-width: 798px;
+              color: rgba(255, 255, 255, 0.8);
+              margin-bottom: 40px;
+            }
           }
         }
       }
     }
-  }
-  .follow {
-    padding-top: 204px;
-    padding-bottom: 195px;
-    .text {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 200px;
-      background: linear-gradient(180deg, #1a437f 0%, #194e90 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-      margin: 0px 50px;
-    }
-    .image1,
-    .image2 {
-      height: 140px;
-      width: 0px;
-      margin-bottom: 10px;
-      margin-bottom: 50px;
-      transition: all 1s !important;
-    }
-    .image1 {
-      background: url("/images/followImg1.jpg") no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    .image2 {
-      background: url("/images/followImg2.jpg") no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    a {
-      margin-top: 100px;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 25px;
-      color: #1a407a;
-      justify-content: center;
-      align-items: center;
-      &:hover {
-        text-decoration: none;
+    .follow {
+      padding-top: 204px;
+      padding-bottom: 195px;
+      .text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 200px;
+        background: linear-gradient(180deg, #1a437f 0%, #194e90 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin: 0px 50px;
       }
-      .imgDiv {
+      .image1,
+      .image2 {
+        height: 140px;
+        width: 0px;
         margin-bottom: 10px;
+        margin-bottom: 50px;
+        transition: all 1s !important;
       }
-      img {
-        width: 40px;
+      .image1 {
+        background: url("/images/followImg1.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .image2 {
+        background: url("/images/followImg2.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      a {
+        margin-top: 100px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        color: #1a407a;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          text-decoration: none;
+        }
+        .imgDiv {
+          margin-bottom: 10px;
+        }
+        img {
+          width: 40px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .enHome {
+    left: 0px !important;
+    position: relative;
+    .chatWithUs {
+      position: fixed;
+      bottom: 53px;
+      right: 67px;
+      z-index: 8;
+      .text {
+        background: rgba(1, 22, 55, 0.4);
+        backdrop-filter: blur(30px);
+        border-radius: 60px 0px 0px 60px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        color: #ffffff;
+        padding: 4px 25px 4px 19px;
+        height: fit-content;
         margin-right: 8px;
+        border: 1px solid rgba(137, 137, 137, 0.5);
+      }
+      .circle {
+        padding: 25px;
+        border-radius: 100%;
+        background: rgba(1, 22, 55, 0.4);
+        backdrop-filter: blur(30px);
+        border: 1px solid rgba(137, 137, 137, 0.5);
+      }
+    }
+    .topDiv {
+      padding: 68px 148px 90px 70px;
+      background: url("/images/homeBack.jpg") no-repeat;
+      background-size: cover;
+      height: 100vh;
+      min-height: 485px;
+      .logoDiv {
+        width: 100%;
+        text-align: left;
+        .enLogo {
+          width: 130px;
+        }
+      }
+      .about {
+        opacity: 0;
+        transition: all 1s;
+        h1 {
+          font-style: bold;
+          font-weight: 800;
+          font-size: 40px;
+          color: #ffffff;
+          margin-bottom: 12px;
+        }
+        .text {
+          margin-bottom: 95px;
+          div {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            color: #bac6d7;
+            max-width: 358px;
+            margin-left: 77px;
+          }
+          img {
+            width: 56px;
+          }
+        }
+        .socials {
+          img {
+            margin: 0px 10px;
+          }
+        }
+      }
+    }
+    .aboutRazak {
+      padding: 128px 148px 187px 161px;
+      & > div {
+        gap: 50px;
+      }
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        color: #b9b7bd;
+        margin-bottom: 10px;
+        span {
+          display: inline-block;
+          height: 5px;
+          width: 43px;
+          background-color: #1a407a;
+          margin-right: 10px;
+          border-radius: 5px;
+        }
+      }
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 56px;
+        color: #0b1a31;
+        max-width: 453px;
+        margin-bottom: 40px;
+      }
+      .more {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #1a407a;
+        img {
+          margin-right: 7px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 34px;
+        text-align: justify;
+        color: #606a79;
+        max-width: 532px;
+        margin-bottom: 53px;
+      }
+      .links {
+        gap: 50px;
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #1a407a;
+          border: 1px solid #1a407a;
+          border-radius: 40px;
+          padding: 16px 20px;
+          transition: all 0.5s;
+          img {
+            margin-right: 7px;
+          }
+          &:hover {
+            text-decoration: none;
+            transform: translate3d(-5px, -5px, 5px);
+            box-shadow: 10px 10px 15px #0b1a31;
+          }
+        }
+      }
+    }
+    .homeNews {
+      background: #1a407a;
+      .titles {
+        padding: 200px 148px 0px 152px;
+        .line {
+          width: 0%;
+          height: 3px;
+          background-color: white;
+          display: inline-block;
+          margin-bottom: 92px;
+          transition: 1s all !important;
+        }
+        .newsTitle {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #b9b7bd;
+          margin-bottom: 10px;
+          span {
+            display: inline-block;
+            height: 5px;
+            width: 43px;
+            border-radius: 5px;
+            margin-right: 19px;
+            background-color: white;
+          }
+        }
+        h3 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          color: #ffffff;
+        }
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #ffffff;
+          img {
+            width: 40px;
+            margin-right: 8px;
+          }
+        }
+      }
+      .images {
+        display: flex;
+        position: relative;
+        cursor: grab;
+        overflow: scroll;
+        padding-right: 265px;
+        padding-left: 200px;
+        top: 220px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .image {
+          min-width: 350px;
+          height: 466px;
+          margin-left: 50px;
+          overflow: hidden;
+          &:hover {
+            .effectedDiv {
+              transform: translateY(0px);
+            }
+          }
+          .effectedDiv {
+            transform: translateY(100%);
+            transition: transform 1s;
+            padding: 100px 45px 84px 45px;
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              rgba(12, 48, 103, 0.45) 0%,
+              #1a407ae1 100%
+            );
+            background-blend-mode: multiply;
+            width: 100%;
+            height: 100%;
+            .newsTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #b9b7bd;
+              margin-bottom: 8px;
+            }
+            h5 {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 25px;
+              color: #ffffff;
+              margin-bottom: 16px;
+            }
+            .date {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #b9b7bd;
+              margin-bottom: 110px;
+              img {
+                margin-left: 8px;
+              }
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #ffffff;
+              &:hover {
+                text-decoration: none;
+              }
+              img {
+                width: 40px;
+                margin-right: 7px;
+              }
+            }
+          }
+        }
+        .image1 {
+          background: url("/images/newsImage1.jpg") no-repeat;
+          background-size: cover;
+        }
+        .image2 {
+          background: url("/images/newsImage2.jpg") no-repeat;
+          background-size: cover;
+        }
+        .image3 {
+          background: url("/images/newsImage3.jpg") no-repeat;
+          background-size: cover;
+        }
+        .image4 {
+          background: url("/images/newsImage4.jpg") no-repeat;
+          background-size: cover;
+        }
+      }
+      .activeDrag {
+        cursor: grabbing;
+      }
+    }
+    .podcasts {
+      padding: 408px 0px 200px 148px;
+      .titles {
+        width: 28%;
+        margin-right: 50px;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #b9b7bd;
+          margin-bottom: 8px;
+          span {
+            width: 43px;
+            height: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: #1a407a;
+            margin-right: 10px;
+          }
+        }
+        h5 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          color: #0b1a31;
+          margin-bottom: 16px;
+        }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          text-align: justify;
+          color: #606a79;
+          max-width: 452px;
+          margin-bottom: 45px;
+        }
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #1a407a;
+          &:hover {
+            text-decoration: none;
+          }
+          img {
+            margin-right: 8px;
+            width: 40px;
+          }
+        }
+      }
+      .phone {
+        background: url("/images/phone.jpg") no-repeat;
+        background-size: cover;
+        padding: 122px 31px;
+        width: 387px;
+        height: 792px;
+        .podcastName {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #ffffff;
+          margin-top: 18px;
+        }
+        .category {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #b9b7bd;
+          margin-bottom: 40px;
+        }
+        .podcastImg {
+          width: 100%;
+        }
+        .timeline {
+          direction: ltr;
+          background-color: #b9b7bd;
+          cursor: pointer;
+          height: 2px;
+          overflow: visible;
+          margin-bottom: 15px;
+          display: flex;
+          position: relative;
+          .progress {
+            height: 100%;
+            overflow: visible;
+            background-color: white;
+            position: absolute;
+            left: 0px;
+          }
+          .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            bottom: 7px;
+            z-index: 2;
+            left: 0px;
+          }
+        }
+        .time {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          color: #ffffff;
+          margin-bottom: 39px;
+        }
+        .controls {
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+      .podcastsList {
+        overflow: scroll;
+        padding: 124px 48px;
+        background-color: #f6f6f6;
+        position: relative;
+        cursor: grab;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .podcast {
+          min-width: 248px;
+          margin-left: 100px;
+          cursor: pointer;
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #0b1a31;
+            margin-bottom: 10px;
+            span {
+              width: 3px;
+              height: 16px;
+              background-color: #235093;
+              margin-left: 7px;
+              display: inline-block;
+            }
+          }
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            // text-align: justify;
+            color: #606a79;
+          }
+        }
+      }
+      .activeDrag2 {
+        cursor: grabbing;
+      }
+      &::before {
+        content: "";
+        height: 60%;
+        display: inline-block;
+        width: 200px;
+        background: linear-gradient(
+          270.45deg,
+          rgba(255, 255, 255, 0) 22.58%,
+          #ffffff 79%
+        );
+        position: absolute;
+        left: 0px;
+        z-index: 2;
+      }
+    }
+    .homeBlogs {
+      background: url("/images/homeBlogs.jpg") no-repeat;
+      background-size: cover;
+      height: 100vh;
+      min-height: 850px;
+      .effect {
+        background: #153465d3;
+        padding: 200px 148px 200px 153px;
+        height: 100%;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 40px;
+          color: #b9b7bd;
+          margin-bottom: 10px;
+          span {
+            background-color: white;
+            display: inline-block;
+            width: 43px;
+            height: 5px;
+            border-radius: 5px;
+            margin-right: 21px;
+          }
+        }
+        h5 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          color: #ffffff;
+          margin-bottom: 167px;
+        }
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #ffffff;
+          img {
+            width: 40px;
+            margin-right: 8px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .blogs {
+          max-height: 340px;
+          overflow-y: scroll;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .blog {
+            height: 340px;
+            .blogTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 25px;
+              color: #ffffff;
+              margin-bottom: 16px;
+            }
+            p {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              max-width: 798px;
+              color: rgba(255, 255, 255, 0.8);
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+    .follow {
+      padding-top: 204px;
+      padding-bottom: 195px;
+      .text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 200px;
+        background: linear-gradient(180deg, #1a437f 0%, #194e90 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin: 0px 50px;
+      }
+      .image1,
+      .image2 {
+        height: 140px;
+        width: 0px;
+        margin-bottom: 10px;
+        margin-bottom: 50px;
+        transition: all 1s !important;
+      }
+      .image1 {
+        background: url("/images/followImg1.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .image2 {
+        background: url("/images/followImg2.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      a {
+        margin-top: 100px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        color: #1a407a;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          text-decoration: none;
+        }
+        .imgDiv {
+          margin-bottom: 10px;
+        }
+        img {
+          width: 40px;
+          margin-right: 8px;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 1732px) {
   .home {
-    .follow {
-      .text {
-        font-weight: 700;
-        font-size: 150px;
+    .faHome {
+      .follow {
+        .text {
+          font-weight: 700;
+          font-size: 150px;
+        }
+      }
+    }
+    .enHome {
+      .follow {
+        .text {
+          font-weight: 700;
+          font-size: 150px;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 1418px) {
   .home {
-    .podcasts {
-      flex-direction: column;
-      padding-left: 148px;
-      &::before {
-        display: none;
-      }
-      .titles {
-        width: 100%;
-        margin-left: 0px;
-        p {
-          max-width: 100%;
+    .faHome {
+      .podcasts {
+        flex-direction: column;
+        padding-left: 148px;
+        &::before {
+          display: none;
+        }
+        .titles {
+          width: 100%;
+          margin-left: 0px;
+          p {
+            max-width: 100%;
+          }
+        }
+        .phone {
+          margin: 50px 0px;
+        }
+        .podcastsList {
+          min-height: fit-content;
+          flex-basis: auto !important;
+          padding: 48px;
+          .podcast {
+            height: fit-content;
+          }
         }
       }
-      .phone {
-        margin: 50px 0px;
-      }
-      .podcastsList {
-        min-height: fit-content;
-        flex-basis: auto !important;
-        padding: 48px;
-        .podcast {
-          height: fit-content;
+      .follow {
+        .text {
+          font-weight: 700;
+          font-size: 100px;
+        }
+        .image1,
+        .image2 {
+          height: 70px;
+          margin-bottom: 25px;
         }
       }
     }
-    .follow {
-      .text {
-        font-weight: 700;
-        font-size: 100px;
+    .enHome {
+      .podcasts {
+        flex-direction: column;
+        padding-left: 148px;
+        &::before {
+          display: none;
+        }
+        .titles {
+          width: 100%;
+          margin-left: 0px;
+          p {
+            max-width: 100%;
+          }
+        }
+        .phone {
+          margin: 50px 0px;
+        }
+        .podcastsList {
+          min-height: fit-content;
+          flex-basis: auto !important;
+          padding: 48px;
+          .podcast {
+            height: fit-content;
+          }
+        }
       }
-      .image1,
-      .image2 {
-        height: 70px;
-        margin-bottom: 25px;
+      .follow {
+        .text {
+          font-weight: 700;
+          font-size: 100px;
+        }
+        .image1,
+        .image2 {
+          height: 70px;
+          margin-bottom: 25px;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 1057px) {
   .home {
-    .topDiv {
-      padding: 70px;
-      padding-bottom: 200px;
-    }
-    .aboutRazak {
-      padding: 70px;
-      & > div {
-        flex-direction: column;
-      }
-    }
-    .homeNews {
-      .titles {
+    .faHome {
+      .topDiv {
         padding: 70px;
-        padding-bottom: 0px;
+        padding-bottom: 200px;
       }
-    }
-    .podcasts {
-      padding: 70px;
-      padding-top: 350px;
-    }
-    .homeBlogs {
-      .effect {
+      .aboutRazak {
         padding: 70px;
+        & > div {
+          flex-direction: column;
+        }
+      }
+      .homeNews {
+        .titles {
+          padding: 70px;
+          padding-bottom: 0px;
+        }
+      }
+      .podcasts {
+        padding: 70px;
+        padding-top: 350px;
+      }
+      .homeBlogs {
+        .effect {
+          padding: 70px;
+        }
+      }
+      .follow {
+        .text {
+          font-size: 65px;
+          margin: 0px 30px;
+        }
+        .image1,
+        .image2 {
+          height: 45px;
+          margin-bottom: 14px;
+        }
       }
     }
-    .follow {
-      .text {
-        font-size: 65px;
-        margin: 0px 30px;
+    .enHome {
+      .topDiv {
+        padding: 70px;
+        padding-bottom: 200px;
       }
-      .image1,
-      .image2 {
-        height: 45px;
-        margin-bottom: 14px;
+      .aboutRazak {
+        padding: 70px;
+        & > div {
+          flex-direction: column;
+        }
+      }
+      .homeNews {
+        .titles {
+          padding: 70px;
+          padding-bottom: 0px;
+        }
+      }
+      .podcasts {
+        padding: 70px;
+        padding-top: 350px;
+      }
+      .homeBlogs {
+        .effect {
+          padding: 70px;
+        }
+      }
+      .follow {
+        .text {
+          font-size: 65px;
+          margin: 0px 30px;
+        }
+        .image1,
+        .image2 {
+          height: 45px;
+          margin-bottom: 14px;
+        }
       }
     }
   }
 }
+
 @media only screen and (max-width: 719px) {
   .home {
-    .chatWithUs {
-      left: 50px;
-      bottom: 50px;
-      .text {
-        font-size: 10px;
-      }
-      .circle {
-        img {
-          width: 30px;
-        }
-      }
-    }
-    .topDiv {
-      padding: 50px;
-      .logoDiv {
-        .enLogo {
-          display: none;
-          width: 78px;
-        }
-      }
-      .about {
-        h1 {
-          font-size: 30px;
-        }
+    .faHome {
+      .chatWithUs {
+        right: 50px;
+        bottom: 50px;
         .text {
-          flex-direction: column;
-          div {
-            font-size: 15px;
-            margin-left: 0px;
-            line-height: 22px;
-          }
-          img {
-            width: 35px;
-          }
-        }
-        .socials {
-          img {
-            width: 15px;
-          }
-        }
-      }
-    }
-    .aboutRazak {
-      padding: 100px 50px;
-      .title {
-        font-size: 15px;
-        span {
-          height: 2.5px;
-          width: 25px;
-        }
-      }
-      h2 {
-        font-size: 18px;
-        line-height: 40px;
-      }
-      .more {
-        font-size: 12px;
-        img {
-          width: 20px;
-        }
-      }
-      p {
-        font-size: 13px;
-      }
-      .links {
-        flex-wrap: wrap;
-        gap: 25px;
-        a {
           font-size: 10px;
         }
-      }
-    }
-    .homeNews {
-      .titles {
-        padding: 100px 50px;
-        .line {
-          margin-bottom: 50px;
-        }
-        .newsTitle {
-          font-size: 15px;
-          span {
-            height: 2.5px;
-            width: 20px;
-          }
-        }
-        h3 {
-          font-size: 20px;
-        }
-        a {
-          font-size: 12px;
+        .circle {
           img {
-            width: 20px;
+            width: 30px;
           }
         }
       }
-      .images {
-        top: 150px;
-        padding-right: 150px;
-        .image {
-          min-width: 200px;
-          height: 300px;
-          .effectedDiv {
-            padding: 20px;
-            .newsTitle {
-              font-size: 12px;
+      .topDiv {
+        padding: 50px;
+        .logoDiv {
+          .enLogo {
+            display: none;
+            width: 78px;
+          }
+        }
+        .about {
+          h1 {
+            font-size: 30px;
+          }
+          .text {
+            flex-direction: column;
+            div {
+              font-size: 15px;
+              margin-left: 0px;
+              line-height: 22px;
             }
-            h5 {
-              font-size: 17px;
+            img {
+              width: 35px;
             }
-            .date {
-              font-size: 12px;
-              margin-bottom: 144px;
-              img {
-                width: 12px;
-              }
-            }
-            a {
-              font-size: 12px;
-              img {
-                width: 20px;
-              }
+          }
+          .socials {
+            img {
+              width: 15px;
             }
           }
         }
       }
-    }
-    .podcasts {
-      padding: 50px;
-      padding-top: 250px;
-      padding-bottom: 100px;
-      .titles {
+      .aboutRazak {
+        padding: 100px 50px;
         .title {
           font-size: 15px;
           span {
-            width: 20px;
             height: 2.5px;
-          }
-        }
-        h5 {
-          font-size: 20px;
-        }
-        p {
-          font-size: 15px;
-        }
-        a {
-          font-size: 12px;
-          img {
-            width: 20px;
-          }
-        }
-      }
-      .phone {
-        width: 99%;
-        max-width: 387px;
-        height: auto;
-        padding: 158px 31px;
-        .podcastName {
-          font-size: 12px;
-        }
-        .category {
-          font-size: 11px;
-          margin-bottom: 20px;
-        }
-        .time {
-          font-size: 10px;
-          margin-bottom: 20px;
-        }
-        .controls {
-          img {
             width: 25px;
           }
         }
-      }
-      .podcastsList {
-        .podcast {
-          .title {
-            font-size: 25px;
-          }
-          p {
-            font-size: 12px;
-          }
+        h2 {
+          font-size: 18px;
+          line-height: 40px;
         }
-      }
-    }
-    .homeBlogs {
-      min-height: 730px;
-      .effect {
-        padding: 100px 50px;
-        & > div {
-          flex-wrap: wrap;
-        }
-        .title {
-          font-size: 15px;
-          span {
-            width: 20px;
-            height: 2.5px;
-          }
-        }
-        h5 {
-          font-size: 20px;
-          margin-bottom: 30px;
-        }
-        a {
+        .more {
           font-size: 12px;
-          margin-bottom: 167px;
           img {
             width: 20px;
           }
         }
-        .blogs {
-          height: 251px;
-          .blog {
-            height: 251px;
-            .blogTitle {
-              font-size: 15px;
+        p {
+          font-size: 13px;
+        }
+        .links {
+          flex-wrap: wrap;
+          gap: 25px;
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+      .homeNews {
+        .titles {
+          padding: 100px 50px;
+          .line {
+            margin-bottom: 50px;
+          }
+          .newsTitle {
+            font-size: 15px;
+            span {
+              height: 2.5px;
+              width: 20px;
+            }
+          }
+          h3 {
+            font-size: 20px;
+          }
+          a {
+            font-size: 12px;
+            img {
+              width: 20px;
+            }
+          }
+        }
+        .images {
+          top: 150px;
+          padding-right: 150px;
+          .image {
+            min-width: 200px;
+            height: 300px;
+            .effectedDiv {
+              padding: 20px;
+              .newsTitle {
+                font-size: 12px;
+              }
+              h5 {
+                font-size: 17px;
+              }
+              .date {
+                font-size: 12px;
+                margin-bottom: 144px;
+                img {
+                  width: 12px;
+                }
+              }
+              a {
+                font-size: 12px;
+                img {
+                  width: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .podcasts {
+        padding: 50px;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        .titles {
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 15px;
+          }
+          a {
+            font-size: 12px;
+            img {
+              width: 20px;
+            }
+          }
+        }
+        .phone {
+          width: 99%;
+          max-width: 387px;
+          height: auto;
+          padding: 158px 31px;
+          .podcastName {
+            font-size: 12px;
+          }
+          .category {
+            font-size: 11px;
+            margin-bottom: 20px;
+          }
+          .time {
+            font-size: 10px;
+            margin-bottom: 20px;
+          }
+          .controls {
+            img {
+              width: 25px;
+            }
+          }
+        }
+        .podcastsList {
+          .podcast {
+            .title {
+              font-size: 25px;
             }
             p {
               font-size: 12px;
@@ -897,17 +1542,294 @@
           }
         }
       }
-    }
-    .follow {
-      padding: 100px 0px;
-      & > div {
-        flex-direction: column-reverse;
+      .homeBlogs {
+        min-height: 730px;
+        .effect {
+          padding: 100px 50px;
+          & > div {
+            flex-wrap: wrap;
+          }
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+          a {
+            font-size: 12px;
+            margin-bottom: 167px;
+            img {
+              width: 20px;
+            }
+          }
+          .blogs {
+            height: 251px;
+            .blog {
+              height: 251px;
+              .blogTitle {
+                font-size: 15px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
       }
-      a {
-        font-size: 15px;
-        margin-top: 100px;
-        img {
-          width: 20px;
+      .follow {
+        padding: 100px 0px;
+        & > div {
+          flex-direction: column-reverse;
+        }
+        a {
+          font-size: 15px;
+          margin-top: 100px;
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+    .enHome {
+      .chatWithUs {
+        left: 50px;
+        bottom: 50px;
+        .text {
+          font-size: 10px;
+        }
+        .circle {
+          img {
+            width: 30px;
+          }
+        }
+      }
+      .topDiv {
+        padding: 50px;
+        .logoDiv {
+          .enLogo {
+            display: none;
+            width: 78px;
+          }
+        }
+        .about {
+          h1 {
+            font-size: 30px;
+          }
+          .text {
+            flex-direction: column;
+            div {
+              font-size: 15px;
+              margin-left: 0px;
+              line-height: 22px;
+            }
+            img {
+              width: 35px;
+            }
+          }
+          .socials {
+            img {
+              width: 15px;
+            }
+          }
+        }
+      }
+      .aboutRazak {
+        padding: 100px 50px;
+        .title {
+          font-size: 15px;
+          span {
+            height: 2.5px;
+            width: 25px;
+          }
+        }
+        h2 {
+          font-size: 18px;
+          line-height: 40px;
+        }
+        .more {
+          font-size: 12px;
+          img {
+            width: 20px;
+          }
+        }
+        p {
+          font-size: 13px;
+        }
+        .links {
+          flex-wrap: wrap;
+          gap: 25px;
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+      .homeNews {
+        .titles {
+          padding: 100px 50px;
+          .line {
+            margin-bottom: 50px;
+          }
+          .newsTitle {
+            font-size: 15px;
+            span {
+              height: 2.5px;
+              width: 20px;
+            }
+          }
+          h3 {
+            font-size: 20px;
+          }
+          a {
+            font-size: 12px;
+            img {
+              width: 20px;
+            }
+          }
+        }
+        .images {
+          top: 150px;
+          padding-right: 150px;
+          .image {
+            min-width: 200px;
+            height: 300px;
+            .effectedDiv {
+              padding: 20px;
+              .newsTitle {
+                font-size: 12px;
+              }
+              h5 {
+                font-size: 17px;
+              }
+              .date {
+                font-size: 12px;
+                margin-bottom: 144px;
+                img {
+                  width: 12px;
+                }
+              }
+              a {
+                font-size: 12px;
+                img {
+                  width: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .podcasts {
+        padding: 50px;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        .titles {
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 15px;
+          }
+          a {
+            font-size: 12px;
+            img {
+              width: 20px;
+            }
+          }
+        }
+        .phone {
+          width: 99%;
+          max-width: 387px;
+          height: auto;
+          padding: 158px 31px;
+          .podcastName {
+            font-size: 12px;
+          }
+          .category {
+            font-size: 11px;
+            margin-bottom: 20px;
+          }
+          .time {
+            font-size: 10px;
+            margin-bottom: 20px;
+          }
+          .controls {
+            img {
+              width: 25px;
+            }
+          }
+        }
+        .podcastsList {
+          .podcast {
+            .title {
+              font-size: 25px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .homeBlogs {
+        min-height: 730px;
+        .effect {
+          padding: 100px 50px;
+          & > div {
+            flex-wrap: wrap;
+          }
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+          a {
+            font-size: 12px;
+            margin-bottom: 167px;
+            img {
+              width: 20px;
+            }
+          }
+          .blogs {
+            height: 251px;
+            .blog {
+              height: 251px;
+              .blogTitle {
+                font-size: 15px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .follow {
+        padding: 100px 0px;
+        & > div {
+          flex-direction: column-reverse;
+        }
+        a {
+          font-size: 15px;
+          margin-top: 100px;
+          img {
+            width: 20px;
+          }
         }
       }
     }
@@ -915,11 +1837,22 @@
 }
 @media only screen and (max-width: 510px) {
   .home {
-    .podcasts {
-      .phone {
-        width: 200px;
-        height: 410px;
-        padding: 50px 15px;
+    .faHome {
+      .podcasts {
+        .phone {
+          width: 200px;
+          height: 410px;
+          padding: 50px 15px;
+        }
+      }
+    }
+    .enHome {
+      .podcasts {
+        .phone {
+          width: 200px;
+          height: 410px;
+          padding: 50px 15px;
+        }
       }
     }
   }

@@ -1,232 +1,470 @@
 .blogsDetail {
-  .topDiv {
-    background: url("/images/newsBack.jpg") no-repeat;
-    background-size: cover;
-    padding: 70px 148px 150px 70px;
-    .enLogo {
-      text-align: left;
-      margin-bottom: 82px;
-    }
-    .title {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      line-height: 56px;
-      color: #ffffff;
-      max-width: 570px;
-    }
-  }
-  .route {
-    width: 100%;
-    padding: 10px 148px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
-    font-size: 16px;
-    color: #1a407a;
-    background: #e6e9ed;
-    margin-bottom: 200px;
-    span {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 29px;
-      color: #606a79;
-    }
-  }
-  .news {
-    padding: 0px 148px 100px 141px;
-    gap: 100px;
-    .new {
-      p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 35px;
-        text-align: justify;
-        color: #606a79;
-        margin-bottom: 16px;
-      }
-      .newImg {
-        width: 100%;
-        margin-top: 34px;
-        margin-bottom: 50px;
-      }
-      .writer,
-      .date {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 50px;
-        color: #1a407a;
-        border-bottom: 1px solid #b9b7bd;
-      }
-    }
-    .lotsVisit {
-      min-width: 30%;
-      height: fit-content;
-      padding: 49px 25px 0px 25px;
-      box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
-      .searchDiv {
-        position: relative;
-        margin-bottom: 42px;
-        img {
-          position: absolute;
-          top: 4px;
-        }
-        input {
-          width: 100%;
-          border: none;
-          border-bottom: 1px solid #606a79;
-          padding-right: 32px;
-          padding-bottom: 4px;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 32px;
-          color: #606a79;
-          &:focus {
-            outline: none;
-          }
-        }
+  .faBlogsDetail {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 82px;
       }
       .title {
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-        color: #0b1a31;
-        margin-bottom: 37px;
-        span {
-          margin-right: 20px;
-          display: inline-block;
-          width: 38px;
-          height: 5px;
-          border-radius: 5px;
-          background-color: #1a407a;
-        }
+        font-size: 32px;
+        line-height: 56px;
+        color: #ffffff;
+        max-width: 570px;
       }
-      .lotsVisitNew {
-        padding-bottom: 39px;
-        margin-bottom: 45px;
-        border-bottom: 1px solid #b9b7bd;
-        &:last-child {
-          border-bottom: none;
-        }
-        .subject {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 32px;
-          color: #0b1a31;
-        }
-        .new {
+    }
+    .route {
+      width: 100%;
+      padding: 10px 148px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+      margin-bottom: 200px;
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        color: #606a79;
+      }
+    }
+    .news {
+      padding: 0px 148px 100px 141px;
+      gap: 100px;
+      .new {
+        p {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
-          line-height: 34px;
+          line-height: 35px;
           text-align: justify;
           color: #606a79;
+          margin-bottom: 16px;
         }
-        a {
+        .newImg {
+          width: 100%;
+          margin-top: 34px;
+          margin-bottom: 50px;
+        }
+        .writer,
+        .date {
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 50px;
           color: #1a407a;
-          &:hover {
-            text-decoration: none;
-          }
+          border-bottom: 1px solid #b9b7bd;
+        }
+      }
+      .lotsVisit {
+        min-width: 30%;
+        height: fit-content;
+        padding: 49px 25px 0px 25px;
+        box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
+        .searchDiv {
+          position: relative;
+          margin-bottom: 42px;
           img {
-            width: 26px;
-            margin-right: 4px;
+            position: absolute;
+            top: 4px;
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #606a79;
+            padding-right: 32px;
+            padding-bottom: 4px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #606a79;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: #0b1a31;
+          margin-bottom: 37px;
+          span {
+            margin-right: 20px;
+            display: inline-block;
+            width: 38px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #1a407a;
+          }
+        }
+        .lotsVisitNew {
+          padding-bottom: 39px;
+          margin-bottom: 45px;
+          border-bottom: 1px solid #b9b7bd;
+          &:last-child {
+            border-bottom: none;
+          }
+          .subject {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #0b1a31;
+          }
+          .new {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 34px;
+            text-align: justify;
+            color: #606a79;
+          }
+          a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            color: #1a407a;
+            &:hover {
+              text-decoration: none;
+            }
+            img {
+              width: 26px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+    .relatedPosts {
+      padding: 0px 148px 0px 152px;
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        color: #0b1a31;
+        margin-bottom: 32px;
+        span {
+          width: 43px;
+          height: 5px;
+          display: inline-block;
+          border-radius: 5px;
+          background-color: #1a407a;
+          margin-right: 10px;
+        }
+      }
+      .newsList {
+        gap: 25px;
+        overflow-x: scroll;
+        margin-bottom: 210px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .new {
+          background: url("/images/topNew.jpg") no-repeat;
+          background-size: cover;
+          min-width: 312px;
+          overflow: hidden;
+          &:hover {
+            .effect {
+              transform: translateY(0px);
+            }
+          }
+          .effect {
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 66, 123, 0.8);
+            background-blend-mode: multiply;
+            padding: 41px 19px 47px 19px;
+            transform: translateY(225px);
+            transition: transform 1s;
+            .title {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              color: #b9b7bd;
+              margin-bottom: 4px;
+            }
+            .about {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 29px;
+              color: #ffffff;
+              margin-bottom: 23px;
+            }
+            .text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+              text-align: justify;
+              color: #b9b7bd;
+              margin-bottom: 31px;
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 50px;
+              color: #ffffff;
+              img {
+                width: 40px;
+                margin-right: 7px;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
           }
         }
       }
     }
   }
-  .relatedPosts {
-    padding: 0px 148px 0px 152px;
-    .title {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 40px;
-      color: #0b1a31;
-      margin-bottom: 32px;
-      span {
-        width: 43px;
-        height: 5px;
-        display: inline-block;
-        border-radius: 5px;
-        background-color: #1a407a;
-        margin-right: 10px;
+  .enBlogsDetail {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 82px;
+      }
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 56px;
+        color: #ffffff;
+        max-width: 570px;
       }
     }
-    .newsList {
-      gap: 25px;
-      overflow-x: scroll;
-      margin-bottom: 210px;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
+    .route {
+      width: 100%;
+      padding: 10px 148px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+      margin-bottom: 200px;
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        color: #606a79;
       }
+    }
+    .news {
+      padding: 0px 148px 100px 141px;
+      gap: 100px;
       .new {
-        background: url("/images/topNew.jpg") no-repeat;
-        background-size: cover;
-        min-width: 312px;
-        overflow: hidden;
-        &:hover {
-          .effect {
-            transform: translateY(0px);
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 35px;
+          text-align: justify;
+          color: #606a79;
+          margin-bottom: 16px;
+        }
+        .newImg {
+          width: 100%;
+          margin-top: 34px;
+          margin-bottom: 50px;
+        }
+        .writer,
+        .date {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 50px;
+          color: #1a407a;
+          border-bottom: 1px solid #b9b7bd;
+        }
+      }
+      .lotsVisit {
+        min-width: 30%;
+        height: fit-content;
+        padding: 49px 25px 0px 25px;
+        box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
+        .searchDiv {
+          position: relative;
+          margin-bottom: 42px;
+          img {
+            position: absolute;
+            top: 4px;
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #606a79;
+            padding-right: 32px;
+            padding-bottom: 4px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #606a79;
+            &:focus {
+              outline: none;
+            }
           }
         }
-        .effect {
-          width: 100%;
-          height: 100%;
-          background: rgba(28, 66, 123, 0.8);
-          background-blend-mode: multiply;
-          padding: 41px 19px 47px 19px;
-          transform: translateY(225px);
-          transition: transform 1s;
-          .title {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            color: #b9b7bd;
-            margin-bottom: 4px;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: #0b1a31;
+          margin-bottom: 37px;
+          span {
+            margin-right: 20px;
+            display: inline-block;
+            width: 38px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #1a407a;
           }
-          .about {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 29px;
-            color: #ffffff;
-            margin-bottom: 23px;
+        }
+        .lotsVisitNew {
+          padding-bottom: 39px;
+          margin-bottom: 45px;
+          border-bottom: 1px solid #b9b7bd;
+          &:last-child {
+            border-bottom: none;
           }
-          .text {
+          .subject {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #0b1a31;
+          }
+          .new {
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 30px;
+            line-height: 34px;
             text-align: justify;
-            color: #b9b7bd;
-            margin-bottom: 31px;
+            color: #606a79;
           }
           a {
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 50px;
-            color: #ffffff;
-            img {
-              width: 40px;
-              margin-right: 7px;
-            }
+            color: #1a407a;
             &:hover {
               text-decoration: none;
+            }
+            img {
+              width: 26px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+    .relatedPosts {
+      padding: 0px 148px 0px 152px;
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        color: #0b1a31;
+        margin-bottom: 32px;
+        span {
+          width: 43px;
+          height: 5px;
+          display: inline-block;
+          border-radius: 5px;
+          background-color: #1a407a;
+          margin-right: 10px;
+        }
+      }
+      .newsList {
+        gap: 25px;
+        overflow-x: scroll;
+        margin-bottom: 210px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .new {
+          background: url("/images/topNew.jpg") no-repeat;
+          background-size: cover;
+          min-width: 312px;
+          overflow: hidden;
+          &:hover {
+            .effect {
+              transform: translateY(0px);
+            }
+          }
+          .effect {
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 66, 123, 0.8);
+            background-blend-mode: multiply;
+            padding: 41px 19px 47px 19px;
+            transform: translateY(225px);
+            transition: transform 1s;
+            .title {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              color: #b9b7bd;
+              margin-bottom: 4px;
+            }
+            .about {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 29px;
+              color: #ffffff;
+              margin-bottom: 23px;
+            }
+            .text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+              text-align: justify;
+              color: #b9b7bd;
+              margin-bottom: 31px;
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 50px;
+              color: #ffffff;
+              img {
+                width: 40px;
+                margin-right: 7px;
+              }
+              &:hover {
+                text-decoration: none;
+              }
             }
           }
         }
@@ -236,82 +474,136 @@
 }
 @media only screen and (max-width: 1540px) {
   .blogsDetail {
-    .news {
-      flex-direction: column;
-      gap: 50px;
+    .faBlogsDetail {
+      .news {
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+    .enBlogsDetail {
+      .news {
+        flex-direction: column;
+        gap: 50px;
+      }
     }
   }
 }
 @media only screen and (max-width: 1057px) {
   .blogsDetail {
-    .topDiv {
-      padding-right: 70px;
+    .faBlogsDetail {
+      .topDiv {
+        padding-right: 70px;
+      }
+      .route {
+        padding: 0px 70px;
+        margin-bottom: 100px;
+      }
+      .news {
+        padding: 0px 70px;
+      }
+      .relatedPosts {
+        margin-top: 100px;
+        padding: 0px 70px;
+      }
     }
-    .route {
-      padding: 0px 70px;
-      margin-bottom: 100px;
-    }
-    .news {
-      padding: 0px 70px;
-    }
-    .relatedPosts {
-      margin-top: 100px;
-      padding: 0px 70px;
+    .enBlogsDetail {
+      .topDiv {
+        padding-right: 70px;
+      }
+      .route {
+        padding: 0px 70px;
+        margin-bottom: 100px;
+      }
+      .news {
+        padding: 0px 70px;
+      }
+      .relatedPosts {
+        margin-top: 100px;
+        padding: 0px 70px;
+      }
     }
   }
 }
 @media only screen and (max-width: 719px) {
   .blogsDetail {
-    .topDiv {
-      padding: 50px;
-      padding-top: 100px;
-      .title {
-        font-size: 23px;
-        max-width: 100%;
-        line-height: 40px;
-      }
-      .enLogo {
-        img {
-          display: none;
+    .faBlogsDetail {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
+        .title {
+          font-size: 23px;
+          max-width: 100%;
+          line-height: 40px;
+        }
+        .enLogo {
+          img {
+            display: none;
+          }
         }
       }
-    }
-    .route {
-      padding: 10px 50px;
-      font-size: 12px;
-      margin-bottom: 50px;
-      span {
+      .route {
+        padding: 10px 50px;
         font-size: 12px;
-        line-height: 20px;
-      }
-    }
-    .news {
-      padding: 0px 20px;
-      .new {
-        p {
-          font-size: 15px;
-          line-height: 35px;
-        }
-        .writer,
-        .date {
-          font-size: 14px;
-          img {
-            width: 15px;
-          }
-        }
-      }
-      .lotsVisit {
         margin-bottom: 50px;
-        .searchDiv {
-          img {
-            width: 15px;
-            top: 9px;
-          }
-          input {
+        line-height: 15px;
+        span {
+          font-size: 12px;
+          line-height: 0px;
+        }
+      }
+      .news {
+        padding: 0px 50px;
+        .new {
+          p {
             font-size: 15px;
-            padding-right: 24px;
+            line-height: 25px;
+          }
+          .writer,
+          .date {
+            font-size: 14px;
+            img {
+              width: 15px;
+            }
           }
         }
+        .lotsVisit {
+          margin-bottom: 50px;
+          .searchDiv {
+            img {
+              width: 15px;
+              top: 9px;
+            }
+            input {
+              font-size: 15px;
+              padding-right: 24px;
+            }
+          }
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          .lotsVisitNew {
+            .subject {
+              font-size: 15px;
+            }
+            .new {
+              font-size: 12px;
+            }
+            a {
+              font-size: 10px;
+              img {
+                width: 16px;
+              }
+            }
+          }
+        }
+      }
+      .relatedPosts {
+        padding: 0px 50px;
+        margin-top: 50px;
         .title {
           font-size: 15px;
           span {
@@ -319,56 +611,147 @@
             height: 2.5px;
           }
         }
-        .lotsVisitNew {
-          .subject {
-            font-size: 15px;
-          }
+        .newsList {
           .new {
-            font-size: 12px;
-          }
-          a {
-            font-size: 10px;
-            img {
-              width: 16px;
+            min-width: 200px;
+            .effect {
+              padding: 20px 15px;
+              transform: translateY(160px);
+              .title {
+                font-size: 12px;
+                margin-bottom: 0px;
+              }
+              .about {
+                font-size: 12px;
+                line-height: 22px;
+                margin-bottom: 17px;
+              }
+              .text {
+                font-size: 11px;
+                line-height: 22px;
+                margin-bottom: 0px;
+              }
+              a {
+                font-size: 11px;
+                img {
+                  width: 20px;
+                }
+              }
             }
           }
         }
       }
     }
-    .relatedPosts {
-      padding: 0px 20px;
-      margin-top: 50px;
-      .title {
-        font-size: 15px;
-        span {
-          width: 20px;
-          height: 2.5px;
+    .enBlogsDetail {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
+        .title {
+          font-size: 23px;
+          max-width: 100%;
+          line-height: 40px;
+        }
+        .enLogo {
+          img {
+            display: none;
+          }
         }
       }
-      .newsList {
+      .route {
+        padding: 10px 50px;
+        font-size: 12px;
+        margin-bottom: 50px;
+        line-height: 15px;
+        span {
+          font-size: 12px;
+          line-height: 0px;
+        }
+      }
+      .news {
+        padding: 0px 50px;
         .new {
-          min-width: 200px;
-          .effect {
-            padding: 20px 15px;
-            transform: translateY(160px);
-            .title {
-              font-size: 12px;
-              margin-bottom: 0px;
+          p {
+            font-size: 15px;
+            line-height: 25px;
+          }
+          .writer,
+          .date {
+            font-size: 14px;
+            img {
+              width: 15px;
             }
-            .about {
-              font-size: 12px;
-              line-height: 22px;
-              margin-bottom: 17px;
+          }
+        }
+        .lotsVisit {
+          margin-bottom: 50px;
+          .searchDiv {
+            img {
+              width: 15px;
+              top: 9px;
             }
-            .text {
-              font-size: 11px;
-              line-height: 22px;
-              margin-bottom: 0px;
+            input {
+              font-size: 15px;
+              padding-right: 24px;
+            }
+          }
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          .lotsVisitNew {
+            .subject {
+              font-size: 15px;
+            }
+            .new {
+              font-size: 12px;
             }
             a {
-              font-size: 11px;
+              font-size: 10px;
               img {
-                width: 20px;
+                width: 16px;
+              }
+            }
+          }
+        }
+      }
+      .relatedPosts {
+        padding: 0px 50px;
+        margin-top: 50px;
+        .title {
+          font-size: 15px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
+        }
+        .newsList {
+          .new {
+            min-width: 200px;
+            .effect {
+              padding: 20px 15px;
+              transform: translateY(160px);
+              .title {
+                font-size: 12px;
+                margin-bottom: 0px;
+              }
+              .about {
+                font-size: 12px;
+                line-height: 22px;
+                margin-bottom: 17px;
+              }
+              .text {
+                font-size: 11px;
+                line-height: 22px;
+                margin-bottom: 0px;
+              }
+              a {
+                font-size: 11px;
+                img {
+                  width: 20px;
+                }
               }
             }
           }

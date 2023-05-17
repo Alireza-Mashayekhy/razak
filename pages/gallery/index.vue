@@ -1,22 +1,44 @@
 <template>
   <div class="gallery">
-    <div class="topDiv">
-      <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+    <div v-show="$store.state.lang == 'fa'" class="faPage faGallery">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">گالری تصاویر</div>
       </div>
-      <div class="title">گالری تصاویر</div>
+      <div class="route">صفحه اصلی . گالری تصاویر</div>
+      <div class="images d-flex flex-wrap justify-content-center">
+        <router-link
+          to="/gallery/1"
+          class="image"
+          v-for="image in images"
+          :key="image.id"
+        >
+          <img :src="image.img" alt="gallery" />
+          <div class="text">لورم ایپسوم متن ساختگی با تولید</div>
+        </router-link>
+      </div>
     </div>
-    <div class="route">صفحه اصلی . گالری تصاویر</div>
-    <div class="images d-flex flex-wrap justify-content-center">
-      <router-link
-        to="/gallery/1"
-        class="image"
-        v-for="image in images"
-        :key="image.id"
-      >
-        <img :src="image.img" alt="gallery" />
-        <div class="text">لورم ایپسوم متن ساختگی با تولید</div>
-      </router-link>
+    <div v-show="$store.state.lang == 'en'" class="enPage enGallery">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">گالری تصاویر</div>
+      </div>
+      <div class="route">صفحه اصلی . گالری تصاویر</div>
+      <div class="images d-flex flex-wrap justify-content-center">
+        <router-link
+          to="/gallery/1"
+          class="image"
+          v-for="image in images"
+          :key="image.id"
+        >
+          <img :src="image.img" alt="gallery" />
+          <div class="text">لورم ایپسوم متن ساختگی با تولید</div>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

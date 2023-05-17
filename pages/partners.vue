@@ -1,16 +1,33 @@
 <template>
   <div class="partners">
-    <div class="topDiv">
-      <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+    <div v-show="$store.state.lang == 'fa'" class="faPage faPartners">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">شرکای رازک</div>
       </div>
-      <div class="title">شرکای رازک</div>
+      <div class="route">صفحه اصلی . شرکای رازک</div>
+      <div class="partners d-flex flex-wrap justify-content-center">
+        <div class="partner" v-for="image in images" :key="image.id">
+          <img :src="image.img" alt="gallery" />
+          <div class="text">لورم ایپسوم متن</div>
+        </div>
+      </div>
     </div>
-    <div class="route">صفحه اصلی . شرکای رازک</div>
-    <div class="partners d-flex flex-wrap justify-content-center">
-      <div class="partner" v-for="image in images" :key="image.id">
-        <img :src="image.img" alt="gallery" />
-        <div class="text">لورم ایپسوم متن</div>
+    <div v-show="$store.state.lang == 'en'" class="enPage enPartners">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">شرکای رازک</div>
+      </div>
+      <div class="route">صفحه اصلی . شرکای رازک</div>
+      <div class="partners d-flex flex-wrap justify-content-center">
+        <div class="partner" v-for="image in images" :key="image.id">
+          <img :src="image.img" alt="gallery" />
+          <div class="text">لورم ایپسوم متن</div>
+        </div>
       </div>
     </div>
   </div>

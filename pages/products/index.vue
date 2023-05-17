@@ -1,115 +1,244 @@
 <template>
   <div class="products">
-    <div class="topDiv">
-      <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+    <div v-show="$store.state.lang == 'fa'" class="faPage faProducts">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">لیست محصولات</div>
       </div>
-      <div class="title">لیست محصولات</div>
-    </div>
-    <div class="route">صفحه اصلی . رویداد ها</div>
-    <div class="table">
-      <div
-        class="lettersSort d-flex"
-        :class="{ activeDrag: mouseDown == true }"
-        @mousemove="mousemove"
-        @mousedown="startDragging"
-        @mouseup="stopDragging"
-        @mouseleave="stopDragging"
-        ref="parent"
-      >
+      <div class="route">صفحه اصلی . رویداد ها</div>
+      <div class="table">
         <div
-          v-for="letter in letters"
-          :key="letter"
-          @click="ourLetter = letter"
-          :class="{ active: ourLetter == letter }"
+          class="lettersSort d-flex"
+          :class="{ activeDrag: mouseDown == true }"
+          @mousemove="mousemove"
+          @mousedown="startDragging"
+          @mouseup="stopDragging"
+          @mouseleave="stopDragging"
+          ref="parent"
         >
-          {{ letter }}
-        </div>
-      </div>
-      <div class="filters d-flex">
-        <div class="searchDiv">
-          <img src="/icons/graySearch.svg" alt="Search" />
-          <input type="search" placeholder="search" />
-        </div>
-        <div class="categoryDiv">
-          <img src="/icons/grayCategory.svg" alt="Category" />
-          <select name="category">
-            <option value="" hidden selected>category</option>
-          </select>
-        </div>
-        <div class="sortDiv">
-          <img src="/icons/grayFrame.svg" alt="Frame" />
-          <select name="sort">
-            <option value="" hidden selected>sort</option>
-          </select>
-        </div>
-      </div>
-      <div
-        class="productTable"
-        :class="{ activeDrag: mouseDown2 == true }"
-        @mousemove="mousemove2"
-        @mousedown="startDragging2"
-        @mouseup="stopDragging2"
-        @mouseleave="stopDragging2"
-        ref="parent2"
-      >
-        <div class="title d-flex">
-          <div class="d-flex justify-content-center align-items-center name">
-            Product Names
-          </div>
-          <div class="d-flex justify-content-center align-items-center generic">
-            Generic Name & Strength
-          </div>
-          <div class="d-flex justify-content-center align-items-center forms">
-            Dosage Forms
-          </div>
           <div
-            class="d-flex justify-content-center align-items-center indications"
+            v-for="letter in letters"
+            :key="letter"
+            @click="ourLetter = letter"
+            :class="{ active: ourLetter == letter }"
           >
-            Indications
+            {{ letter }}
           </div>
-          <div
-            class="d-flex justify-content-center align-items-center packinging"
-          >
-            Packaging
+        </div>
+        <div class="filters d-flex">
+          <div class="searchDiv">
+            <img src="/icons/graySearch.svg" alt="Search" />
+            <input type="search" placeholder="search" />
           </div>
-          <div class="d-flex justify-content-center align-items-center detail">
-            Detail
+          <div class="categoryDiv">
+            <img src="/icons/grayCategory.svg" alt="Category" />
+            <select name="category">
+              <option value="" hidden selected>category</option>
+            </select>
+          </div>
+          <div class="sortDiv">
+            <img src="/icons/grayFrame.svg" alt="Frame" />
+            <select name="sort">
+              <option value="" hidden selected>sort</option>
+            </select>
           </div>
         </div>
         <div
-          class="product d-flex"
-          v-for="product in products"
-          :key="product.name"
+          class="productTable"
+          :class="{ activeDrag: mouseDown2 == true }"
+          @mousemove="mousemove2"
+          @mousedown="startDragging2"
+          @mouseup="stopDragging2"
+          @mouseleave="stopDragging2"
+          ref="parent2"
         >
-          <div class="d-flex justify-content-center align-items-center name">
-            {{ product.name }}
-          </div>
-          <div class="d-flex justify-content-center align-items-center generic">
-            {{ product.generic }}
-          </div>
-          <div class="d-flex justify-content-center align-items-center forms">
-            {{ product.forms }}
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center indications"
-          >
-            {{ product.indications }}
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center packinging"
-          >
-            {{ product.packaging }}
-          </div>
-          <router-link
-            to="/products/1"
-            class="d-flex blueCircleLink justify-content-center align-items-center detail"
-          >
-            More
-            <div class="imgDiv">
-              <img src="/icons/blueAngleArrow.svg" alt="CircleArrow" />
+          <div class="title d-flex">
+            <div class="d-flex justify-content-center align-items-center name">
+              Product Names
             </div>
-          </router-link>
+            <div
+              class="d-flex justify-content-center align-items-center generic"
+            >
+              Generic Name & Strength
+            </div>
+            <div class="d-flex justify-content-center align-items-center forms">
+              Dosage Forms
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center indications"
+            >
+              Indications
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center packinging"
+            >
+              Packaging
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center detail"
+            >
+              Detail
+            </div>
+          </div>
+          <div
+            class="product d-flex"
+            v-for="product in products"
+            :key="product.name"
+          >
+            <div class="d-flex justify-content-center align-items-center name">
+              {{ product.name }}
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center generic"
+            >
+              {{ product.generic }}
+            </div>
+            <div class="d-flex justify-content-center align-items-center forms">
+              {{ product.forms }}
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center indications"
+            >
+              {{ product.indications }}
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center packinging"
+            >
+              {{ product.packaging }}
+            </div>
+            <router-link
+              to="/products/1"
+              class="d-flex blueCircleLink justify-content-center align-items-center detail"
+            >
+              More
+              <div class="imgDiv">
+                <img src="/icons/blueAngleArrow.svg" alt="CircleArrow" />
+              </div>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-show="$store.state.lang == 'en'" class="enPage enProducts">
+      <div class="topDiv">
+        <div class="enLogo">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </div>
+        <div class="title">لیست محصولات</div>
+      </div>
+      <div class="route">صفحه اصلی . رویداد ها</div>
+      <div class="table">
+        <div
+          class="lettersSort d-flex"
+          :class="{ activeDrag: mouseDown == true }"
+          @mousemove="mousemove"
+          @mousedown="startDragging"
+          @mouseup="stopDragging"
+          @mouseleave="stopDragging"
+          ref="parent"
+        >
+          <div
+            v-for="letter in letters"
+            :key="letter"
+            @click="ourLetter = letter"
+            :class="{ active: ourLetter == letter }"
+          >
+            {{ letter }}
+          </div>
+        </div>
+        <div class="filters d-flex">
+          <div class="searchDiv">
+            <img src="/icons/graySearch.svg" alt="Search" />
+            <input type="search" placeholder="search" />
+          </div>
+          <div class="categoryDiv">
+            <img src="/icons/grayCategory.svg" alt="Category" />
+            <select name="category">
+              <option value="" hidden selected>category</option>
+            </select>
+          </div>
+          <div class="sortDiv">
+            <img src="/icons/grayFrame.svg" alt="Frame" />
+            <select name="sort">
+              <option value="" hidden selected>sort</option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="productTable"
+          :class="{ activeDrag: mouseDown2 == true }"
+          @mousemove="mousemove2"
+          @mousedown="startDragging2"
+          @mouseup="stopDragging2"
+          @mouseleave="stopDragging2"
+          ref="parent2"
+        >
+          <div class="title d-flex">
+            <div class="d-flex justify-content-center align-items-center name">
+              Product Names
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center generic"
+            >
+              Generic Name & Strength
+            </div>
+            <div class="d-flex justify-content-center align-items-center forms">
+              Dosage Forms
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center indications"
+            >
+              Indications
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center packinging"
+            >
+              Packaging
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center detail"
+            >
+              Detail
+            </div>
+          </div>
+          <div
+            class="product d-flex"
+            v-for="product in products"
+            :key="product.name"
+          >
+            <div class="d-flex justify-content-center align-items-center name">
+              {{ product.name }}
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center generic"
+            >
+              {{ product.generic }}
+            </div>
+            <div class="d-flex justify-content-center align-items-center forms">
+              {{ product.forms }}
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center indications"
+            >
+              {{ product.indications }}
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center packinging"
+            >
+              {{ product.packaging }}
+            </div>
+            <router-link
+              to="/products/1"
+              class="d-flex blueCircleLink justify-content-center align-items-center detail"
+            >
+              More
+              <div class="imgDiv">
+                <img src="/icons/blueAngleArrow.svg" alt="CircleArrow" />
+              </div>
+            </router-link>
+          </div>
         </div>
       </div>
     </div>

@@ -1,115 +1,235 @@
 .team {
-  background: url("/images/aboutUs.jpg"),
-    linear-gradient(179.87deg, #01040b 40%, #000000 90%);
-  background-repeat: no-repeat;
-  background-size: contain;
-  .effect {
-    padding: 60px 148px 197px 152px;
-    .enLogo {
-      text-align: left;
-      margin-bottom: 266px;
-      position: relative;
-      left: -82px;
-      img {
-        width: 130px;
+  .faTeam {
+    background: url("/images/aboutUs.jpg"),
+      linear-gradient(179.87deg, #01040b 40%, #000000 90%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .effect {
+      padding: 60px 148px 197px 152px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 266px;
+        position: relative;
+        left: -82px;
+        img {
+          width: 130px;
+        }
       }
-    }
-    .title {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      color: #b9b7bd;
-      margin-bottom: 10px;
-      span {
-        display: inline-block;
-        width: 43px;
-        height: 5px;
-        border-radius: 5px;
-        background-color: white;
-        margin-right: 24px;
-      }
-    }
-    h3 {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      color: #ffffff;
-      margin-bottom: 30px;
-    }
-    p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 35px;
-      text-align: justify;
-      color: rgba(255, 255, 255, 0.8);
-      margin-bottom: 200px;
-      max-width: 693px;
-    }
-    .category {
-      margin-bottom: 100px;
-      div {
-        width: 400px;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        padding-bottom: 15px;
+      .title {
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        color: #ffffff;
-        cursor: pointer;
-      }
-      .active {
-        border-bottom: 5px solid #ffffff;
-      }
-    }
-    .pictures {
-      gap: 25px;
-      justify-content: center;
-      .picture {
-        width: 300px;
-        height: 400px;
-        background: url("/images/firstTeam.jpg") no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: end;
-        overflow: hidden;
-        &:hover {
-          .informations {
-            transform: translateY(0px);
-          }
+        font-size: 18px;
+        color: #b9b7bd;
+        margin-bottom: 10px;
+        span {
+          display: inline-block;
+          width: 43px;
+          height: 5px;
+          border-radius: 5px;
+          background-color: white;
+          margin-right: 24px;
         }
-        .informations {
-          transform: translateY(85px);
-          transition: transform 1s;
-          width: 100%;
-          background: rgba(255, 255, 255, 0.16);
-          backdrop-filter: blur(10px);
-          padding: 25px 35px 22px 0px;
-          .name {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            color: #ffffff;
-            margin-bottom: 16px;
-            span {
-              height: 17px;
-              width: 5px;
-              background-color: #1a407a;
-              border-radius: 5px;
-              margin-left: 13px;
-              display: inline-block;
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 200px;
+        max-width: 693px;
+      }
+      .category {
+        margin-bottom: 100px;
+        div {
+          width: 400px;
+          text-align: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          padding-bottom: 15px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+        .active {
+          border-bottom: 5px solid #ffffff;
+        }
+      }
+      .pictures {
+        gap: 25px;
+        justify-content: center;
+        .picture {
+          width: 300px;
+          height: 400px;
+          background: url("/images/firstTeam.jpg") no-repeat;
+          background-size: cover;
+          display: flex;
+          align-items: end;
+          overflow: hidden;
+          &:hover {
+            .informations {
+              transform: translateY(0px);
             }
           }
-          .position {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 17px;
+          .informations {
+            transform: translateY(85px);
+            transition: transform 1s;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.16);
+            backdrop-filter: blur(10px);
+            padding: 25px 35px 22px 0px;
+            .name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              color: #ffffff;
+              margin-bottom: 16px;
+              span {
+                height: 17px;
+                width: 5px;
+                background-color: #1a407a;
+                border-radius: 5px;
+                margin-left: 13px;
+                display: inline-block;
+              }
+            }
+            .position {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: rgba(255, 255, 255, 0.8);
+              margin-bottom: 17px;
+            }
+            .socials {
+              gap: 13px;
+            }
           }
-          .socials {
-            gap: 13px;
+        }
+      }
+    }
+  }
+  .enTeam {
+    background: url("/images/aboutUs.jpg"),
+      linear-gradient(179.87deg, #01040b 40%, #000000 90%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .effect {
+      padding: 60px 148px 197px 152px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 266px;
+        position: relative;
+        left: -82px;
+        img {
+          width: 130px;
+        }
+      }
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #b9b7bd;
+        margin-bottom: 10px;
+        span {
+          display: inline-block;
+          width: 43px;
+          height: 5px;
+          border-radius: 5px;
+          background-color: white;
+          margin-right: 24px;
+        }
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 200px;
+        max-width: 693px;
+      }
+      .category {
+        margin-bottom: 100px;
+        div {
+          width: 400px;
+          text-align: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          padding-bottom: 15px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+        .active {
+          border-bottom: 5px solid #ffffff;
+        }
+      }
+      .pictures {
+        gap: 25px;
+        justify-content: center;
+        .picture {
+          width: 300px;
+          height: 400px;
+          background: url("/images/firstTeam.jpg") no-repeat;
+          background-size: cover;
+          display: flex;
+          align-items: end;
+          overflow: hidden;
+          &:hover {
+            .informations {
+              transform: translateY(0px);
+            }
+          }
+          .informations {
+            transform: translateY(85px);
+            transition: transform 1s;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.16);
+            backdrop-filter: blur(10px);
+            padding: 25px 35px 22px 0px;
+            .name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              color: #ffffff;
+              margin-bottom: 16px;
+              span {
+                height: 17px;
+                width: 5px;
+                background-color: #1a407a;
+                border-radius: 5px;
+                margin-left: 13px;
+                display: inline-block;
+              }
+            }
+            .position {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: rgba(255, 255, 255, 0.8);
+              margin-bottom: 17px;
+            }
+            .socials {
+              gap: 13px;
+            }
           }
         }
       }
@@ -119,66 +239,138 @@
 
 @media only screen and (max-width: 1057px) {
   .team {
-    .effect {
-      padding: 70px;
-      padding-top: 60px;
-      padding-bottom: 100px;
-      .enLogo {
-        left: 0px;
+    .faTeam {
+      .effect {
+        padding: 70px;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .enLogo {
+          left: 0px;
+        }
+      }
+    }
+    .enTeam {
+      .effect {
+        padding: 70px;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .enLogo {
+          left: 0px;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 719px) {
   .team {
-    .effect {
-      padding: 20px;
-      padding-bottom: 50px;
-      .enLogo {
-        margin-bottom: 100px;
-        img {
-          height: 40px;
-          display: none;
+    .faTeam {
+      .effect {
+        padding: 50px;
+        padding-bottom: 50px;
+        .enLogo {
+          margin-bottom: 50px;
+          img {
+            height: 40px;
+            display: none;
+          }
         }
-      }
-      .title {
-        font-size: 15px;
-        span {
-          width: 20px;
-          height: 2.5px;
+        .title {
+          font-size: 15px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
         }
-      }
-      h3 {
-        font-size: 15px;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 12px;
-        line-height: 25px;
-        max-width: 70%;
-      }
-      .category {
-        div {
+        h3 {
+          font-size: 15px;
+          margin-bottom: 20px;
+        }
+        p {
           font-size: 12px;
+          line-height: 25px;
+          max-width: 70%;
+          margin-bottom: 100px;
+        }
+        .category {
+          div {
+            font-size: 12px;
+          }
+        }
+        .pictures {
+          gap: 20px;
+          .picture {
+            width: 200px;
+            height: 250px;
+            .informations {
+              padding: 15px;
+              transform: translateY(67px);
+              .name {
+                font-size: 12px;
+              }
+              .position {
+                font-size: 10px;
+              }
+              .socials {
+                img {
+                  width: 15px;
+                }
+              }
+            }
+          }
         }
       }
-      .pictures {
-        gap: 20px;
-        .picture {
-          width: 200px;
-          height: 250px;
-          .informations {
-            padding: 15px;
-            transform: translateY(67px);
-            .name {
-              font-size: 12px;
-            }
-            .position {
-              font-size: 10px;
-            }
-            .socials {
-              img {
-                width: 15px;
+    }
+    .enTeam {
+      .effect {
+        padding: 50px;
+        padding-bottom: 50px;
+        .enLogo {
+          margin-bottom: 50px;
+          img {
+            height: 40px;
+            display: none;
+          }
+        }
+        .title {
+          font-size: 15px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
+        }
+        h3 {
+          font-size: 15px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 25px;
+          max-width: 70%;
+          margin-bottom: 100px;
+        }
+        .category {
+          div {
+            font-size: 12px;
+          }
+        }
+        .pictures {
+          gap: 20px;
+          .picture {
+            width: 200px;
+            height: 250px;
+            .informations {
+              padding: 15px;
+              transform: translateY(67px);
+              .name {
+                font-size: 12px;
+              }
+              .position {
+                font-size: 10px;
+              }
+              .socials {
+                img {
+                  width: 15px;
+                }
               }
             }
           }

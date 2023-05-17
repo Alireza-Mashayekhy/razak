@@ -1,305 +1,628 @@
 <template>
   <div class="home">
-    <div class="chatWithUs d-flex align-items-center">
-      <div class="text">با ما گفتگو کنید</div>
-      <div class="circle">
-        <img src="/icons/messages.svg" alt="messages" class="messages" />
+    <div class="faHome faPage" v-show="$store.state.lang == 'fa'">
+      <div class="chatWithUs d-flex align-items-center">
+        <div class="text">با ما گفتگو کنید</div>
+        <div class="circle">
+          <img src="/icons/messages.svg" alt="messages" class="messages" />
+        </div>
       </div>
-    </div>
-    <div class="topDiv d-flex flex-column justify-content-between">
-      <div class="logoDiv">
-        <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
-      </div>
-      <div class="about">
-        <h1>شرکت داروسازی رازک</h1>
-        <div class="d-flex align-items-end text">
-          <div>شرکـــت لابـــراتـــوار های رازک با نیـــم قـــرن تجـــربه</div>
-          <router-link to="#" class="circleLink">
-            <div class="imgDiv">
-              <img
-                src="/icons/angleArrow.svg"
-                alt="circle arrow"
-                class="circleArrow"
-              />
+      <div class="topDiv d-flex flex-column justify-content-between">
+        <div class="logoDiv">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </div>
+        <div class="about">
+          <h1>شرکت داروسازی رازک</h1>
+          <div class="d-flex align-items-end text">
+            <div>
+              شرکـــت لابـــراتـــوار های رازک با نیـــم قـــرن تجـــربه
             </div>
-          </router-link>
-        </div>
-        <div class="socials">
-          <img src="/icons/whatsapp.svg" alt="whatsapp" />
-          <img src="/icons/instagram.svg" alt="instagram" />
-          <img src="/icons/linkedin.svg" alt="linkedin" />
-        </div>
-      </div>
-    </div>
-    <div class="aboutRazak">
-      <div class="title" data-aos="zoom-in" data-aos-duration="1000">
-        درباره ی رازک
-        <span></span>
-      </div>
-      <div
-        class="d-flex justify-content-between"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-      >
-        <div>
-          <h2>شرکت لابراتوارهای رازک با بیش از نیم قرن تجربه و بهترین کیفیت</h2>
-          <router-link to="/" class="more blueCircleLink">
-            <span>بیشتر بخوانید</span>
-            <div class="imgDiv">
-              <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
-            </div>
-          </router-link>
-        </div>
-        <div>
-          <p>
-            شرکت سهامی داروسازی لابراتوارهای رازک در سال 1343 هجری شمسی (1964
-            میلادی) با نام شرکت سهامی لابراتوارهای فایزر تحت مالکیت شرکت فایزر
-            آمریکا فعالیت خود را آغاز نمود.
-          </p>
-          <div class="d-flex links">
-            <router-link to="/"
-              >لیست محصولات
-              <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
-            /></router-link>
-            <router-link to="/"
-              >تماس با ما
-              <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
-            /></router-link>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="homeNews">
-      <div class="titles">
-        <div class="line lineAnimation"></div>
-        <div class="newsTitle" data-aos="fade-up" data-aos-duration="1000">
-          اخبار
-          <span></span>
-        </div>
-        <div
-          class="d-flex justify-content-between"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h3>اخبار و رویداد ها</h3>
-          <router-link to="/" class="littleCircleLink">
-            دیدن همه
-            <div class="imgDiv">
-              <img src="/icons/angleArrow.svg" alt="circleArrow" />
-            </div>
-          </router-link>
-        </div>
-      </div>
-      <div
-        class="images"
-        :class="{ activeDrag: mouseDown == true }"
-        @mousemove="mousemove"
-        @mousedown="startDragging"
-        @mouseup="stopDragging"
-        @mouseleave="stopDragging"
-        ref="parent"
-      >
-        <div class="image image1">
-          <div class="effectedDiv">
-            <div class="newsTitle">اخبار</div>
-            <h5>لورم ایپسوم</h5>
-            <div class="date">
-              <img src="/icons/calendar.svg" alt="calendar" />
-              ۱۴۰۱/۰۵/۰۲
-            </div>
-            <router-link to="/">
-              بیشتر بخوانید
-              <img src="/icons/circleArrow.svg" alt="circleArrow" />
+            <router-link to="#" class="circleLink">
+              <div class="imgDiv">
+                <img
+                  src="/icons/angleArrow.svg"
+                  alt="circle arrow"
+                  class="circleArrow"
+                />
+              </div>
             </router-link>
           </div>
-        </div>
-        <div class="image image2">
-          <div class="effectedDiv">
-            <div class="newsTitle">اخبار</div>
-            <h5>لورم ایپسوم</h5>
-            <div class="date">
-              <img src="/icons/calendar.svg" alt="calendar" />
-              ۱۴۰۱/۰۵/۰۲
-            </div>
-            <router-link to="/">
-              بیشتر بخوانید
-              <img src="/icons/circleArrow.svg" alt="circleArrow" />
-            </router-link>
-          </div>
-        </div>
-        <div class="image image3">
-          <div class="effectedDiv">
-            <div class="newsTitle">اخبار</div>
-            <h5>لورم ایپسوم</h5>
-            <div class="date">
-              <img src="/icons/calendar.svg" alt="calendar" />
-              ۱۴۰۱/۰۵/۰۲
-            </div>
-            <router-link to="/">
-              بیشتر بخوانید
-              <img src="/icons/circleArrow.svg" alt="circleArrow" />
-            </router-link>
-          </div>
-        </div>
-        <div class="image image4">
-          <div class="effectedDiv">
-            <div class="newsTitle">اخبار</div>
-            <h5>لورم ایپسوم</h5>
-            <div class="date">
-              <img src="/icons/calendar.svg" alt="calendar" />
-              ۱۴۰۱/۰۵/۰۲
-            </div>
-            <router-link to="/">
-              بیشتر بخوانید
-              <img src="/icons/circleArrow.svg" alt="circleArrow" />
-            </router-link>
+          <div class="socials">
+            <img src="/icons/whatsapp.svg" alt="whatsapp" />
+            <img src="/icons/instagram.svg" alt="instagram" />
+            <img src="/icons/linkedin.svg" alt="linkedin" />
           </div>
         </div>
       </div>
-    </div>
-    <div class="podcasts d-flex align-items-center">
-      <div class="titles" data-aos="fade-left" data-aos-duration="1000">
-        <div class="title">
-          پایگاه دانش
-          <span></span>
-        </div>
-        <h5>پادکست های رازک</h5>
-        <p>
-          این روزها گوش دادن به انواع پادکست با موضوعات مختلف طرفداران بسیار
-          زیادی دارد، زیرا به راحتی، بدون اتلاف وقت، در مسیر و حتی در حال
-          استراحت می‌‌توانید به آن گوش کنید.
-        </p>
-        <router-link to="/" class="blueCircleLink">
-          دیدن همه
-          <div class="imgDiv">
-            <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
-          </div>
-        </router-link>
-      </div>
-      <div class="phone">
-        <img
-          :src="`/images/podcastImg${podcastNum}.jpg`"
-          class="podcastImg"
-          alt="podcastImg"
-        />
-        <div class="podcastName">پادکست شماره {{ podcastNum }}</div>
-        <div class="category">دسته بندی</div>
-        <div class="timeline">
-          <span class="circle"></span>
-          <div class="progress"></div>
-        </div>
-        <div class="time d-flex justify-content-between">
-          <div class="length"></div>
-          <div class="current">0:00</div>
-        </div>
-        <div class="controls d-flex justify-content-between">
-          <a href="/audio/podcast.mp3">
-            <img src="/icons/arrowDown.svg" alt="control icon" />
-          </a>
-          <img
-            @click="nextPodcast"
-            src="/icons/forward.svg"
-            alt="control icon"
-          />
-          <img
-            class="playControl"
-            v-if="play"
-            src="/icons/pause.svg"
-            alt="control icon"
-          />
-          <img
-            class="playControl"
-            v-else
-            src="/icons/play.svg"
-            alt="control icon"
-          />
-          <img
-            @click="prevPodcast"
-            src="/icons/previous.svg"
-            alt="control icon"
-          />
-          <img src="/icons/repeateOne.svg" alt="control icon" />
-        </div>
-      </div>
-      <div
-        class="podcastsList d-flex col"
-        ref="parent2"
-        :class="{ activeDrag2: mouseDown2 == true }"
-        @mousemove="mousemove2"
-        @mousedown="startDragging2"
-        @mouseup="stopDragging2"
-        @mouseleave="stopDragging2"
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        <div class="podcast" v-for="i in 5" :key="i" @click="podcastNum = i">
-          <div class="title"><span></span>پادکست شماره {{ i }}</div>
-          <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان...
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="homeBlogs">
-      <div class="effect">
+      <div class="aboutRazak">
         <div class="title" data-aos="zoom-in" data-aos-duration="1000">
-          پایگاه دانش<span></span>
+          درباره ی رازک
+          <span></span>
         </div>
         <div
           class="d-flex justify-content-between"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          <h5>مقالات، تحقیقات و نوآوری های رازک</h5>
-          <router-link to="/" class="littleCircleLink">
-            دیدن همه
-            <div class="imgDiv">
-              <img src="/icons/angleArrow.svg" alt="circleArrow" />
-            </div>
-          </router-link>
-        </div>
-        <div class="blogs">
-          <div class="blog" v-for="i in 4" :key="i">
-            <div class="blogTitle">دارو سازی</div>
+          <div>
+            <h2>
+              شرکت لابراتوارهای رازک با بیش از نیم قرن تجربه و بهترین کیفیت
+            </h2>
+            <router-link to="/" class="more blueCircleLink">
+              <span>بیشتر بخوانید</span>
+              <div class="imgDiv">
+                <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+              </div>
+            </router-link>
+          </div>
+          <div>
             <p>
-              داروسازی حرفه‌ای است که در زمینه دارو درمانی برای مداوای یک بیمار
-              به عنوان متداول‌ترین شیوه در دنیا با بیماران و مردم مرتبط می‌گردد.
-              داروساز در صورت ناموفق بودن رژیم دارو درمانی باید علل عدم موفقیت
-              را بررسی کند. این رشته در ایران و بسیاری از کشورهای جهان در مقطع
-              دکترای حرفه ای ارائه می شود...
+              شرکت سهامی داروسازی لابراتوارهای رازک در سال 1343 هجری شمسی (1964
+              میلادی) با نام شرکت سهامی لابراتوارهای فایزر تحت مالکیت شرکت فایزر
+              آمریکا فعالیت خود را آغاز نمود.
             </p>
+            <div class="d-flex links">
+              <router-link to="/"
+                >لیست محصولات
+                <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
+              /></router-link>
+              <router-link to="/"
+                >تماس با ما
+                <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
+              /></router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homeNews">
+        <div class="titles">
+          <div class="line lineAnimation"></div>
+          <div class="newsTitle" data-aos="fade-up" data-aos-duration="1000">
+            اخبار
+            <span></span>
+          </div>
+          <div
+            class="d-flex justify-content-between"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h3>اخبار و رویداد ها</h3>
             <router-link to="/" class="littleCircleLink">
-              بیشتر بخوانید
+              دیدن همه
               <div class="imgDiv">
                 <img src="/icons/angleArrow.svg" alt="circleArrow" />
               </div>
             </router-link>
           </div>
         </div>
+        <div
+          class="images"
+          :class="{ activeDrag: mouseDown == true }"
+          @mousemove="mousemove"
+          @mousedown="startDragging"
+          @mouseup="stopDragging"
+          @mouseleave="stopDragging"
+          ref="parent"
+        >
+          <div class="image image1">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+          <div class="image image2">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+          <div class="image image3">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+          <div class="image image4">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="podcasts d-flex align-items-center">
+        <div class="titles" data-aos="fade-left" data-aos-duration="1000">
+          <div class="title">
+            پایگاه دانش
+            <span></span>
+          </div>
+          <h5>پادکست های رازک</h5>
+          <p>
+            این روزها گوش دادن به انواع پادکست با موضوعات مختلف طرفداران بسیار
+            زیادی دارد، زیرا به راحتی، بدون اتلاف وقت، در مسیر و حتی در حال
+            استراحت می‌‌توانید به آن گوش کنید.
+          </p>
+          <router-link to="/" class="blueCircleLink">
+            دیدن همه
+            <div class="imgDiv">
+              <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+            </div>
+          </router-link>
+        </div>
+        <div class="phone">
+          <img
+            :src="`/images/podcastImg${podcastNum}.jpg`"
+            class="podcastImg"
+            alt="podcastImg"
+          />
+          <div class="podcastName">پادکست شماره {{ podcastNum }}</div>
+          <div class="category">دسته بندی</div>
+          <div class="timeline">
+            <span class="circle"></span>
+            <div class="progress"></div>
+          </div>
+          <div class="time d-flex justify-content-between">
+            <div class="length"></div>
+            <div class="current">0:00</div>
+          </div>
+          <div class="controls d-flex justify-content-between">
+            <a href="/audio/podcast.mp3">
+              <img src="/icons/arrowDown.svg" alt="control icon" />
+            </a>
+            <img
+              @click="nextPodcast"
+              src="/icons/forward.svg"
+              alt="control icon"
+            />
+            <img
+              class="playControl"
+              v-if="play"
+              src="/icons/pause.svg"
+              alt="control icon"
+            />
+            <img
+              class="playControl"
+              v-else
+              src="/icons/play.svg"
+              alt="control icon"
+            />
+            <img
+              @click="prevPodcast"
+              src="/icons/previous.svg"
+              alt="control icon"
+            />
+            <img src="/icons/repeateOne.svg" alt="control icon" />
+          </div>
+        </div>
+        <div
+          class="podcastsList d-flex col"
+          ref="parent2"
+          :class="{ activeDrag2: mouseDown2 == true }"
+          @mousemove="mousemove2"
+          @mousedown="startDragging2"
+          @mouseup="stopDragging2"
+          @mouseleave="stopDragging2"
+        >
+          <div
+            class="podcast"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            v-for="i in 5"
+            :key="i"
+            @click="podcastNum = i"
+          >
+            <div class="title"><span></span>پادکست شماره {{ i }}</div>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="homeBlogs">
+        <div class="effect">
+          <div class="title" data-aos="zoom-in" data-aos-duration="1000">
+            پایگاه دانش<span></span>
+          </div>
+          <div
+            class="d-flex justify-content-between"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <h5>مقالات، تحقیقات و نوآوری های رازک</h5>
+            <router-link to="/" class="littleCircleLink">
+              دیدن همه
+              <div class="imgDiv">
+                <img src="/icons/angleArrow.svg" alt="circleArrow" />
+              </div>
+            </router-link>
+          </div>
+          <div class="blogs">
+            <div class="blog" v-for="i in 4" :key="i">
+              <div class="blogTitle">دارو سازی</div>
+              <p>
+                داروسازی حرفه‌ای است که در زمینه دارو درمانی برای مداوای یک
+                بیمار به عنوان متداول‌ترین شیوه در دنیا با بیماران و مردم مرتبط
+                می‌گردد. داروساز در صورت ناموفق بودن رژیم دارو درمانی باید علل
+                عدم موفقیت را بررسی کند. این رشته در ایران و بسیاری از کشورهای
+                جهان در مقطع دکترای حرفه ای ارائه می شود...
+              </p>
+              <router-link to="/" class="littleCircleLink">
+                بیشتر بخوانید
+                <div class="imgDiv">
+                  <img src="/icons/angleArrow.svg" alt="circleArrow" />
+                </div>
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="follow text-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text">YOU</div>
+          <div class="image1 followImage" v-show="animeImg == 1"></div>
+          <div class="image1 followImage2" v-show="animeImg == 2"></div>
+          <div class="image1 followImage3" v-show="animeImg == 3"></div>
+          <div class="text">DON’T</div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text">?US</div>
+          <div class="image2 followImage" v-show="animeImg == 1"></div>
+          <div class="image2 followImage2" v-show="animeImg == 2"></div>
+          <div class="image2 followImage3" v-show="animeImg == 3"></div>
+          <div class="text">FOLLOW</div>
+        </div>
+        <router-link to="/" class="blueCircleLink">
+          اینستاگرام ما
+          <div class="imgDiv">
+            <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+          </div>
+        </router-link>
       </div>
     </div>
-    <div class="follow text-center">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="text">YOU</div>
-        <div class="image1 followImage" v-show="animeImg == 1"></div>
-        <div class="image1 followImage2" v-show="animeImg == 2"></div>
-        <div class="image1 followImage3" v-show="animeImg == 3"></div>
-        <div class="text">DON’T</div>
-      </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="text">?US</div>
-        <div class="image2 followImage" v-show="animeImg == 1"></div>
-        <div class="image2 followImage2" v-show="animeImg == 2"></div>
-        <div class="image2 followImage3" v-show="animeImg == 3"></div>
-        <div class="text">FOLLOW</div>
-      </div>
-      <router-link to="/" class="blueCircleLink">
-        اینستاگرام ما
-        <div class="imgDiv">
-          <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+    <div class="enHome enPage" v-show="$store.state.lang == 'en'">
+      <div class="chatWithUs d-flex align-items-center">
+        <div class="text">با ما گفتگو کنید</div>
+        <div class="circle">
+          <img src="/icons/messages.svg" alt="messages" class="messages" />
         </div>
-      </router-link>
+      </div>
+      <div class="topDiv d-flex flex-column justify-content-between">
+        <div class="logoDiv">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </div>
+        <div class="about">
+          <h1>شرکت داروسازی رازک</h1>
+          <div class="d-flex align-items-end text">
+            <div>
+              شرکـــت لابـــراتـــوار های رازک با نیـــم قـــرن تجـــربه
+            </div>
+            <router-link to="#" class="circleLink">
+              <div class="imgDiv">
+                <img
+                  src="/icons/angleArrow.svg"
+                  alt="circle arrow"
+                  class="circleArrow"
+                />
+              </div>
+            </router-link>
+          </div>
+          <div class="socials">
+            <img src="/icons/whatsapp.svg" alt="whatsapp" />
+            <img src="/icons/instagram.svg" alt="instagram" />
+            <img src="/icons/linkedin.svg" alt="linkedin" />
+          </div>
+        </div>
+      </div>
+      <div class="aboutRazak">
+        <div class="title" data-aos="zoom-in" data-aos-duration="1000">
+          درباره ی رازک
+          <span></span>
+        </div>
+        <div
+          class="d-flex justify-content-between"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div>
+            <h2>
+              شرکت لابراتوارهای رازک با بیش از نیم قرن تجربه و بهترین کیفیت
+            </h2>
+            <router-link to="/" class="more blueCircleLink">
+              <span>بیشتر بخوانید</span>
+              <div class="imgDiv">
+                <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+              </div>
+            </router-link>
+          </div>
+          <div>
+            <p>
+              شرکت سهامی داروسازی لابراتوارهای رازک در سال 1343 هجری شمسی (1964
+              میلادی) با نام شرکت سهامی لابراتوارهای فایزر تحت مالکیت شرکت فایزر
+              آمریکا فعالیت خود را آغاز نمود.
+            </p>
+            <div class="d-flex links">
+              <router-link to="/"
+                >لیست محصولات
+                <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
+              /></router-link>
+              <router-link to="/"
+                >تماس با ما
+                <img src="/icons/leftAngelArrow.svg" alt="leftAngelArrow"
+              /></router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homeNews">
+        <div class="titles">
+          <div class="line lineAnimation"></div>
+          <div class="newsTitle" data-aos="fade-up" data-aos-duration="1000">
+            اخبار
+            <span></span>
+          </div>
+          <div
+            class="d-flex justify-content-between"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h3>اخبار و رویداد ها</h3>
+            <router-link to="/" class="littleCircleLink">
+              دیدن همه
+              <div class="imgDiv">
+                <img src="/icons/angleArrow.svg" alt="circleArrow" />
+              </div>
+            </router-link>
+          </div>
+        </div>
+        <div
+          class="images"
+          :class="{ activeDrag: mouseDown == true }"
+          @mousemove="mousemove"
+          @mousedown="startDragging"
+          @mouseup="stopDragging"
+          @mouseleave="stopDragging"
+          ref="parent"
+        >
+          <div class="image image1">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+          <div class="image image2">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+          <div class="image image3">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+          <div class="image image4">
+            <div class="effectedDiv">
+              <div class="newsTitle">اخبار</div>
+              <h5>لورم ایپسوم</h5>
+              <div class="date">
+                <img src="/icons/calendar.svg" alt="calendar" />
+                ۱۴۰۱/۰۵/۰۲
+              </div>
+              <router-link to="/">
+                بیشتر بخوانید
+                <img src="/icons/circleArrow.svg" alt="circleArrow" />
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="podcasts d-flex align-items-center">
+        <div class="titles" data-aos="fade-left" data-aos-duration="1000">
+          <div class="title">
+            پایگاه دانش
+            <span></span>
+          </div>
+          <h5>پادکست های رازک</h5>
+          <p>
+            این روزها گوش دادن به انواع پادکست با موضوعات مختلف طرفداران بسیار
+            زیادی دارد، زیرا به راحتی، بدون اتلاف وقت، در مسیر و حتی در حال
+            استراحت می‌‌توانید به آن گوش کنید.
+          </p>
+          <router-link to="/" class="blueCircleLink">
+            دیدن همه
+            <div class="imgDiv">
+              <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+            </div>
+          </router-link>
+        </div>
+        <div class="phone">
+          <img
+            :src="`/images/podcastImg${podcastNum}.jpg`"
+            class="podcastImg"
+            alt="podcastImg"
+          />
+          <div class="podcastName">پادکست شماره {{ podcastNum }}</div>
+          <div class="category">دسته بندی</div>
+          <div class="timeline">
+            <span class="circle"></span>
+            <div class="progress"></div>
+          </div>
+          <div class="time d-flex justify-content-between">
+            <div class="length"></div>
+            <div class="current">0:00</div>
+          </div>
+          <div class="controls d-flex justify-content-between">
+            <a href="/audio/podcast.mp3">
+              <img src="/icons/arrowDown.svg" alt="control icon" />
+            </a>
+            <img
+              @click="nextPodcast"
+              src="/icons/forward.svg"
+              alt="control icon"
+            />
+            <img
+              class="playControl"
+              v-if="play"
+              src="/icons/pause.svg"
+              alt="control icon"
+            />
+            <img
+              class="playControl"
+              v-else
+              src="/icons/play.svg"
+              alt="control icon"
+            />
+            <img
+              @click="prevPodcast"
+              src="/icons/previous.svg"
+              alt="control icon"
+            />
+            <img src="/icons/repeateOne.svg" alt="control icon" />
+          </div>
+        </div>
+        <div
+          class="podcastsList d-flex col"
+          ref="parent2"
+          :class="{ activeDrag2: mouseDown2 == true }"
+          @mousemove="mousemove2"
+          @mousedown="startDragging2"
+          @mouseup="stopDragging2"
+          @mouseleave="stopDragging2"
+        >
+          <div
+            class="podcast"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            v-for="i in 5"
+            :key="i"
+            @click="podcastNum = i"
+          >
+            <div class="title"><span></span>پادکست شماره {{ i }}</div>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="homeBlogs">
+        <div class="effect">
+          <div class="title" data-aos="zoom-in" data-aos-duration="1000">
+            پایگاه دانش<span></span>
+          </div>
+          <div
+            class="d-flex justify-content-between"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <h5>مقالات، تحقیقات و نوآوری های رازک</h5>
+            <router-link to="/" class="littleCircleLink">
+              دیدن همه
+              <div class="imgDiv">
+                <img src="/icons/angleArrow.svg" alt="circleArrow" />
+              </div>
+            </router-link>
+          </div>
+          <div class="blogs">
+            <div class="blog" v-for="i in 4" :key="i">
+              <div class="blogTitle">دارو سازی</div>
+              <p>
+                داروسازی حرفه‌ای است که در زمینه دارو درمانی برای مداوای یک
+                بیمار به عنوان متداول‌ترین شیوه در دنیا با بیماران و مردم مرتبط
+                می‌گردد. داروساز در صورت ناموفق بودن رژیم دارو درمانی باید علل
+                عدم موفقیت را بررسی کند. این رشته در ایران و بسیاری از کشورهای
+                جهان در مقطع دکترای حرفه ای ارائه می شود...
+              </p>
+              <router-link to="/" class="littleCircleLink">
+                بیشتر بخوانید
+                <div class="imgDiv">
+                  <img src="/icons/angleArrow.svg" alt="circleArrow" />
+                </div>
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="follow text-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text">YOU</div>
+          <div class="image1 followImage" v-show="animeImg == 1"></div>
+          <div class="image1 followImage2" v-show="animeImg == 2"></div>
+          <div class="image1 followImage3" v-show="animeImg == 3"></div>
+          <div class="text">DON’T</div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text">?US</div>
+          <div class="image2 followImage" v-show="animeImg == 1"></div>
+          <div class="image2 followImage2" v-show="animeImg == 2"></div>
+          <div class="image2 followImage3" v-show="animeImg == 3"></div>
+          <div class="text">FOLLOW</div>
+        </div>
+        <router-link to="/" class="blueCircleLink">
+          اینستاگرام ما
+          <div class="imgDiv">
+            <img src="/icons/blueAngleArrow.svg" alt="blueCircleArrow" />
+          </div>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -331,8 +654,12 @@ export default {
       this.imagesGsap3();
       this.lineAnimation();
       window.addEventListener("resize", this.resizeFunc);
-      document.getElementsByClassName("about")[0].style.transition = "all 2s";
-      document.getElementsByClassName("about")[0].style.opacity = "1";
+      document
+        .getElementsByClassName("faHome")[0]
+        .getElementsByClassName("about")[0].style.transition = "all 2s";
+      document
+        .getElementsByClassName("faHome")[0]
+        .getElementsByClassName("about")[0].style.opacity = "1";
     }, 100);
   },
   methods: {
@@ -507,6 +834,63 @@ export default {
         },
         width: "100%",
       });
+    },
+  },
+  watch: {
+    "$store.state.lang"() {
+      if (this.$store.state.lang == "fa") {
+        document
+          .getElementsByClassName("enHome")[0]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("enHome")[0]
+          .getElementsByClassName("about")[0].style.opacity = "0";
+        document
+          .getElementsByClassName("faHome")[0]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("faHome")[0]
+          .getElementsByClassName("about")[0].style.opacity = "1";
+
+        document
+          .getElementsByClassName("enHome")[1]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("enHome")[1]
+          .getElementsByClassName("about")[0].style.opacity = "0";
+        document
+          .getElementsByClassName("faHome")[1]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("faHome")[1]
+          .getElementsByClassName("about")[0].style.opacity = "1";
+      } else {
+        document
+          .getElementsByClassName("enHome")[0]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("enHome")[0]
+          .getElementsByClassName("about")[0].style.opacity = "1";
+        document
+          .getElementsByClassName("faHome")[0]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("faHome")[0]
+          .getElementsByClassName("about")[0].style.opacity = "0";
+
+        document
+          .getElementsByClassName("enHome")[1]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("enHome")[1]
+          .getElementsByClassName("about")[0].style.opacity = "1";
+        document
+          .getElementsByClassName("faHome")[1]
+          .getElementsByClassName("about")[0].style.transition = "all 2s";
+        document
+          .getElementsByClassName("faHome")[1]
+          .getElementsByClassName("about")[0].style.opacity = "0";
+      }
     },
   },
 };

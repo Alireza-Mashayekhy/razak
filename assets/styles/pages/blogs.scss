@@ -1,295 +1,595 @@
 .blogs {
-  .topDiv {
-    background: url("/images/newsBack.jpg") no-repeat;
-    background-size: cover;
-    padding: 70px 148px 150px 70px;
-    .enLogo {
-      text-align: left;
-      margin-bottom: 82px;
+  .faBlogs {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 82px;
+      }
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+      }
     }
-    .title {
+    .route {
+      width: 100%;
+      padding: 7px 148px;
       font-style: normal;
       font-weight: 400;
-      font-size: 32px;
-      color: #ffffff;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+      margin-bottom: 200px;
     }
-  }
-  .route {
-    width: 100%;
-    padding: 7px 148px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #1a407a;
-    background: #e6e9ed;
-    margin-bottom: 200px;
-  }
-  .topNews {
-    padding: 0px 148px 0px 152px;
-    .title {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 40px;
-      color: #0b1a31;
-      margin-bottom: 32px;
-      span {
-        width: 43px;
-        height: 5px;
-        display: inline-block;
-        border-radius: 5px;
-        background-color: #1a407a;
-        margin-right: 10px;
-      }
-    }
-    .newsList {
-      gap: 25px;
-      overflow-x: scroll;
-      border-bottom: 1px solid #b9b7bd;
-      padding-bottom: 50px;
-      margin-bottom: 100px;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-      .new {
-        background: url("/images/topNew.jpg") no-repeat;
-        background-size: cover;
-        min-width: 312px;
-        overflow: hidden;
-        &:hover {
-          .effect {
-            transform: translateY(0px);
-          }
-        }
-        .effect {
-          width: 100%;
-          height: 100%;
-          background: rgba(28, 66, 123, 0.8);
-          background-blend-mode: multiply;
-          padding: 41px 19px 47px 19px;
-          transform: translateY(225px);
-          transition: transform 1s;
-          .title {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            color: #b9b7bd;
-            margin-bottom: 4px;
-          }
-          .about {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 29px;
-            color: #ffffff;
-            margin-bottom: 23px;
-          }
-          .text {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 30px;
-            text-align: justify;
-            color: #b9b7bd;
-            margin-bottom: 31px;
-          }
-          a {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 50px;
-            color: #ffffff;
-            img {
-              width: 40px;
-              margin-right: 7px;
-            }
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-      }
-    }
-  }
-  .someNews {
-    padding-right: 148px;
-    padding-left: 150px;
-    gap: 120px;
-    .lastNews {
-      padding-bottom: 200px;
+    .topNews {
+      padding: 0px 148px 0px 152px;
       .title {
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 40px;
         color: #0b1a31;
-        margin-bottom: 50px;
+        margin-bottom: 32px;
         span {
-          height: 5px;
           width: 43px;
+          height: 5px;
           display: inline-block;
-          margin-right: 10px;
           border-radius: 5px;
           background-color: #1a407a;
+          margin-right: 10px;
         }
       }
-      .lastNew {
-        padding-bottom: 50px;
+      .newsList {
+        gap: 25px;
+        overflow-x: scroll;
         border-bottom: 1px solid #b9b7bd;
-        margin-bottom: 56px;
-        .newTitle {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 32px;
-          color: #0b1a31;
-          margin-bottom: 16px;
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
         }
-        p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 35px;
-          text-align: justify;
-          color: #606a79;
-        }
-        .profile {
-          margin-left: 5px;
-        }
-        .calendar {
-          margin-left: 5px;
-        }
-        .writer {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 50px;
-          color: #1a407a;
-          margin-left: 12px;
-        }
-        .littleLine {
-          width: 1px;
-          background-color: #b9b7bd;
-          height: 11px;
-          display: inline-block;
-          margin-left: 15px;
-        }
-        .date {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 50px;
-          letter-spacing: 0.2em;
-          color: #1a407a;
-        }
-        .newPic {
-          width: 180px;
-          height: 180px;
-          margin-right: 85px;
-        }
-      }
-      .pagination {
-        gap: 10px;
-        .num {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 32px;
-          color: #606a79;
-          cursor: pointer;
-        }
-        .activePage {
-          color: #0b1a31;
-        }
-        .linePagination {
-          height: 2px;
-          width: 86px;
-          display: inline-block;
-          background-color: #0b1a31;
+        .new {
+          background: url("/images/topNew.jpg") no-repeat;
+          background-size: cover;
+          min-width: 312px;
+          overflow: hidden;
+          &:hover {
+            .effect {
+              transform: translateY(0px);
+            }
+          }
+          .effect {
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 66, 123, 0.8);
+            background-blend-mode: multiply;
+            padding: 41px 19px 47px 19px;
+            transform: translateY(225px);
+            transition: transform 1s;
+            .title {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              color: #b9b7bd;
+              margin-bottom: 4px;
+            }
+            .about {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 29px;
+              color: #ffffff;
+              margin-bottom: 23px;
+            }
+            .text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+              text-align: justify;
+              color: #b9b7bd;
+              margin-bottom: 31px;
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 50px;
+              color: #ffffff;
+              img {
+                width: 40px;
+                margin-right: 7px;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
         }
       }
     }
-    .lotsVisit {
-      min-width: 30%;
-      height: fit-content;
-      padding: 49px 25px 0px 25px;
-      box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
-      .searchDiv {
-        position: relative;
-        margin-bottom: 42px;
-        img {
-          position: absolute;
-          top: 4px;
+    .someNews {
+      padding-right: 148px;
+      padding-left: 150px;
+      gap: 120px;
+      .lastNews {
+        padding-bottom: 200px;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 40px;
+          color: #0b1a31;
+          margin-bottom: 50px;
+          span {
+            height: 5px;
+            width: 43px;
+            display: inline-block;
+            margin-right: 10px;
+            border-radius: 5px;
+            background-color: #1a407a;
+          }
         }
-        input {
-          width: 100%;
-          border: none;
-          border-bottom: 1px solid #606a79;
-          padding-right: 32px;
-          padding-bottom: 4px;
+        .lastNew {
+          padding-bottom: 50px;
+          border-bottom: 1px solid #b9b7bd;
+          margin-bottom: 56px;
+          .newTitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #0b1a31;
+            margin-bottom: 16px;
+          }
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 35px;
+            text-align: justify;
+            color: #606a79;
+          }
+          .profile {
+            margin-left: 5px;
+          }
+          .calendar {
+            margin-left: 5px;
+          }
+          .writer {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            color: #1a407a;
+            margin-left: 12px;
+          }
+          .littleLine {
+            width: 1px;
+            background-color: #b9b7bd;
+            height: 11px;
+            display: inline-block;
+            margin-left: 15px;
+          }
+          .date {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            letter-spacing: 0.2em;
+            color: #1a407a;
+          }
+          .newPic {
+            width: 180px;
+            height: 180px;
+            margin-right: 85px;
+          }
+        }
+        .pagination {
+          gap: 10px;
+          .num {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: #606a79;
+            cursor: pointer;
+          }
+          .activePage {
+            color: #0b1a31;
+          }
+          .linePagination {
+            height: 2px;
+            width: 86px;
+            display: inline-block;
+            background-color: #0b1a31;
+          }
+        }
+      }
+      .lotsVisit {
+        min-width: 30%;
+        height: fit-content;
+        padding: 49px 25px 0px 25px;
+        box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
+        .searchDiv {
+          position: relative;
+          margin-bottom: 42px;
+          img {
+            position: absolute;
+            top: 4px;
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #606a79;
+            padding-right: 32px;
+            padding-bottom: 4px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #606a79;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .title {
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 32px;
-          color: #606a79;
-          &:focus {
-            outline: none;
+          color: #0b1a31;
+          margin-bottom: 37px;
+          span {
+            margin-right: 20px;
+            display: inline-block;
+            width: 38px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #1a407a;
           }
         }
+        .lotsVisitNew {
+          padding-bottom: 39px;
+          margin-bottom: 45px;
+          border-bottom: 1px solid #b9b7bd;
+          &:last-child {
+            border-bottom: none;
+          }
+          .subject {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #0b1a31;
+          }
+          .new {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 34px;
+            text-align: justify;
+            color: #606a79;
+          }
+          a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            color: #1a407a;
+            &:hover {
+              text-decoration: none;
+            }
+            img {
+              width: 26px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .enBlogs {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 82px;
       }
       .title {
         font-style: normal;
         font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+      }
+    }
+    .route {
+      width: 100%;
+      padding: 7px 148px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+      margin-bottom: 200px;
+    }
+    .topNews {
+      padding: 0px 148px 0px 152px;
+      .title {
+        font-style: normal;
+        font-weight: 400;
         font-size: 18px;
-        line-height: 32px;
+        line-height: 40px;
         color: #0b1a31;
-        margin-bottom: 37px;
+        margin-bottom: 32px;
         span {
-          margin-right: 20px;
-          display: inline-block;
-          width: 38px;
+          width: 43px;
           height: 5px;
+          display: inline-block;
           border-radius: 5px;
           background-color: #1a407a;
+          margin-right: 10px;
         }
       }
-      .lotsVisitNew {
-        padding-bottom: 39px;
-        margin-bottom: 45px;
+      .newsList {
+        gap: 25px;
+        overflow-x: scroll;
         border-bottom: 1px solid #b9b7bd;
-        &:last-child {
-          border-bottom: none;
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
         }
-        .subject {
+        .new {
+          background: url("/images/topNew.jpg") no-repeat;
+          background-size: cover;
+          min-width: 312px;
+          overflow: hidden;
+          &:hover {
+            .effect {
+              transform: translateY(0px);
+            }
+          }
+          .effect {
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 66, 123, 0.8);
+            background-blend-mode: multiply;
+            padding: 41px 19px 47px 19px;
+            transform: translateY(225px);
+            transition: transform 1s;
+            .title {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              color: #b9b7bd;
+              margin-bottom: 4px;
+            }
+            .about {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 29px;
+              color: #ffffff;
+              margin-bottom: 23px;
+            }
+            .text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+              text-align: justify;
+              color: #b9b7bd;
+              margin-bottom: 31px;
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 50px;
+              color: #ffffff;
+              img {
+                width: 40px;
+                margin-right: 7px;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .someNews {
+      padding-right: 148px;
+      padding-left: 150px;
+      gap: 120px;
+      .lastNews {
+        padding-bottom: 200px;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 40px;
+          color: #0b1a31;
+          margin-bottom: 50px;
+          span {
+            height: 5px;
+            width: 43px;
+            display: inline-block;
+            margin-right: 10px;
+            border-radius: 5px;
+            background-color: #1a407a;
+          }
+        }
+        .lastNew {
+          padding-bottom: 50px;
+          border-bottom: 1px solid #b9b7bd;
+          margin-bottom: 56px;
+          .newTitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #0b1a31;
+            margin-bottom: 16px;
+          }
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 35px;
+            text-align: justify;
+            color: #606a79;
+          }
+          .profile {
+            margin-left: 5px;
+          }
+          .calendar {
+            margin-left: 5px;
+          }
+          .writer {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            color: #1a407a;
+            margin-left: 12px;
+          }
+          .littleLine {
+            width: 1px;
+            background-color: #b9b7bd;
+            height: 11px;
+            display: inline-block;
+            margin-left: 15px;
+          }
+          .date {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            letter-spacing: 0.2em;
+            color: #1a407a;
+          }
+          .newPic {
+            width: 180px;
+            height: 180px;
+            margin-right: 85px;
+          }
+        }
+        .pagination {
+          gap: 10px;
+          .num {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: #606a79;
+            cursor: pointer;
+          }
+          .activePage {
+            color: #0b1a31;
+          }
+          .linePagination {
+            height: 2px;
+            width: 86px;
+            display: inline-block;
+            background-color: #0b1a31;
+          }
+        }
+      }
+      .lotsVisit {
+        min-width: 30%;
+        height: fit-content;
+        padding: 49px 25px 0px 25px;
+        box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
+        .searchDiv {
+          position: relative;
+          margin-bottom: 42px;
+          img {
+            position: absolute;
+            top: 4px;
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #606a79;
+            padding-right: 32px;
+            padding-bottom: 4px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #606a79;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .title {
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 32px;
           color: #0b1a31;
-        }
-        .new {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 34px;
-          text-align: justify;
-          color: #606a79;
-        }
-        a {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 50px;
-          color: #1a407a;
-          &:hover {
-            text-decoration: none;
+          margin-bottom: 37px;
+          span {
+            margin-right: 20px;
+            display: inline-block;
+            width: 38px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #1a407a;
           }
-          img {
-            width: 26px;
-            margin-right: 4px;
+        }
+        .lotsVisitNew {
+          padding-bottom: 39px;
+          margin-bottom: 45px;
+          border-bottom: 1px solid #b9b7bd;
+          &:last-child {
+            border-bottom: none;
+          }
+          .subject {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #0b1a31;
+          }
+          .new {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 34px;
+            text-align: justify;
+            color: #606a79;
+          }
+          a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            color: #1a407a;
+            &:hover {
+              text-decoration: none;
+            }
+            img {
+              width: 26px;
+              margin-right: 4px;
+            }
           }
         }
       }
@@ -298,33 +598,68 @@
 }
 @media only screen and (max-width: 1540px) {
   .blogs {
-    .someNews {
-      flex-direction: column;
-      gap: 0px;
-      .lotsVisit {
-        margin-bottom: 200px;
+    .faBlogs {
+      .someNews {
+        flex-direction: column;
+        gap: 0px;
+        .lotsVisit {
+          margin-bottom: 200px;
+        }
+      }
+    }
+    .enBlogs {
+      .someNews {
+        flex-direction: column;
+        gap: 0px;
+        .lotsVisit {
+          margin-bottom: 200px;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 1057px) {
   .blogs {
-    .topDiv {
-      padding-right: 70px;
+    .faBlogs {
+      .topDiv {
+        padding-right: 70px;
+      }
+      .route {
+        padding-right: 70px;
+        margin-bottom: 100px;
+      }
+      .topNews {
+        padding: 0px 70px;
+      }
+      .someNews {
+        padding: 0px 70px;
+        .lastNews {
+          .lastNew {
+            .newPic {
+              margin-right: 30px;
+            }
+          }
+        }
+      }
     }
-    .route {
-      padding-right: 70px;
-      margin-bottom: 100px;
-    }
-    .topNews {
-      padding: 0px 70px;
-    }
-    .someNews {
-      padding: 0px 70px;
-      .lastNews {
-        .lastNew {
-          .newPic {
-            margin-right: 30px;
+    .enBlogs {
+      .topDiv {
+        padding-right: 70px;
+      }
+      .route {
+        padding-right: 70px;
+        margin-bottom: 100px;
+      }
+      .topNews {
+        padding: 0px 70px;
+      }
+      .someNews {
+        padding: 0px 70px;
+        .lastNews {
+          .lastNew {
+            .newPic {
+              margin-right: 30px;
+            }
           }
         }
       }
@@ -333,119 +668,164 @@
 }
 @media only screen and (max-width: 719px) {
   .blogs {
-    .topDiv {
-      padding: 50px;
-      padding-top: 100px;
-      .title {
-        font-size: 23px;
-      }
-      .enLogo {
-        img {
-          display: none;
+    .faBlogs {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
+        .title {
+          font-size: 23px;
+        }
+        .enLogo {
+          img {
+            display: none;
+          }
         }
       }
-    }
-    .route {
-      padding-right: 50px;
-      font-size: 12px;
-      margin-bottom: 100px;
-    }
-    .topNews {
-      padding: 0px 50px;
-      .title {
-        font-size: 15px;
-        span {
-          width: 20px;
-          height: 2.5px;
+      .route {
+        padding-right: 50px;
+        font-size: 12px;
+        margin-bottom: 100px;
+      }
+      .topNews {
+        padding: 0px 50px;
+        .title {
+          font-size: 15px;
+          span {
+            width: 20px;
+            height: 2.5px;
+          }
+        }
+        .newsList {
+          .new {
+            min-width: 200px;
+            .effect {
+              padding: 20px 15px;
+              transform: translateY(160px);
+              .title {
+                font-size: 12px;
+                margin-bottom: 0px;
+              }
+              .about {
+                font-size: 12px;
+                line-height: 22px;
+                margin-bottom: 17px;
+              }
+              .text {
+                font-size: 11px;
+                line-height: 22px;
+                margin-bottom: 0px;
+              }
+              a {
+                font-size: 11px;
+                img {
+                  width: 20px;
+                }
+              }
+            }
+          }
         }
       }
-      .newsList {
-        .new {
-          min-width: 200px;
-          .effect {
-            padding: 20px 15px;
-            transform: translateY(160px);
-            .title {
-              font-size: 12px;
-              margin-bottom: 0px;
+      .someNews {
+        padding: 0px 50px;
+        .lastNews {
+          padding-bottom: 50px;
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
             }
-            .about {
-              font-size: 12px;
-              line-height: 22px;
-              margin-bottom: 17px;
+          }
+          .lastNew {
+            flex-direction: column;
+            align-items: center;
+            .newTitle {
+              font-size: 15px;
             }
-            .text {
-              font-size: 11px;
-              line-height: 22px;
-              margin-bottom: 0px;
+            p {
+              font-size: 15px;
+            }
+            .writer,
+            .date {
+              font-size: 10px;
+            }
+            .calendar,
+            .profile {
+              width: 12px;
+            }
+            .newPic {
+              width: 100%;
+              height: auto;
+              margin-top: 50px;
+              margin-right: 0px;
+            }
+          }
+          .pagination {
+            .num {
+              font-size: 15px;
+              width: fit-content;
+            }
+            span {
+              width: 45px;
+            }
+          }
+        }
+        .lotsVisit {
+          margin-bottom: 50px;
+          .searchDiv {
+            img {
+              width: 15px;
+              top: 9px;
+            }
+            input {
+              font-size: 15px;
+              padding-right: 24px;
+            }
+          }
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          .lotsVisitNew {
+            .subject {
+              font-size: 15px;
+            }
+            .new {
+              font-size: 12px;
             }
             a {
-              font-size: 11px;
+              font-size: 10px;
               img {
-                width: 20px;
+                width: 16px;
               }
             }
           }
         }
       }
     }
-    .someNews {
-      padding: 0px 50px;
-      .lastNews {
-        padding-bottom: 50px;
+    .enBlogs {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
         .title {
-          font-size: 15px;
-          span {
-            width: 20px;
-            height: 2.5px;
-          }
+          font-size: 23px;
         }
-        .lastNew {
-          flex-direction: column;
-          align-items: center;
-          .newTitle {
-            font-size: 15px;
-          }
-          p {
-            font-size: 15px;
-          }
-          .writer,
-          .date {
-            font-size: 10px;
-          }
-          .calendar,
-          .profile {
-            width: 12px;
-          }
-          .newPic {
-            width: 100%;
-            height: auto;
-            margin-top: 50px;
-            margin-right: 0px;
-          }
-        }
-        .pagination {
-          .num {
-            font-size: 15px;
-            width: fit-content;
-          }
-          span {
-            width: 45px;
+        .enLogo {
+          img {
+            display: none;
           }
         }
       }
-      .lotsVisit {
-        margin-bottom: 50px;
-        .searchDiv {
-          img {
-            width: 15px;
-            top: 9px;
-          }
-          input {
-            font-size: 15px;
-            padding-right: 24px;
-          }
-        }
+      .route {
+        padding-right: 50px;
+        font-size: 12px;
+        margin-bottom: 100px;
+      }
+      .topNews {
+        padding: 0px 50px;
         .title {
           font-size: 15px;
           span {
@@ -453,17 +833,112 @@
             height: 2.5px;
           }
         }
-        .lotsVisitNew {
-          .subject {
-            font-size: 15px;
-          }
+        .newsList {
           .new {
-            font-size: 12px;
+            min-width: 200px;
+            .effect {
+              padding: 20px 15px;
+              transform: translateY(160px);
+              .title {
+                font-size: 12px;
+                margin-bottom: 0px;
+              }
+              .about {
+                font-size: 12px;
+                line-height: 22px;
+                margin-bottom: 17px;
+              }
+              .text {
+                font-size: 11px;
+                line-height: 22px;
+                margin-bottom: 0px;
+              }
+              a {
+                font-size: 11px;
+                img {
+                  width: 20px;
+                }
+              }
+            }
           }
-          a {
-            font-size: 10px;
+        }
+      }
+      .someNews {
+        padding: 0px 50px;
+        .lastNews {
+          padding-bottom: 50px;
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          .lastNew {
+            flex-direction: column;
+            align-items: center;
+            .newTitle {
+              font-size: 15px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .writer,
+            .date {
+              font-size: 10px;
+            }
+            .calendar,
+            .profile {
+              width: 12px;
+            }
+            .newPic {
+              width: 100%;
+              height: auto;
+              margin-top: 50px;
+              margin-right: 0px;
+            }
+          }
+          .pagination {
+            .num {
+              font-size: 15px;
+              width: fit-content;
+            }
+            span {
+              width: 45px;
+            }
+          }
+        }
+        .lotsVisit {
+          margin-bottom: 50px;
+          .searchDiv {
             img {
-              width: 16px;
+              width: 15px;
+              top: 9px;
+            }
+            input {
+              font-size: 15px;
+              padding-right: 24px;
+            }
+          }
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          .lotsVisitNew {
+            .subject {
+              font-size: 15px;
+            }
+            .new {
+              font-size: 12px;
+            }
+            a {
+              font-size: 10px;
+              img {
+                width: 16px;
+              }
             }
           }
         }

@@ -1,95 +1,192 @@
 .partners {
-  .topDiv {
-    background: url("/images/newsBack.jpg") no-repeat;
-    background-size: cover;
-    padding: 70px 148px 150px 70px;
-    .enLogo {
-      text-align: left;
-      margin-bottom: 82px;
-      img {
-        width: 130px;
+  .faPartners {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 82px;
+        img {
+          width: 130px;
+        }
       }
-    }
-    .title {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      color: #ffffff;
-    }
-  }
-  .route {
-    width: 100%;
-    padding: 7px 148px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #1a407a;
-    background: #e6e9ed;
-  }
-  .partners {
-    padding: 209px 148px 200px 150px;
-    gap: 105px;
-    .partner {
-      img {
-        width: 150px;
-        margin-bottom: 25px;
-      }
-      .text {
+      .title {
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-        text-align: center;
-        color: #01040b;
+        font-size: 32px;
+        color: #ffffff;
+      }
+    }
+    .route {
+      width: 100%;
+      padding: 7px 148px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+    }
+    .partners {
+      padding: 209px 148px 200px 150px;
+      gap: 105px;
+      .partner {
+        img {
+          width: 150px;
+          margin-bottom: 25px;
+        }
+        .text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          text-align: center;
+          color: #01040b;
+        }
+      }
+    }
+  }
+  .enPartners {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 82px;
+        img {
+          width: 130px;
+        }
+      }
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+      }
+    }
+    .route {
+      width: 100%;
+      padding: 7px 148px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+    }
+    .partners {
+      padding: 209px 148px 200px 150px;
+      gap: 105px;
+      .partner {
+        img {
+          width: 150px;
+          margin-bottom: 25px;
+        }
+        .text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          text-align: center;
+          color: #01040b;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 1057px) {
   .partners {
-    .topDiv {
-      padding-right: 70px;
+    .faPartners {
+      .topDiv {
+        padding-right: 70px;
+      }
+      .route {
+        padding-right: 70px;
+      }
+      .partners {
+        gap: 70px;
+        padding: 70px;
+      }
     }
-    .route {
-      padding-right: 70px;
-    }
-    .partners {
-      gap: 70px;
-      padding: 70px;
+    .enPartners {
+      .topDiv {
+        padding-right: 70px;
+      }
+      .route {
+        padding-right: 70px;
+      }
+      .partners {
+        gap: 70px;
+        padding: 70px;
+      }
     }
   }
 }
 @media only screen and (max-width: 719px) {
   .partners {
-    .topDiv {
-      padding: 20px;
-      padding-bottom: 150px;
-      padding-top: 100px;
-      .title {
-        font-size: 23px;
+    .faPartners {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
+        .title {
+          font-size: 23px;
+        }
+        .enLogo {
+          img {
+            display: none;
+          }
+        }
       }
-      .enLogo {
-        img {
-          display: none;
+      .route {
+        padding: 7px 50px;
+        font-size: 12px;
+        margin-bottom: 50px;
+      }
+      .partners {
+        padding: 50px;
+        gap: 40px;
+        margin-bottom: 50px;
+        .partner {
+          img {
+            width: 90px;
+            margin-bottom: 0px;
+          }
+          .text {
+            font-size: 12px;
+          }
         }
       }
     }
-    .route {
-      padding: 7px 20px;
-      font-size: 12px;
-      margin-bottom: 50px;
-    }
-    .partners {
-      padding: 20px;
-      gap: 40px;
-      margin-bottom: 50px;
-      .partner {
-        img {
-          width: 90px;
-          margin-bottom: 0px;
+    .enPartners {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
+        .title {
+          font-size: 23px;
         }
-        .text {
-          font-size: 12px;
+        .enLogo {
+          img {
+            display: none;
+          }
+        }
+      }
+      .route {
+        padding: 7px 50px;
+        font-size: 12px;
+        margin-bottom: 50px;
+      }
+      .partners {
+        padding: 50px;
+        gap: 40px;
+        margin-bottom: 50px;
+        .partner {
+          img {
+            width: 90px;
+            margin-bottom: 0px;
+          }
+          .text {
+            font-size: 12px;
+          }
         }
       }
     }

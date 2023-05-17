@@ -1,449 +1,904 @@
 .stockNews {
-  .topDiv {
-    background: url("/images/newsBack.jpg") no-repeat;
-    background-size: cover;
-    padding: 70px 148px 150px 70px;
-    .enLogo {
-      text-align: left;
-      margin-bottom: 82px;
-      img {
-        width: 130px;
-      }
-    }
-    .title {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      color: #ffffff;
-    }
-  }
-  .route {
-    width: 100%;
-    padding: 7px 148px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #1a407a;
-    background: #e6e9ed;
-  }
-  .page {
-    padding: 200px 148px 170px 148px;
-    .chartDiv {
-      background: #01040b;
-      padding: 50px;
-      * {
-        direction: ltr;
+  .faStockNews {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
         text-align: left;
+        margin-bottom: 82px;
+        img {
+          width: 130px;
+        }
       }
       .title {
         font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 28px;
-        color: #72abf0;
-        margin-bottom: 31px;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
       }
-      .dropNum {
-        .number {
+    }
+    .route {
+      width: 100%;
+      padding: 7px 148px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+    }
+    .page {
+      padding: 200px 148px 170px 148px;
+      .chartDiv {
+        background: #01040b;
+        padding: 50px;
+        * {
+          direction: ltr;
+          text-align: left;
+        }
+        .title {
           font-style: normal;
-          font-weight: 600;
-          font-size: 24px;
+          font-weight: 700;
+          font-size: 28px;
           line-height: 28px;
-          color: #ffffff;
-          margin-right: 48px;
+          color: #72abf0;
+          margin-bottom: 31px;
         }
-        .text {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 28px;
-          color: #b2b2b2;
-          margin-top: 10px;
-        }
-        .green,
-        .red {
-          font-style: normal;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 28px;
-        }
-        .red {
-          margin-right: 29px;
-          color: #e61414;
-        }
-        .green {
-          color: #50b810;
-        }
-      }
-      .grayLine {
-        width: 0.5px;
-        display: inline-block;
-        border-radius: 1px;
-        background-color: #4c4c4c;
-        margin-right: 29px;
-      }
-      .years {
-        margin-top: 54px;
-        margin-bottom: 13px;
-        & > div {
-          gap: 20px;
-          flex-wrap: wrap;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 20px;
-          letter-spacing: -0.24px;
-          color: #ffffff;
-          div {
-            direction: rtl;
+        .dropNum {
+          .number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            color: #ffffff;
+            margin-right: 48px;
+          }
+          .text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #b2b2b2;
+            margin-top: 10px;
+          }
+          .green,
+          .red {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+          }
+          .red {
+            margin-right: 29px;
+            color: #e61414;
+          }
+          .green {
+            color: #50b810;
           }
         }
-        button {
-          background: #4c4c4c;
-          border-radius: 4px;
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 20px;
-          letter-spacing: -0.24px;
-          color: #ffffff;
-          border: none;
-          margin-left: 10px;
+        .grayLine {
+          width: 0.5px;
+          display: inline-block;
+          border-radius: 1px;
+          background-color: #4c4c4c;
+          margin-right: 29px;
+        }
+        .years {
+          margin-top: 54px;
+          margin-bottom: 13px;
+          & > div {
+            gap: 20px;
+            flex-wrap: wrap;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            div {
+              direction: rtl;
+            }
+          }
+          button {
+            background: #4c4c4c;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            border: none;
+            margin-left: 10px;
+          }
+        }
+        .chart {
+          height: 220px;
+        }
+        .aboutChart {
+          margin-top: 29px;
+          & > div {
+            width: 111px;
+          }
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #b2b2b2;
+            height: fit-content;
+          }
+          .number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            height: fit-content;
+          }
+          span {
+            width: 1px;
+            display: inline-block;
+            margin: 0px 32px;
+            background-color: #b2b2b2;
+            margin-bottom: 31px;
+          }
         }
       }
-      .chart {
-        height: 220px;
-      }
-      .aboutChart {
-        margin-top: 29px;
-        & > div {
-          width: 111px;
+      .banner {
+        margin: 100px 0px;
+        background: url("/images/stockNewBanner.jpg") no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 47px;
+        img {
+          margin-left: 23px;
         }
         .title {
           font-style: normal;
           font-weight: 400;
-          font-size: 12px;
-          line-height: 20px;
-          letter-spacing: -0.24px;
-          color: #b2b2b2;
-          height: fit-content;
-        }
-        .number {
-          font-style: normal;
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 20px;
-          letter-spacing: -0.24px;
+          font-size: 25px;
+          line-height: 40px;
           color: #ffffff;
-          height: fit-content;
+          margin-left: 100px;
         }
-        span {
-          width: 1px;
-          display: inline-block;
-          margin: 0px 32px;
-          background-color: #b2b2b2;
-          margin-bottom: 31px;
-        }
-      }
-    }
-    .banner {
-      margin: 100px 0px;
-      background: url("/images/stockNewBanner.jpg") no-repeat;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 50px 47px;
-      img {
-        margin-left: 23px;
-      }
-      .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 40px;
-        color: #ffffff;
-        margin-left: 100px;
-      }
-      button {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #1a407a;
-        background: #ffffff;
-        border-radius: 40px;
-        border: none;
-        padding: 0px 22px;
-        text-align: center;
-        transition: all 0.5s;
-        &:hover {
-          transform: translate3d(-5px, -5px, 5px);
-          box-shadow: 10px 10px 15px #0b1a31;
-        }
-      }
-    }
-    .topNews {
-      .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 40px;
-        color: #0b1a31;
-        margin-bottom: 32px;
-        span {
-          width: 43px;
-          height: 5px;
-          display: inline-block;
-          border-radius: 5px;
-          background-color: #1a407a;
-          margin-right: 10px;
-        }
-      }
-      .newsList {
-        gap: 25px;
-        overflow-x: scroll;
-        border-bottom: 1px solid #b9b7bd;
-        padding-bottom: 50px;
-        margin-bottom: 100px;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        &::-webkit-scrollbar {
-          display: none;
-        }
-        .new {
-          background: url("/images/topNew.jpg") no-repeat;
-          background-size: cover;
-          min-width: 312px;
-          overflow: hidden;
+        button {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          color: #1a407a;
+          background: #ffffff;
+          border-radius: 40px;
+          border: none;
+          padding: 0px 22px;
+          text-align: center;
+          transition: all 0.5s;
           &:hover {
-            .effect {
-              transform: translateY(0px);
-            }
-          }
-          .effect {
-            width: 100%;
-            height: 100%;
-            background: rgba(28, 66, 123, 0.8);
-            background-blend-mode: multiply;
-            padding: 41px 19px 47px 19px;
-            transform: translateY(225px);
-            transition: transform 1s;
-            .title {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              color: #b9b7bd;
-              margin-bottom: 4px;
-            }
-            .about {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 29px;
-              color: #ffffff;
-              margin-bottom: 23px;
-            }
-            .text {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 30px;
-              text-align: justify;
-              color: #b9b7bd;
-              margin-bottom: 31px;
-            }
-            a {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 50px;
-              color: #ffffff;
-              img {
-                width: 40px;
-                margin-right: 7px;
-              }
-              &:hover {
-                text-decoration: none;
-              }
-            }
+            transform: translate3d(-5px, -5px, 5px);
+            box-shadow: 10px 10px 15px #0b1a31;
           }
         }
       }
-    }
-    .someNews {
-      gap: 120px;
-      .lastNews {
+      .topNews {
         .title {
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 40px;
           color: #0b1a31;
-          margin-bottom: 50px;
+          margin-bottom: 32px;
           span {
-            height: 5px;
             width: 43px;
+            height: 5px;
             display: inline-block;
-            margin-right: 10px;
             border-radius: 5px;
             background-color: #1a407a;
+            margin-right: 10px;
           }
         }
-        .lastNew {
-          padding-bottom: 50px;
+        .newsList {
+          gap: 25px;
+          overflow-x: scroll;
           border-bottom: 1px solid #b9b7bd;
-          margin-bottom: 56px;
-          .newTitle {
+          padding-bottom: 50px;
+          margin-bottom: 100px;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .new {
+            background: url("/images/topNew.jpg") no-repeat;
+            background-size: cover;
+            min-width: 312px;
+            overflow: hidden;
+            &:hover {
+              .effect {
+                transform: translateY(0px);
+              }
+            }
+            .effect {
+              width: 100%;
+              height: 100%;
+              background: rgba(28, 66, 123, 0.8);
+              background-blend-mode: multiply;
+              padding: 41px 19px 47px 19px;
+              transform: translateY(225px);
+              transition: transform 1s;
+              .title {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #b9b7bd;
+                margin-bottom: 4px;
+              }
+              .about {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                color: #ffffff;
+                margin-bottom: 23px;
+              }
+              .text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: justify;
+                color: #b9b7bd;
+                margin-bottom: 31px;
+              }
+              a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 50px;
+                color: #ffffff;
+                img {
+                  width: 40px;
+                  margin-right: 7px;
+                }
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .someNews {
+        gap: 120px;
+        .lastNews {
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 40px;
+            color: #0b1a31;
+            margin-bottom: 50px;
+            span {
+              height: 5px;
+              width: 43px;
+              display: inline-block;
+              margin-right: 10px;
+              border-radius: 5px;
+              background-color: #1a407a;
+            }
+          }
+          .lastNew {
+            padding-bottom: 50px;
+            border-bottom: 1px solid #b9b7bd;
+            margin-bottom: 56px;
+            .newTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 32px;
+              color: #0b1a31;
+              margin-bottom: 16px;
+            }
+            p {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 35px;
+              text-align: justify;
+              color: #606a79;
+            }
+            .profile {
+              margin-left: 5px;
+            }
+            .calendar {
+              margin-left: 5px;
+            }
+            .writer {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 50px;
+              color: #1a407a;
+              margin-left: 12px;
+            }
+            .littleLine {
+              width: 1px;
+              background-color: #b9b7bd;
+              height: 11px;
+              display: inline-block;
+              margin-left: 15px;
+            }
+            .date {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 50px;
+              letter-spacing: 0.2em;
+              color: #1a407a;
+            }
+            .newPic {
+              width: 180px;
+              height: 180px;
+              margin-right: 85px;
+            }
+          }
+          .pagination {
+            gap: 10px;
+            .num {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 32px;
+              color: #606a79;
+              cursor: pointer;
+            }
+            .activePage {
+              color: #0b1a31;
+            }
+            .linePagination {
+              height: 2px;
+              width: 86px;
+              display: inline-block;
+              background-color: #0b1a31;
+            }
+          }
+        }
+        .lotsVisit {
+          min-width: 30%;
+          height: fit-content;
+          padding: 49px 25px 0px 25px;
+          box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
+          .searchDiv {
+            position: relative;
+            margin-bottom: 42px;
+            img {
+              position: absolute;
+              top: 4px;
+            }
+            input {
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid #606a79;
+              padding-right: 32px;
+              padding-bottom: 4px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 32px;
+              color: #606a79;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          .title {
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
             line-height: 32px;
             color: #0b1a31;
-            margin-bottom: 16px;
+            margin-bottom: 37px;
+            span {
+              margin-right: 20px;
+              display: inline-block;
+              width: 38px;
+              height: 5px;
+              border-radius: 5px;
+              background-color: #1a407a;
+            }
           }
-          p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 35px;
-            text-align: justify;
-            color: #606a79;
-          }
-          .profile {
-            margin-left: 5px;
-          }
-          .calendar {
-            margin-left: 5px;
-          }
-          .writer {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 50px;
-            color: #1a407a;
-            margin-left: 12px;
-          }
-          .littleLine {
-            width: 1px;
-            background-color: #b9b7bd;
-            height: 11px;
-            display: inline-block;
-            margin-left: 15px;
-          }
-          .date {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 50px;
-            letter-spacing: 0.2em;
-            color: #1a407a;
-          }
-          .newPic {
-            width: 180px;
-            height: 180px;
-            margin-right: 85px;
-          }
-        }
-        .pagination {
-          gap: 10px;
-          .num {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 32px;
-            color: #606a79;
-            cursor: pointer;
-          }
-          .activePage {
-            color: #0b1a31;
-          }
-          .linePagination {
-            height: 2px;
-            width: 86px;
-            display: inline-block;
-            background-color: #0b1a31;
+          .lotsVisitNew {
+            padding-bottom: 39px;
+            margin-bottom: 45px;
+            border-bottom: 1px solid #b9b7bd;
+            &:last-child {
+              border-bottom: none;
+            }
+            .subject {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 32px;
+              color: #0b1a31;
+            }
+            .new {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 34px;
+              text-align: justify;
+              color: #606a79;
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 50px;
+              color: #1a407a;
+              &:hover {
+                text-decoration: none;
+              }
+              img {
+                width: 26px;
+                margin-right: 4px;
+              }
+            }
           }
         }
       }
-      .lotsVisit {
-        min-width: 30%;
-        height: fit-content;
-        padding: 49px 25px 0px 25px;
-        box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
-        .searchDiv {
-          position: relative;
-          margin-bottom: 42px;
-          img {
-            position: absolute;
-            top: 4px;
+    }
+  }
+  .enStockNews {
+    .topDiv {
+      background: url("/images/newsBack.jpg") no-repeat;
+      background-size: cover;
+      padding: 70px 148px 150px 70px;
+      .enLogo {
+        text-align: left;
+        margin-bottom: 82px;
+        img {
+          width: 130px;
+        }
+      }
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+      }
+    }
+    .route {
+      width: 100%;
+      padding: 7px 148px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #1a407a;
+      background: #e6e9ed;
+    }
+    .page {
+      padding: 200px 148px 170px 148px;
+      .chartDiv {
+        background: #01040b;
+        padding: 50px;
+        * {
+          direction: ltr;
+          text-align: left;
+        }
+        .title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 28px;
+          color: #72abf0;
+          margin-bottom: 31px;
+        }
+        .dropNum {
+          .number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            color: #ffffff;
+            margin-right: 48px;
           }
-          input {
-            width: 100%;
-            border: none;
-            border-bottom: 1px solid #606a79;
-            padding-right: 32px;
-            padding-bottom: 4px;
+          .text {
             font-style: normal;
             font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #b2b2b2;
+            margin-top: 10px;
+          }
+          .green,
+          .red {
+            font-style: normal;
+            font-weight: 600;
             font-size: 16px;
-            line-height: 32px;
-            color: #606a79;
-            &:focus {
-              outline: none;
+            line-height: 28px;
+          }
+          .red {
+            margin-right: 29px;
+            color: #e61414;
+          }
+          .green {
+            color: #50b810;
+          }
+        }
+        .grayLine {
+          width: 0.5px;
+          display: inline-block;
+          border-radius: 1px;
+          background-color: #4c4c4c;
+          margin-right: 29px;
+        }
+        .years {
+          margin-top: 54px;
+          margin-bottom: 13px;
+          & > div {
+            gap: 20px;
+            flex-wrap: wrap;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            div {
+              direction: rtl;
             }
           }
+          button {
+            background: #4c4c4c;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            border: none;
+            margin-left: 10px;
+          }
+        }
+        .chart {
+          height: 220px;
+        }
+        .aboutChart {
+          margin-top: 29px;
+          & > div {
+            width: 111px;
+          }
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #b2b2b2;
+            height: fit-content;
+          }
+          .number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #ffffff;
+            height: fit-content;
+          }
+          span {
+            width: 1px;
+            display: inline-block;
+            margin: 0px 32px;
+            background-color: #b2b2b2;
+            margin-bottom: 31px;
+          }
+        }
+      }
+      .banner {
+        margin: 100px 0px;
+        background: url("/images/stockNewBanner.jpg") no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 47px;
+        img {
+          margin-left: 23px;
         }
         .title {
           font-style: normal;
           font-weight: 400;
-          font-size: 18px;
-          line-height: 32px;
-          color: #0b1a31;
-          margin-bottom: 37px;
-          span {
-            margin-right: 20px;
-            display: inline-block;
-            width: 38px;
-            height: 5px;
-            border-radius: 5px;
-            background-color: #1a407a;
+          font-size: 25px;
+          line-height: 40px;
+          color: #ffffff;
+          margin-left: 100px;
+        }
+        button {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          color: #1a407a;
+          background: #ffffff;
+          border-radius: 40px;
+          border: none;
+          padding: 0px 22px;
+          text-align: center;
+          transition: all 0.5s;
+          &:hover {
+            transform: translate3d(-5px, -5px, 5px);
+            box-shadow: 10px 10px 15px #0b1a31;
           }
         }
-        .lotsVisitNew {
-          padding-bottom: 39px;
-          margin-bottom: 45px;
-          border-bottom: 1px solid #b9b7bd;
-          &:last-child {
-            border-bottom: none;
+      }
+      .topNews {
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 40px;
+          color: #0b1a31;
+          margin-bottom: 32px;
+          span {
+            width: 43px;
+            height: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #1a407a;
+            margin-right: 10px;
           }
-          .subject {
+        }
+        .newsList {
+          gap: 25px;
+          overflow-x: scroll;
+          border-bottom: 1px solid #b9b7bd;
+          padding-bottom: 50px;
+          margin-bottom: 100px;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .new {
+            background: url("/images/topNew.jpg") no-repeat;
+            background-size: cover;
+            min-width: 312px;
+            overflow: hidden;
+            &:hover {
+              .effect {
+                transform: translateY(0px);
+              }
+            }
+            .effect {
+              width: 100%;
+              height: 100%;
+              background: rgba(28, 66, 123, 0.8);
+              background-blend-mode: multiply;
+              padding: 41px 19px 47px 19px;
+              transform: translateY(225px);
+              transition: transform 1s;
+              .title {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #b9b7bd;
+                margin-bottom: 4px;
+              }
+              .about {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                color: #ffffff;
+                margin-bottom: 23px;
+              }
+              .text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: justify;
+                color: #b9b7bd;
+                margin-bottom: 31px;
+              }
+              a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 50px;
+                color: #ffffff;
+                img {
+                  width: 40px;
+                  margin-right: 7px;
+                }
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .someNews {
+        gap: 120px;
+        .lastNews {
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 40px;
+            color: #0b1a31;
+            margin-bottom: 50px;
+            span {
+              height: 5px;
+              width: 43px;
+              display: inline-block;
+              margin-right: 10px;
+              border-radius: 5px;
+              background-color: #1a407a;
+            }
+          }
+          .lastNew {
+            padding-bottom: 50px;
+            border-bottom: 1px solid #b9b7bd;
+            margin-bottom: 56px;
+            .newTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 32px;
+              color: #0b1a31;
+              margin-bottom: 16px;
+            }
+            p {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 35px;
+              text-align: justify;
+              color: #606a79;
+            }
+            .profile {
+              margin-left: 5px;
+            }
+            .calendar {
+              margin-left: 5px;
+            }
+            .writer {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 50px;
+              color: #1a407a;
+              margin-left: 12px;
+            }
+            .littleLine {
+              width: 1px;
+              background-color: #b9b7bd;
+              height: 11px;
+              display: inline-block;
+              margin-left: 15px;
+            }
+            .date {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 50px;
+              letter-spacing: 0.2em;
+              color: #1a407a;
+            }
+            .newPic {
+              width: 180px;
+              height: 180px;
+              margin-right: 85px;
+            }
+          }
+          .pagination {
+            gap: 10px;
+            .num {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 32px;
+              color: #606a79;
+              cursor: pointer;
+            }
+            .activePage {
+              color: #0b1a31;
+            }
+            .linePagination {
+              height: 2px;
+              width: 86px;
+              display: inline-block;
+              background-color: #0b1a31;
+            }
+          }
+        }
+        .lotsVisit {
+          min-width: 30%;
+          height: fit-content;
+          padding: 49px 25px 0px 25px;
+          box-shadow: 0px 0px 24px rgba(26, 64, 122, 0.1);
+          .searchDiv {
+            position: relative;
+            margin-bottom: 42px;
+            img {
+              position: absolute;
+              top: 4px;
+            }
+            input {
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid #606a79;
+              padding-right: 32px;
+              padding-bottom: 4px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 32px;
+              color: #606a79;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          .title {
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
             line-height: 32px;
             color: #0b1a31;
-          }
-          .new {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 34px;
-            text-align: justify;
-            color: #606a79;
-          }
-          a {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 50px;
-            color: #1a407a;
-            &:hover {
-              text-decoration: none;
+            margin-bottom: 37px;
+            span {
+              margin-right: 20px;
+              display: inline-block;
+              width: 38px;
+              height: 5px;
+              border-radius: 5px;
+              background-color: #1a407a;
             }
-            img {
-              width: 26px;
-              margin-right: 4px;
+          }
+          .lotsVisitNew {
+            padding-bottom: 39px;
+            margin-bottom: 45px;
+            border-bottom: 1px solid #b9b7bd;
+            &:last-child {
+              border-bottom: none;
+            }
+            .subject {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 32px;
+              color: #0b1a31;
+            }
+            .new {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 34px;
+              text-align: justify;
+              color: #606a79;
+            }
+            a {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 50px;
+              color: #1a407a;
+              &:hover {
+                text-decoration: none;
+              }
+              img {
+                width: 26px;
+                margin-right: 4px;
+              }
             }
           }
         }
@@ -453,13 +908,27 @@
 }
 @media only screen and (max-width: 1540px) {
   .stockNews {
-    .page {
-      .someNews {
-        flex-direction: column;
-        gap: 0px;
-        .lotsVisit {
-          margin-bottom: 200px;
-          margin-top: 50px;
+    .faStockNews {
+      .page {
+        .someNews {
+          flex-direction: column;
+          gap: 0px;
+          .lotsVisit {
+            margin-bottom: 200px;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+    .enStockNews {
+      .page {
+        .someNews {
+          flex-direction: column;
+          gap: 0px;
+          .lotsVisit {
+            margin-bottom: 200px;
+            margin-top: 50px;
+          }
         }
       }
     }
@@ -467,39 +936,79 @@
 }
 @media only screen and (max-width: 1057px) {
   .stockNews {
-    .topDiv {
-      padding-right: 70px;
-      padding-top: 100px;
-      .enLogo {
-        img {
-          display: none;
-        }
-      }
-    }
-    .route {
-      padding-right: 70px;
-      margin-bottom: 100px;
-    }
-    .page {
-      padding: 150px 70px;
-      .someNews {
-        .lastNews {
-          .lastNew {
-            .newPic {
-              margin-right: 30px;
-            }
+    .faStockNews {
+      .topDiv {
+        padding-right: 70px;
+        padding-top: 100px;
+        .enLogo {
+          img {
+            display: none;
           }
         }
       }
-      .banner {
-        flex-direction: column;
-        gap: 20px;
-        img {
-          margin-left: 0px;
+      .route {
+        padding-right: 70px;
+        margin-bottom: 100px;
+      }
+      .page {
+        padding: 150px 70px;
+        .someNews {
+          .lastNews {
+            .lastNew {
+              .newPic {
+                margin-right: 30px;
+              }
+            }
+          }
         }
-        .title {
-          margin-left: 0px;
-          text-align: center;
+        .banner {
+          flex-direction: column;
+          gap: 20px;
+          img {
+            margin-left: 0px;
+          }
+          .title {
+            margin-left: 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .enStockNews {
+      .topDiv {
+        padding-right: 70px;
+        padding-top: 100px;
+        .enLogo {
+          img {
+            display: none;
+          }
+        }
+      }
+      .route {
+        padding-right: 70px;
+        margin-bottom: 100px;
+      }
+      .page {
+        padding: 150px 70px;
+        .someNews {
+          .lastNews {
+            .lastNew {
+              .newPic {
+                margin-right: 30px;
+              }
+            }
+          }
+        }
+        .banner {
+          flex-direction: column;
+          gap: 20px;
+          img {
+            margin-left: 0px;
+          }
+          .title {
+            margin-left: 0px;
+            text-align: center;
+          }
         }
       }
     }
@@ -507,167 +1016,298 @@
 }
 @media only screen and (max-width: 719px) {
   .stockNews {
-    .topDiv {
-      padding: 20px;
-      padding-bottom: 150px;
-      .title {
-        font-size: 23px;
-      }
-      .enLogo {
-        img {
-          height: 40px;
-        }
-      }
-    }
-    .route {
-      padding-right: 20px;
-      font-size: 12px;
-      margin-bottom: 50px;
-    }
-    .page {
-      padding: 0px 20px;
-      .chartDiv {
-        padding: 20px;
+    .faStockNews {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
         .title {
-          font-size: 18px;
+          font-size: 23px;
         }
-        .dropNum {
-          & > div {
-            flex-direction: column;
-          }
-          .number {
-            font-size: 15px;
-            margin-right: 20px;
-          }
-          .red,
-          .text,
-          .green {
-            font-size: 12px;
-          }
-          .text {
-            margin-right: 20px;
+        .enLogo {
+          img {
+            height: 40px;
           }
         }
-        .years {
-          flex-direction: column;
-          div {
-            font-size: 10px;
-          }
-          button {
-            margin-left: 0px;
-            margin-top: 10px;
-            text-align: center;
-          }
-        }
-        .aboutChart {
-          & > div {
-            width: 37px;
-          }
-          div {
-            flex-direction: column;
-          }
+      }
+      .route {
+        padding: 7px 50px;
+        font-size: 12px;
+        margin-bottom: 50px;
+      }
+      .page {
+        padding: 0px 50px;
+        .chartDiv {
+          padding: 20px;
           .title {
-            margin-bottom: 10px;
-            font-size: 10px;
+            font-size: 18px;
           }
-          .number {
-            margin-bottom: 20px;
-            font-size: 10px;
+          .dropNum {
+            & > div {
+              flex-direction: column;
+            }
+            .number {
+              font-size: 15px;
+              margin-right: 20px;
+            }
+            .red,
+            .text,
+            .green {
+              font-size: 12px;
+            }
+            .text {
+              margin-right: 20px;
+            }
+          }
+          .years {
+            flex-direction: column;
+            div {
+              font-size: 10px;
+            }
+            button {
+              margin-left: 0px;
+              margin-top: 10px;
+              text-align: center;
+            }
+          }
+          .aboutChart {
+            & > div {
+              width: 37px;
+            }
+            div {
+              flex-direction: column;
+            }
+            .title {
+              margin-bottom: 10px;
+              font-size: 10px;
+            }
+            .number {
+              margin-bottom: 20px;
+              font-size: 10px;
+            }
           }
         }
-      }
-      .topNews {
-        .title {
-          font-size: 15px;
-          span {
-            width: 20px;
-            height: 2.5px;
+        .banner {
+          padding: 20px;
+          .title {
+            font-size: 15px;
+            line-height: 25px;
+          }
+          img {
+            width: 15px;
+          }
+          a {
+            button {
+              font-size: 15px;
+            }
           }
         }
-        .newsList {
-          .new {
-            min-width: 200px;
-            .effect {
-              padding: 20px 15px;
-              transform: translateY(160px);
-              .title {
-                font-size: 12px;
-                margin-bottom: 0px;
+        .topNews {
+          .title {
+            font-size: 15px;
+            span {
+              width: 20px;
+              height: 2.5px;
+            }
+          }
+          .newsList {
+            .new {
+              min-width: 200px;
+              .effect {
+                padding: 20px 15px;
+                transform: translateY(160px);
+                .title {
+                  font-size: 12px;
+                  margin-bottom: 0px;
+                }
+                .about {
+                  font-size: 12px;
+                  line-height: 22px;
+                  margin-bottom: 17px;
+                }
+                .text {
+                  font-size: 11px;
+                  line-height: 22px;
+                  margin-bottom: 0px;
+                }
+                a {
+                  font-size: 11px;
+                  img {
+                    width: 20px;
+                  }
+                }
               }
-              .about {
-                font-size: 12px;
-                line-height: 22px;
-                margin-bottom: 17px;
+            }
+          }
+        }
+        .someNews {
+          .lastNews {
+            padding-bottom: 50px;
+            .title {
+              font-size: 15px;
+              span {
+                width: 20px;
+                height: 2.5px;
               }
-              .text {
-                font-size: 11px;
-                line-height: 22px;
-                margin-bottom: 0px;
+            }
+            .lastNew {
+              flex-direction: column;
+              align-items: center;
+              .newTitle {
+                font-size: 15px;
+                line-height: 25px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 25px;
+              }
+              .writer,
+              .date {
+                font-size: 10px;
+              }
+              .calendar,
+              .profile {
+                width: 12px;
+              }
+              .newPic {
+                margin-top: 50px;
+                margin-right: 0px;
+                width: 100%;
+                height: auto;
+              }
+            }
+            .pagination {
+              .num {
+                font-size: 15px;
+                width: fit-content;
+              }
+              span {
+                width: 45px;
+              }
+            }
+          }
+          .lotsVisit {
+            margin-bottom: 50px;
+            .searchDiv {
+              img {
+                width: 15px;
+                top: 9px;
+              }
+              input {
+                font-size: 15px;
+                padding-right: 24px;
+              }
+            }
+            .title {
+              font-size: 15px;
+              span {
+                width: 20px;
+                height: 2.5px;
+              }
+            }
+            .lotsVisitNew {
+              .subject {
+                font-size: 15px;
+              }
+              .new {
+                font-size: 12px;
               }
               a {
-                font-size: 11px;
+                font-size: 10px;
                 img {
-                  width: 20px;
+                  width: 16px;
                 }
               }
             }
           }
         }
       }
-      .someNews {
-        .lastNews {
-          padding-bottom: 50px;
+    }
+    .enStockNews {
+      .topDiv {
+        padding: 50px;
+        padding-top: 100px;
+        .title {
+          font-size: 23px;
+        }
+        .enLogo {
+          img {
+            height: 40px;
+          }
+        }
+      }
+      .route {
+        padding: 7px 50px;
+        font-size: 12px;
+        margin-bottom: 50px;
+      }
+      .page {
+        padding: 0px 50px;
+        .chartDiv {
+          padding: 20px;
           .title {
-            font-size: 15px;
-            span {
-              width: 20px;
-              height: 2.5px;
+            font-size: 18px;
+          }
+          .dropNum {
+            & > div {
+              flex-direction: column;
+            }
+            .number {
+              font-size: 15px;
+              margin-right: 20px;
+            }
+            .red,
+            .text,
+            .green {
+              font-size: 12px;
+            }
+            .text {
+              margin-right: 20px;
             }
           }
-          .lastNew {
+          .years {
             flex-direction: column;
-            align-items: center;
-            .newTitle {
-              font-size: 15px;
-            }
-            p {
-              font-size: 15px;
-            }
-            .writer,
-            .date {
+            div {
               font-size: 10px;
             }
-            .calendar,
-            .profile {
-              width: 12px;
-            }
-            .newPic {
-              margin-top: 50px;
-              margin-right: 0px;
+            button {
+              margin-left: 0px;
+              margin-top: 10px;
+              text-align: center;
             }
           }
-          .pagination {
-            .num {
-              font-size: 15px;
-              width: fit-content;
+          .aboutChart {
+            & > div {
+              width: 37px;
             }
-            span {
-              width: 45px;
+            div {
+              flex-direction: column;
+            }
+            .title {
+              margin-bottom: 10px;
+              font-size: 10px;
+            }
+            .number {
+              margin-bottom: 20px;
+              font-size: 10px;
             }
           }
         }
-        .lotsVisit {
-          margin-bottom: 50px;
-          .searchDiv {
-            img {
-              width: 15px;
-              top: 9px;
-            }
-            input {
+        .banner {
+          padding: 20px;
+          .title {
+            font-size: 15px;
+            line-height: 25px;
+          }
+          img {
+            width: 15px;
+          }
+          a {
+            button {
               font-size: 15px;
-              padding-right: 24px;
             }
           }
+        }
+        .topNews {
           .title {
             font-size: 15px;
             span {
@@ -675,17 +1315,113 @@
               height: 2.5px;
             }
           }
-          .lotsVisitNew {
-            .subject {
-              font-size: 15px;
-            }
+          .newsList {
             .new {
-              font-size: 12px;
+              min-width: 200px;
+              .effect {
+                padding: 20px 15px;
+                transform: translateY(160px);
+                .title {
+                  font-size: 12px;
+                  margin-bottom: 0px;
+                }
+                .about {
+                  font-size: 12px;
+                  line-height: 22px;
+                  margin-bottom: 17px;
+                }
+                .text {
+                  font-size: 11px;
+                  line-height: 22px;
+                  margin-bottom: 0px;
+                }
+                a {
+                  font-size: 11px;
+                  img {
+                    width: 20px;
+                  }
+                }
+              }
             }
-            a {
-              font-size: 10px;
+          }
+        }
+        .someNews {
+          .lastNews {
+            padding-bottom: 50px;
+            .title {
+              font-size: 15px;
+              span {
+                width: 20px;
+                height: 2.5px;
+              }
+            }
+            .lastNew {
+              flex-direction: column;
+              align-items: center;
+              .newTitle {
+                font-size: 15px;
+                line-height: 25px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 25px;
+              }
+              .writer,
+              .date {
+                font-size: 10px;
+              }
+              .calendar,
+              .profile {
+                width: 12px;
+              }
+              .newPic {
+                margin-top: 50px;
+                margin-right: 0px;
+                width: 100%;
+                height: auto;
+              }
+            }
+            .pagination {
+              .num {
+                font-size: 15px;
+                width: fit-content;
+              }
+              span {
+                width: 45px;
+              }
+            }
+          }
+          .lotsVisit {
+            margin-bottom: 50px;
+            .searchDiv {
               img {
-                width: 16px;
+                width: 15px;
+                top: 9px;
+              }
+              input {
+                font-size: 15px;
+                padding-right: 24px;
+              }
+            }
+            .title {
+              font-size: 15px;
+              span {
+                width: 20px;
+                height: 2.5px;
+              }
+            }
+            .lotsVisitNew {
+              .subject {
+                font-size: 15px;
+              }
+              .new {
+                font-size: 12px;
+              }
+              a {
+                font-size: 10px;
+                img {
+                  width: 16px;
+                }
               }
             }
           }
