@@ -1,226 +1,217 @@
-.gallery {
-  .faGallery {
-    .topDiv {
-      background: url("/images/galleryBack.jpg") no-repeat;
-      background-size: cover;
-      padding: 70px 148px 225px 70px;
-      .enLogo {
-        text-align: left;
-        margin-bottom: 82px;
-        img {
-          width: 130px;
-        }
+.faGallery {
+  .topDiv {
+    background: url("/images/galleryBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 225px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 82px;
+      img {
+        width: 130px;
       }
-      .title {
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .images {
+    padding: 200px 148px 200px 157px;
+    gap: 70px;
+    .image {
+      margin-bottom: 30px;
+      width: 28%;
+      &:hover {
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+      }
+      .text {
+        width: 100%;
+        padding: 34px;
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 16px;
+        line-height: 32px;
         color: #ffffff;
+        text-align: center;
+        background: #1a407a;
+      }
+    }
+  }
+}
+.enGallery {
+  .topDiv {
+    background: url("/images/galleryBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 70px 225px 148px;
+    .enLogo {
+      text-align: right;
+      margin-bottom: 82px;
+      img {
+        width: 130px;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .images {
+    padding: 200px 148px 200px 157px;
+    gap: 70px;
+    .image {
+      margin-bottom: 30px;
+      width: 28%;
+      &:hover {
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+      }
+      .text {
+        width: 100%;
+        padding: 34px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+        text-align: center;
+        background: #1a407a;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1540px) {
+  .faGallery {
+    .images {
+      padding: 70px;
+    }
+  }
+  .enGallery {
+    .images {
+      padding: 70px;
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .faGallery {
+    .images {
+      .image {
+        width: 42%;
+      }
+    }
+  }
+  .enGallery {
+    .images {
+      .image {
+        width: 42%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .faGallery {
+    .topDiv {
+      padding-right: 70px;
+    }
+    .route {
+      padding-right: 70px;
+      margin-bottom: 100px;
+    }
+  }
+  .enGallery {
+    .topDiv {
+      padding-right: 70px;
+    }
+    .route {
+      padding-right: 70px;
+      margin-bottom: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .faGallery {
+    .topDiv {
+      padding: 50px;
+      padding-top: 100px;
+      .title {
+        font-size: 23px;
+      }
+      .enLogo {
+        img {
+          display: none;
+        }
       }
     }
     .route {
-      width: 100%;
-      padding: 7px 148px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #1a407a;
-      background: #e6e9ed;
+      padding-right: 50px;
+      font-size: 12px;
+      margin-bottom: 50px;
     }
     .images {
-      padding: 200px 148px 200px 157px;
-      gap: 70px;
+      padding: 50px;
+      gap: 20px;
       .image {
-        margin-bottom: 30px;
-        width: 28%;
-        &:hover {
-          text-decoration: none;
-        }
-        img {
-          width: 100%;
-        }
+        width: 100%;
         .text {
-          width: 100%;
-          padding: 34px;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 32px;
-          color: #ffffff;
-          text-align: center;
-          background: #1a407a;
+          padding: 15px;
+          font-size: 12px;
         }
       }
     }
   }
   .enGallery {
     .topDiv {
-      background: url("/images/galleryBack.jpg") no-repeat;
-      background-size: cover;
-      padding: 70px 148px 225px 70px;
-      .enLogo {
-        text-align: left;
-        margin-bottom: 82px;
-        img {
-          width: 130px;
-        }
-      }
+      padding: 50px;
+      padding-top: 100px;
       .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        color: #ffffff;
+        font-size: 23px;
+      }
+      .enLogo {
+        img {
+          display: none;
+        }
       }
     }
     .route {
-      width: 100%;
-      padding: 7px 148px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #1a407a;
-      background: #e6e9ed;
+      padding-right: 50px;
+      font-size: 12px;
+      margin-bottom: 50px;
     }
     .images {
-      padding: 200px 148px 200px 157px;
-      gap: 70px;
+      padding: 50px;
+      gap: 20px;
       .image {
-        margin-bottom: 30px;
-        width: 28%;
-        &:hover {
-          text-decoration: none;
-        }
-        img {
-          width: 100%;
-        }
+        width: 100%;
         .text {
-          width: 100%;
-          padding: 34px;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 32px;
-          color: #ffffff;
-          text-align: center;
-          background: #1a407a;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1540px) {
-  .gallery {
-    .faGallery {
-      .images {
-        padding: 70px;
-      }
-    }
-    .enGallery {
-      .images {
-        padding: 70px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .gallery {
-    .faGallery {
-      .images {
-        .image {
-          width: 42%;
-        }
-      }
-    }
-    .enGallery {
-      .images {
-        .image {
-          width: 42%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1057px) {
-  .gallery {
-    .faGallery {
-      .topDiv {
-        padding-right: 70px;
-      }
-      .route {
-        padding-right: 70px;
-        margin-bottom: 100px;
-      }
-    }
-    .enGallery {
-      .topDiv {
-        padding-right: 70px;
-      }
-      .route {
-        padding-right: 70px;
-        margin-bottom: 100px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 719px) {
-  .gallery {
-    .faGallery {
-      .topDiv {
-        padding: 50px;
-        padding-top: 100px;
-        .title {
-          font-size: 23px;
-        }
-        .enLogo {
-          img {
-            display: none;
-          }
-        }
-      }
-      .route {
-        padding-right: 50px;
-        font-size: 12px;
-        margin-bottom: 50px;
-      }
-      .images {
-        padding: 50px;
-        gap: 20px;
-        .image {
-          width: 100%;
-          .text {
-            padding: 15px;
-            font-size: 12px;
-          }
-        }
-      }
-    }
-    .enGallery {
-      .topDiv {
-        padding: 50px;
-        padding-top: 100px;
-        .title {
-          font-size: 23px;
-        }
-        .enLogo {
-          img {
-            display: none;
-          }
-        }
-      }
-      .route {
-        padding-right: 50px;
-        font-size: 12px;
-        margin-bottom: 50px;
-      }
-      .images {
-        padding: 50px;
-        gap: 20px;
-        .image {
-          width: 100%;
-          .text {
-            padding: 15px;
-            font-size: 12px;
-          }
+          padding: 15px;
+          font-size: 12px;
         }
       }
     }

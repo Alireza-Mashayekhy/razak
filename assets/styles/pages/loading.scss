@@ -1,0 +1,13 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background: #1a407a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 20vw;
+    height: auto;
+    opacity: 0;
+  }
+}

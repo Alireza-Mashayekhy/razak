@@ -1,550 +1,543 @@
-.contactUs {
-  .faContactUs {
-    height: 100vh;
-    min-height: 900px;
-    background: url("/images/contactUs.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 73px 148px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .enLogo {
-      text-align: left;
-      padding-left: 70px;
-      img {
-        width: 130px;
+.faContactUs {
+  height: 100vh;
+  min-height: 900px;
+  background: url("/images/contactUs.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 73px 148px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .enLogo {
+    text-align: left;
+    padding-left: 70px;
+    img {
+      width: 130px;
+    }
+  }
+  & > div {
+    gap: 50px;
+  }
+  .informations {
+    width: 535px;
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #b9b7bd;
+      margin-bottom: 10px;
+      span {
+        height: 5px;
+        width: 43px;
+        border-radius: 5px;
+        margin-right: 10px;
+        display: inline-block;
+        background-color: #fff;
       }
     }
-    & > div {
-      gap: 50px;
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 56px;
+      color: #ffffff;
+      max-width: 185px;
+      margin-bottom: 32px;
     }
-    .informations {
-      width: 535px;
-      .title {
+    .line {
+      width: 100%;
+      height: 2px;
+      display: inline-block;
+      background-color: white;
+      margin-bottom: 34px;
+    }
+    .phone,
+    .whatsAppNum1,
+    .email,
+    .whatsAppNum2 {
+      .fieldTitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #bac6d7;
+      }
+      .fieldInfo {
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        color: #b9b7bd;
-        margin-bottom: 10px;
-        span {
-          height: 5px;
-          width: 43px;
-          border-radius: 5px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+      }
+    }
+    .phone,
+    .email {
+      margin-bottom: 38px;
+      .fieldTitle {
+        margin-bottom: 8px;
+        img {
+          margin-left: 10px;
+        }
+      }
+    }
+    .whatsAppNum1,
+    .whatsAppNum2 {
+      .fieldTitle {
+        position: relative;
+        left: 10px;
+      }
+    }
+    .address,
+    .postalCode {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+    .address {
+      margin-top: 62px;
+    }
+  }
+  .form {
+    padding: 116px 107px 177px 100px;
+    background: linear-gradient(
+      180deg,
+      #000917 0%,
+      rgba(26, 64, 122, 0.42) 100%
+    );
+    width: 620px;
+    margin-left: 151px;
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+      color: #ffffff;
+      margin-bottom: 99px;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid #bac6d7;
+      color: white;
+      padding-bottom: 16px;
+      background-color: inherit;
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: white;
+      }
+
+      &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: white;
+      }
+    }
+    .email {
+      margin-bottom: 70px;
+    }
+    .message {
+      margin-bottom: 55px;
+    }
+    a {
+      background-color: inherit;
+      border: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+      .imgDiv {
+        margin-right: 0px;
+        margin-left: 10px;
+      }
+      .circleArrow {
+        width: 40px;
+        margin-left: 8px;
+      }
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.enContactUs {
+  height: 100vh;
+  min-height: 900px;
+  background: url("/images/contactUs.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 73px 0px 0px 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .enLogo {
+    text-align: right;
+    padding-right: 70px;
+    img {
+      width: 130px;
+    }
+  }
+  & > div {
+    gap: 50px;
+  }
+  .informations {
+    width: 535px;
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #b9b7bd;
+      margin-bottom: 10px;
+      span {
+        height: 5px;
+        width: 43px;
+        border-radius: 5px;
+        margin-left: 10px;
+        display: inline-block;
+        background-color: #fff;
+      }
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 56px;
+      color: #ffffff;
+      max-width: 185px;
+      margin-bottom: 32px;
+    }
+    .line {
+      width: 100%;
+      height: 2px;
+      display: inline-block;
+      background-color: white;
+      margin-bottom: 34px;
+    }
+    .phone,
+    .whatsAppNum1,
+    .email,
+    .whatsAppNum2 {
+      .fieldTitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #bac6d7;
+      }
+      .fieldInfo {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+      }
+    }
+    .phone,
+    .email {
+      margin-bottom: 38px;
+      .fieldTitle {
+        margin-bottom: 8px;
+        img {
           margin-right: 10px;
-          display: inline-block;
-          background-color: #fff;
+        }
+      }
+    }
+    .whatsAppNum1,
+    .whatsAppNum2 {
+      .fieldTitle {
+        position: relative;
+        left: -10px;
+      }
+    }
+    .address,
+    .postalCode {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+    .address {
+      margin-top: 62px;
+    }
+  }
+  .form {
+    padding: 116px 107px 177px 100px;
+    background: linear-gradient(
+      180deg,
+      #000917 0%,
+      rgba(26, 64, 122, 0.42) 100%
+    );
+    width: 620px;
+    margin-right: 151px;
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+      color: #ffffff;
+      margin-bottom: 99px;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid #bac6d7;
+      color: white;
+      padding-bottom: 16px;
+      background-color: inherit;
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: white;
+      }
+
+      &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: white;
+      }
+    }
+    .email {
+      margin-bottom: 70px;
+    }
+    .message {
+      margin-bottom: 55px;
+    }
+    a {
+      background-color: inherit;
+      border: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+      .imgDiv {
+        margin-right: 10px;
+        margin-left: 0px;
+      }
+      .circleArrow {
+        width: 40px;
+        margin-left: 8px;
+      }
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .faContactUs {
+    min-height: fit-content;
+    height: fit-content;
+    & > div {
+      flex-direction: column;
+      padding-left: 150px;
+    }
+    .informations {
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  .enContactUs {
+    min-height: fit-content;
+    height: fit-content;
+    & > div {
+      flex-direction: column;
+      padding-left: 150px;
+    }
+    .informations {
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .faContactUs {
+    padding-right: 70px;
+    & > div {
+      padding-left: 70px;
+    }
+    .form {
+      padding: 60px;
+    }
+  }
+  .enContactUs {
+    padding-right: 70px;
+    & > div {
+      padding-left: 70px;
+    }
+    .form {
+      padding: 60px;
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .faContactUs {
+    padding: 50px;
+    padding-top: 100px;
+    .enLogo {
+      padding-left: 20px;
+      img {
+        display: none;
+      }
+    }
+    & > div {
+      padding-left: 20px;
+    }
+    .allInfoes {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .informations {
+      .title {
+        font-size: 15px;
+        span {
+          width: 20px;
+          height: 2.5px;
         }
       }
       h3 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 56px;
-        color: #ffffff;
-        max-width: 185px;
-        margin-bottom: 32px;
+        font-size: 20px;
+        max-width: 100%;
+        margin-bottom: 0px;
       }
-      .line {
-        width: 100%;
-        height: 2px;
-        display: inline-block;
-        background-color: white;
-        margin-bottom: 34px;
+      img {
+        width: 15px;
       }
-      .phone,
-      .whatsAppNum1,
-      .email,
-      .whatsAppNum2 {
+      .whatsAppNum2,
+      .whatsAppNum1 {
         .fieldTitle {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          color: #bac6d7;
+          left: 5px;
+          margin-bottom: 5px;
         }
-        .fieldInfo {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          letter-spacing: 0.1em;
-          color: #ffffff;
+        img {
+          width: 26px;
         }
       }
-      .phone,
-      .email {
-        margin-bottom: 38px;
-        .fieldTitle {
-          margin-bottom: 8px;
-          img {
-            margin-left: 10px;
-          }
-        }
+      .fieldTitle {
+        font-size: 12px !important;
       }
-      .whatsAppNum1,
-      .whatsAppNum2 {
-        .fieldTitle {
-          position: relative;
-          left: 10px;
-        }
+      .fieldInfo {
+        font-size: 14px !important;
       }
       .address,
       .postalCode {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #ffffff;
-      }
-      .address {
-        margin-top: 62px;
+        font-size: 12px;
       }
     }
     .form {
-      padding: 116px 107px 177px 100px;
-      background: linear-gradient(
-        180deg,
-        #000917 0%,
-        rgba(26, 64, 122, 0.42) 100%
-      );
-      width: 620px;
-      margin-left: 151px;
+      padding: 30px;
       p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: justify;
-        color: #ffffff;
-        margin-bottom: 99px;
+        font-size: 12px;
+        margin-bottom: 50px;
+        line-height: 25px;
       }
       input {
-        border: none;
-        border-bottom: 1px solid #bac6d7;
-        color: white;
-        padding-bottom: 16px;
-        background-color: inherit;
-        width: 100%;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        &::placeholder {
-          /* Chrome, Firefox, Opera, Safari 10.1+ */
-          color: white;
-          opacity: 1; /* Firefox */
-        }
-
-        &:-ms-input-placeholder {
-          /* Internet Explorer 10-11 */
-          color: white;
-        }
-
-        &::-ms-input-placeholder {
-          /* Microsoft Edge */
-          color: white;
-        }
-      }
-      .email {
-        margin-bottom: 70px;
-      }
-      .message {
-        margin-bottom: 55px;
+        font-size: 12px;
       }
       a {
-        background-color: inherit;
-        border: none;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: #ffffff;
-        .imgDiv {
-          margin-right: 0px;
-          margin-left: 10px;
-        }
+        font-size: 12px;
         .circleArrow {
-          width: 40px;
-          margin-left: 8px;
+          width: 20px;
         }
-        span {
-          margin-right: 5px;
+        .dots {
+          width: 70px !important;
         }
       }
     }
   }
   .enContactUs {
-    height: 100vh;
-    min-height: 900px;
-    background: url("/images/contactUs.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 73px 148px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 50px;
+    padding-top: 100px;
     .enLogo {
-      text-align: left;
-      padding-left: 70px;
+      padding-left: 20px;
       img {
-        width: 130px;
+        display: none;
       }
     }
     & > div {
-      gap: 50px;
+      padding-left: 20px;
+    }
+    .allInfoes {
+      flex-wrap: wrap;
+      gap: 20px;
     }
     .informations {
-      width: 535px;
       .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #b9b7bd;
-        margin-bottom: 10px;
+        font-size: 15px;
         span {
-          height: 5px;
-          width: 43px;
-          border-radius: 5px;
-          margin-right: 10px;
-          display: inline-block;
-          background-color: #fff;
+          width: 20px;
+          height: 2.5px;
         }
       }
       h3 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 56px;
-        color: #ffffff;
-        max-width: 185px;
-        margin-bottom: 32px;
+        font-size: 20px;
+        max-width: 100%;
+        margin-bottom: 0px;
       }
-      .line {
-        width: 100%;
-        height: 2px;
-        display: inline-block;
-        background-color: white;
-        margin-bottom: 34px;
+      img {
+        width: 15px;
       }
-      .phone,
-      .whatsAppNum1,
-      .email,
-      .whatsAppNum2 {
+      .whatsAppNum2,
+      .whatsAppNum1 {
         .fieldTitle {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          color: #bac6d7;
+          left: 5px;
+          margin-bottom: 5px;
         }
-        .fieldInfo {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          letter-spacing: 0.1em;
-          color: #ffffff;
+        img {
+          width: 26px;
         }
       }
-      .phone,
-      .email {
-        margin-bottom: 38px;
-        .fieldTitle {
-          margin-bottom: 8px;
-          img {
-            margin-left: 10px;
-          }
-        }
+      .fieldTitle {
+        font-size: 12px !important;
       }
-      .whatsAppNum1,
-      .whatsAppNum2 {
-        .fieldTitle {
-          position: relative;
-          left: 10px;
-        }
+      .fieldInfo {
+        font-size: 14px !important;
       }
       .address,
       .postalCode {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #ffffff;
-      }
-      .address {
-        margin-top: 62px;
+        font-size: 12px;
       }
     }
     .form {
-      padding: 116px 107px 177px 100px;
-      background: linear-gradient(
-        180deg,
-        #000917 0%,
-        rgba(26, 64, 122, 0.42) 100%
-      );
-      width: 620px;
-      margin-left: 151px;
+      padding: 30px;
       p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: justify;
-        color: #ffffff;
-        margin-bottom: 99px;
+        font-size: 12px;
+        margin-bottom: 50px;
+        line-height: 25px;
       }
       input {
-        border: none;
-        border-bottom: 1px solid #bac6d7;
-        color: white;
-        padding-bottom: 16px;
-        background-color: inherit;
-        width: 100%;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        &::placeholder {
-          /* Chrome, Firefox, Opera, Safari 10.1+ */
-          color: white;
-          opacity: 1; /* Firefox */
-        }
-
-        &:-ms-input-placeholder {
-          /* Internet Explorer 10-11 */
-          color: white;
-        }
-
-        &::-ms-input-placeholder {
-          /* Microsoft Edge */
-          color: white;
-        }
-      }
-      .email {
-        margin-bottom: 70px;
-      }
-      .message {
-        margin-bottom: 55px;
+        font-size: 12px;
       }
       a {
-        background-color: inherit;
-        border: none;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: #ffffff;
-        .imgDiv {
-          margin-right: 0px;
-          margin-left: 10px;
-        }
+        font-size: 12px;
         .circleArrow {
-          width: 40px;
-          margin-left: 8px;
+          width: 20px;
         }
-        span {
-          margin-right: 5px;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .contactUs {
-    .faContactUs {
-      min-height: fit-content;
-      height: fit-content;
-      & > div {
-        flex-direction: column;
-        padding-left: 150px;
-      }
-      .informations {
-        width: 100%;
-      }
-      .form {
-        width: 100%;
-        margin-left: 0px;
-      }
-    }
-    .enContactUs {
-      min-height: fit-content;
-      height: fit-content;
-      & > div {
-        flex-direction: column;
-        padding-left: 150px;
-      }
-      .informations {
-        width: 100%;
-      }
-      .form {
-        width: 100%;
-        margin-left: 0px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1057px) {
-  .contactUs {
-    .faContactUs {
-      padding-right: 70px;
-      & > div {
-        padding-left: 70px;
-      }
-      .form {
-        padding: 60px;
-      }
-    }
-    .enContactUs {
-      padding-right: 70px;
-      & > div {
-        padding-left: 70px;
-      }
-      .form {
-        padding: 60px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 719px) {
-  .contactUs {
-    .faContactUs {
-      padding: 50px;
-      padding-top: 100px;
-      .enLogo {
-        padding-left: 20px;
-        img {
-          display: none;
-        }
-      }
-      & > div {
-        padding-left: 20px;
-      }
-      .allInfoes {
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-      .informations {
-        .title {
-          font-size: 15px;
-          span {
-            width: 20px;
-            height: 2.5px;
-          }
-        }
-        h3 {
-          font-size: 20px;
-          max-width: 100%;
-          margin-bottom: 0px;
-        }
-        img {
-          width: 15px;
-        }
-        .whatsAppNum2,
-        .whatsAppNum1 {
-          .fieldTitle {
-            left: 5px;
-            margin-bottom: 5px;
-          }
-          img {
-            width: 26px;
-          }
-        }
-        .fieldTitle {
-          font-size: 12px !important;
-        }
-        .fieldInfo {
-          font-size: 14px !important;
-        }
-        .address,
-        .postalCode {
-          font-size: 12px;
-        }
-      }
-      .form {
-        padding: 30px;
-        p {
-          font-size: 12px;
-          margin-bottom: 50px;
-          line-height: 25px;
-        }
-        input {
-          font-size: 12px;
-        }
-        a {
-          font-size: 12px;
-          .circleArrow {
-            width: 20px;
-          }
-          .dots {
-            width: 70px !important;
-          }
-        }
-      }
-    }
-    .enContactUs {
-      padding: 50px;
-      padding-top: 100px;
-      .enLogo {
-        padding-left: 20px;
-        img {
-          display: none;
-        }
-      }
-      & > div {
-        padding-left: 20px;
-      }
-      .allInfoes {
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-      .informations {
-        .title {
-          font-size: 15px;
-          span {
-            width: 20px;
-            height: 2.5px;
-          }
-        }
-        h3 {
-          font-size: 20px;
-          max-width: 100%;
-          margin-bottom: 0px;
-        }
-        img {
-          width: 15px;
-        }
-        .whatsAppNum2,
-        .whatsAppNum1 {
-          .fieldTitle {
-            left: 5px;
-            margin-bottom: 5px;
-          }
-          img {
-            width: 26px;
-          }
-        }
-        .fieldTitle {
-          font-size: 12px !important;
-        }
-        .fieldInfo {
-          font-size: 14px !important;
-        }
-        .address,
-        .postalCode {
-          font-size: 12px;
-        }
-      }
-      .form {
-        padding: 30px;
-        p {
-          font-size: 12px;
-          margin-bottom: 50px;
-          line-height: 25px;
-        }
-        input {
-          font-size: 12px;
-        }
-        a {
-          font-size: 12px;
-          .circleArrow {
-            width: 20px;
-          }
-          .dots {
-            width: 70px !important;
-          }
+        .dots {
+          width: 70px !important;
         }
       }
     }

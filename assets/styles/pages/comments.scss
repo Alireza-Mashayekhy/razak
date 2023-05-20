@@ -1,284 +1,277 @@
-.comments {
-  .faComments {
-    .topDiv {
-      background: url("/images/commentBack.jpg") no-repeat;
-      background-size: cover;
-      padding: 70px 148px 150px 70px;
-      .enLogo {
-        text-align: left;
-        margin-bottom: 90px;
-        img {
-          width: 130px;
-        }
+.faComments {
+  .topDiv {
+    background: url("/images/commentBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 150px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 90px;
+      img {
+        width: 130px;
       }
-      .title {
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .commentsList {
+    padding: 200px 148px 100px 148px;
+    gap: 83px;
+    .comment {
+      margin-bottom: 17px;
+      background: #e6e9ed;
+      padding: 52px 34px 41px 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 433px;
+      .comma {
+        margin-bottom: 50px;
+      }
+      p {
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
-        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #01040b;
+        margin-bottom: 44px;
+      }
+      .name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: rgba(1, 4, 11, 0.81);
+      }
+    }
+  }
+  .pagination {
+    gap: 10px;
+    margin-bottom: 200px;
+    .num {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #606a79;
+      cursor: pointer;
+    }
+    .activePage {
+      color: #0b1a31;
+    }
+    .linePagination {
+      height: 2px;
+      width: 86px;
+      display: inline-block;
+      background-color: #0b1a31;
+    }
+  }
+}
+.enComments {
+  .topDiv {
+    background: url("/images/commentBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 70px 150px 148px;
+    .enLogo {
+      text-align: right;
+      margin-bottom: 90px;
+      img {
+        width: 130px;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .commentsList {
+    padding: 200px 148px 100px 148px;
+    gap: 83px;
+    .comment {
+      margin-bottom: 17px;
+      background: #e6e9ed;
+      padding: 52px 34px 41px 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 433px;
+      .comma {
+        margin-bottom: 50px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #01040b;
+        margin-bottom: 44px;
+      }
+      .name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: rgba(1, 4, 11, 0.81);
+      }
+    }
+  }
+  .pagination {
+    gap: 10px;
+    margin-bottom: 200px;
+    .num {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #606a79;
+      cursor: pointer;
+    }
+    .activePage {
+      color: #0b1a31;
+    }
+    .linePagination {
+      height: 2px;
+      width: 86px;
+      display: inline-block;
+      background-color: #0b1a31;
+    }
+  }
+}
+
+@media only screen and (max-width: 1540px) {
+  .faComments {
+    .commentsList {
+      padding: 70px;
+    }
+  }
+  .enComments {
+    .commentsList {
+      padding: 70px;
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .faComments {
+    .topDiv {
+      padding-right: 70px;
+    }
+    .route {
+      padding-right: 70px;
+    }
+  }
+  .enComments {
+    .topDiv {
+      padding-right: 70px;
+    }
+    .route {
+      padding-right: 70px;
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .faComments {
+    .topDiv {
+      padding: 50px;
+      padding-top: 100px;
+      .title {
+        font-size: 23px;
+      }
+      .enLogo {
+        img {
+          display: none;
+        }
       }
     }
     .route {
-      width: 100%;
-      padding: 7px 148px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #1a407a;
-      background: #e6e9ed;
+      padding: 7px 50px;
+      font-size: 12px;
+      margin-bottom: 50px;
     }
     .commentsList {
-      padding: 200px 148px 100px 148px;
-      gap: 83px;
+      padding: 50px;
+      gap: 20px;
       .comment {
-        margin-bottom: 17px;
-        background: #e6e9ed;
-        padding: 52px 34px 41px 45px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 433px;
+        padding: 20px;
+        width: 250px;
         .comma {
-          margin-bottom: 50px;
+          width: 20px;
+          margin-bottom: 20px;
         }
         p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 30px;
-          text-align: center;
-          color: #01040b;
-          margin-bottom: 44px;
+          font-size: 10px;
+          margin-bottom: 20px;
+        }
+        .profile {
+          width: 45px;
         }
         .name {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 30px;
-          color: rgba(1, 4, 11, 0.81);
+          font-size: 10px;
         }
-      }
-    }
-    .pagination {
-      gap: 10px;
-      margin-bottom: 200px;
-      .num {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
-        color: #606a79;
-        cursor: pointer;
-      }
-      .activePage {
-        color: #0b1a31;
-      }
-      .linePagination {
-        height: 2px;
-        width: 86px;
-        display: inline-block;
-        background-color: #0b1a31;
       }
     }
   }
   .enComments {
     .topDiv {
-      background: url("/images/commentBack.jpg") no-repeat;
-      background-size: cover;
-      padding: 70px 148px 150px 70px;
-      .enLogo {
-        text-align: left;
-        margin-bottom: 90px;
-        img {
-          width: 130px;
-        }
-      }
+      padding: 50px;
+      padding-top: 100px;
       .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        color: #ffffff;
+        font-size: 23px;
+      }
+      .enLogo {
+        img {
+          display: none;
+        }
       }
     }
     .route {
-      width: 100%;
-      padding: 7px 148px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #1a407a;
-      background: #e6e9ed;
+      padding: 7px 50px;
+      font-size: 12px;
+      margin-bottom: 50px;
     }
     .commentsList {
-      padding: 200px 148px 100px 148px;
-      gap: 83px;
+      padding: 50px;
+      gap: 20px;
       .comment {
-        margin-bottom: 17px;
-        background: #e6e9ed;
-        padding: 52px 34px 41px 45px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 433px;
+        padding: 20px;
+        width: 250px;
         .comma {
-          margin-bottom: 50px;
+          width: 20px;
+          margin-bottom: 20px;
         }
         p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 30px;
-          text-align: center;
-          color: #01040b;
-          margin-bottom: 44px;
+          font-size: 10px;
+          margin-bottom: 20px;
+        }
+        .profile {
+          width: 45px;
         }
         .name {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 30px;
-          color: rgba(1, 4, 11, 0.81);
-        }
-      }
-    }
-    .pagination {
-      gap: 10px;
-      margin-bottom: 200px;
-      .num {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
-        color: #606a79;
-        cursor: pointer;
-      }
-      .activePage {
-        color: #0b1a31;
-      }
-      .linePagination {
-        height: 2px;
-        width: 86px;
-        display: inline-block;
-        background-color: #0b1a31;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1540px) {
-  .comments {
-    .faComments {
-      .commentsList {
-        padding: 70px;
-      }
-    }
-    .enComments {
-      .commentsList {
-        padding: 70px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1057px) {
-  .comments {
-    .faComments {
-      .topDiv {
-        padding-right: 70px;
-      }
-      .route {
-        padding-right: 70px;
-      }
-    }
-    .enComments {
-      .topDiv {
-        padding-right: 70px;
-      }
-      .route {
-        padding-right: 70px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 719px) {
-  .comments {
-    .faComments {
-      .topDiv {
-        padding: 50px;
-        padding-top: 100px;
-        .title {
-          font-size: 23px;
-        }
-        .enLogo {
-          img {
-            display: none;
-          }
-        }
-      }
-      .route {
-        padding: 7px 50px;
-        font-size: 12px;
-        margin-bottom: 50px;
-      }
-      .commentsList {
-        padding: 50px;
-        gap: 20px;
-        .comment {
-          padding: 20px;
-          width: 250px;
-          .comma {
-            width: 20px;
-            margin-bottom: 20px;
-          }
-          p {
-            font-size: 10px;
-            margin-bottom: 20px;
-          }
-          .profile {
-            width: 45px;
-          }
-          .name {
-            font-size: 10px;
-          }
-        }
-      }
-    }
-    .enComments {
-      .topDiv {
-        padding: 50px;
-        padding-top: 100px;
-        .title {
-          font-size: 23px;
-        }
-        .enLogo {
-          img {
-            display: none;
-          }
-        }
-      }
-      .route {
-        padding: 7px 50px;
-        font-size: 12px;
-        margin-bottom: 50px;
-      }
-      .commentsList {
-        padding: 50px;
-        gap: 20px;
-        .comment {
-          padding: 20px;
-          width: 250px;
-          .comma {
-            width: 20px;
-            margin-bottom: 20px;
-          }
-          p {
-            font-size: 10px;
-            margin-bottom: 20px;
-          }
-          .profile {
-            width: 45px;
-          }
-          .name {
-            font-size: 10px;
-          }
+          font-size: 10px;
         }
       }
     }

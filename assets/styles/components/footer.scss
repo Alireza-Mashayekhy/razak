@@ -1,153 +1,310 @@
 .footer {
-  padding: 179px 150px 68px 150px;
-  background: #1a407a;
-  color: white;
-  .topDiv {
-    margin-bottom: 186px;
-    & > div {
-      margin: 0px 10px;
-    }
-    .faLogo {
-      width: 130px;
-      margin-bottom: 39px;
-    }
-    p {
-      max-width: 250px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 41px;
-      color: #bac6d7;
-    }
-    h5 {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-    a {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #bac6d7;
-      margin-bottom: 24px;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    .calls {
-      img {
-        margin-left: 10px;
-      }
+  .faFooter {
+    padding: 179px 150px 68px 150px;
+    background: #1a407a;
+    color: white;
+    .topDiv {
+      margin-bottom: 186px;
       & > div {
-        margin-bottom: 24px;
+        margin: 0px 10px;
+      }
+      .faLogo {
+        width: 130px;
+        margin-bottom: 39px;
+      }
+      p {
+        max-width: 250px;
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
+        line-height: 20px;
         color: #bac6d7;
       }
+      h5 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        margin-bottom: 25px;
+      }
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #bac6d7;
+        margin-bottom: 24px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .calls {
+        img {
+          margin-left: 10px;
+        }
+        & > div {
+          margin-bottom: 24px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #bac6d7;
+        }
+      }
+      .getPadding {
+        padding-top: 33px;
+      }
     }
-    .getPadding {
-      padding-top: 33px;
+    .agency,
+    .rules,
+    .socials {
+      width: 100%;
+      text-align: center;
     }
-  }
-  .agency,
-  .rules,
-  .socials {
-    width: 100%;
-    text-align: center;
-  }
-  .agency {
-    margin-bottom: 22px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 32px;
-  }
-  .rules {
-    margin-bottom: 32px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #bac6d7;
-    span {
-      margin: 0px 9px;
+    .agency {
+      margin-bottom: 22px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 32px;
     }
-    a {
+    .rules {
+      margin-bottom: 32px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
       color: #bac6d7;
-      &:hover {
-        text-decoration: none;
+      span {
+        margin: 0px 9px;
+      }
+      a {
+        color: #bac6d7;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .socials {
+      img {
+        margin: 0px 10px;
       }
     }
   }
-  .socials {
-    img {
-      margin: 0px 10px;
+  .enFooter {
+    padding: 179px 150px 68px 150px;
+    background: #1a407a;
+    color: white;
+    .topDiv {
+      margin-bottom: 186px;
+      & > div {
+        margin: 0px 10px;
+      }
+      .faLogo {
+        width: 130px;
+        margin-bottom: 39px;
+      }
+      p {
+        max-width: 250px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #bac6d7;
+      }
+      h5 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        margin-bottom: 25px;
+      }
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #bac6d7;
+        margin-bottom: 24px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .calls {
+        img {
+          margin-right: 10px;
+        }
+        .call {
+          transform: rotate(90deg);
+        }
+        & > div {
+          margin-bottom: 24px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #bac6d7;
+        }
+      }
+      .getPadding {
+        padding-top: 33px;
+      }
+    }
+    .agency,
+    .rules,
+    .socials {
+      width: 100%;
+      text-align: center;
+    }
+    .agency {
+      margin-bottom: 22px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 32px;
+    }
+    .rules {
+      margin-bottom: 32px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      color: #bac6d7;
+      span {
+        margin: 0px 9px;
+      }
+      a {
+        color: #bac6d7;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .socials {
+      img {
+        margin: 0px 10px;
+      }
     }
   }
 }
 @media only screen and (max-width: 1320px) {
   .footer {
-    .topDiv {
-      flex-wrap: wrap;
-      & > div {
-        width: 100%;
+    .faFooter {
+      .topDiv {
+        flex-wrap: wrap;
+        & > div {
+          width: 100%;
+        }
+        .getPadding {
+          width: 30%;
+        }
+        p {
+          max-width: 100%;
+        }
       }
-      .getPadding {
-        width: 30%;
-      }
-      p {
-        max-width: 100%;
+    }
+    .enFooter {
+      .topDiv {
+        flex-wrap: wrap;
+        & > div {
+          width: 100%;
+        }
+        .getPadding {
+          width: 30%;
+        }
+        p {
+          max-width: 100%;
+        }
       }
     }
   }
 }
 @media only screen and (max-width: 1057px) {
   .footer {
-    padding: 70px;
+    .faFooter,
+    .enFooter {
+      padding: 70px;
+    }
   }
 }
 @media only screen and (max-width: 719px) {
   .footer {
-    padding: 20px;
-    padding-bottom: 100px;
-    .topDiv {
-      margin-bottom: 100px;
-      .faLogo {
-        width: 78px;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 12px;
-      }
-      h5 {
-        font-size: 15px;
-      }
-      a {
-        font-size: 12px;
-      }
-      .calls {
-        div {
+    .faFooter {
+      padding: 20px;
+      padding-bottom: 100px;
+      .topDiv {
+        margin-bottom: 100px;
+        .faLogo {
+          width: 78px;
+          margin-bottom: 20px;
+        }
+        p {
           font-size: 12px;
         }
+        h5 {
+          font-size: 15px;
+        }
+        a {
+          font-size: 12px;
+        }
+        .calls {
+          div {
+            font-size: 12px;
+          }
+          img {
+            width: 15px;
+          }
+        }
+      }
+      .agency {
+        font-size: 13px;
+        flex-wrap: wrap;
+        div {
+          text-align: center;
+        }
+      }
+      .rules {
+        font-size: 12px;
+      }
+      .socials {
         img {
           width: 15px;
         }
       }
     }
-    .agency {
-      font-size: 13px;
-      flex-wrap: wrap;
-      div {
-        text-align: center;
+    .enFooter {
+      padding: 20px;
+      padding-bottom: 100px;
+      .topDiv {
+        margin-bottom: 100px;
+        .faLogo {
+          width: 78px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 12px;
+        }
+        h5 {
+          font-size: 15px;
+        }
+        a {
+          font-size: 12px;
+        }
+        .calls {
+          div {
+            font-size: 12px;
+          }
+          img {
+            width: 15px;
+          }
+        }
       }
-    }
-    .rules {
-      font-size: 12px;
-    }
-    .socials {
-      img {
-        width: 15px;
+      .agency {
+        font-size: 13px;
+        flex-wrap: wrap;
+        div {
+          text-align: center;
+        }
+      }
+      .rules {
+        font-size: 12px;
+      }
+      .socials {
+        img {
+          width: 15px;
+        }
       }
     }
   }

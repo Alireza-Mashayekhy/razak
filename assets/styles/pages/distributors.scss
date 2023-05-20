@@ -1,353 +1,1128 @@
-.distributors {
-  .faDistributors {
-    .topDiv {
-      background: url("/images/distributorsBack.jpg") no-repeat;
-      background-size: cover;
-      padding: 70px 148px 150px 70px;
-      .enLogo {
-        text-align: left;
-        margin-bottom: 82px;
-        img {
-          width: 130px;
-        }
+.faDistributors {
+  .topDiv {
+    background: url("/images/distributorsBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 148px 150px 70px;
+    .enLogo {
+      text-align: left;
+      margin-bottom: 82px;
+      img {
+        width: 130px;
       }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .about {
+    padding: 200px 148px;
+    img {
+      width: 42%;
+    }
+    & > div {
+      width: 52%;
       .title {
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 18px;
+        line-height: 40px;
+        color: #0b1a31;
+        max-width: 423px;
+        margin-bottom: 30px;
+        span {
+          margin-right: 10px;
+          height: 5px;
+          border-radius: 5px;
+          width: 43px;
+          background-color: #1a407a;
+          display: inline-block;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+        color: #606a79;
+      }
+    }
+  }
+  .slider {
+    .splide__arrow--prev {
+      left: 20%;
+      background-color: inherit;
+      height: 60px !important;
+      display: flex;
+      align-items: start;
+    }
+    .splide__arrow--next {
+      right: 20%;
+      background-color: inherit;
+      height: 60px !important;
+      display: flex;
+      align-items: start;
+    }
+    .splide__slide {
+      padding: 100px;
+      opacity: 0.3;
+      .slide {
+        width: 100%;
+        height: 400px;
+        background: url("/images/disSlider.jpg");
+        position: relative;
+        .info {
+          width: 50%;
+          padding: 23px 36px 26px 26px;
+          background: #1a407a;
+          position: absolute;
+          bottom: 0px;
+          right: -100px;
+          .city {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            color: #ffffff;
+            margin-bottom: 16px;
+            img {
+              margin-left: 4px;
+              margin-bottom: 5px;
+            }
+          }
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 29px;
+            color: #ffffff;
+            margin-bottom: 8px;
+          }
+          p {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .is-active {
+      opacity: 1;
+    }
+  }
+  .spreaders {
+    padding: 200px 148px 200px 63px;
+    .info {
+      max-width: 100%;
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        color: #0b1a31;
+        margin-bottom: 30px;
+        span {
+          margin-right: 10px;
+          display: inline-block;
+          height: 5px;
+          width: 43px;
+          background-color: #1a407a;
+          border-radius: 5px;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 50px;
+      }
+      a {
+        border: none;
+        background-color: inherit;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 50px;
+        color: #000000;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+    .map {
+      min-width: 936px;
+      height: 853.3px;
+      background: url("/images/map.png") no-repeat;
+      background-size: contain;
+      position: relative;
+      .circle {
+        background: #1a407a;
+        border-radius: 100%;
+        width: fit-content;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
         color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+      }
+      .tehran {
+        left: 319px;
+        top: 233px;
+        padding: 10px 6px;
+      }
+      .mashhad {
+        right: 233px;
+        top: 224px;
+        padding: 10px 5px;
+      }
+      .isfahan {
+        left: 339px;
+        top: 360px;
+        padding: 15px 5px;
+      }
+      .shiraz {
+        bottom: 235px;
+        left: 400px;
+        padding: 10px 6px;
+      }
+    }
+  }
+  .modalBack {
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    .myModal {
+      background-color: white;
+      width: 1000px;
+      .modalHeader {
+        background: #1a407a;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        padding: 13px 35px;
+        margin-bottom: 42px;
+        img {
+          width: 25px;
+          cursor: pointer;
+        }
+      }
+      .filters {
+        padding: 0px 40px;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+        .searchDiv,
+        .sectionDiv,
+        .cityDiv {
+          width: 230px;
+          input,
+          select {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #b9b7bd;
+            padding-right: 26px;
+            padding-bottom: 8px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #b9b7bd;
+            &:focus {
+              outline: none;
+            }
+          }
+          img {
+            position: absolute;
+          }
+        }
+      }
+      .listHeader {
+        display: flex;
+        padding: 0px 40px;
+        margin-bottom: 17px;
+        .phone {
+          min-width: 219px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          color: #1a407a;
+        }
+        .address {
+          width: 100%;
+          text-align: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          color: #1a407a;
+        }
+        .city {
+          min-width: 131px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          color: #1a407a;
+        }
+      }
+      .list {
+        padding: 0px 40px;
+        .myRow {
+          display: flex;
+          margin-bottom: 10px;
+          margin-left: 0px;
+          border: 0.5px solid #1a407a;
+          width: 100%;
+          .cityValue {
+            min-width: 131px;
+          }
+          .addressValue {
+            width: 100%;
+            border-right: 0.5px solid #1a407a;
+            border-left: 0.5px solid #1a407a;
+          }
+          .phoneValue {
+            min-width: 219px;
+          }
+          .cityValue,
+          .addressValue,
+          .phoneValue {
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+            padding: 12px 0px;
+          }
+        }
+      }
+      .pagination {
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 63px;
+        .num {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          color: #606a79;
+          cursor: pointer;
+        }
+        .activePage {
+          color: #0b1a31;
+        }
+        .linePagination {
+          height: 2px;
+          width: 86px;
+          display: inline-block;
+          background-color: #0b1a31;
+        }
+      }
+    }
+  }
+}
+.enDistributors {
+  .topDiv {
+    background: url("/images/distributorsBack.jpg") no-repeat;
+    background-size: cover;
+    padding: 70px 70px 150px 148px;
+    .enLogo {
+      text-align: right;
+      margin-bottom: 82px;
+      img {
+        width: 130px;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+  .route {
+    width: 100%;
+    padding: 7px 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a407a;
+    background: #e6e9ed;
+  }
+  .about {
+    padding: 200px 148px;
+    img {
+      width: 42%;
+    }
+    & > div {
+      width: 52%;
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        color: #0b1a31;
+        max-width: 423px;
+        margin-bottom: 30px;
+        span {
+          margin-left: 10px;
+          height: 5px;
+          border-radius: 5px;
+          width: 43px;
+          background-color: #1a407a;
+          display: inline-block;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+        color: #606a79;
+      }
+    }
+  }
+  .slider {
+    .splide__arrow--prev {
+      left: 20%;
+      background-color: inherit;
+      height: 60px !important;
+      display: flex;
+      align-items: start;
+    }
+    .splide__arrow--next {
+      right: 20%;
+      background-color: inherit;
+      height: 60px !important;
+      display: flex;
+      align-items: start;
+    }
+    .splide__slide {
+      padding: 100px;
+      opacity: 0.3;
+      .slide {
+        width: 100%;
+        height: 400px;
+        background: url("/images/disSlider.jpg");
+        position: relative;
+        .info {
+          width: 50%;
+          padding: 23px 36px 26px 26px;
+          background: #1a407a;
+          position: absolute;
+          bottom: 0px;
+          right: -100px;
+          .city {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            color: #ffffff;
+            margin-bottom: 16px;
+            img {
+              margin-right: 4px;
+              margin-bottom: 5px;
+            }
+          }
+          .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 29px;
+            color: #ffffff;
+            margin-bottom: 8px;
+          }
+          p {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .is-active {
+      opacity: 1;
+    }
+  }
+  .spreaders {
+    padding: 200px 148px 200px 63px;
+    .info {
+      max-width: 100%;
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        color: #0b1a31;
+        margin-bottom: 30px;
+        span {
+          margin-right: 10px;
+          display: inline-block;
+          height: 5px;
+          width: 43px;
+          background-color: #1a407a;
+          border-radius: 5px;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 50px;
+      }
+      a {
+        border: none;
+        background-color: inherit;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 50px;
+        color: #000000;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+    .map {
+      min-width: 936px;
+      height: 853.3px;
+      background: url("/images/map.png") no-repeat;
+      background-size: contain;
+      position: relative;
+      .circle {
+        background: #1a407a;
+        border-radius: 100%;
+        width: fit-content;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+        color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+      }
+      .tehran {
+        left: 319px;
+        top: 233px;
+        padding: 10px 6px;
+      }
+      .mashhad {
+        right: 233px;
+        top: 224px;
+        padding: 10px 5px;
+      }
+      .isfahan {
+        left: 339px;
+        top: 360px;
+        padding: 15px 5px;
+      }
+      .shiraz {
+        bottom: 235px;
+        left: 400px;
+        padding: 10px 6px;
+      }
+    }
+  }
+  .modalBack {
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    .myModal {
+      background-color: white;
+      width: 1000px;
+      .modalHeader {
+        background: #1a407a;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        padding: 13px 35px;
+        margin-bottom: 42px;
+        img {
+          width: 25px;
+          cursor: pointer;
+        }
+      }
+      .filters {
+        padding: 0px 40px;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+        .searchDiv,
+        .sectionDiv,
+        .cityDiv {
+          width: 230px;
+          input,
+          select {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #b9b7bd;
+            padding-right: 26px;
+            padding-bottom: 8px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #b9b7bd;
+            &:focus {
+              outline: none;
+            }
+          }
+          img {
+            position: absolute;
+          }
+        }
+      }
+      .listHeader {
+        display: flex;
+        padding: 0px 40px;
+        margin-bottom: 17px;
+        .phone {
+          min-width: 219px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          color: #1a407a;
+        }
+        .address {
+          width: 100%;
+          text-align: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          color: #1a407a;
+        }
+        .city {
+          min-width: 131px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+          color: #1a407a;
+        }
+      }
+      .list {
+        padding: 0px 40px;
+        .myRow {
+          display: flex;
+          margin-bottom: 10px;
+          margin-left: 0px;
+          border: 0.5px solid #1a407a;
+          width: 100%;
+          .cityValue {
+            min-width: 131px;
+          }
+          .addressValue {
+            width: 100%;
+            border-right: 0.5px solid #1a407a;
+            border-left: 0.5px solid #1a407a;
+          }
+          .phoneValue {
+            min-width: 219px;
+          }
+          .cityValue,
+          .addressValue,
+          .phoneValue {
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+            padding: 12px 0px;
+          }
+        }
+      }
+      .pagination {
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 63px;
+        .num {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          color: #606a79;
+          cursor: pointer;
+        }
+        .activePage {
+          color: #0b1a31;
+        }
+        .linePagination {
+          height: 2px;
+          width: 86px;
+          display: inline-block;
+          background-color: #0b1a31;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .faDistributors {
+    .about {
+      flex-direction: column;
+      & > div {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .slider {
+      .splide__slide {
+        .slide {
+          .info {
+            width: 90%;
+          }
+        }
+      }
+    }
+    .spreaders {
+      flex-direction: column;
+      align-items: center;
+      .map {
+        width: 730px;
+        min-width: 730px;
+        .mashhad {
+          right: 184px;
+          top: 171px;
+        }
+        .tehran {
+          left: 243px;
+          top: 178px;
+        }
+        .isfahan {
+          left: 260px;
+          top: 283px;
+        }
+        .shiraz {
+          bottom: 374px;
+          left: 301px;
+        }
+      }
+    }
+    .modalBack {
+      justify-content: start;
+      .myModal {
+        width: 90%;
+        height: 100%;
+      }
+    }
+  }
+  .enDistributors {
+    .about {
+      flex-direction: column;
+      & > div {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .slider {
+      .splide__slide {
+        .slide {
+          .info {
+            width: 90%;
+          }
+        }
+      }
+    }
+    .spreaders {
+      flex-direction: column;
+      align-items: center;
+      .map {
+        width: 730px;
+        min-width: 730px;
+        .mashhad {
+          right: 184px;
+          top: 171px;
+        }
+        .tehran {
+          left: 243px;
+          top: 178px;
+        }
+        .isfahan {
+          left: 260px;
+          top: 283px;
+        }
+        .shiraz {
+          bottom: 374px;
+          left: 301px;
+        }
+      }
+    }
+    .modalBack {
+      justify-content: start;
+      .myModal {
+        width: 90%;
+        height: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1057px) {
+  .faDistributors {
+    .topDiv {
+      padding: 70px;
+      padding-bottom: 100px;
+    }
+    .route {
+      padding: 7px 70px;
+    }
+    .about {
+      padding: 100px 70px;
+    }
+    .slider {
+      .splide__arrow--prev {
+        left: 15%;
+      }
+      .splide__arrow--next {
+        right: 16%;
+      }
+      .splide__slide {
+        .slide {
+          .info {
+            padding: 20px;
+          }
+        }
+      }
+    }
+    .spreaders {
+      padding-right: 70px;
+      padding-left: 30px;
+      .map {
+        width: 522px;
+        min-width: 522px;
+        .mashhad {
+          right: 124px;
+          top: 124px;
+        }
+        .tehran {
+          left: 173px;
+          top: 126px;
+        }
+        .isfahan {
+          left: 179px;
+          top: 197px;
+        }
+        .shiraz {
+          bottom: 497px;
+          left: 213px;
+        }
+      }
+    }
+    .modalBack {
+      .myModal {
+        width: 88%;
+      }
+    }
+  }
+  .enDistributors {
+    .topDiv {
+      padding: 70px;
+      padding-bottom: 100px;
+    }
+    .route {
+      padding: 7px 70px;
+    }
+    .about {
+      padding: 100px 70px;
+    }
+    .slider {
+      .splide__arrow--prev {
+        left: 15%;
+      }
+      .splide__arrow--next {
+        right: 16%;
+      }
+      .splide__slide {
+        .slide {
+          .info {
+            padding: 20px;
+          }
+        }
+      }
+    }
+    .spreaders {
+      padding-right: 70px;
+      padding-left: 30px;
+      .map {
+        width: 522px;
+        min-width: 522px;
+        .mashhad {
+          right: 124px;
+          top: 124px;
+        }
+        .tehran {
+          left: 173px;
+          top: 126px;
+        }
+        .isfahan {
+          left: 179px;
+          top: 197px;
+        }
+        .shiraz {
+          bottom: 497px;
+          left: 213px;
+        }
+      }
+    }
+    .modalBack {
+      .myModal {
+        width: 88%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .faDistributors {
+    .modalBack {
+      .myModal {
+        width: 84.8%;
+      }
+    }
+  }
+  .enDistributors {
+    .modalBack {
+      .myModal {
+        width: 84.8%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 719px) {
+  .faDistributors {
+    .topDiv {
+      padding: 50px;
+      padding-top: 100px;
+      .enLogo {
+        img {
+          display: none;
+        }
+      }
+      .title {
+        font-size: 20px;
       }
     }
     .route {
-      width: 100%;
-      padding: 7px 148px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #1a407a;
-      background: #e6e9ed;
+      padding: 7px 50px;
+      font-size: 10px;
     }
     .about {
-      padding: 200px 148px;
-      img {
-        width: 42%;
-      }
-      & > div {
-        width: 52%;
+      padding: 50px;
+      div {
         .title {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 40px;
-          color: #0b1a31;
-          max-width: 423px;
-          margin-bottom: 30px;
+          font-size: 15px;
+          max-width: 428px;
+          line-height: 30px;
           span {
-            margin-right: 10px;
-            height: 5px;
-            border-radius: 5px;
-            width: 43px;
-            background-color: #1a407a;
-            display: inline-block;
+            height: 2.5px;
+            width: 20px;
           }
         }
         p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 35px;
-          text-align: justify;
-          color: #606a79;
+          font-size: 12px;
+          line-height: 25px;
         }
       }
     }
     .slider {
       .splide__arrow--prev {
-        left: 20%;
-        background-color: inherit;
-        height: 60px !important;
-        display: flex;
-        align-items: start;
+        left: 4%;
       }
       .splide__arrow--next {
-        right: 20%;
-        background-color: inherit;
-        height: 60px !important;
-        display: flex;
-        align-items: start;
+        right: 5%;
       }
       .splide__slide {
-        padding: 100px;
-        opacity: 0.3;
         .slide {
-          width: 100%;
-          height: 400px;
-          background: url("/images/disSlider.jpg");
-          position: relative;
           .info {
-            width: 50%;
-            padding: 23px 36px 26px 26px;
-            background: #1a407a;
-            position: absolute;
-            bottom: 0px;
-            right: -100px;
+            width: 80%;
+            right: -50px;
             .city {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              color: #ffffff;
-              margin-bottom: 16px;
+              font-size: 10px;
+              margin-bottom: 0px;
               img {
-                margin-left: 4px;
-                margin-bottom: 5px;
+                width: 12px;
+                margin-bottom: 7px;
               }
             }
             .title {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 29px;
-              color: #ffffff;
-              margin-bottom: 8px;
+              font-size: 12px;
             }
             p {
-              font-style: normal;
-              font-weight: 300;
-              font-size: 15px;
-              line-height: 24px;
-              color: #ffffff;
+              font-size: 10px;
+              margin-bottom: 0px;
             }
           }
         }
-      }
-      .is-active {
-        opacity: 1;
       }
     }
     .spreaders {
-      padding: 200px 148px 200px 63px;
+      padding: 0px 20px;
       .info {
-        max-width: 100%;
+        padding: 0px 30px;
         .title {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 40px;
-          color: #0b1a31;
-          margin-bottom: 30px;
+          font-size: 15px;
+          margin-bottom: 0px;
           span {
-            margin-right: 10px;
-            display: inline-block;
-            height: 5px;
-            width: 43px;
-            background-color: #1a407a;
-            border-radius: 5px;
+            width: 20px;
+            height: 2.5px;
           }
         }
         p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 35px;
-          color: #000000;
-          margin-bottom: 50px;
+          font-size: 15px;
+          margin-bottom: 0px;
         }
-        a {
-          border: none;
-          background-color: inherit;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 50px;
-          color: #000000;
+        button {
+          font-size: 12px;
           img {
-            margin-right: 8px;
+            width: 20px;
           }
         }
       }
       .map {
-        min-width: 936px;
-        height: 853.3px;
-        background: url("/images/map.png") no-repeat;
-        background-size: contain;
-        position: relative;
-        .circle {
-          background: #1a407a;
-          border-radius: 100%;
-          width: fit-content;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 10px;
-          line-height: 16px;
-          color: #ffffff;
-          cursor: pointer;
-          position: absolute;
+        width: 280px;
+        min-width: 280px;
+        height: 300px;
+        margin-top: 40px;
+        .mashhad {
+          right: 63px;
+          top: 61px;
         }
         .tehran {
-          left: 319px;
-          top: 233px;
-          padding: 10px 6px;
-        }
-        .mashhad {
-          right: 233px;
-          top: 224px;
-          padding: 10px 5px;
+          left: 92px;
+          top: 63px;
         }
         .isfahan {
-          left: 339px;
-          top: 360px;
-          padding: 15px 5px;
+          left: 94px;
+          top: 104px;
         }
         .shiraz {
-          bottom: 235px;
-          left: 400px;
-          padding: 10px 6px;
+          bottom: 110px;
+          left: 113px;
+        }
+        .circle {
+          font-size: 5px;
+          padding: 5px;
         }
       }
     }
     .modalBack {
-      width: 100%;
-      height: 100vh;
-      z-index: 2;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(5px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      top: 0px;
       .myModal {
-        background-color: white;
-        width: 1000px;
+        width: 100%;
         .modalHeader {
-          background: #1a407a;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 20px;
-          line-height: 32px;
-          color: #ffffff;
-          padding: 13px 35px;
-          margin-bottom: 42px;
-          img {
-            width: 25px;
-            cursor: pointer;
-          }
+          font-size: 12px;
         }
         .filters {
-          padding: 0px 40px;
-          display: flex;
-          gap: 50px;
-          margin-bottom: 50px;
+          gap: 20px;
           .searchDiv,
           .sectionDiv,
           .cityDiv {
-            width: 230px;
+            position: relative;
             input,
             select {
-              width: 100%;
-              border: none;
-              border-bottom: 1px solid #b9b7bd;
-              padding-right: 26px;
-              padding-bottom: 8px;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              color: #b9b7bd;
-              &:focus {
-                outline: none;
-              }
+              font-size: 10px;
+              padding-right: 19px;
+              padding-bottom: 4px;
             }
             img {
-              position: absolute;
+              width: 15px;
+              bottom: 9px;
+            }
+            input {
+              padding-bottom: 0px !important;
             }
           }
         }
         .listHeader {
-          display: flex;
-          padding: 0px 40px;
-          margin-bottom: 17px;
+          margin-bottom: 5px;
+          .city,
+          .address,
           .phone {
-            min-width: 219px;
-            text-align: center;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            color: #1a407a;
-          }
-          .address {
-            width: 100%;
-            text-align: center;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            color: #1a407a;
+            font-size: 10px;
           }
           .city {
-            min-width: 131px;
-            text-align: center;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            color: #1a407a;
+            min-width: 70px;
+          }
+          .phone {
+            min-width: 150px;
           }
         }
         .list {
-          padding: 0px 40px;
           .myRow {
-            display: flex;
-            margin-bottom: 10px;
-            margin-left: 0px;
-            border: 0.5px solid #1a407a;
-            width: 100%;
-            .cityValue {
-              min-width: 131px;
-            }
-            .addressValue {
-              width: 100%;
-              border-right: 0.5px solid #1a407a;
-              border-left: 0.5px solid #1a407a;
-            }
-            .phoneValue {
-              min-width: 219px;
-            }
             .cityValue,
             .addressValue,
             .phoneValue {
-              text-align: center;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              color: #000000;
-              padding: 12px 0px;
+              font-size: 10px;
+            }
+            .cityValue {
+              min-width: 70px;
+            }
+            .phoneValue {
+              min-width: 150px;
             }
           }
         }
         .pagination {
-          gap: 10px;
-          margin-top: 50px;
-          margin-bottom: 63px;
+          margin-top: 20px;
           .num {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 32px;
-            color: #606a79;
-            cursor: pointer;
-          }
-          .activePage {
-            color: #0b1a31;
+            font-size: 10px;
           }
           .linePagination {
-            height: 2px;
-            width: 86px;
-            display: inline-block;
-            background-color: #0b1a31;
+            width: 46px;
           }
         }
       }
@@ -355,967 +1130,183 @@
   }
   .enDistributors {
     .topDiv {
-      background: url("/images/distributorsBack.jpg") no-repeat;
-      background-size: cover;
-      padding: 70px 148px 150px 70px;
+      padding: 50px;
+      padding-top: 100px;
       .enLogo {
-        text-align: left;
-        margin-bottom: 82px;
         img {
-          width: 130px;
+          display: none;
         }
       }
       .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        color: #ffffff;
+        font-size: 20px;
       }
     }
     .route {
-      width: 100%;
-      padding: 7px 148px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      color: #1a407a;
-      background: #e6e9ed;
+      padding: 7px 50px;
+      font-size: 10px;
     }
     .about {
-      padding: 200px 148px;
-      img {
-        width: 42%;
-      }
-      & > div {
-        width: 52%;
+      padding: 50px;
+      div {
         .title {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 40px;
-          color: #0b1a31;
-          max-width: 423px;
-          margin-bottom: 30px;
+          font-size: 15px;
+          max-width: 428px;
+          line-height: 30px;
           span {
-            margin-right: 10px;
-            height: 5px;
-            border-radius: 5px;
-            width: 43px;
-            background-color: #1a407a;
-            display: inline-block;
+            height: 2.5px;
+            width: 20px;
           }
         }
         p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 35px;
-          text-align: justify;
-          color: #606a79;
+          font-size: 12px;
+          line-height: 25px;
         }
       }
     }
     .slider {
       .splide__arrow--prev {
-        left: 20%;
-        background-color: inherit;
-        height: 60px !important;
-        display: flex;
-        align-items: start;
+        left: 4%;
       }
       .splide__arrow--next {
-        right: 20%;
-        background-color: inherit;
-        height: 60px !important;
-        display: flex;
-        align-items: start;
+        right: 5%;
       }
       .splide__slide {
-        padding: 100px;
-        opacity: 0.3;
         .slide {
-          width: 100%;
-          height: 400px;
-          background: url("/images/disSlider.jpg");
-          position: relative;
           .info {
-            width: 50%;
-            padding: 23px 36px 26px 26px;
-            background: #1a407a;
-            position: absolute;
-            bottom: 0px;
-            right: -100px;
+            width: 80%;
+            right: -50px;
             .city {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              color: #ffffff;
-              margin-bottom: 16px;
+              font-size: 10px;
+              margin-bottom: 0px;
               img {
-                margin-left: 4px;
-                margin-bottom: 5px;
+                width: 12px;
+                margin-bottom: 7px;
               }
             }
             .title {
-              font-style: normal;
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 29px;
-              color: #ffffff;
-              margin-bottom: 8px;
+              font-size: 12px;
             }
             p {
-              font-style: normal;
-              font-weight: 300;
-              font-size: 15px;
-              line-height: 24px;
-              color: #ffffff;
+              font-size: 10px;
+              margin-bottom: 0px;
             }
           }
         }
-      }
-      .is-active {
-        opacity: 1;
       }
     }
     .spreaders {
-      padding: 200px 148px 200px 63px;
+      padding: 0px 20px;
       .info {
-        max-width: 100%;
+        padding: 0px 30px;
         .title {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 40px;
-          color: #0b1a31;
-          margin-bottom: 30px;
+          font-size: 15px;
+          margin-bottom: 0px;
           span {
-            margin-right: 10px;
-            display: inline-block;
-            height: 5px;
-            width: 43px;
-            background-color: #1a407a;
-            border-radius: 5px;
+            width: 20px;
+            height: 2.5px;
           }
         }
         p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 35px;
-          color: #000000;
-          margin-bottom: 50px;
+          font-size: 15px;
+          margin-bottom: 0px;
         }
-        a {
-          border: none;
-          background-color: inherit;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 50px;
-          color: #000000;
+        button {
+          font-size: 12px;
           img {
-            margin-right: 8px;
+            width: 20px;
           }
         }
       }
       .map {
-        min-width: 936px;
-        height: 853.3px;
-        background: url("/images/map.png") no-repeat;
-        background-size: contain;
-        position: relative;
-        .circle {
-          background: #1a407a;
-          border-radius: 100%;
-          width: fit-content;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 10px;
-          line-height: 16px;
-          color: #ffffff;
-          cursor: pointer;
-          position: absolute;
+        width: 280px;
+        min-width: 280px;
+        height: 300px;
+        margin-top: 40px;
+        .mashhad {
+          right: 63px;
+          top: 61px;
         }
         .tehran {
-          left: 319px;
-          top: 233px;
-          padding: 10px 6px;
-        }
-        .mashhad {
-          right: 233px;
-          top: 224px;
-          padding: 10px 5px;
+          left: 92px;
+          top: 63px;
         }
         .isfahan {
-          left: 339px;
-          top: 360px;
-          padding: 15px 5px;
+          left: 94px;
+          top: 104px;
         }
         .shiraz {
-          bottom: 235px;
-          left: 400px;
-          padding: 10px 6px;
+          bottom: 110px;
+          left: 113px;
+        }
+        .circle {
+          font-size: 5px;
+          padding: 5px;
         }
       }
     }
     .modalBack {
-      width: 100%;
-      height: 100vh;
-      z-index: 2;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(5px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      top: 0px;
       .myModal {
-        background-color: white;
-        width: 1000px;
+        width: 100%;
         .modalHeader {
-          background: #1a407a;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 20px;
-          line-height: 32px;
-          color: #ffffff;
-          padding: 13px 35px;
-          margin-bottom: 42px;
-          img {
-            width: 25px;
-            cursor: pointer;
-          }
+          font-size: 12px;
         }
         .filters {
-          padding: 0px 40px;
-          display: flex;
-          gap: 50px;
-          margin-bottom: 50px;
+          gap: 20px;
           .searchDiv,
           .sectionDiv,
           .cityDiv {
-            width: 230px;
+            position: relative;
             input,
             select {
-              width: 100%;
-              border: none;
-              border-bottom: 1px solid #b9b7bd;
-              padding-right: 26px;
-              padding-bottom: 8px;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              color: #b9b7bd;
-              &:focus {
-                outline: none;
-              }
+              font-size: 10px;
+              padding-right: 19px;
+              padding-bottom: 4px;
             }
             img {
-              position: absolute;
+              width: 15px;
+              bottom: 9px;
+            }
+            input {
+              padding-bottom: 0px !important;
             }
           }
         }
         .listHeader {
-          display: flex;
-          padding: 0px 40px;
-          margin-bottom: 17px;
+          margin-bottom: 5px;
+          .city,
+          .address,
           .phone {
-            min-width: 219px;
-            text-align: center;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            color: #1a407a;
-          }
-          .address {
-            width: 100%;
-            text-align: center;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            color: #1a407a;
+            font-size: 10px;
           }
           .city {
-            min-width: 131px;
-            text-align: center;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            color: #1a407a;
+            min-width: 70px;
+          }
+          .phone {
+            min-width: 150px;
           }
         }
         .list {
-          padding: 0px 40px;
           .myRow {
-            display: flex;
-            margin-bottom: 10px;
-            margin-left: 0px;
-            border: 0.5px solid #1a407a;
-            width: 100%;
-            .cityValue {
-              min-width: 131px;
-            }
-            .addressValue {
-              width: 100%;
-              border-right: 0.5px solid #1a407a;
-              border-left: 0.5px solid #1a407a;
-            }
-            .phoneValue {
-              min-width: 219px;
-            }
             .cityValue,
             .addressValue,
             .phoneValue {
-              text-align: center;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 26px;
-              color: #000000;
-              padding: 12px 0px;
+              font-size: 10px;
+            }
+            .cityValue {
+              min-width: 70px;
+            }
+            .phoneValue {
+              min-width: 150px;
             }
           }
         }
         .pagination {
-          gap: 10px;
-          margin-top: 50px;
-          margin-bottom: 63px;
+          margin-top: 20px;
           .num {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 32px;
-            color: #606a79;
-            cursor: pointer;
-          }
-          .activePage {
-            color: #0b1a31;
+            font-size: 10px;
           }
           .linePagination {
-            height: 2px;
-            width: 86px;
-            display: inline-block;
-            background-color: #0b1a31;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .distributors {
-    .faDistributors {
-      .about {
-        flex-direction: column;
-        & > div {
-          width: 100%;
-          margin-bottom: 50px;
-        }
-        img {
-          width: 100%;
-        }
-      }
-      .slider {
-        .splide__slide {
-          .slide {
-            .info {
-              width: 90%;
-            }
-          }
-        }
-      }
-      .spreaders {
-        flex-direction: column;
-        align-items: center;
-        .map {
-          width: 730px;
-          min-width: 730px;
-          .mashhad {
-            right: 184px;
-            top: 171px;
-          }
-          .tehran {
-            left: 243px;
-            top: 178px;
-          }
-          .isfahan {
-            left: 260px;
-            top: 283px;
-          }
-          .shiraz {
-            bottom: 374px;
-            left: 301px;
-          }
-        }
-      }
-      .modalBack {
-        justify-content: start;
-        .myModal {
-          width: 90%;
-          height: 100%;
-        }
-      }
-    }
-    .enDistributors {
-      .about {
-        flex-direction: column;
-        & > div {
-          width: 100%;
-          margin-bottom: 50px;
-        }
-        img {
-          width: 100%;
-        }
-      }
-      .slider {
-        .splide__slide {
-          .slide {
-            .info {
-              width: 90%;
-            }
-          }
-        }
-      }
-      .spreaders {
-        flex-direction: column;
-        align-items: center;
-        .map {
-          width: 730px;
-          min-width: 730px;
-          .mashhad {
-            right: 184px;
-            top: 171px;
-          }
-          .tehran {
-            left: 243px;
-            top: 178px;
-          }
-          .isfahan {
-            left: 260px;
-            top: 283px;
-          }
-          .shiraz {
-            bottom: 374px;
-            left: 301px;
-          }
-        }
-      }
-      .modalBack {
-        justify-content: start;
-        .myModal {
-          width: 90%;
-          height: 100%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1057px) {
-  .distributors {
-    .faDistributors {
-      .topDiv {
-        padding: 70px;
-        padding-bottom: 100px;
-      }
-      .route {
-        padding: 7px 70px;
-      }
-      .about {
-        padding: 100px 70px;
-      }
-      .slider {
-        .splide__arrow--prev {
-          left: 15%;
-        }
-        .splide__arrow--next {
-          right: 16%;
-        }
-        .splide__slide {
-          .slide {
-            .info {
-              padding: 20px;
-            }
-          }
-        }
-      }
-      .spreaders {
-        padding-right: 70px;
-        padding-left: 30px;
-        .map {
-          width: 522px;
-          min-width: 522px;
-          .mashhad {
-            right: 124px;
-            top: 124px;
-          }
-          .tehran {
-            left: 173px;
-            top: 126px;
-          }
-          .isfahan {
-            left: 179px;
-            top: 197px;
-          }
-          .shiraz {
-            bottom: 497px;
-            left: 213px;
-          }
-        }
-      }
-      .modalBack {
-        .myModal {
-          width: 88%;
-        }
-      }
-    }
-    .enDistributors {
-      .topDiv {
-        padding: 70px;
-        padding-bottom: 100px;
-      }
-      .route {
-        padding: 7px 70px;
-      }
-      .about {
-        padding: 100px 70px;
-      }
-      .slider {
-        .splide__arrow--prev {
-          left: 15%;
-        }
-        .splide__arrow--next {
-          right: 16%;
-        }
-        .splide__slide {
-          .slide {
-            .info {
-              padding: 20px;
-            }
-          }
-        }
-      }
-      .spreaders {
-        padding-right: 70px;
-        padding-left: 30px;
-        .map {
-          width: 522px;
-          min-width: 522px;
-          .mashhad {
-            right: 124px;
-            top: 124px;
-          }
-          .tehran {
-            left: 173px;
-            top: 126px;
-          }
-          .isfahan {
-            left: 179px;
-            top: 197px;
-          }
-          .shiraz {
-            bottom: 497px;
-            left: 213px;
-          }
-        }
-      }
-      .modalBack {
-        .myModal {
-          width: 88%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 900px) {
-  .distributors {
-    .faDistributors {
-      .modalBack {
-        .myModal {
-          width: 84.8%;
-        }
-      }
-    }
-    .enDistributors {
-      .modalBack {
-        .myModal {
-          width: 84.8%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 719px) {
-  .distributors {
-    .faDistributors {
-      .topDiv {
-        padding: 50px;
-        padding-top: 100px;
-        .enLogo {
-          img {
-            display: none;
-          }
-        }
-        .title {
-          font-size: 20px;
-        }
-      }
-      .route {
-        padding: 7px 50px;
-        font-size: 10px;
-      }
-      .about {
-        padding: 50px;
-        div {
-          .title {
-            font-size: 15px;
-            max-width: 428px;
-            line-height: 30px;
-            span {
-              height: 2.5px;
-              width: 20px;
-            }
-          }
-          p {
-            font-size: 12px;
-            line-height: 25px;
-          }
-        }
-      }
-      .slider {
-        .splide__arrow--prev {
-          left: 4%;
-        }
-        .splide__arrow--next {
-          right: 5%;
-        }
-        .splide__slide {
-          .slide {
-            .info {
-              width: 80%;
-              right: -50px;
-              .city {
-                font-size: 10px;
-                margin-bottom: 0px;
-                img {
-                  width: 12px;
-                  margin-bottom: 7px;
-                }
-              }
-              .title {
-                font-size: 12px;
-              }
-              p {
-                font-size: 10px;
-                margin-bottom: 0px;
-              }
-            }
-          }
-        }
-      }
-      .spreaders {
-        padding: 0px 20px;
-        .info {
-          padding: 0px 30px;
-          .title {
-            font-size: 15px;
-            margin-bottom: 0px;
-            span {
-              width: 20px;
-              height: 2.5px;
-            }
-          }
-          p {
-            font-size: 15px;
-            margin-bottom: 0px;
-          }
-          button {
-            font-size: 12px;
-            img {
-              width: 20px;
-            }
-          }
-        }
-        .map {
-          width: 280px;
-          min-width: 280px;
-          height: 300px;
-          margin-top: 40px;
-          .mashhad {
-            right: 63px;
-            top: 61px;
-          }
-          .tehran {
-            left: 92px;
-            top: 63px;
-          }
-          .isfahan {
-            left: 94px;
-            top: 104px;
-          }
-          .shiraz {
-            bottom: 110px;
-            left: 113px;
-          }
-          .circle {
-            font-size: 5px;
-            padding: 5px;
-          }
-        }
-      }
-      .modalBack {
-        .myModal {
-          width: 100%;
-          .modalHeader {
-            font-size: 12px;
-          }
-          .filters {
-            gap: 20px;
-            .searchDiv,
-            .sectionDiv,
-            .cityDiv {
-              position: relative;
-              input,
-              select {
-                font-size: 10px;
-                padding-right: 19px;
-                padding-bottom: 4px;
-              }
-              img {
-                width: 15px;
-                bottom: 9px;
-              }
-              input {
-                padding-bottom: 0px !important;
-              }
-            }
-          }
-          .listHeader {
-            margin-bottom: 5px;
-            .city,
-            .address,
-            .phone {
-              font-size: 10px;
-            }
-            .city {
-              min-width: 70px;
-            }
-            .phone {
-              min-width: 150px;
-            }
-          }
-          .list {
-            .myRow {
-              .cityValue,
-              .addressValue,
-              .phoneValue {
-                font-size: 10px;
-              }
-              .cityValue {
-                min-width: 70px;
-              }
-              .phoneValue {
-                min-width: 150px;
-              }
-            }
-          }
-          .pagination {
-            margin-top: 20px;
-            .num {
-              font-size: 10px;
-            }
-            .linePagination {
-              width: 46px;
-            }
-          }
-        }
-      }
-    }
-    .enDistributors {
-      .topDiv {
-        padding: 50px;
-        padding-top: 100px;
-        .enLogo {
-          img {
-            display: none;
-          }
-        }
-        .title {
-          font-size: 20px;
-        }
-      }
-      .route {
-        padding: 7px 50px;
-        font-size: 10px;
-      }
-      .about {
-        padding: 50px;
-        div {
-          .title {
-            font-size: 15px;
-            max-width: 428px;
-            line-height: 30px;
-            span {
-              height: 2.5px;
-              width: 20px;
-            }
-          }
-          p {
-            font-size: 12px;
-            line-height: 25px;
-          }
-        }
-      }
-      .slider {
-        .splide__arrow--prev {
-          left: 4%;
-        }
-        .splide__arrow--next {
-          right: 5%;
-        }
-        .splide__slide {
-          .slide {
-            .info {
-              width: 80%;
-              right: -50px;
-              .city {
-                font-size: 10px;
-                margin-bottom: 0px;
-                img {
-                  width: 12px;
-                  margin-bottom: 7px;
-                }
-              }
-              .title {
-                font-size: 12px;
-              }
-              p {
-                font-size: 10px;
-                margin-bottom: 0px;
-              }
-            }
-          }
-        }
-      }
-      .spreaders {
-        padding: 0px 20px;
-        .info {
-          padding: 0px 30px;
-          .title {
-            font-size: 15px;
-            margin-bottom: 0px;
-            span {
-              width: 20px;
-              height: 2.5px;
-            }
-          }
-          p {
-            font-size: 15px;
-            margin-bottom: 0px;
-          }
-          button {
-            font-size: 12px;
-            img {
-              width: 20px;
-            }
-          }
-        }
-        .map {
-          width: 280px;
-          min-width: 280px;
-          height: 300px;
-          margin-top: 40px;
-          .mashhad {
-            right: 63px;
-            top: 61px;
-          }
-          .tehran {
-            left: 92px;
-            top: 63px;
-          }
-          .isfahan {
-            left: 94px;
-            top: 104px;
-          }
-          .shiraz {
-            bottom: 110px;
-            left: 113px;
-          }
-          .circle {
-            font-size: 5px;
-            padding: 5px;
-          }
-        }
-      }
-      .modalBack {
-        .myModal {
-          width: 100%;
-          .modalHeader {
-            font-size: 12px;
-          }
-          .filters {
-            gap: 20px;
-            .searchDiv,
-            .sectionDiv,
-            .cityDiv {
-              position: relative;
-              input,
-              select {
-                font-size: 10px;
-                padding-right: 19px;
-                padding-bottom: 4px;
-              }
-              img {
-                width: 15px;
-                bottom: 9px;
-              }
-              input {
-                padding-bottom: 0px !important;
-              }
-            }
-          }
-          .listHeader {
-            margin-bottom: 5px;
-            .city,
-            .address,
-            .phone {
-              font-size: 10px;
-            }
-            .city {
-              min-width: 70px;
-            }
-            .phone {
-              min-width: 150px;
-            }
-          }
-          .list {
-            .myRow {
-              .cityValue,
-              .addressValue,
-              .phoneValue {
-                font-size: 10px;
-              }
-              .cityValue {
-                min-width: 70px;
-              }
-              .phoneValue {
-                min-width: 150px;
-              }
-            }
-          }
-          .pagination {
-            margin-top: 20px;
-            .num {
-              font-size: 10px;
-            }
-            .linePagination {
-              width: 46px;
-            }
+            width: 46px;
           }
         }
       }
@@ -1323,66 +1314,64 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .distributors {
-    .faDistributors {
-      .modalBack {
-        .myModal {
-          width: 100%;
-          .filters {
-            gap: 20px;
+  .faDistributors {
+    .modalBack {
+      .myModal {
+        width: 100%;
+        .filters {
+          gap: 20px;
+          flex-direction: column;
+          .searchDiv,
+          .sectionDiv,
+          .cityDiv {
+            width: 100%;
+            min-width: 100%;
+          }
+        }
+        .listHeader {
+          display: none;
+        }
+        .list {
+          max-height: 155px;
+          overflow-y: scroll;
+          .myRow {
             flex-direction: column;
-            .searchDiv,
-            .sectionDiv,
-            .cityDiv {
-              width: 100%;
-              min-width: 100%;
-            }
-          }
-          .listHeader {
-            display: none;
-          }
-          .list {
-            max-height: 155px;
-            overflow-y: scroll;
-            .myRow {
-              flex-direction: column;
-              .addressValue {
-                border: none;
-                border-top: 0.5px solid #1a407a;
-                border-bottom: 0.5px solid #1a407a;
-              }
+            .addressValue {
+              border: none;
+              border-top: 0.5px solid #1a407a;
+              border-bottom: 0.5px solid #1a407a;
             }
           }
         }
       }
     }
-    .enDistributors {
-      .modalBack {
-        .myModal {
-          width: 100%;
-          .filters {
-            gap: 20px;
+  }
+  .enDistributors {
+    .modalBack {
+      .myModal {
+        width: 100%;
+        .filters {
+          gap: 20px;
+          flex-direction: column;
+          .searchDiv,
+          .sectionDiv,
+          .cityDiv {
+            width: 100%;
+            min-width: 100%;
+          }
+        }
+        .listHeader {
+          display: none;
+        }
+        .list {
+          max-height: 155px;
+          overflow-y: scroll;
+          .myRow {
             flex-direction: column;
-            .searchDiv,
-            .sectionDiv,
-            .cityDiv {
-              width: 100%;
-              min-width: 100%;
-            }
-          }
-          .listHeader {
-            display: none;
-          }
-          .list {
-            max-height: 155px;
-            overflow-y: scroll;
-            .myRow {
-              flex-direction: column;
-              .addressValue {
-                border: none;
-                border-top: 0.5px solid #1a407a;
-                border-bottom: 0.5px solid #1a407a;
-              }
+            .addressValue {
+              border: none;
+              border-top: 0.5px solid #1a407a;
+              border-bottom: 0.5px solid #1a407a;
             }
           }
         }

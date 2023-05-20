@@ -5,7 +5,7 @@
     padding: 85px 40px 56px 18px;
     height: 100%;
     position: fixed;
-    right: 120px;
+    right: 105px;
     width: 100%;
     align-items: end;
     transform: translateX(100vw);
@@ -181,15 +181,15 @@
             h5 {
               font-style: normal;
               font-weight: 400;
-              font-size: 18px;
+              font-size: 17px;
               margin-bottom: 17px;
             }
             a {
               font-style: normal;
               font-weight: 400;
-              font-size: 16px;
+              font-size: 14px;
               color: #b0bed1;
-              margin-bottom: 8px;
+              margin-bottom: 10px;
               &:hover {
                 text-decoration: none;
               }
@@ -210,7 +210,7 @@
             padding-bottom: 5px;
             color: white;
             font-weight: 300;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             &:focus {
               outline: none;
@@ -233,7 +233,7 @@
       .rules {
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         color: #bac6d7;
         padding-right: 260px;
         padding-bottom: 41px;
@@ -249,10 +249,10 @@
   .enHeader {
     background: #1a407a;
     color: white;
-    padding: 85px 18px 56px 40px;
+    padding: 85px 33px 56px 40px;
     height: 100%;
     position: fixed;
-    left: 120px;
+    left: 105px;
     display: flex;
     width: 100%;
     align-items: end;
@@ -268,7 +268,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-right: 15px;
       .barIcon {
         width: 37px;
         position: relative;
@@ -318,7 +317,7 @@
       }
       .text {
         transform: rotate(-90deg);
-        margin-top: 15px;
+        margin-top: 30px;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -365,7 +364,7 @@
         opacity: 0.7;
         img {
           width: 24px;
-          margin-top: 40px;
+          margin-top: 25px;
         }
         div {
           transform: rotate(-90deg);
@@ -428,15 +427,15 @@
             h5 {
               font-style: normal;
               font-weight: 400;
-              font-size: 18px;
+              font-size: 17px;
               margin-bottom: 17px;
             }
             a {
               font-style: normal;
               font-weight: 400;
-              font-size: 16px;
+              font-size: 14px;
               color: #b0bed1;
-              margin-bottom: 8px;
+              margin-bottom: 10px;
               &:hover {
                 text-decoration: none;
               }
@@ -446,10 +445,10 @@
         .searchDiv {
           img {
             position: relative;
-            right: 26px;
+            left: 26px;
           }
           input {
-            padding-right: 35px;
+            padding-left: 35px;
             border: 0px;
             border-bottom: 2px solid #ffffff;
             width: 277px;
@@ -457,7 +456,7 @@
             padding-bottom: 5px;
             color: white;
             font-weight: 300;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             &:focus {
               outline: none;
@@ -480,9 +479,9 @@
       .rules {
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         color: #bac6d7;
-        padding-right: 260px;
+        padding-left: 260px;
         padding-bottom: 41px;
         a {
           color: #bac6d7;
@@ -584,7 +583,7 @@
             input {
               width: 100%;
               font-weight: 300;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 26px;
             }
             img {
@@ -595,12 +594,9 @@
           }
           .links {
             .link {
-              height: 74px;
               overflow: hidden;
               transition: all 1s;
-              &:hover {
-                height: fit-content;
-              }
+              height: fit-content;
               h5 {
                 font-weight: 400;
                 font-size: 18px;
@@ -608,12 +604,12 @@
               }
               a {
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 26px;
               }
               .num {
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 24px;
               }
             }
@@ -621,7 +617,7 @@
         }
         .rules {
           font-weight: 400;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 26px;
         }
       }
@@ -676,7 +672,7 @@
             input {
               width: 100%;
               font-weight: 300;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 26px;
             }
             img {
@@ -700,12 +696,12 @@
               }
               a {
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 26px;
               }
               .num {
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 24px;
               }
             }
@@ -713,7 +709,7 @@
         }
         .rules {
           font-weight: 400;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 26px;
         }
       }

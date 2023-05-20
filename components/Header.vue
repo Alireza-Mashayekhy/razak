@@ -46,51 +46,51 @@
             <div class="link">
               <div class="num">01</div>
               <h5>پایگاه دانش</h5>
-              <router-link to="/blogs">مقالات</router-link>
-              <router-link to="/">نوآوری و تحقیقات</router-link>
-              <router-link to="/">مطالعات </router-link>
-              <router-link to="/">کتاب الکترونیکی</router-link>
-              <router-link to="/">پادکست ها</router-link>
+              <router-link to="/fa/blogs">مقالات</router-link>
+              <router-link to="/fa/">نوآوری و تحقیقات</router-link>
+              <router-link to="/fa/">مطالعات </router-link>
+              <router-link to="/fa/">کتاب الکترونیکی</router-link>
+              <router-link to="/fa/">پادکست ها</router-link>
             </div>
             <div class="link">
               <div class="num">02</div>
               <h5>محصولات</h5>
-              <router-link to="/">انسانی</router-link>
-              <router-link to="/">دامی</router-link>
-              <router-link to="/products">لیست محصولات</router-link>
-              <router-link to="/distributors">توزیع کنندگان</router-link>
+              <router-link to="/fa/">انسانی</router-link>
+              <router-link to="/fa/">دامی</router-link>
+              <router-link to="/fa/products">لیست محصولات</router-link>
+              <router-link to="/fa/distributors">توزیع کنندگان</router-link>
             </div>
             <div class="link">
               <div class="num">03</div>
               <h5>اتاق خبر</h5>
-              <router-link to="/news">اخبار </router-link>
-              <router-link to="/events">رویداد های رازک</router-link>
-              <router-link to="/">اخبار تیپیکو</router-link>
-              <router-link to="/stockNews">اخبار سهام</router-link>
+              <router-link to="/fa/news">اخبار </router-link>
+              <router-link to="/fa/events">رویداد های رازک</router-link>
+              <router-link to="/fa/">اخبار تیپیکو</router-link>
+              <router-link to="/fa/stockNews">اخبار سهام</router-link>
             </div>
             <div class="link">
               <div class="num">04</div>
               <h5>لابراتوارهای رازک</h5>
-              <router-link to="/aboutUs">درباره ی رازک</router-link>
-              <router-link to="/team">مدیران و سهامداران رازک</router-link>
-              <router-link to="/partners">شرکای رازک</router-link>
-              <router-link to="/">پورتال سهامداران</router-link>
-              <router-link to="/">معرفی لوگو</router-link>
+              <router-link to="/fa/aboutUs">درباره ی رازک</router-link>
+              <router-link to="/fa/team">مدیران و سهامداران رازک</router-link>
+              <router-link to="/fa/partners">شرکای رازک</router-link>
+              <router-link to="/fa/">پورتال سهامداران</router-link>
+              <router-link to="/fa/">معرفی لوگو</router-link>
             </div>
             <div class="link">
               <div class="num">05</div>
               <h5>تماس با ما</h5>
-              <router-link to="/contactUs">اطلاعات تماس</router-link>
-              <router-link to="/">صدای مشتریان</router-link>
-              <router-link to="/">همکاری با ما</router-link>
-              <router-link to="/voc">ثبت شکایت</router-link>
-              <router-link to="/comments">نظرات همراهان</router-link>
+              <router-link to="/fa/contactUs">اطلاعات تماس</router-link>
+              <router-link to="/fa/voc">صدای مشتریان</router-link>
+              <router-link to="/fa/">همکاری با ما</router-link>
+              <router-link to="/fa/voc">ثبت شکایت</router-link>
+              <router-link to="/fa/comments">نظرات همراهان</router-link>
             </div>
             <div class="link">
               <div class="num">06</div>
               <h5>مدیا سنتر</h5>
-              <router-link to="/gallery">گالری تصاویر</router-link>
-              <router-link to="/">گالری ویدیوها</router-link>
+              <router-link to="/fa/gallery">گالری تصاویر</router-link>
+              <router-link to="/fa/">گالری ویدیوها</router-link>
             </div>
           </div>
           <div class="searchDiv">
@@ -99,11 +99,11 @@
           </div>
         </div>
         <div class="rules">
-          <router-link to="/">قوانین و مقررات </router-link>
+          <router-link to="/fa/">قوانین و مقررات </router-link>
           <span>|</span>
-          <router-link to="/">نقشه سایت</router-link>
+          <router-link to="/fa/">نقشه سایت</router-link>
           <span>|</span>
-          <router-link to="/">حریم خصوصی</router-link>
+          <router-link to="/fa/">حریم خصوصی</router-link>
         </div>
       </div>
     </div>
@@ -123,7 +123,7 @@
             <span></span>
           </div>
         </div>
-        <div class="text">منو</div>
+        <div class="text">menu</div>
       </div>
       <div class="langAndScroll">
         <div class="language">
@@ -134,7 +134,7 @@
           <img src="/icons/global.svg" alt="global" @click="handelEnLang" />
         </div>
         <div class="scroll">
-          <div>اسکرول کنید</div>
+          <div>Scroll</div>
           <img src="/icons/mouse.svg" alt="mouse" />
         </div>
       </div>
@@ -152,65 +152,67 @@
           <div class="links">
             <div class="link">
               <div class="num">01</div>
-              <h5>پایگاه دانش</h5>
-              <router-link to="/blogs">مقالات</router-link>
-              <router-link to="/">نوآوری و تحقیقات</router-link>
-              <router-link to="/">مطالعات </router-link>
-              <router-link to="/">کتاب الکترونیکی</router-link>
-              <router-link to="/">پادکست ها</router-link>
+              <h5>Knowledge base</h5>
+              <router-link to="en/blogs">Articles</router-link>
+              <router-link to="/en/">Innovation and research</router-link>
+              <router-link to="/en/">Studies</router-link>
+              <router-link to="/en/">Electronic book</router-link>
+              <router-link to="/en/">Podcasts</router-link>
             </div>
             <div class="link">
               <div class="num">02</div>
-              <h5>محصولات</h5>
-              <router-link to="/">انسانی</router-link>
-              <router-link to="/">دامی</router-link>
-              <router-link to="/products">لیست محصولات</router-link>
-              <router-link to="/distributors">توزیع کنندگان</router-link>
+              <h5>Products</h5>
+              <router-link to="/en/">Human</router-link>
+              <router-link to="/en/">Livestock</router-link>
+              <router-link to="/en/products">Products List</router-link>
+              <router-link to="/en/distributors">Distributors</router-link>
             </div>
             <div class="link">
               <div class="num">03</div>
-              <h5>اتاق خبر</h5>
-              <router-link to="/news">اخبار </router-link>
-              <router-link to="/events">رویداد های رازک</router-link>
-              <router-link to="/">اخبار تیپیکو</router-link>
-              <router-link to="/stockNews">اخبار سهام</router-link>
+              <h5>News Room</h5>
+              <router-link to="/en/news">News </router-link>
+              <router-link to="/en/events">Razak events</router-link>
+              <router-link to="/en/">Tipico news</router-link>
+              <router-link to="/en/stockNews">Stock news</router-link>
             </div>
             <div class="link">
               <div class="num">04</div>
-              <h5>لابراتوارهای رازک</h5>
-              <router-link to="/aboutUs">درباره ی رازک</router-link>
-              <router-link to="/team">مدیران و سهامداران رازک</router-link>
-              <router-link to="/partners">شرکای رازک</router-link>
-              <router-link to="/">پورتال سهامداران</router-link>
-              <router-link to="/">معرفی لوگو</router-link>
+              <h5>Razak Laboratories</h5>
+              <router-link to="/en/aboutUs">About Razak</router-link>
+              <router-link to="/en/team"
+                >Managers and shareholders of Razak</router-link
+              >
+              <router-link to="/en/partners">Razak partners</router-link>
+              <router-link to="/en/">Shareholder portal</router-link>
+              <router-link to="/en/">Introducing the logo</router-link>
             </div>
             <div class="link">
               <div class="num">05</div>
-              <h5>تماس با ما</h5>
-              <router-link to="/contactUs">اطلاعات تماس</router-link>
-              <router-link to="/">صدای مشتریان</router-link>
-              <router-link to="/">همکاری با ما</router-link>
-              <router-link to="/voc">ثبت شکایت</router-link>
-              <router-link to="/comments">نظرات همراهان</router-link>
+              <h5>contact us</h5>
+              <router-link to="/en/contactUs">Contacts</router-link>
+              <router-link to="/en/voc">The voice of customers</router-link>
+              <router-link to="/en/">Work with us</router-link>
+              <router-link to="/en/voc">Submitting a complaint</router-link>
+              <router-link to="/en/comments">Companions' comments</router-link>
             </div>
             <div class="link">
               <div class="num">06</div>
-              <h5>مدیا سنتر</h5>
-              <router-link to="/gallery">گالری تصاویر</router-link>
-              <router-link to="/">گالری ویدیوها</router-link>
+              <h5>Media Center</h5>
+              <router-link to="/en/gallery">Photo gallery</router-link>
+              <router-link to="/en/">Video gallery</router-link>
             </div>
           </div>
           <div class="searchDiv">
             <img src="/icons/search.svg" alt="search" />
-            <input type="search" placeholder="جستجو" />
+            <input type="search" placeholder="search" />
           </div>
         </div>
         <div class="rules">
-          <router-link to="/">قوانین و مقررات </router-link>
+          <router-link to="en/">Terms and Conditions</router-link>
           <span>|</span>
-          <router-link to="/">نقشه سایت</router-link>
+          <router-link to="en/">Sitemap</router-link>
           <span>|</span>
-          <router-link to="/">حریم خصوصی</router-link>
+          <router-link to="en/">Privacy</router-link>
         </div>
       </div>
     </div>
@@ -234,10 +236,10 @@ export default {
       if (window.innerWidth > 719) {
         if (this.headerOpen) {
           document.getElementsByClassName("faHeader")[0].style.transform =
-            "translateX(120px)";
+            "translateX(105px)";
           document.getElementsByClassName("faHeader")[0].style.padding = "0px";
           document.getElementsByClassName("enHeader")[0].style.transform =
-            "translateX(-120px)";
+            "translateX(-105px)";
           document.getElementsByClassName("enHeader")[0].style.padding = "0px";
         } else {
           document.getElementsByClassName("faHeader")[0].style.transform =
@@ -247,7 +249,7 @@ export default {
           document.getElementsByClassName("enHeader")[0].style.transform =
             "translateX(-100vw)";
           document.getElementsByClassName("enHeader")[0].style.padding =
-            "85px 18px 56px 40px";
+            "85px 33px 56px 40px";
         }
       } else {
         if (this.headerOpen) {
@@ -275,12 +277,12 @@ export default {
         document.getElementsByClassName("faHeader")[0].style.transition =
           "transform 1s";
         document.getElementsByClassName("faHeader")[0].style.transform =
-          "translateX(120px)";
+          "translateX(105px)";
         document.getElementsByClassName("faHeader")[0].style.padding = "0px";
         document.getElementsByClassName("enHeader")[0].style.transition =
           "transform 1s";
         document.getElementsByClassName("enHeader")[0].style.transform =
-          "translateX(-120px)";
+          "translateX(-105px)";
         document.getElementsByClassName("enHeader")[0].style.padding = "0px";
         document.getElementsByClassName("menu")[0].style.display = "none";
         document.getElementsByClassName("langAndScroll")[0].style.display =
@@ -322,7 +324,7 @@ export default {
           document.getElementsByClassName("faHeader")[0].style.padding =
             "85px 40px 56px 18px";
           document.getElementsByClassName("enHeader")[0].style.padding =
-            "85px 18px 56px 40px";
+            "85px 33px 56px 40px";
           document.getElementsByClassName("menu")[0].style.display = "flex";
           document.getElementsByClassName("langAndScroll")[0].style.display =
             "flex";
@@ -374,7 +376,6 @@ export default {
       }
     },
     handelEnLang() {
-      console.log("h");
       const lang = document
         .getElementsByClassName("enHeader")[0]
         .getElementsByClassName("language")[0];
@@ -386,9 +387,13 @@ export default {
     },
     changeToEn() {
       this.$store.commit("changeToEn");
+      const currentPath = this.$route.fullPath.replace("fa", "en");
+      this.$router.push(currentPath);
     },
     changeToFa() {
       this.$store.commit("changeToFa");
+      const currentPath = this.$route.fullPath.replace("en", "fa");
+      this.$router.push(currentPath);
     },
   },
   watch: {

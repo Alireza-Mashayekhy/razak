@@ -1,8 +1,8 @@
 <template>
   <div class="mainLayout">
     <Header />
-    <div class="faLayout" v-show="$store.state.lang == 'fa'">
-      <div class="bar">
+    <div class="faLayout" v-if="$store.state.lang == 'fa'">
+      <div class="bar faPage">
         <div class="barIcon" @click="openMenu">
           <div class="firstLine">
             <span></span>
@@ -28,7 +28,7 @@
       <Nuxt />
       <Footer />
     </div>
-    <div class="enLayout" v-show="$store.state.lang == 'en'">
+    <div class="enLayout enPage" v-if="$store.state.lang == 'en'">
       <div class="bar">
         <div class="barIcon" @click="openMenu">
           <div class="firstLine">
@@ -66,6 +66,11 @@ export default {
   },
   mounted() {
     document.getElementsByClassName("resLanguage")[0].style.height = "26px";
+    if (this.$route.path.split("/")[1] == "en") {
+      this.$store.commit("changeToEn");
+    } else {
+      this.$store.commit("changeToFa");
+    }
   },
   methods: {
     openMenu() {
@@ -122,9 +127,22 @@ export default {
     },
     changeToEn() {
       this.$store.commit("changeToEn");
+      const currentPath = this.$route.fullPath.replace("fa", "en");
+      this.$router.push(currentPath);
     },
     changeToFa() {
       this.$store.commit("changeToFa");
+      const currentPath = this.$route.fullPath.replace("en", "fa");
+      this.$router.push(currentPath);
+    },
+  },
+  watch: {
+    "$route.path"() {
+      if (this.$route.path.split("/")[1] == "en") {
+        this.$store.commit("changeToEn");
+      } else {
+        this.$store.commit("changeToFa");
+      }
     },
   },
 };
