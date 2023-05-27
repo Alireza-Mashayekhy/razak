@@ -6,7 +6,10 @@
       </div>
       <div class="title">اخبار سهام</div>
     </div>
-    <div class="route">صفحه اصلی . اخبار سهام</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      اخبار سهام
+    </div>
     <div class="page">
       <div class="chartDiv">
         <div class="title">Razak Pharma</div>

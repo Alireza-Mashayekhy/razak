@@ -135,12 +135,30 @@
         border-radius: 40px;
         padding: 16px 20px;
         transition: all 0.5s;
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background-color: #1a407a;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1;
+          transform: translateX(100%);
+          transition: all 0.5s;
+        }
         img {
           margin-right: 7px;
         }
         &:hover {
+          color: white;
           text-decoration: none;
-          scale: 1.1;
+          &::before {
+            transform: translateX(0);
+          }
         }
       }
     }
@@ -720,13 +738,31 @@
         border-radius: 40px;
         padding: 16px 20px;
         transition: all 0.5s;
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background-color: #1a407a;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          z-index: -1;
+          transform: translateX(-100%);
+          transition: all 0.5s;
+        }
         img {
           margin-left: 7px;
           transform: rotate(180deg);
         }
         &:hover {
+          color: white;
           text-decoration: none;
-          scale: 1.1;
+          &::before {
+            transform: translateX(0);
+          }
         }
       }
     }

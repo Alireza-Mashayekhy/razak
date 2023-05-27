@@ -6,7 +6,10 @@
       </div>
       <div class="title">پورتال سهامداران شرکت داروسازی رازک</div>
     </div>
-    <div class="route">صفحه اصلی . پورتال سهامداران شرکت داروسازی رازک</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      پورتال سهامداران شرکت داروسازی رازک
+    </div>
     <div class="page">
       <div class="form d-flex flex-column align-items-center">
         <div class="title">ورود به سیستم</div>

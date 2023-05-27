@@ -7,7 +7,8 @@
       <div class="title">Livestock seminars and forums</div>
     </div>
     <div class="route">
-      Main Page . Photo Gallery.
+      <router-link to="/en/"> Main Page . </router-link>
+      <router-link to="/en/gallery"> Photo Gallery. </router-link>
       <span
         >Razak Laboratories pharmaceutical company is on the path of continuous
         improvement</span

@@ -10,7 +10,8 @@
       </div>
     </div>
     <div class="route">
-      Main Page . News.
+      <router-link to="/en/"> Main Page . </router-link>
+      <router-link to="/en/news"> News. </router-link>
 
       <span>
         Razak Laboratories pharmaceutical company is on the path of continuous

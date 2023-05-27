@@ -9,7 +9,8 @@
       </div>
     </div>
     <div class="route">
-      Main Page . Portal of shareholders of Razak Pharmaceutical Company
+      <router-link to="/en/"> Main Page . </router-link>
+      Portal of shareholders of Razak Pharmaceutical Company
     </div>
     <div class="page">
       <div class="form d-flex flex-column align-items-center">

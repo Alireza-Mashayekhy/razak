@@ -9,7 +9,8 @@
       </div>
     </div>
     <div class="route">
-      صفحه اصلی .رویداد ها.
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      <router-link to="/fa/events"> رویداد ها. </router-link>
       <span>شرکت داروسازی لابراتوارهای رازک در مسیر بهبود مستمر</span>
     </div>
     <div class="news d-flex">

@@ -6,7 +6,10 @@
       </div>
       <div class="title">Stock news</div>
     </div>
-    <div class="route">Main Page . Stock news</div>
+    <div class="route">
+      <router-link to="/en/"> Main Page . </router-link>
+      Stock news
+    </div>
     <div class="page">
       <div class="chartDiv">
         <div class="title">Razak Pharma</div>

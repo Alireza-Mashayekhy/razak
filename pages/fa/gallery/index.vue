@@ -6,10 +6,13 @@
       </div>
       <div class="title">گالری تصاویر</div>
     </div>
-    <div class="route">صفحه اصلی . گالری تصاویر</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      گالری تصاویر
+    </div>
     <div class="images d-flex flex-wrap justify-content-center">
       <router-link
-        to="/gallery/1"
+        to="/fa/gallery/1"
         class="image"
         v-for="image in images"
         :key="image.id"

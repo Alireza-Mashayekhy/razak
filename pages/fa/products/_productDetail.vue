@@ -7,7 +7,8 @@
       <div class="title">سیستین B6 زینک رازک</div>
     </div>
     <div class="route">
-      صفحه اصلی . محصولات .
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      <router-link to="/fa/products"> محصولات . </router-link>
       <span>سیستین B6 زینک رازک</span>
     </div>
     <div class="aboutProduct">

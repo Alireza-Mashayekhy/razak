@@ -6,7 +6,10 @@
       </div>
       <div class="title">Comments of Razak's regular companions</div>
     </div>
-    <div class="route">Main Page . Comments of Razak's regular companions</div>
+    <div class="route">
+      <router-link to="/en/"> Main Page . </router-link>
+      Comments of Razak's regular companions
+    </div>
     <div class="commentsList d-flex flex-wrap justify-content-center">
       <div class="comment" v-for="i in 9" :key="i">
         <img src="/icons/comma.svg" alt="comma" class="comma" />

@@ -6,7 +6,10 @@
       </div>
       <div class="title">Articles</div>
     </div>
-    <div class="route">Main Page . articles</div>
+    <div class="route">
+      <router-link to="/en/"> Main Page . </router-link>
+      articles
+    </div>
     <div class="topNews">
       <div class="title">
         Selected articles

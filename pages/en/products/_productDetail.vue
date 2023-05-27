@@ -7,7 +7,8 @@
       <div class="title">Cysteine ​​B6 zinc hops</div>
     </div>
     <div class="route">
-      Main Page . Products .
+      <router-link to="/en/"> Main Page . </router-link>
+      <router-link to="/en/products"> Products . </router-link>
 
       <span>Cysteine ​​B6 zinc Razak</span>
     </div>

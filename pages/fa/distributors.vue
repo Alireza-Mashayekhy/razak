@@ -6,7 +6,10 @@
       </div>
       <div class="title">مراکز پخش محصولات رازک</div>
     </div>
-    <div class="route">صفحه اصلی . مراکز پخش محصولات رازک</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      مراکز پخش محصولات رازک
+    </div>
     <div class="about d-flex justify-content-between align-items-center">
       <div>
         <div class="title">

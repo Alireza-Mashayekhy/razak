@@ -6,7 +6,10 @@
       </div>
       <div class="title">products List</div>
     </div>
-    <div class="route">Main Page . events</div>
+    <div class="route">
+      <router-link to="/en/"> Main Page . </router-link>
+      events
+    </div>
     <div class="table">
       <div
         class="lettersSort d-flex"

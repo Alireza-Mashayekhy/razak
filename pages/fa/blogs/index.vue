@@ -6,7 +6,10 @@
       </div>
       <div class="title">مقالات</div>
     </div>
-    <div class="route">صفحه اصلی . مقالات</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      مقالات
+    </div>
     <div class="topNews">
       <div class="title">
         مقالات منتخب

@@ -6,7 +6,10 @@
       </div>
       <div class="title">لیست محصولات</div>
     </div>
-    <div class="route">صفحه اصلی . رویداد ها</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      رویداد ها
+    </div>
     <div class="table">
       <div
         class="lettersSort d-flex"

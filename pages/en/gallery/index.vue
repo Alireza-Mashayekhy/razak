@@ -6,7 +6,10 @@
       </div>
       <div class="title">Photo Gallery</div>
     </div>
-    <div class="route">Main Page . Photo Gallery</div>
+    <div class="route">
+      <router-link to="/en/"> Main Page . </router-link>
+      Photo Gallery
+    </div>
     <div class="images d-flex flex-wrap justify-content-center">
       <router-link
         to="/en/gallery/1"

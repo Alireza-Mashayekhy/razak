@@ -6,7 +6,10 @@
       </div>
       <div class="title">Distribution centers for hop products</div>
     </div>
-    <div class="route">Main Page . Distribution centers for hop products</div>
+    <div class="route">
+      <router-link to="/en/"> Main Page . </router-link>
+      Distribution centers for hop products
+    </div>
     <div class="about d-flex justify-content-between align-items-center">
       <div>
         <div class="title">

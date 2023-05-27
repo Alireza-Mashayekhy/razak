@@ -6,7 +6,10 @@
       </div>
       <div class="title">نظرات همراهان همیشگی رازک</div>
     </div>
-    <div class="route">صفحه اصلی . نظرات همراهان همیشگی رازک</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      نظرات همراهان همیشگی رازک
+    </div>
     <div class="commentsList d-flex flex-wrap justify-content-center">
       <div class="comment" v-for="i in 9" :key="i">
         <img src="/icons/comma.svg" alt="comma" class="comma" />

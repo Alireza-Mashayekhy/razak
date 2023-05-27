@@ -35,3 +35,11 @@ html {
 * {
   line-height: 2em !important;
 }
+.route {
+  a {
+    color: #606a79;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

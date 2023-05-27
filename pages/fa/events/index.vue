@@ -6,7 +6,10 @@
       </div>
       <div class="title">رویداد ها</div>
     </div>
-    <div class="route">صفحه اصلی . رویداد ها</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      رویداد ها
+    </div>
     <div class="topNews">
       <div class="title">
         رویداد منتخب

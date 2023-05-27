@@ -6,7 +6,10 @@
       </div>
       <div class="title">شرکای رازک</div>
     </div>
-    <div class="route">صفحه اصلی . شرکای رازک</div>
+    <div class="route">
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      شرکای رازک
+    </div>
     <div class="partners d-flex flex-wrap justify-content-center">
       <div class="partner" v-for="image in images" :key="image.id">
         <img :src="image.img" alt="gallery" />

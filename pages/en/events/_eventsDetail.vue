@@ -10,7 +10,8 @@
       </div>
     </div>
     <div class="route">
-      Main page. Events.
+      <router-link to="/en/"> Main page. </router-link>
+      <router-link to="/en/events"> Events. </router-link>
       <span
         >Razak Laboratories pharmaceutical company is on the path of continuous
         improvement</span

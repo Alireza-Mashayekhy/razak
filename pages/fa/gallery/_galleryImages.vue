@@ -7,7 +7,8 @@
       <div class="title">سمینارها و انجمن های دامی</div>
     </div>
     <div class="route">
-      صفحه اصلی . گالری تصاویر.
+      <router-link to="/fa/"> صفحه اصلی . </router-link>
+      <router-link to="/fa/gallery"> گالری تصاویر. </router-link>
       <span>شرکت داروسازی لابراتوارهای رازک در مسیر بهبود مستمر</span>
     </div>
     <div class="images d-flex flex-wrap justify-content-center">

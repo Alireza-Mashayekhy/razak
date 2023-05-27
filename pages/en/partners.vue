@@ -6,7 +6,10 @@
       </div>
       <div class="title">Razak Partners</div>
     </div>
-    <div class="route">Main Page . Razak Partners</div>
+    <div class="route">
+      <router-link to="/en/"> Main Page . </router-link>
+      Razak Partners
+    </div>
     <div class="partners d-flex flex-wrap justify-content-center">
       <div class="partner" v-for="image in images" :key="image.id">
         <img :src="image.img" alt="gallery" />
