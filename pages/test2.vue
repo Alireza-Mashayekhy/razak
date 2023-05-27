@@ -5,13 +5,7 @@
 </template>
 
 <script>
-export default {
-  mounted() {
-    setTimeout(() => {
-      this.$router.push("/fa");
-    }, 2000);
-  },
-};
+export default {};
 </script>
 
 <style>

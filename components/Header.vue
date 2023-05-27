@@ -33,7 +33,9 @@
       </div>
       <div class="openedMenu">
         <div class="topDiv d-flex justify-content-between">
-          <img src="/images/enLogo.svg" class="enLogo" alt="enLogo" />
+          <router-link to="/fa">
+            <img src="/images/enLogo.svg" class="enLogo" alt="enLogo" />
+          </router-link>
           <img
             src="/icons/xIcon.svg"
             class="xIcon"
@@ -140,7 +142,9 @@
       </div>
       <div class="openedMenu">
         <div class="topDiv d-flex justify-content-between">
-          <img src="/images/enLogo.svg" class="enLogo" alt="enLogo" />
+          <router-link to="/en">
+            <img src="/images/enLogo.svg" class="enLogo" alt="enLogo" />
+          </router-link>
           <img
             src="/icons/xIcon.svg"
             class="xIcon"
@@ -370,7 +374,7 @@ export default {
     handelLang() {
       const lang = document.getElementsByClassName("language")[0];
       if (lang.style.height == "25px") {
-        lang.style.height = "125px";
+        lang.style.height = "140px";
       } else {
         lang.style.height = "25px";
       }
@@ -380,7 +384,7 @@ export default {
         .getElementsByClassName("enHeader")[0]
         .getElementsByClassName("language")[0];
       if (lang.style.height == "25px") {
-        lang.style.height = "125px";
+        lang.style.height = "140px";
       } else {
         lang.style.height = "25px";
       }

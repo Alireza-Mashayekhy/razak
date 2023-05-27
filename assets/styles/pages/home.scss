@@ -125,7 +125,7 @@
       margin-bottom: 53px;
     }
     .links {
-      gap: 50px;
+      gap: 30px;
       a {
         font-style: normal;
         font-weight: 400;
@@ -140,8 +140,7 @@
         }
         &:hover {
           text-decoration: none;
-          transform: translate3d(-5px, -5px, 5px);
-          box-shadow: 10px 10px 15px #0b1a31;
+          scale: 1.1;
         }
       }
     }
@@ -200,6 +199,7 @@
       top: 220px;
       -ms-overflow-style: none;
       scrollbar-width: none;
+      z-index: 2;
       &::-webkit-scrollbar {
         display: none;
       }
@@ -710,7 +710,7 @@
       margin-bottom: 53px;
     }
     .links {
-      gap: 50px;
+      gap: 30px;
       a {
         font-style: normal;
         font-weight: 400;
@@ -726,8 +726,7 @@
         }
         &:hover {
           text-decoration: none;
-          transform: translate3d(-5px, -5px, 5px);
-          box-shadow: 10px 10px 15px #0b1a31;
+          scale: 1.1;
         }
       }
     }
@@ -786,6 +785,7 @@
       top: 220px;
       -ms-overflow-style: none;
       scrollbar-width: none;
+      z-index: 2;
       &::-webkit-scrollbar {
         display: none;
       }
