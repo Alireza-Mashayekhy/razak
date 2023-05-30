@@ -1,22 +1,86 @@
 .loading {
   width: 100vw;
   height: 100vh;
-  background: #1a407a;
   display: flex;
   justify-content: center;
   align-items: center;
-  img {
-    transform: rotateY(0deg);
-    animation: loadLogo 2s forwards;
+  background: #1a407a;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html,
+body {
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #030321;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  /*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+  display: block;
+  font: 10.5em "Montserrat";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #00f7ff;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #00ff40;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #e5ff00;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #ff0202;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #fdb731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
   }
 }
 @keyframes loadLogo {
+}
+@keyframes textUp {
   0% {
-    transform: rotateX(0deg);
-    scale: 0.5;
+    transform: skewY(9deg) rotateX(90deg);
   }
   100% {
-    transform: rotateY(360deg);
-    scale: 1.5;
+    transform: skewY(9deg) rotateX(0deg);
   }
 }
