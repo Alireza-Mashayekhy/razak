@@ -380,8 +380,8 @@ export default {
           scrub: true,
           // markers: true,
         },
-        "min-width": "70px",
-        "min-width": "70px",
+        "min-width": "90px",
+        "min-width": "90px",
       });
     },
     imagesGsap3() {
@@ -395,8 +395,8 @@ export default {
           scrub: true,
           // markers: true,
         },
-        "min-width": "45px",
-        "min-width": "45px",
+        "min-width": "65px",
+        "min-width": "65px",
       });
     },
     mousemove(e) {

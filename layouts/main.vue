@@ -120,7 +120,7 @@ export default {
     handelLang() {
       const lang = document.getElementsByClassName("resLanguage")[0];
       if (lang.style.height == "26px") {
-        lang.style.height = "125px";
+        lang.style.height = "140px";
       } else {
         lang.style.height = "26px";
       }
