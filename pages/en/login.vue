@@ -2,7 +2,9 @@
   <div class="enPage enLogin">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/en">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">
         Portal of shareholders of Razak Pharmaceutical Company

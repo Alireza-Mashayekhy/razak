@@ -2,7 +2,9 @@
   <div class="enPage enComments">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/en">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">Comments of Razak's regular companions</div>
     </div>

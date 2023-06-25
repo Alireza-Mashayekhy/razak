@@ -2,7 +2,9 @@
   <div class="faPage faPartners">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/fa">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">شرکای رازک</div>
     </div>

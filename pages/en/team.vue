@@ -2,7 +2,9 @@
   <div class="enPage enTeam">
     <div class="effect">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/en">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">our team <span></span></div>
       <h3>Our experienced team</h3>

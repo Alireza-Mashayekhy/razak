@@ -3,7 +3,9 @@
     <div class="topDiv">
       <div class="effect">
         <div class="enLogo">
-          <img src="/images/enLogo.svg" alt="enLogo" />
+          <router-link to="/en">
+            <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+          </router-link>
         </div>
         <div>
           <div class="title">

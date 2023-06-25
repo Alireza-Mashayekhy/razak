@@ -2,7 +2,9 @@
   <div class="enPage enVoc">
     <div class="effect">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/en">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">
         customer's voice

@@ -374,7 +374,7 @@
           background: rgba(28, 66, 123, 0.8);
           background-blend-mode: multiply;
           padding: 41px 19px 47px 19px;
-          transform: translateY(205px);
+          transform: translateY(250px);
           transition: transform 1s;
           .title {
             font-style: normal;
@@ -462,7 +462,6 @@
           color: #606a79;
         }
         .profile {
-          margin-left: 5px;
         }
         .calendar {
           margin-left: 5px;
@@ -488,6 +487,7 @@
           font-size: 14px;
           line-height: 50px;
           letter-spacing: 0.2em;
+          margin-left: 12px;
           color: #1a407a;
         }
         .newPic {
@@ -528,6 +528,7 @@
         img {
           position: absolute;
           top: 4px;
+          left: 0;
         }
         input {
           width: 100%;
@@ -537,7 +538,7 @@
           padding-bottom: 4px;
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 18px;
           line-height: 32px;
           color: #606a79;
           &:focus {
@@ -590,12 +591,14 @@
           font-size: 14px;
           line-height: 50px;
           color: #1a407a;
+          margin-top: 20px;
           &:hover {
             text-decoration: none;
           }
           img {
             width: 26px;
             margin-right: 4px;
+            margin-top: 2px !important;
           }
         }
       }
@@ -899,6 +902,7 @@
           .newPic {
             margin-top: 50px;
             margin-right: 0px;
+            margin-left: 0px;
             width: 100%;
             height: auto;
           }

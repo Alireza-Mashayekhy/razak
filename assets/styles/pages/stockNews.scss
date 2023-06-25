@@ -680,7 +680,7 @@
             background: rgba(28, 66, 123, 0.8);
             background-blend-mode: multiply;
             padding: 41px 19px 47px 19px;
-            transform: translateY(205px);
+            transform: translateY(250px);
             transition: transform 1s;
             .title {
               font-style: normal;
@@ -792,6 +792,7 @@
             line-height: 50px;
             letter-spacing: 0.2em;
             color: #1a407a;
+            margin-left: 12px;
           }
           .newPic {
             width: 180px;
@@ -893,6 +894,7 @@
             font-size: 14px;
             line-height: 50px;
             color: #1a407a;
+            margin-top: 20px;
             &:hover {
               text-decoration: none;
             }

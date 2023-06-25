@@ -1,7 +1,9 @@
 <template>
   <div class="faPage faContactUs">
     <div class="enLogo">
-      <img src="/images/enLogo.svg" alt="enLogo" />
+      <router-link to="/fa">
+        <img src="/images/enLogo.svg" alt="enLogo" />
+      </router-link>
     </div>
     <div class="d-flex justify-content-between align-items-center">
       <div class="informations">

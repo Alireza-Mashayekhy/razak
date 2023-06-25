@@ -2,7 +2,9 @@
   <div class="enPage enProducts">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/en">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">products List</div>
     </div>
@@ -105,7 +107,7 @@
             {{ product.packaging }}
           </div>
           <router-link
-            to="/products/1"
+            to="/en/products/1"
             class="d-flex blueCircleLink justify-content-center align-items-center detail"
           >
             More

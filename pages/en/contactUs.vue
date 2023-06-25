@@ -1,7 +1,9 @@
 <template>
   <div class="enPage enContactUs">
     <div class="enLogo">
-      <img src="/images/enLogo.svg" alt="enLogo" />
+      <router-link to="/en">
+        <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+      </router-link>
     </div>
     <div class="d-flex justify-content-between align-items-center">
       <div class="informations">

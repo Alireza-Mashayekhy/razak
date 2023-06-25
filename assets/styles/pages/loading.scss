@@ -10,29 +10,38 @@
     height: 25vw;
     position: relative;
     animation: logoAnimation 1s;
-    .text {
+    img {
+      width: 100%;
+      // height: 69%;
+      // top: 14%;
+      // left: 5%;
       position: absolute;
-      top: 48%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #1a407a;
-      font-size: 12vw;
-      font-weight: 600;
-      letter-spacing: 2.2px;
-      text-indent: 5px;
       opacity: 0;
       animation: textAnimation 2s forwards 1s;
     }
+    // .text {
+    //   position: absolute;
+    //   top: 48%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   color: #1a407a;
+    //   font-size: 12vw;
+    //   font-weight: 600;
+    //   letter-spacing: 2.2px;
+    //   text-indent: 5px;
+    //   opacity: 0;
+    //   animation: textAnimation 2s forwards 1s;
+    // }
     &::before {
       background-color: white;
       content: "";
-      width: 100%;
-      height: 70%;
+      width: 102%;
+      height: 96%;
       position: absolute;
-      top: 50%;
+      top: 51%;
       left: 50%;
       border-radius: 50%;
-      transform: translate(-50%, -50%) rotate(-13deg);
+      transform: translate(-50%, -50%) rotate(-12deg);
     }
   }
 }

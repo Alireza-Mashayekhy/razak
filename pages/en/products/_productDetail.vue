@@ -2,7 +2,9 @@
   <div class="enPage enProductsDetail">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/en">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">Cysteine ​​B6 zinc hops</div>
     </div>

@@ -372,6 +372,7 @@
           font-weight: 400;
           font-size: 14px;
           line-height: 50px;
+          margin-top: 20px;
           color: #1a407a;
           &:hover {
             text-decoration: none;
@@ -379,6 +380,7 @@
           img {
             width: 26px;
             margin-left: 4px;
+            margin-top: 2px !important;
           }
           .imgDiv {
             margin-left: 10px;
@@ -430,7 +432,7 @@
           background: rgba(28, 66, 123, 0.8);
           background-blend-mode: multiply;
           padding: 41px 19px 47px 19px;
-          transform: translateY(205px);
+          transform: translateY(250px);
           transition: transform 1s;
           .title {
             font-style: normal;

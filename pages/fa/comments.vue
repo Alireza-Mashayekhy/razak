@@ -2,7 +2,9 @@
   <div class="faPage faComments">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/fa">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </router-link>
       </div>
       <div class="title">نظرات همراهان همیشگی رازک</div>
     </div>

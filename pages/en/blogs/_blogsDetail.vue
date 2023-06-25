@@ -2,7 +2,9 @@
   <div class="enPage enBlogsDetail">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/en">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">
         Razak Laboratories pharmaceutical company is on the path of continuous

@@ -8,7 +8,9 @@
     </div>
     <div class="topDiv d-flex flex-column justify-content-between">
       <div class="logoDiv">
-        <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        <router-link to="/fa">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="about">
         <h1>شرکت داروسازی رازک</h1>

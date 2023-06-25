@@ -2,7 +2,9 @@
   <div class="faPage faTeam">
     <div class="effect">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/fa">
+          <img src="/images/enLogo.svg" alt="enLogo" class="enLogo" />
+        </router-link>
       </div>
       <div class="title">تیم ما<span></span></div>
       <h3>تیم با تجربه ما</h3>

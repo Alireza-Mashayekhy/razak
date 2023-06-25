@@ -890,12 +890,14 @@
       z-index: 1;
     }
     .teamBaner {
+      transform: rotateY(180deg);
       top: -100px;
-      right: -130px;
+      left: -130px;
     }
     .reverseTeamBaner {
+      transform: rotateY(180deg);
       bottom: 0px;
-      left: -275px;
+      right: -275px;
     }
     .aboutTeam {
       .titles {
@@ -1581,11 +1583,11 @@
       .teamBaner {
         width: 250px;
         top: -45px;
-        right: -40px;
+        left: -40px;
       }
       .reverseTeamBaner {
         width: 250px;
-        left: -73px;
+        right: -73px;
       }
       .aboutTeam {
         .titles {

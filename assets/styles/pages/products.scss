@@ -100,27 +100,39 @@
         display: none;
       }
       .name {
-        min-width: 240px;
+        min-width: 265px;
+        max-width: 265px;
+        padding: 10px 50px;
         text-align: center;
       }
       .generic {
         min-width: 373px;
+        max-width: 373px;
+        padding: 10px 50px;
         text-align: center;
       }
       .forms {
         min-width: 261px;
+        max-width: 261px;
+        padding: 10px 50px;
         text-align: center;
       }
       .indications {
         min-width: 258px;
+        max-width: 258px;
+        padding: 10px 50px;
         text-align: center;
       }
       .packinging {
         min-width: 222px;
+        max-width: 222px;
+        padding: 10px 50px;
         text-align: center;
       }
       .detail {
-        min-width: 135px;
+        min-width: 175px;
+        max-width: 175px;
+        padding: 10px 50px;
         text-align: center;
       }
       .title {
@@ -136,7 +148,7 @@
         }
       }
       .product {
-        height: 150px;
+        height: fit-content;
         gap: 1px;
         div,
         a {
@@ -276,27 +288,39 @@
         display: none;
       }
       .name {
-        min-width: 240px;
+        min-width: 265px;
+        max-width: 265px;
+        padding: 10px 50px;
         text-align: center;
       }
       .generic {
         min-width: 373px;
+        max-width: 373px;
+        padding: 10px 50px;
         text-align: center;
       }
       .forms {
         min-width: 261px;
+        max-width: 261px;
+        padding: 10px 50px;
         text-align: center;
       }
       .indications {
         min-width: 258px;
+        max-width: 258px;
+        padding: 10px 50px;
         text-align: center;
       }
       .packinging {
         min-width: 222px;
+        max-width: 222px;
+        padding: 10px 50px;
         text-align: center;
       }
       .detail {
-        min-width: 135px;
+        min-width: 175px;
+        max-width: 175px;
+        padding: 10px 50px;
         text-align: center;
       }
       .title {
@@ -312,7 +336,7 @@
         }
       }
       .product {
-        height: 150px;
+        height: fit-content;
         gap: 1px;
         div,
         a {

@@ -1,7 +1,7 @@
 <template>
   <div class="loading">
     <div class="logo">
-      <div class="text">Razak</div>
+      <img src="/images/enLogo.svg" alt="" />
     </div>
   </div>
 </template>

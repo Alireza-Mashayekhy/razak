@@ -2,7 +2,9 @@
   <div class="faPage faEventsDetail">
     <div class="topDiv">
       <div class="enLogo">
-        <img src="/images/enLogo.svg" alt="enLogo" />
+        <router-link to="/fa">
+          <img src="/images/enLogo.svg" alt="enLogo" />
+        </router-link>
       </div>
       <div class="title">
         شرکت داروسازی لابراتوارهای رازک در مسیر بهبود مستمر
